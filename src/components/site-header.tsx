@@ -2,7 +2,8 @@ import Link from "next/link";
 
 const nav = [
   { href: "/testler", label: "Testler" },
-  { href: "/hediye", label: "Hediyeler" },
+  { href: "/eleme", label: "Eleme" },
+  { href: "/hediye", label: "Hediye" },
 ];
 
 export function SiteHeader() {
@@ -16,7 +17,7 @@ export function SiteHeader() {
           >
             🧠
           </span>
-          <span className="font-display text-lg leading-none font-extrabold tracking-tight sm:text-xl">
+          <span className="hidden font-display text-lg leading-none font-extrabold tracking-tight min-[380px]:inline sm:text-xl">
             sosyal<span className="text-cherry">eğlence</span>
           </span>
         </Link>
@@ -26,7 +27,7 @@ export function SiteHeader() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="rounded-full px-2.5 py-2 font-display text-[15px] font-semibold hover:bg-blush sm:px-3"
+                  className="rounded-full px-2 py-2 font-display text-[15px] font-semibold hover:bg-blush sm:px-3"
                 >
                   {item.label}
                 </Link>

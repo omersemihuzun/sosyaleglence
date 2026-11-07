@@ -7,15 +7,19 @@ type Font = { name: string; data: Buffer; weight: 500 | 800; style: "normal" };
 
 let cached: Font[] | null = null;
 
-/** Görsel üretici için fontlar. latin + latin-ext birlikte: ğ, ş, ı, İ için şart. */
+/**
+ * Görsel üretici için fontlar. Türkçe harfler iki dosyaya bölünmüş durumda (ı/ç/ö/ü latin,
+ * ş/ğ/İ latin-ext). Satori aynı isimli fontlardan birini kullandığı için ayrı isim verip
+ * fontFamily içinde yedek zincir kuruyoruz: "Display, DisplayExt".
+ */
 export async function loadOgFonts(): Promise<Font[]> {
   if (cached) return cached;
   const dir = join(process.cwd(), "assets/fonts");
   const files: [string, string, 500 | 800][] = [
     ["Display", "bricolage-grotesque-latin-800-normal.woff", 800],
-    ["Display", "bricolage-grotesque-latin-ext-800-normal.woff", 800],
+    ["DisplayExt", "bricolage-grotesque-latin-ext-800-normal.woff", 800],
     ["Body", "instrument-sans-latin-500-normal.woff", 500],
-    ["Body", "instrument-sans-latin-ext-500-normal.woff", 500],
+    ["BodyExt", "instrument-sans-latin-ext-500-normal.woff", 500],
   ];
   cached = await Promise.all(
     files.map(async ([name, file, weight]) => ({
@@ -54,12 +58,12 @@ export function StoryCard({
         flexDirection: "column",
         background: result.color,
         padding: 72,
-        fontFamily: "Body",
+        fontFamily: "Body, BodyExt",
         color: PLUM,
       }}
     >
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", color: PAPER }}>
-        <div style={{ fontFamily: "Display", fontSize: 44 }}>sosyaleglence</div>
+        <div style={{ fontFamily: "Display, DisplayExt", fontSize: 44 }}>sosyaleglence</div>
         <div style={{ fontSize: 32, opacity: 0.85 }}>{test.title}</div>
       </div>
 
@@ -80,14 +84,14 @@ export function StoryCard({
         <div style={{ display: "flex", alignItems: "center", marginTop: 16 }}>
           <div style={{ fontSize: 150, lineHeight: 1 }}>{result.emoji}</div>
         </div>
-        <div style={{ fontFamily: "Display", fontSize: 104, lineHeight: 1.0, marginTop: 24, letterSpacing: -2 }}>
+        <div style={{ fontFamily: "Display, DisplayExt", fontSize: 104, lineHeight: 1.0, marginTop: 24, letterSpacing: -2 }}>
           {result.name}
         </div>
         <div style={{ fontSize: 40, lineHeight: 1.35, marginTop: 28, color: "#5A3E5E" }}>{result.tagline}</div>
 
         {headline !== null && test.headline && (
           <div style={{ display: "flex", alignItems: "baseline", marginTop: 40 }}>
-            <div style={{ fontFamily: "Display", fontSize: 120, color: "#D7102F", lineHeight: 1 }}>{`%${headline}`}</div>
+            <div style={{ fontFamily: "Display, DisplayExt", fontSize: 120, color: "#D7102F", lineHeight: 1 }}>{`%${headline}`}</div>
             <div style={{ fontSize: 36, marginLeft: 20 }}>{test.headline.label.toLocaleLowerCase("tr")}</div>
           </div>
         )}
@@ -98,7 +102,7 @@ export function StoryCard({
               <div key={d.id} style={{ display: "flex", flexDirection: "column", marginTop: 22 }}>
                 <div style={{ display: "flex", justifyContent: "space-between", fontSize: 32 }}>
                   <div>{d.label}</div>
-                  <div style={{ fontFamily: "Display" }}>{`%${scores[d.id] ?? 0}`}</div>
+                  <div style={{ fontFamily: "Display, DisplayExt" }}>{`%${scores[d.id] ?? 0}`}</div>
                 </div>
                 <div
                   style={{
@@ -128,7 +132,7 @@ export function StoryCard({
           color: PAPER,
         }}
       >
-        <div style={{ fontFamily: "Display", fontSize: 56 }}>Sen hangisisin?</div>
+        <div style={{ fontFamily: "Display, DisplayExt", fontSize: 56 }}>Sen hangisisin?</div>
         <div
           style={{
             marginTop: 20,
@@ -138,7 +142,7 @@ export function StoryCard({
             borderRadius: 999,
             padding: "18px 40px",
             fontSize: 36,
-            fontFamily: "Display",
+            fontFamily: "Display, DisplayExt",
           }}
         >
           {`${host}/testler/${test.slug}`}
@@ -158,7 +162,7 @@ export function OgResultCard({ test, result }: { test: Test; result: Result }) {
         display: "flex",
         background: result.color,
         padding: 48,
-        fontFamily: "Body",
+        fontFamily: "Body, BodyExt",
         color: PLUM,
       }}
     >
@@ -177,11 +181,11 @@ export function OgResultCard({ test, result }: { test: Test; result: Result }) {
         <div style={{ fontSize: 190, lineHeight: 1, marginRight: 48 }}>{result.emoji}</div>
         <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
           <div style={{ fontSize: 30, color: "#5A3E5E" }}>{test.title}</div>
-          <div style={{ fontFamily: "Display", fontSize: 84, lineHeight: 1, marginTop: 12, letterSpacing: -1 }}>
+          <div style={{ fontFamily: "Display, DisplayExt", fontSize: 84, lineHeight: 1, marginTop: 12, letterSpacing: -1 }}>
             {result.name}
           </div>
           <div style={{ fontSize: 32, lineHeight: 1.3, marginTop: 20, color: "#5A3E5E" }}>{result.tagline}</div>
-          <div style={{ fontFamily: "Display", fontSize: 30, marginTop: 28, color: "#D7102F" }}>
+          <div style={{ fontFamily: "Display, DisplayExt", fontSize: 30, marginTop: 28, color: "#D7102F" }}>
             Sen hangisisin? Testi çöz →
           </div>
         </div>
@@ -199,7 +203,7 @@ export function OgTestCard({ test }: { test: Test }) {
         display: "flex",
         background: test.color,
         padding: 48,
-        fontFamily: "Body",
+        fontFamily: "Body, BodyExt",
         color: PLUM,
       }}
     >
@@ -218,13 +222,13 @@ export function OgTestCard({ test }: { test: Test }) {
       >
         <div style={{ display: "flex", alignItems: "center" }}>
           <div style={{ fontSize: 110, lineHeight: 1, marginRight: 32 }}>{test.emoji}</div>
-          <div style={{ fontFamily: "Display", fontSize: 80, lineHeight: 1, letterSpacing: -1, flex: 1 }}>
+          <div style={{ fontFamily: "Display, DisplayExt", fontSize: 80, lineHeight: 1, letterSpacing: -1, flex: 1 }}>
             {test.title}
           </div>
         </div>
         <div style={{ fontSize: 34, lineHeight: 1.35, color: "#5A3E5E" }}>{test.summary}</div>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <div style={{ fontFamily: "Display", fontSize: 36 }}>sosyaleglence.com</div>
+          <div style={{ fontFamily: "Display, DisplayExt", fontSize: 36 }}>sosyaleglence.com</div>
           <div style={{ fontSize: 30 }}>
             {`${test.questions.length} soru, ${test.results.length} farklı sonuç`}
           </div>

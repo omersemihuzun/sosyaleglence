@@ -1,5 +1,7 @@
 import Link from "next/link";
+import { BracketCard } from "@/components/bracket-card";
 import { LiveQuestion } from "@/components/live-question";
+import { brackets } from "@/content/brackets";
 import { TestCard } from "@/components/test-card";
 import { guides } from "@/content/gifts/guides";
 import { recipients, type Recipient } from "@/content/gifts/types";
@@ -45,6 +47,23 @@ export default function Home() {
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {tests.map((t, i) => (
             <TestCard key={t.slug} test={t} tilt={TILTS[i % TILTS.length]} />
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto mt-20 max-w-6xl px-4 sm:px-6">
+        <div className="flex items-end justify-between gap-4">
+          <div>
+            <h2 className="font-display text-3xl font-bold sm:text-4xl">Eleme oyunları</h2>
+            <p className="mt-2 text-plum-soft">16 seçenek, her turda ikisinden biri. Sonunda tek şampiyon.</p>
+          </div>
+          <Link href="/eleme" className="shrink-0 font-display font-bold text-cherry hover:underline">
+            Hepsini gör
+          </Link>
+        </div>
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {brackets.slice(0, 3).map((b, i) => (
+            <BracketCard key={b.slug} bracket={b} tilt={TILTS[(i + 1) % TILTS.length]} />
           ))}
         </div>
       </section>

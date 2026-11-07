@@ -18,6 +18,7 @@ export function SiteFooter() {
           <p className="font-display font-bold">Keşfet</p>
           <ul className="mt-3 space-y-2 text-sm text-paper/80">
             <li><Link className="hover:text-butter" href="/testler">Tüm testler</Link></li>
+            <li><Link className="hover:text-butter" href="/eleme">Eleme oyunları</Link></li>
             <li><Link className="hover:text-butter" href="/hediye">Hediye bulucu</Link></li>
             <li><Link className="hover:text-butter" href="/iletisim">İletişim</Link></li>
           </ul>
