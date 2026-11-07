@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sosyal Eğlence
 
-## Getting Started
-
-First, run the development server:
+İlişki ve kişilik testleri ile hediye rehberi. Next.js 16 (App Router, Cache Components), Tailwind CSS 4, TypeScript.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
+npm run build      # production build
+npm run kalibre    # test sonuçlarını kalibre et (yeni test ekleyince ya da soru değiştirince)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Klasörler
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/content/tests/      Testler (her test tek dosya) + kalibrasyon.json
+src/content/gifts/      Hediye fikirleri (ideas.ts) ve SEO rehberleri (guides.ts)
+src/lib/scoring.ts      Puanlama: boyut skorları + en yakın sonuç profili
+src/lib/shop.ts         Mağaza linkleri (affiliate eklenecek yer)
+src/lib/og.tsx          Paylaşım görselleri (story kartı ve bağlantı önizlemesi)
+src/lib/site.ts         Site adı, e-posta, sosyal medya hesapları
+scripts/kalibre.ts      Sonuç profili kalibrasyonu
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Test nasıl çalışır?
 
-## Learn More
+- Her test 3-5 **boyut** ölçer (ör. Kıskançlık: sahiplenme, güvensizlik, kontrol, sessiz kırgınlık).
+- Her şık bu boyutlara 0-3 puan verir. Şıkların sırası her açılışta karışır.
+- Boyut skoru = alınan puan / o boyutta alınabilecek en yüksek puan (0-100).
+- Sonuç, skorlara **en yakın profile** sahip sonuçtur.
+- Skorlar sonuç adresinde taşınır (`?s=64-20-80-33`). Veritabanı gerekmez.
 
-To learn more about Next.js, take a look at the following resources:
+## Yeni test eklemek
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. `src/content/tests/` içinde mevcut bir testi kopyala, içeriği değiştir.
+2. Her sonucun `profile` alanına o sonucun **niyetini** yaz (ör. "kontrol yüksek, diğerleri düşük" için `{ kontrol: 80, sahiplenme: 20, ... }`).
+3. Testi `src/content/tests/index.ts` içindeki listeye ve `scripts/kalibre.ts` içindeki `files` listesine ekle.
+4. `npm run kalibre` çalıştır. Script sanal cevaplayıcılarla her sonucun gerçekte ulaşılabilir profilini hesaplar, dağılımı ve isabet oranını raporlar.
+   - İsabet %75'in altındaysa sonuçlar birbirinden ayrışmıyor demektir. Şıkların puanlarını gözden geçir.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+İyi bir soru için ipuçları: Gerçekçi bir senaryo yaz. 4 şıktan hiçbiri açıkça "doğru" ya da "kötü" görünmesin. Her şık farklı bir eğilimi ölçsün.
 
-## Deploy on Vercel
+## Hediye eklemek
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`src/content/gifts/ideas.ts` dosyasına yeni bir nesne ekle: alıcılar, ilgi alanları, bütçe aralığı ve mağazada aranacak ifade (`query`). Rehber sayfaları ve hediye bulucu otomatik güncellenir.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Affiliate
+
+`src/lib/shop.ts`:
+- Amazon: `.env` içinde `NEXT_PUBLIC_AMAZON_TAG=xxx-21` tanımla.
+- Trendyol / Hepsiburada: partner panelindeki link biçimi belli olunca `wrapTrendyol` / `wrapHepsiburada` fonksiyonlarını güncelle.
+
+## Eski siteden yönlendirmeler
+
+`next.config.ts` içinde: `/quizmaker`, `/hediye-önerileri`, `/iletişim` adresleri yeni sayfalara kalıcı (301) yönlendirilir.

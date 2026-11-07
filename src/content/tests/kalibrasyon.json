@@ -1,0 +1,197 @@
+{
+  "kiskanclik-testi": {
+    "sakin-liman": {
+      "sahiplenme": 14,
+      "guvensizlik": 8,
+      "kontrol": 9,
+      "sessizlik": 7
+    },
+    "dengeli-romantik": {
+      "sahiplenme": 32,
+      "guvensizlik": 21,
+      "kontrol": 18,
+      "sessizlik": 12
+    },
+    "atesli-koruyucu": {
+      "sahiplenme": 82,
+      "guvensizlik": 10,
+      "kontrol": 38,
+      "sessizlik": 6
+    },
+    "sessiz-dedektif": {
+      "sahiplenme": 21,
+      "guvensizlik": 32,
+      "kontrol": 76,
+      "sessizlik": 28
+    },
+    "kirilgan-kalp": {
+      "sahiplenme": 8,
+      "guvensizlik": 80,
+      "kontrol": 18,
+      "sessizlik": 42
+    },
+    "radar": {
+      "sahiplenme": 41,
+      "guvensizlik": 42,
+      "kontrol": 59,
+      "sessizlik": 22
+    }
+  },
+  "red-flag-testi": {
+    "green-flag": {
+      "manipulasyon": 6,
+      "ofke": 6,
+      "mesafe": 7,
+      "drama": 6
+    },
+    "buz-dagi": {
+      "manipulasyon": 8,
+      "ofke": 3,
+      "mesafe": 89,
+      "drama": 10
+    },
+    "volkan": {
+      "manipulasyon": 5,
+      "ofke": 87,
+      "mesafe": 4,
+      "drama": 32
+    },
+    "drama": {
+      "manipulasyon": 19,
+      "ofke": 25,
+      "mesafe": 7,
+      "drama": 83
+    },
+    "manipulator": {
+      "manipulasyon": 88,
+      "ofke": 6,
+      "mesafe": 8,
+      "drama": 26
+    },
+    "kirmizi-alarm": {
+      "manipulasyon": 36,
+      "ofke": 34,
+      "mesafe": 31,
+      "drama": 42
+    }
+  },
+  "baglanma-stili-testi": {
+    "guvenli": {
+      "kaygi": 14,
+      "kacinma": 15
+    },
+    "kaygili": {
+      "kaygi": 93,
+      "kacinma": 3
+    },
+    "kacingan": {
+      "kaygi": 4,
+      "kacinma": 93
+    },
+    "korkulu": {
+      "kaygi": 52,
+      "kacinma": 56
+    }
+  },
+  "exini-unuttun-mu-testi": {
+    "tamamen-bitti": {
+      "ozlem": 8,
+      "takip": 6,
+      "kirginlik": 7,
+      "kiyas": 7
+    },
+    "nostaljik": {
+      "ozlem": 84,
+      "takip": 10,
+      "kirginlik": 3,
+      "kiyas": 24
+    },
+    "gizli-takipci": {
+      "ozlem": 28,
+      "takip": 86,
+      "kirginlik": 7,
+      "kiyas": 17
+    },
+    "hesap-kapanmadi": {
+      "ozlem": 9,
+      "takip": 9,
+      "kirginlik": 87,
+      "kiyas": 22
+    },
+    "geri-donus": {
+      "ozlem": 74,
+      "takip": 32,
+      "kirginlik": 4,
+      "kiyas": 39
+    }
+  },
+  "sevgi-dili-testi": {
+    "soz": {
+      "soz": 85,
+      "zaman": 12,
+      "hediye": 5,
+      "hizmet": 5,
+      "temas": 11
+    },
+    "zaman": {
+      "soz": 12,
+      "zaman": 83,
+      "hediye": 4,
+      "hizmet": 7,
+      "temas": 12
+    },
+    "hediye": {
+      "soz": 13,
+      "zaman": 12,
+      "hediye": 86,
+      "hizmet": 11,
+      "temas": 13
+    },
+    "hizmet": {
+      "soz": 8,
+      "zaman": 11,
+      "hediye": 11,
+      "hizmet": 87,
+      "temas": 12
+    },
+    "temas": {
+      "soz": 11,
+      "zaman": 16,
+      "hediye": 8,
+      "hizmet": 7,
+      "temas": 86
+    }
+  },
+  "flort-tarzi-testi": {
+    "avci": {
+      "cesaret": 95,
+      "oyun": 0,
+      "romantizm": 6,
+      "mizah": 3
+    },
+    "ulasilmaz": {
+      "cesaret": 0,
+      "oyun": 98,
+      "romantizm": 1,
+      "mizah": 3
+    },
+    "romantik": {
+      "cesaret": 1,
+      "oyun": 0,
+      "romantizm": 99,
+      "mizah": 0
+    },
+    "esprili": {
+      "cesaret": 12,
+      "oyun": 1,
+      "romantizm": 0,
+      "mizah": 97
+    },
+    "dengeli": {
+      "cesaret": 31,
+      "oyun": 17,
+      "romantizm": 29,
+      "mizah": 28
+    }
+  }
+}
