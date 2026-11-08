@@ -20,6 +20,7 @@ export function SiteFooter() {
             <li><Link className="hover:text-butter" href="/testler">Tüm testler</Link></li>
             <li><Link className="hover:text-butter" href="/eleme">Eleme oyunları</Link></li>
             <li><Link className="hover:text-butter" href="/bunu-mu-o-mu">Bunu mu o mu?</Link></li>
+            <li><Link className="hover:text-butter" href="/burclar">Burç uyumu</Link></li>
             <li><Link className="hover:text-butter" href="/hediye">Hediye bulucu</Link></li>
             <li><Link className="hover:text-butter" href="/iletisim">İletişim</Link></li>
             <li><Link className="hover:text-butter" href="/gizlilik">Gizlilik</Link></li>

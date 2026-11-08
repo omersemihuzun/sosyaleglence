@@ -59,6 +59,8 @@ const load = (p: string) => import(pathToFileURL(join(root, p)).href);
 const { tests } = await load("src/content/tests/index.ts");
 const { brackets } = await load("src/content/brackets/index.ts");
 const { guides } = await load("src/content/gifts/guides.ts");
+const burcMod = await load("src/content/burc-uyum.ts");
+const { burclar, getBurc } = await load("src/content/burclar.ts");
 // Sonuç sayfaları başlık/açıklamayı bu fonksiyonlarla üretir: denetim sayfayla birebir aynı metni görür
 const seo = await load("src/lib/jsonld.ts");
 const len: (s: string) => number = seo.textLength;
@@ -85,6 +87,14 @@ for (const b of brackets) {
     });
 }
 for (const g of guides) rows.push({ url: `/hediye/${g.slug}`, title: seo.guideTitle(g.metaTitle, g.title), desc: g.metaDescription });
+
+rows.push({ url: "/burclar", title: burcMod.BURCLAR_TITLE, desc: burcMod.BURCLAR_DESC });
+for (const b of burclar) rows.push({ url: `/burclar/${b.slug}`, title: burcMod.burcTitle(b), desc: burcMod.burcDescription(b) });
+for (const u of burcMod.uyumlar) {
+  const A = getBurc(u.a);
+  const B = getBurc(u.b);
+  rows.push({ url: `/burc-uyumu/${u.slug}`, title: burcMod.ciftTitle(A, B), desc: burcMod.ciftDescription(A, B, u) });
+}
 
 const problems: string[] = [];
 for (const r of rows) {
