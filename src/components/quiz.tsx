@@ -102,9 +102,10 @@ export function Quiz({ test }: { test: Test }) {
           type="button"
           onClick={back}
           disabled={current === 0}
+          aria-label="Önceki soruya dön"
           className="rounded-full px-2 py-1 text-sm font-semibold text-plum-soft underline-offset-4 hover:underline disabled:invisible"
         >
-          ← Önceki
+          <span aria-hidden>←</span> Önceki
         </button>
         <div
           className="h-3 flex-1 overflow-hidden rounded-full border-2 border-plum bg-white"
@@ -112,11 +113,12 @@ export function Quiz({ test }: { test: Test }) {
           aria-valuemin={0}
           aria-valuemax={total}
           aria-valuenow={current + 1}
+          aria-valuetext={`Soru ${current + 1} / ${total}`}
           aria-label="İlerleme"
         >
           <div className="h-full bg-cherry transition-[width] duration-300" style={{ width: `${progress}%` }} />
         </div>
-        <span className="min-w-12 text-right font-display text-sm font-bold tabular-nums">
+        <span aria-hidden className="min-w-12 text-right font-display text-sm font-bold tabular-nums">
           {current + 1}/{total}
         </span>
       </div>
@@ -127,6 +129,7 @@ export function Quiz({ test }: { test: Test }) {
           tabIndex={-1}
           className="font-display text-2xl leading-snug font-bold text-balance outline-none sm:text-3xl"
         >
+          <span className="sr-only">{`Soru ${current + 1} / ${total}: `}</span>
           {q.text}
         </h2>
         <ul className="mt-6 grid gap-3">

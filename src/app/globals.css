@@ -73,10 +73,77 @@ body {
     color 120ms ease;
 }
 
+/* Mağaza rengi zeminde beyaz yazı (ör. Trendyol turuncusu) 4.5:1'in altında kalıyordu.
+   Rengin açık tonu + mürdüm yazı her mağazada okunur. */
 .store-btn:hover,
 .store-btn:focus-visible {
-  background: var(--store);
-  color: #fff;
+  background: color-mix(in srgb, var(--store) 22%, #fff);
+  color: var(--color-plum);
+}
+
+/* Klavye kullanıcıları için "İçeriğe geç" bağlantısı: odaklanınca görünür */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -100px;
+  z-index: 50;
+  padding: 10px 16px;
+  border: 2px solid var(--color-plum);
+  border-radius: 12px;
+  background: var(--color-butter);
+  color: var(--color-plum);
+  font-family: var(--font-display);
+  font-weight: 700;
+  box-shadow: var(--shadow-sticker);
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+/* Renkli sonuç kartları: şeffaf açık yazı bazı renklerde (pembe, mavi) kontrastı düşürüyordu.
+   Yazıyı tam opak yap ve hafif bir mürdüm gölgeyle zemin ayrımını güçlendir. */
+.sticker.text-paper {
+  text-shadow: 0 1px 2px rgb(43 16 48 / 0.45);
+}
+
+.sticker.text-paper [class*="text-paper/"] {
+  color: var(--color-paper);
+}
+
+/* Sonuca ulaşınca tek seferlik kutlama: küçük konfeti çıkartmaları */
+.celebrate {
+  pointer-events: none;
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 0;
+  overflow: visible;
+}
+
+.celebrate > span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10px;
+  height: 14px;
+  border: 2px solid var(--color-plum);
+  border-radius: 3px;
+  opacity: 0;
+  animation: confetti 1100ms cubic-bezier(0.2, 0.7, 0.3, 1) var(--d, 0ms) 1 forwards;
+}
+
+@keyframes confetti {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, 0) rotate(0deg) scale(0.6);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--x, 0px)), var(--y, -120px)) rotate(var(--r, 180deg)) scale(1);
+  }
 }
 
 @keyframes pop-in {

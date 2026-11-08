@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import type { Result, Test } from "@/lib/types";
 import { decodeScores, headlineScore } from "@/lib/scoring";
+import { Celebrate } from "./celebrate";
 import { ShareBar } from "./share-bar";
 
 export function ResultPersonal({ test, result, shareUrl }: { test: Test; result: Result; shareUrl: string }) {
@@ -33,7 +34,8 @@ export function ResultPersonal({ test, result, shareUrl }: { test: Test; result:
   const shareText = `${test.title} sonucum: ${result.emoji} ${result.name}! Sen hangisisin?`;
 
   return (
-    <div className="sticker bg-white p-6">
+    <div className="sticker relative bg-white p-6">
+      <Celebrate />
       {headline !== null && test.headline && (
         <p className="flex items-baseline gap-3">
           <span className="font-display text-6xl font-extrabold text-cherry tabular-nums">%{headline}</span>

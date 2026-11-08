@@ -1,9 +1,17 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Bracket, BracketItem } from "@/lib/bracket-types";
-import { roundName } from "@/content/brackets";
+
+// Bilinçli olarak @/content/brackets'tan import edilmiyor: o modül 8 turnuvanın bütün metnini
+// tarayıcı paketine taşıyordu (+38 KB). Oyun yalnızca props ile gelen tek turnuvayı bilir.
+function roundName(size: number): string {
+  if (size === 2) return "Final";
+  if (size === 4) return "Yarı final";
+  if (size === 8) return "Çeyrek final";
+  return `Son ${size}`;
+}
 
 function shuffled<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -28,6 +36,12 @@ export function BracketGame({ bracket }: { bracket: Bracket }) {
   const [picks, setPicks] = useState<Pick[]>([]);
   const [chosen, setChosen] = useState<string | null>(null);
   const [finishing, setFinishing] = useState(false);
+  const promptRef = useRef<HTMLHeadingElement>(null);
+
+  // Seçilen kart DOM'dan kalkınca odak kaybolmasın: her yeni eşleşmede soruya odaklan
+  useEffect(() => {
+    if (started) promptRef.current?.focus({ preventScroll: true });
+  }, [started, picks.length]);
 
   // Geçmişten mevcut turu ve eşleşmeyi hesapla
   let round = seed;
@@ -118,6 +132,7 @@ export function BracketGame({ bracket }: { bracket: Bracket }) {
           type="button"
           onClick={() => setPicks(picks.slice(0, -1))}
           disabled={picks.length === 0 || chosen !== null}
+          aria-label="Son seçimi geri al"
           className="text-sm font-semibold text-plum-soft underline-offset-4 hover:underline disabled:invisible"
         >
           Geri al
@@ -127,7 +142,16 @@ export function BracketGame({ bracket }: { bracket: Bracket }) {
         <div className="h-full bg-cherry transition-[width] duration-300" style={{ width: `${progress}%` }} />
       </div>
 
-      <h2 className="mt-6 text-center font-display text-2xl font-bold text-balance sm:text-3xl">{bracket.prompt}</h2>
+      <h2
+        ref={promptRef}
+        tabIndex={-1}
+        className="mt-6 text-center font-display text-2xl font-bold text-balance outline-none sm:text-3xl"
+      >
+        {bracket.prompt}
+      </h2>
+      <p className="sr-only" aria-live="polite">
+        {`${roundName(round.length)}${round.length > 2 ? `, eşleşme ${matchIndex + 1}/${totalMatches}` : ""}: ${left.name} ya da ${right.name}`}
+      </p>
 
       <div key={`${left.id}-${right.id}`} className="animate-pop relative mt-6 grid gap-4 sm:grid-cols-2 sm:gap-6">
         {[left, right].map((item, idx) => {
