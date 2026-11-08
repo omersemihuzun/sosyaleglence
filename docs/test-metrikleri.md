@@ -4,13 +4,13 @@ Bu dosya `npm run kalibre` tarafından üretilir, elle düzenleme.
 
 | | Test | Soru | İsabet | Zor isabet | Dağılım (min–max) | Sınırda | Tek boyutlu şık | Etkisiz soru | Ölü şık | Uzunluk ipucu |
 |---|---|---|---|---|---|---|---|---|---|---|
-| ✖ | kiskanclik-testi | 15 | %94 | %65 | %2–%30 | %27 | %55 | 0 | 0 | 1 |
-| ⚠ | red-flag-testi | 15 | %99 | %84 | %4–%22 | %15 | %62 | 0 | 0 | 2 |
-| ⚠ | baglanma-stili-testi | 16 | %99 | %93 | %18–%30 | %6 | %86 | 0 | 0 | 6 |
-| ⚠ | exini-unuttun-mu-testi | 15 | %95 | %81 | %7–%30 | %16 | %67 | 0 | 0 | 7 |
-| ⚠ | sevgi-dili-testi | 15 | %100 | %91 | %19–%21 | %10 | %95 | 0 | 0 | 5 |
-| ⚠ | flort-tarzi-testi | 15 | %100 | %86 | %16–%32 | %11 | %88 | 0 | 0 | 6 |
-| ⚠ | sosyal-pil-testi | 16 | %95 | %81 | %11–%27 | %17 | %81 | 0 | 0 | 1 |
+| ✓ | kiskanclik-testi | 15 | %87 | %60 | %3–%29 | %20 | %18 | 0 | 0 | 0 |
+| ✓ | red-flag-testi | 15 | %97 | %71 | %5–%24 | %14 | %25 | 0 | 0 | 0 |
+| ✓ | baglanma-stili-testi | 16 | %99 | %89 | %18–%28 | %5 | %47 | 0 | 0 | 0 |
+| ✓ | exini-unuttun-mu-testi | 15 | %93 | %77 | %7–%31 | %14 | %23 | 0 | 0 | 0 |
+| ✓ | sevgi-dili-testi | 15 | %100 | %88 | %18–%21 | %12 | %0 | 0 | 0 | 0 |
+| ✓ | flort-tarzi-testi | 15 | %99 | %76 | %17–%27 | %11 | %0 | 0 | 0 | 0 |
+| ✓ | sosyal-pil-testi | 16 | %90 | %72 | %14–%29 | %11 | %34 | 0 | 0 | 0 |
 | ⚠ | arkadas-grubundaki-rolun-testi | 15 | %100 | %92 | %16–%33 | %11 | %90 | 0 | 0 | 3 |
 | ⚠ | iliskide-kim-baskin-testi | 15 | %100 | %90 | %16–%29 | %11 | %93 | 0 | 0 | 5 |
 | ⚠ | toksik-arkadas-testi | 15 | %99 | %82 | %4–%26 | %17 | %82 | 0 | 0 | 2 |
@@ -44,47 +44,38 @@ Not: "Bariz doğru şık" (sosyal beğenirlik) sayıyla ölçülemez; içerik in
 
 ### kiskanclik-testi
 
-- ✖ nadir sonuç %1.8
-- ⚠ sınırda %27
-- ⚠ tek boyutlu şık %55
-- ⚠ uzunluk ipucu: S14A
-- Sonuca en az katkı veren sorular (bilgi, %): S14 (8.6), S11 (11.2), S10 (12.2)
+- Uyarı yok
+- Sonuca en az katkı veren sorular (bilgi, %): S14 (8.6), S12 (9.6), S10 (10.9)
 
 ### red-flag-testi
 
-- ⚠ tek boyutlu şık %62
-- ⚠ uzunluk ipucu: S2C, S12D
-- Sonuca en az katkı veren sorular (bilgi, %): S3 (15.0), S4 (17.5), S15 (17.6)
+- Uyarı yok
+- Sonuca en az katkı veren sorular (bilgi, %): S8 (11.5), S13 (12.0), S4 (14.1)
 
 ### baglanma-stili-testi
 
-- ⚠ tek boyutlu şık %86
-- ⚠ uzunluk ipucu: S1B, S2D, S4C, S9D, S13D, S15C
-- Sonuca en az katkı veren sorular (bilgi, %): S13 (20.2), S14 (22.1), S6 (23.2)
+- Uyarı yok
+- Sonuca en az katkı veren sorular (bilgi, %): S1 (13.1), S14 (17.1), S5 (17.7)
 
 ### exini-unuttun-mu-testi
 
-- ⚠ tek boyutlu şık %67
-- ⚠ uzunluk ipucu: S2B, S3D, S5B, S8C, S9C, S10D, S13D
-- Sonuca en az katkı veren sorular (bilgi, %): S13 (10.9), S3 (12.5), S15 (15.4)
+- Uyarı yok
+- Sonuca en az katkı veren sorular (bilgi, %): S6 (12.2), S15 (12.3), S11 (12.8)
 
 ### sevgi-dili-testi
 
-- ⚠ tek boyutlu şık %95
-- ⚠ uzunluk ipucu: S5C, S9C, S11C, S13D, S15A
-- Sonuca en az katkı veren sorular (bilgi, %): S10 (16.7), S8 (18.9), S12 (19.5)
+- Uyarı yok
+- Sonuca en az katkı veren sorular (bilgi, %): S2 (17.0), S3 (17.7), S5 (18.4)
 
 ### flort-tarzi-testi
 
-- ⚠ tek boyutlu şık %88
-- ⚠ uzunluk ipucu: S5C, S9B, S10D, S11D, S12D, S15C
-- Sonuca en az katkı veren sorular (bilgi, %): S7 (22.0), S12 (25.3), S4 (26.1)
+- Uyarı yok
+- Sonuca en az katkı veren sorular (bilgi, %): S13 (17.5), S1 (19.2), S10 (20.0)
 
 ### sosyal-pil-testi
 
-- ⚠ tek boyutlu şık %81
-- ⚠ uzunluk ipucu: S9D
-- Sonuca en az katkı veren sorular (bilgi, %): S7 (19.3), S5 (24.1), S10 (24.6)
+- Uyarı yok
+- Sonuca en az katkı veren sorular (bilgi, %): S7 (15.4), S1 (16.9), S15 (17.4)
 
 ### arkadas-grubundaki-rolun-testi
 

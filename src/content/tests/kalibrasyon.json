@@ -1,224 +1,224 @@
 {
   "kiskanclik-testi": {
     "sakin-liman": {
-      "sahiplenme": 14,
-      "guvensizlik": 8,
-      "kontrol": 9,
-      "sessizlik": 7
+      "sahiplenme": 21,
+      "guvensizlik": 24,
+      "kontrol": 18,
+      "sessizlik": 23
     },
     "dengeli-romantik": {
-      "sahiplenme": 32,
-      "guvensizlik": 21,
-      "kontrol": 18,
-      "sessizlik": 12
+      "sahiplenme": 35,
+      "guvensizlik": 33,
+      "kontrol": 26,
+      "sessizlik": 26
     },
     "atesli-koruyucu": {
-      "sahiplenme": 82,
-      "guvensizlik": 10,
-      "kontrol": 38,
-      "sessizlik": 6
+      "sahiplenme": 77,
+      "guvensizlik": 21,
+      "kontrol": 48,
+      "sessizlik": 8
     },
     "sessiz-dedektif": {
-      "sahiplenme": 21,
-      "guvensizlik": 32,
-      "kontrol": 76,
-      "sessizlik": 28
+      "sahiplenme": 25,
+      "guvensizlik": 44,
+      "kontrol": 68,
+      "sessizlik": 36
     },
     "kirilgan-kalp": {
-      "sahiplenme": 8,
-      "guvensizlik": 80,
-      "kontrol": 17,
-      "sessizlik": 42
+      "sahiplenme": 7,
+      "guvensizlik": 82,
+      "kontrol": 16,
+      "sessizlik": 68
     },
     "radar": {
-      "sahiplenme": 41,
-      "guvensizlik": 42,
-      "kontrol": 60,
-      "sessizlik": 22
+      "sahiplenme": 43,
+      "guvensizlik": 47,
+      "kontrol": 55,
+      "sessizlik": 33
     }
   },
   "red-flag-testi": {
     "green-flag": {
-      "manipulasyon": 6,
-      "ofke": 6,
-      "mesafe": 7,
-      "drama": 6
+      "manipulasyon": 14,
+      "ofke": 10,
+      "mesafe": 21,
+      "drama": 13
     },
     "buz-dagi": {
-      "manipulasyon": 8,
-      "ofke": 3,
-      "mesafe": 89,
-      "drama": 10
+      "manipulasyon": 33,
+      "ofke": 4,
+      "mesafe": 81,
+      "drama": 9
     },
     "volkan": {
-      "manipulasyon": 5,
-      "ofke": 87,
-      "mesafe": 3,
-      "drama": 32
+      "manipulasyon": 11,
+      "ofke": 81,
+      "mesafe": 6,
+      "drama": 54
     },
     "drama": {
-      "manipulasyon": 19,
-      "ofke": 25,
-      "mesafe": 7,
-      "drama": 83
+      "manipulasyon": 27,
+      "ofke": 44,
+      "mesafe": 9,
+      "drama": 78
     },
     "manipulator": {
-      "manipulasyon": 88,
-      "ofke": 7,
-      "mesafe": 8,
-      "drama": 26
+      "manipulasyon": 78,
+      "ofke": 15,
+      "mesafe": 26,
+      "drama": 29
     },
     "kirmizi-alarm": {
-      "manipulasyon": 36,
-      "ofke": 34,
-      "mesafe": 31,
-      "drama": 42
+      "manipulasyon": 45,
+      "ofke": 38,
+      "mesafe": 35,
+      "drama": 46
     }
   },
   "baglanma-stili-testi": {
     "guvenli": {
-      "kaygi": 14,
-      "kacinma": 15
+      "kaygi": 31,
+      "kacinma": 27
     },
     "kaygili": {
-      "kaygi": 93,
-      "kacinma": 3
+      "kaygi": 92,
+      "kacinma": 17
     },
     "kacingan": {
-      "kaygi": 4,
-      "kacinma": 93
+      "kaygi": 26,
+      "kacinma": 92
     },
     "korkulu": {
-      "kaygi": 52,
-      "kacinma": 55
+      "kaygi": 64,
+      "kacinma": 66
     }
   },
   "exini-unuttun-mu-testi": {
     "tamamen-bitti": {
-      "ozlem": 8,
-      "takip": 6,
-      "kirginlik": 7,
-      "kiyas": 7
+      "ozlem": 20,
+      "takip": 11,
+      "kirginlik": 8,
+      "kiyas": 11
     },
     "nostaljik": {
-      "ozlem": 84,
-      "takip": 10,
-      "kirginlik": 3,
-      "kiyas": 24
+      "ozlem": 75,
+      "takip": 22,
+      "kirginlik": 7,
+      "kiyas": 52
     },
     "gizli-takipci": {
-      "ozlem": 28,
-      "takip": 86,
+      "ozlem": 45,
+      "takip": 79,
       "kirginlik": 7,
-      "kiyas": 17
+      "kiyas": 20
     },
     "hesap-kapanmadi": {
-      "ozlem": 9,
+      "ozlem": 30,
       "takip": 10,
-      "kirginlik": 87,
-      "kiyas": 22
+      "kirginlik": 79,
+      "kiyas": 29
     },
     "geri-donus": {
       "ozlem": 74,
-      "takip": 33,
-      "kirginlik": 4,
-      "kiyas": 39
+      "takip": 43,
+      "kirginlik": 7,
+      "kiyas": 55
     }
   },
   "sevgi-dili-testi": {
     "soz": {
-      "soz": 85,
-      "zaman": 12,
-      "hediye": 5,
-      "hizmet": 5,
-      "temas": 11
+      "soz": 81,
+      "zaman": 26,
+      "hediye": 26,
+      "hizmet": 9,
+      "temas": 23
     },
     "zaman": {
-      "soz": 12,
+      "soz": 18,
       "zaman": 83,
       "hediye": 4,
-      "hizmet": 7,
-      "temas": 12
+      "hizmet": 22,
+      "temas": 40
     },
     "hediye": {
-      "soz": 13,
-      "zaman": 12,
-      "hediye": 86,
-      "hizmet": 11,
-      "temas": 14
+      "soz": 37,
+      "zaman": 14,
+      "hediye": 81,
+      "hizmet": 30,
+      "temas": 10
     },
     "hizmet": {
-      "soz": 8,
-      "zaman": 11,
-      "hediye": 11,
-      "hizmet": 87,
-      "temas": 12
+      "soz": 10,
+      "zaman": 35,
+      "hediye": 28,
+      "hizmet": 85,
+      "temas": 18
     },
     "temas": {
-      "soz": 10,
-      "zaman": 16,
-      "hediye": 8,
-      "hizmet": 7,
-      "temas": 86
+      "soz": 14,
+      "zaman": 51,
+      "hediye": 7,
+      "hizmet": 13,
+      "temas": 85
     }
   },
   "flort-tarzi-testi": {
     "avci": {
-      "cesaret": 96,
-      "oyun": 0,
-      "romantizm": 6,
-      "mizah": 3
+      "cesaret": 86,
+      "oyun": 6,
+      "romantizm": 41,
+      "mizah": 17
     },
     "ulasilmaz": {
-      "cesaret": 0,
-      "oyun": 98,
-      "romantizm": 1,
-      "mizah": 3
+      "cesaret": 5,
+      "oyun": 90,
+      "romantizm": 29,
+      "mizah": 25
     },
     "romantik": {
-      "cesaret": 2,
-      "oyun": 0,
-      "romantizm": 99,
-      "mizah": 0
+      "cesaret": 35,
+      "oyun": 22,
+      "romantizm": 87,
+      "mizah": 6
     },
     "esprili": {
-      "cesaret": 12,
-      "oyun": 1,
-      "romantizm": 0,
-      "mizah": 97
+      "cesaret": 30,
+      "oyun": 20,
+      "romantizm": 11,
+      "mizah": 89
     },
     "dengeli": {
-      "cesaret": 30,
-      "oyun": 17,
-      "romantizm": 29,
-      "mizah": 28
+      "cesaret": 42,
+      "oyun": 30,
+      "romantizm": 43,
+      "mizah": 34
     }
   },
   "sosyal-pil-testi": {
     "sinirsiz-sarj": {
-      "sosyal": 75,
-      "yenilenme": 0,
-      "spontan": 44
+      "sosyal": 84,
+      "yenilenme": 2,
+      "spontan": 61
     },
     "planli-sosyal": {
-      "sosyal": 75,
-      "yenilenme": 10,
-      "spontan": 4
+      "sosyal": 77,
+      "yenilenme": 27,
+      "spontan": 15
     },
     "dengeli-pil": {
-      "sosyal": 38,
-      "yenilenme": 28,
-      "spontan": 27
+      "sosyal": 56,
+      "yenilenme": 39,
+      "spontan": 35
     },
     "sonen-yildiz": {
-      "sosyal": 50,
-      "yenilenme": 48,
-      "spontan": 5
+      "sosyal": 55,
+      "yenilenme": 56,
+      "spontan": 16
     },
     "battaniye-modu": {
-      "sosyal": 1,
-      "yenilenme": 98,
-      "spontan": 0
+      "sosyal": 17,
+      "yenilenme": 94,
+      "spontan": 3
     }
   },
   "arkadas-grubundaki-rolun-testi": {
