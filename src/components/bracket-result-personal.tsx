@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import type { Bracket, BracketItem } from "@/lib/bracket-types";
+import { Celebrate } from "./celebrate";
 import { ShareBar } from "./share-bar";
 
 export function BracketResultPersonal({
@@ -43,7 +44,8 @@ export function BracketResultPersonal({
   const qs = new URLSearchParams({ f: finalist.id });
 
   return (
-    <div className="sticker bg-white p-6">
+    <div className="sticker relative bg-white p-6">
+      <Celebrate />
       <p className="font-display text-lg font-bold">Şampiyona giden yol</p>
       <ol className="mt-4 space-y-3">
         <li className="flex items-center gap-3 rounded-xl border-2 border-plum bg-butter px-3 py-2.5">

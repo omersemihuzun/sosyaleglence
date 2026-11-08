@@ -42,8 +42,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="tr" className={`${bricolage.variable} ${instrument.variable} antialiased`}>
       <body className="flex min-h-dvh flex-col">
+        <a href="#icerik" className="skip-link">
+          İçeriğe geç
+        </a>
         <SiteHeader />
-        <main className="flex-1">{children}</main>
+        <main id="icerik" tabIndex={-1} className="flex-1 outline-none">
+          {children}
+        </main>
         <SiteFooter />
         <Analytics />
         <SpeedInsights />
