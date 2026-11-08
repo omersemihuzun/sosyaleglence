@@ -20,7 +20,8 @@ export function organizationJsonLd() {
     name: site.name,
     url: absoluteUrl("/"),
     email: site.email,
-    // Not: 112px+ kare bir logo dosyası eklendiğinde `logo: absoluteUrl("/logo.png")` yazılmalı.
+    // 180x180 kare marka ikonu (src/app/apple-icon.tsx); Google en az 112px istiyor
+    logo: absoluteUrl("/apple-icon"),
   };
 }
 
