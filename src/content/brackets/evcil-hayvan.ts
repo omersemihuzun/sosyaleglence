@@ -24,7 +24,7 @@ export const evcilHayvan: Bracket = {
     { id: "akvaryum", name: "Renkli balıklı akvaryum", emoji: "🐠", detail: "İzlemesi bile terapi", meaning: "Sakinleşmeye ihtiyacın var ve bunu biliyorsun. Evinde bir huzur köşesi yaratmak istiyorsun." },
     { id: "husky", name: "Husky", emoji: "🐾", detail: "Mavi gözlü, inatçı, maceracı", meaning: "Macera ruhlusun ve kolay olanı değil, heyecanlı olanı seçiyorsun. Uzun yürüyüşler ve hareketli bir hayat sana göre." },
     { id: "kopek-kucuk", name: "Kucak köpeği", emoji: "🐩", detail: "Her yere seninle gelen", meaning: "Yakınlık ve beraberlik seviyorsun. Sevdiğin şeyin hep yanında olmasını istiyorsun." },
-    { id: "kirpi", name: "Kirpi", emoji: "🦔", detail: "Dikenli ama tatlı", meaning: "Dışı sert içi yumuşak olanları anlıyorsun. Belki de biraz kendine benzettiğin için." },
+    { id: "muhabbet-kusu", name: "Muhabbet kuşu", emoji: "🐦", detail: "Sabah cıvıltısı, omzunda küçük bir dost", meaning: "Küçük ama neşeli şeylerden mutlu oluyorsun. Evde hep bir ses, bir hareket olsun istiyorsun; sessizlik sana göre değil." },
     { id: "at", name: "At", emoji: "🐴", detail: "Çiftlikte, sabah binicilik", meaning: "Özgürlüğe ve doğaya âşıksın. Büyük ve güçlü bir bağın sorumluluğunu almaktan çekinmiyorsun." },
     { id: "tavuk", name: "Bahçede tavuklar", emoji: "🐓", detail: "Taze yumurta, sabah gıdaklamaları", meaning: "Toprağa yakın, üreten bir hayat hayal ediyorsun. Pratik ve doğal olan seni mutlu ediyor." },
     { id: "van-kedisi", name: "Van kedisi", emoji: "🐱", detail: "Bir gözü mavi bir gözü kehribar, suyu seven", meaning: "Sıra dışı olanı seviyorsun. Farklılıklar sana sıradanlıktan çok daha çekici geliyor." },
