@@ -1,54 +1,79 @@
 # Sosyal Eğlence
 
-İlişki ve kişilik testleri ile hediye rehberi. Next.js 16 (App Router, Cache Components), Tailwind CSS 4, TypeScript.
+İlişki ve kişilik testleri, eleme oyunları, "Bunu mu O mu?" anketleri, burç uyumu, hediye rehberi ve uzun içerikli rehberler.
+Next.js 16 (App Router, Cache Components), Tailwind CSS 4, TypeScript, Upstash Redis (istatistikler), Vercel.
+
+Canlı (geçici adres): https://sosyaleglence.vercel.app
+
+## Komutlar
 
 ```bash
 npm install
 npm run dev        # http://localhost:3000
-npm run build      # production build
-npm run kalibre    # test sonuçlarını kalibre et (yeni test ekleyince ya da soru değiştirince)
+npm run build      # production build (~1000 statik sayfa)
+npm test           # birim + içerik bütünlüğü testleri (vitest)
+npm run e2e        # uçtan uca testler (Playwright; önce build)
+npm run kalibre    # test sonuç profillerini kalibre et (yeni test/soru değişikliğinde)
+npm run seo        # tüm sayfaların başlık/açıklama uzunluk denetimi
+npm run rapor      # istatistik raporu (önce: vercel env pull .env.local --yes)
 ```
+
+## Modüller
+
+| Modül | Adres | İçerik | Kaynak |
+|---|---|---|---|
+| Testler | `/testler` | Çok boyutlu senaryo testleri ve "Seç" formatı | `src/content/tests/` |
+| Eleme oyunları | `/eleme` | 16 seçenekli turnuvalar, açık lisanslı fotoğraflar | `src/content/brackets/` |
+| Bunu mu O mu? | `/bunu-mu-o-mu` | İkili anketler, günün sorusu | `src/content/polls.ts` |
+| Burçlar | `/burclar`, `/burc-uyumu/...` | 12 profil, 78 uyum çifti | `src/content/burclar.ts`, `burc-uyum.ts` |
+| Hediye | `/hediye` | Hediye bulucu, rehberler, SSS | `src/content/gifts/` |
+| Rehber | `/rehber` | Uzun içerikli SEO makaleleri | `src/content/articles/` |
+| Karşılaştırma | `/testler/[slug]/karsilastir/[kod]` | İki kişinin test uyumu (30 gün saklanır) | `src/lib/compare.ts` |
+| Arama | `/ara` | Tüm içerikte Türkçe duyarsız arama | `src/lib/search*.ts` |
 
 ## Klasörler
 
 ```
-src/content/tests/      Testler (her test tek dosya) + kalibrasyon.json
-src/content/gifts/      Hediye fikirleri (ideas.ts) ve SEO rehberleri (guides.ts)
-src/lib/scoring.ts      Puanlama: boyut skorları + en yakın sonuç profili
-src/lib/shop.ts         Mağaza linkleri (affiliate eklenecek yer)
-src/lib/og.tsx          Paylaşım görselleri (story kartı ve bağlantı önizlemesi)
-src/lib/site.ts         Site adı, e-posta, sosyal medya hesapları
-scripts/kalibre.ts      Sonuç profili kalibrasyonu
+src/content/          Tüm içerik (kod değil veri): testler, oyunlar, anketler, burçlar, hediyeler, makaleler
+src/lib/scoring.ts    Test puanlama: boyut skorları + en yakın kalibre profil
+src/lib/bracket.ts    Turnuva durumu (seçim geçmişinden türetilir)
+src/lib/server/       Redis, istek sınırlama, API yardımcıları (sadece sunucu)
+src/lib/og*.tsx       Paylaşım görselleri (story kartı, bağlantı önizlemesi)
+src/app/api/          İstatistik, anket, karşılaştırma ve görsel kart uçları
+scripts/              Kalibrasyon, SEO denetimi, rapor, fotoğraf araçları
+e2e/                  Playwright testleri (masaüstü + mobil, erişilebilirlik dahil)
+docs/                 Operasyon, domain geçişi, rakip analizi, erişilebilirlik, içerik denetimi
 ```
-
-## Test nasıl çalışır?
-
-- Her test 3-5 **boyut** ölçer (ör. Kıskançlık: sahiplenme, güvensizlik, kontrol, sessiz kırgınlık).
-- Her şık bu boyutlara 0-3 puan verir. Şıkların sırası her açılışta karışır.
-- Boyut skoru = alınan puan / o boyutta alınabilecek en yüksek puan (0-100).
-- Sonuç, skorlara **en yakın profile** sahip sonuçtur.
-- Skorlar sonuç adresinde taşınır (`?s=64-20-80-33`). Veritabanı gerekmez.
 
 ## Yeni test eklemek
 
-1. `src/content/tests/` içinde mevcut bir testi kopyala, içeriği değiştir.
-2. Her sonucun `profile` alanına o sonucun **niyetini** yaz (ör. "kontrol yüksek, diğerleri düşük" için `{ kontrol: 80, sahiplenme: 20, ... }`).
-3. Testi `src/content/tests/index.ts` içindeki listeye ve `scripts/kalibre.ts` içindeki `files` listesine ekle.
-4. `npm run kalibre` çalıştır. Script sanal cevaplayıcılarla her sonucun gerçekte ulaşılabilir profilini hesaplar, dağılımı ve isabet oranını raporlar.
-   - İsabet %75'in altındaysa sonuçlar birbirinden ayrışmıyor demektir. Şıkların puanlarını gözden geçir.
+1. `src/content/tests/` içinde mevcut bir testi kopyala. Gerçekçi senaryolar yaz; 4 şıktan hiçbiri bariz doğru olmasın.
+2. Her sonucun `profile` alanına niyetini yaz (ör. kontrol yüksek: `{ kontrol: 80, ... }`).
+3. Testi `src/content/tests/index.ts` ve `scripts/kalibre.ts` listelerine ekle.
+4. `npm run kalibre`: isabet %75'in altındaysa sonuçlar ayrışmıyor, puanları gözden geçir.
+5. `npm test && npm run seo`.
 
-İyi bir soru için ipuçları: Gerçekçi bir senaryo yaz. 4 şıktan hiçbiri açıkça "doğru" ya da "kötü" görünmesin. Her şık farklı bir eğilimi ölçsün.
+## Yeni eleme oyunu ve fotoğraf eklemek
 
-## Hediye eklemek
+1. `src/content/brackets/` içinde 16 seçenekli bir dosya oluştur, `index.ts`'e ekle.
+2. Her seçenek için fotoğraf:
+   ```bash
+   node scripts/gorsel-ara.mjs <oyun-slug> <secenek-id> "ingilizce arama"   # aday tablosu üretir
+   # .gorsel-aday/<slug>/<id>/tablo.jpg dosyasına bak, uygun numarayı seç
+   node scripts/gorsel-sec.mjs <oyun-slug> <secenek-id> <no>
+   ```
+   Sadece CC0, kamu malı, CC BY ve CC BY-SA lisansları alınır. Atıf otomatik kaydedilir ve "Görsel kaynakları" sayfasında görünür.
+   Kurallar: tanınır yüz ana konu olmasın, logo/marka/okunur yazı olmasın, çocuk olmasın.
+3. `src/content/brackets/gorseller/index.ts` dosyasına yeni oyunun json'unu ekle.
+4. Bir oyunda 12'den az fotoğraf varsa oyun otomatik olarak emoji düzeninde görünür.
+5. `npm test` lisans, atıf ve dosya bütünlüğünü kontrol eder.
 
-`src/content/gifts/ideas.ts` dosyasına yeni bir nesne ekle: alıcılar, ilgi alanları, bütçe aralığı ve mağazada aranacak ifade (`query`). Rehber sayfaları ve hediye bulucu otomatik güncellenir.
+## Ortam değişkenleri
 
-## Affiliate
+| Değişken | Ne işe yarar |
+|---|---|
+| `NEXT_PUBLIC_SITE_URL` | Kanonik adres (varsayılan https://sosyaleglence.com) |
+| `KV_REST_API_URL`, `KV_REST_API_TOKEN` | Upstash Redis (Vercel Marketplace kurar). Yoksa istatistik, anket yüzdeleri ve karşılaştırma kapanır. |
+| `NEXT_PUBLIC_AMAZON_TAG` | Amazon affiliate etiketi (isteğe bağlı) |
 
-`src/lib/shop.ts`:
-- Amazon: `.env` içinde `NEXT_PUBLIC_AMAZON_TAG=xxx-21` tanımla.
-- Trendyol / Hepsiburada: partner panelindeki link biçimi belli olunca `wrapTrendyol` / `wrapHepsiburada` fonksiyonlarını güncelle.
-
-## Eski siteden yönlendirmeler
-
-`next.config.ts` içinde: `/quizmaker`, `/hediye-önerileri`, `/iletişim` adresleri yeni sayfalara kalıcı (301) yönlendirilir.
+Ayrıntılar: `docs/operasyon.md`, domain geçişi: `docs/domain-gecisi.md`.
