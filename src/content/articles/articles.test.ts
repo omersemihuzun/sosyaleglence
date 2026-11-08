@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { brackets } from "../brackets";
+import { burclar } from "../burclar";
 import { guides } from "../gifts/guides";
 import { tests } from "../tests";
 import { articleByTest } from "./by-test";
@@ -12,6 +13,11 @@ function routeExists(href: string): boolean {
   if (parts[0] === "testler") return parts.length === 1 || tests.some((t) => t.slug === parts[1]);
   if (parts[0] === "eleme") return parts.length === 1 || brackets.some((b) => b.slug === parts[1]);
   if (parts[0] === "hediye") return parts.length === 1 || guides.some((g) => g.slug === parts[1]);
+  if (parts[0] === "burclar" && parts[1]) return burclar.some((b) => b.slug === parts[1]);
+  if (parts[0] === "burc-uyumu") {
+    const [a, b] = (parts[1] ?? "").split("-ve-");
+    return burclar.some((x) => x.slug === a) && burclar.some((x) => x.slug === b);
+  }
   if (parts[0] === "rehber") return parts.length === 1 || articles.some((a) => a.slug === parts[1]);
   return ["", "bunu-mu-o-mu", "burclar", "iletisim", "gizlilik"].includes(parts[0] ?? "");
 }
