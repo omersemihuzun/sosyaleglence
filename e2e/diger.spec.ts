@@ -78,3 +78,16 @@ test("isimle aşk testi: boş isimde uyarır, iki isimle sıradan bağımsız ay
   await expect(puan).toHaveText(ilk);
   await expect(sonuc.getByRole("link", { name: /WhatsApp/ })).toHaveAttribute("href", /wa\.me/);
 });
+
+test("isimle aşk testi: story kartı tarayıcıda PNG olarak üretilir", async ({ page, consoleErrors, browserName }) => {
+  void consoleErrors;
+  void browserName;
+  await page.goto("/ask-testi");
+  await page.getByLabel("Senin adın").fill("Şeyma");
+  await page.getByLabel("Onun adı").fill("Çağrı");
+  await page.locator("[data-hesapla]").click();
+  // Masaüstünde Web Share dosya desteği yok, kart indirilir
+  await page.evaluate(() => Object.defineProperty(navigator, "canShare", { value: undefined, configurable: true }));
+  const [d] = await Promise.all([page.waitForEvent("download"), page.locator("[data-story]").click()]);
+  expect(d.suggestedFilename()).toBe("isim-uyumu.png");
+});

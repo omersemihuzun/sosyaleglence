@@ -28,6 +28,7 @@ export function IsimUyumuAraci({ siteUrl }: { siteUrl: string }) {
   const [sonuc, setSonuc] = useState<IsimUyumu | null>(null);
   const [hata, setHata] = useState<string | null>(null);
   const [durum, setDurum] = useState<string | null>(null);
+  const [kartHazir, setKartHazir] = useState(false);
   const sayac = useSayac(sonuc?.puan ?? null);
   const sonucRef = useRef<HTMLDivElement>(null);
   const id = useId();
@@ -49,6 +50,31 @@ export function IsimUyumuAraci({ siteUrl }: { siteUrl: string }) {
   const paylasMetni = sonuc
     ? `${sonuc.a} ❤️ ${sonuc.b}: isim uyumumuz %${sonuc.puan} çıktı (${sonuc.baslik}). Sen de dene:`
     : "";
+
+  async function story() {
+    if (!sonuc) return;
+    setKartHazir(true);
+    setDurum(null);
+    try {
+      const { isimKartiOlustur } = await import("@/lib/client/isim-kart");
+      const blob = await isimKartiOlustur(sonuc, new URL(siteUrl).host.replace(/^www\./, ""));
+      const file = new File([blob], "isim-uyumu.png", { type: "image/png" });
+      if (navigator.canShare?.({ files: [file] })) {
+        await navigator.share({ files: [file], text: `${paylasMetni} ${siteUrl}` });
+      } else {
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(blob);
+        a.download = file.name;
+        a.click();
+        URL.revokeObjectURL(a.href);
+        setDurum("Kart indirildi. Story'ne ekleyebilirsin.");
+      }
+    } catch (e) {
+      if ((e as Error).name !== "AbortError") setDurum("Kart hazırlanamadı, tekrar dene.");
+    } finally {
+      setKartHazir(false);
+    }
+  }
 
   async function kopyala() {
     try {
@@ -140,6 +166,15 @@ export function IsimUyumuAraci({ siteUrl }: { siteUrl: string }) {
             </ul>
 
             <div className="mx-auto mt-6 grid max-w-xl gap-3 sm:grid-cols-2">
+              <button
+                type="button"
+                onClick={story}
+                disabled={kartHazir}
+                data-story
+                className="sticker sticker-press bg-butter px-5 py-3.5 font-display text-lg font-bold disabled:opacity-60 sm:col-span-2"
+              >
+                {kartHazir ? "Kart hazırlanıyor…" : "Story kartını paylaş"}
+              </button>
               <a
                 href={`https://wa.me/?text=${encodeURIComponent(`${paylasMetni} ${siteUrl}`)}`}
                 target="_blank"
