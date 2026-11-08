@@ -7,8 +7,33 @@ import { cekiciOzellik } from "./cekici-ozellik";
 import { redFlagEleme } from "./red-flag";
 import { yemek } from "./yemek";
 import { dugun } from "./dugun";
+import { tatilGunu } from "./tatil-gunu";
+import { mevsimlikAn } from "./mevsimlik-an";
+import { sevgilidenMesaj } from "./sevgiliden-mesaj";
+import { evcilHayvan } from "./evcil-hayvan";
+import { kariyer } from "./kariyer";
+import { kahvaltilik } from "./kahvaltilik";
+import { superGuc } from "./super-guc";
+import { muzikTuru } from "./muzik-turu";
 
-export const brackets: Bracket[] = [ev, sevgiliyle, redFlagEleme, yemek, ilkBulusma, cekiciOzellik, dugun, balayi];
+export const brackets: Bracket[] = [
+  ev,
+  sevgiliyle,
+  redFlagEleme,
+  yemek,
+  sevgilidenMesaj,
+  superGuc,
+  ilkBulusma,
+  evcilHayvan,
+  cekiciOzellik,
+  kahvaltilik,
+  dugun,
+  kariyer,
+  tatilGunu,
+  muzikTuru,
+  mevsimlikAn,
+  balayi,
+];
 
 // Yanlış hazırlanmış bir turnuva build'i durdursun: seçenek sayısı 2'nin kuvveti, id'ler benzersiz olmalı
 for (const b of brackets) {

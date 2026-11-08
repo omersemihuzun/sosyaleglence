@@ -1,3 +1,4 @@
+import { guideFaqs, type Faq } from "./faqs";
 import { ideas } from "./ideas";
 import type { Budget, GiftIdea, Interest, Occasion, Recipient } from "./types";
 
@@ -19,9 +20,11 @@ export type Guide = {
     occasions?: Occasion[];
     only?: boolean;
   };
+  /** Sık sorulan sorular. Boşsa faqs.ts içindeki karşılığı kullanılır. */
+  faq?: Faq[];
 };
 
-export const guides: Guide[] = [
+const baseGuides: Guide[] = [
   {
     slug: "sevgiliye-yilbasi-hediyesi",
     title: "Sevgiliye yılbaşı hediyesi",
@@ -226,7 +229,202 @@ export const guides: Guide[] = [
     ],
     filter: { occasions: ["ev"], only: true },
   },
+  {
+    slug: "erkege-dogum-gunu-hediyesi",
+    title: "Erkeğe doğum günü hediyesi",
+    metaTitle: "Erkeğe Doğum Günü Hediyesi: İlgi Alanına Göre Fikirler",
+    metaDescription:
+      "Erkeğe doğum günü hediyesi önerileri: sevgili, eş, baba ve kardeş için teknoloji, aksesuar, bakım ve deneyim hediyeleri. Her bütçeye uygun fikirler.",
+    emoji: "🎂",
+    intro: [
+      "Erkekler için doğum günü hediyesi seçerken en işe yarayan yöntem, onun zaten sevdiği bir şeyi bir adım ileri taşımaktır. Kahve içiyorsa iyi bir demleme seti, spor yapıyorsa bir masaj aleti, çok çalışıyorsa ergonomik bir laptop standı.",
+      "Ne sevdiğinden emin değilsen her gün kullanılan ürünlere yönel: kartlık, kemer, kulaklık ya da sırt çantası. Hediye ne kadar sık kullanılırsa o kadar sık hatırlanır.",
+    ],
+    tips: [
+      "Telefon ve bilgisayar aksesuarlarında cihazın modeline ve uyumluluğuna mutlaka bak.",
+      "Kıyafet ve ayakkabıda değişim imkânı olan mağazayı tercih et.",
+      "Bir deneyim hediyesini (maç, konser, atölye) küçük bir somut hediyeyle birleştirmek etkisini artırır.",
+    ],
+    filter: { recipients: ["erkek-arkadas", "baba"] },
+    faq: [
+      {
+        q: "Erkeğe doğum gününde ne alınır, hiç fikrim yok?",
+        a: "Son zamanlarda bozulan ya da eskiyen eşyalarını düşün: kulaklık, cüzdan, kemer, çanta. Bunların kaliteli bir versiyonu neredeyse her zaman beğenilir.",
+      },
+      {
+        q: "Erkekler hangi hediyeleri gerçekten kullanır?",
+        a: "Günlük hayatta elde olan şeyleri: kulaklık, powerbank, termos, kartlık ve sırt çantası gibi. Süs eşyası yerine işlevsel hediyeler genellikle daha çok kullanılır.",
+      },
+      {
+        q: "Babaya ve sevgiliye aynı hediye alınır mı?",
+        a: "Bazı hediyeler ikisine de uyar (saat, cüzdan, masaj aleti), ama kişiselleştirme farklı olmalı. Sevgiliye ortak bir anıya gönderme, babaya ise aile odaklı bir detay eklemek hediyeyi özel kılar.",
+      },
+    ],
+  },
+  {
+    slug: "kadina-dogum-gunu-hediyesi",
+    title: "Kadına doğum günü hediyesi",
+    metaTitle: "Kadına Doğum Günü Hediyesi: Anlamlı ve Şık Fikirler",
+    metaDescription:
+      "Kadına doğum günü hediyesi önerileri: sevgili, eş ve anne için takı, bakım, deneyim ve kişiye özel hediyeler. İlgi alanına ve bütçeye göre fikirler.",
+    emoji: "🌷",
+    intro: [
+      "Bir kadına doğum günü hediyesi alırken en çok etki bırakan şey, onu dinlediğini gösterebilmek. Aylar önce bahsettiği bir kitabı, sevdiği kokuyu ya da gitmek istediği bir yeri hatırlamak, en pahalı hediyeden daha değerli olabilir.",
+      "Aşağıda takıdan deneyime, bakım setlerinden kişiye özel hediyelere kadar farklı tarzlara uygun fikirler var. Onun tarzını düşünerek seçebilir ya da hediye bulucuyla listeyi daraltabilirsin.",
+    ],
+    tips: [
+      "Takı alırken mevcut takılarına bak: altın mı gümüş mü, sade mi gösterişli mi seviyor?",
+      "Cilt bakımı ve parfümde kullandığı markayı biliyorsan oradan devam et, bilmiyorsan deneme setleri güvenli bir seçim.",
+      "Hediyenin yanına eklenen el yazısı bir not, hediyenin en çok hatırlanan kısmı olabilir.",
+    ],
+    filter: { recipients: ["kiz-arkadas", "anne"] },
+    faq: [
+      {
+        q: "Kadına doğum gününde ne alınır?",
+        a: "İlgi alanına göre değişir ama kişiye özel takılar, bakım setleri, spa gibi deneyim hediyeleri ve anlamlı kitaplar en sık beğenilen seçenekler arasında.",
+      },
+      {
+        q: "Kadınlar deneyim hediyesini mi eşyayı mı tercih eder?",
+        a: "Kişiden kişiye değişir. Birlikte bir deneyim (atölye, konser, kısa bir kaçamak) çoğu zaman uzun süre hatırlanır; küçük bir somut hediyeyle birleştirmek ikisinin de avantajını verir.",
+      },
+      {
+        q: "Bütçem kısıtlı, yine de özel bir hediye verebilir miyim?",
+        a: "Evet. Ortak fotoğraflardan bir albüm, yıldız haritası posteri ya da \"Şu an aç\" mektupları gibi hediyeler düşük bütçeyle çok kişisel olabilir.",
+      },
+    ],
+  },
+  {
+    slug: "ogretmene-hediye",
+    title: "Öğretmene hediye",
+    metaTitle: "Öğretmene Hediye: Öğretmenler Günü İçin Anlamlı Fikirler",
+    metaDescription:
+      "Öğretmenler günü ve yıl sonu için öğretmene hediye önerileri. Kişiye özel kalem, kupa, anı albümü ve bütçe dostu, samimi hediye fikirleri.",
+    emoji: "🍎",
+    intro: [
+      "Öğretmene verilen hediyenin değeri fiyatında değil, içtenliğinde. Öğrencinin kendi eliyle yazdığı bir kart ya da sınıfça hazırlanan bir anı albümü, öğretmenlerin yıllarca sakladığı hediyelerin başında gelir.",
+      "Aşağıda öğretmenlerin gerçekten kullanabileceği, bütçe dostu ve samimi hediye fikirleri var. Öğretmenler günü 24 Kasım'da kutlanır; yıl sonu ve mezuniyet için de aynı fikirler uygundur.",
+    ],
+    tips: [
+      "Okulun ya da velilerin hediye konusundaki kurallarını önceden öğren; bazı okullar pahalı hediyeleri kabul etmez.",
+      "Sınıfça ortak bir hediye almak hem bütçeyi rahatlatır hem de daha anlamlı olur.",
+      "Hediyeye çocuğun kendi yazdığı ya da çizdiği bir not eklemeyi unutma.",
+    ],
+    filter: { occasions: ["ogretmen-gunu"], only: true },
+    faq: [
+      {
+        q: "Öğretmenler günü ne zaman?",
+        a: "Türkiye'de öğretmenler günü her yıl 24 Kasım'da kutlanır.",
+      },
+      {
+        q: "Öğretmene pahalı hediye almak doğru mu?",
+        a: "Genellikle gerek yoktur ve bazı okullarda uygun karşılanmaz. Samimi, kişisel ve bütçe dostu hediyeler öğretmenler tarafından çok daha fazla takdir edilir.",
+      },
+      {
+        q: "Sınıfça ortak hediye için ne alınabilir?",
+        a: "Her öğrencinin bir sayfa hazırladığı anı albümü ya da sınıfın imzaladığı bir kartla birlikte kaliteli bir çanta veya kalem seti iyi bir ortak hediye olur.",
+      },
+    ],
+  },
+  {
+    slug: "mezuniyet-hediyesi",
+    title: "Mezuniyet hediyesi",
+    metaTitle: "Mezuniyet Hediyesi: Yeni Mezunlar İçin Anlamlı Fikirler",
+    metaDescription:
+      "Mezuniyet hediyesi önerileri: lise ve üniversite mezunları için iş hayatına hazırlayan, anı bırakan ve yeni başlangıcı kutlayan hediye fikirleri.",
+    emoji: "🎓",
+    intro: [
+      "Mezuniyet bir bitiş kadar bir başlangıç. Bu yüzden en iyi mezuniyet hediyeleri ya bu dönemi hatırlatır ya da bir sonraki adıma hazırlar: gravürlü bir bileklik, diploma çerçevesi ya da iş hayatına başlangıç için şık bir set.",
+      "Aşağıdaki fikirler lise ve üniversite mezunlarına uygun. Mezunun planlarını düşün: yurt dışına mı gidiyor, işe mi başlıyor, yoksa bir mola mı verecek?",
+    ],
+    tips: [
+      "İşe başlayacak bir mezuna kartvizitlik, kaliteli bir kalem ya da laptop çantası gibi profesyonel hediyeler çok yakışır.",
+      "Seyahat planı olan biri için valiz ya da düzenleyici çantalar pratik bir seçim.",
+      "Gravürlü hediyelerde mezuniyet yılını eklemek, hediyeyi kalıcı bir hatıraya dönüştürür.",
+    ],
+    filter: { occasions: ["mezuniyet"], only: true },
+    faq: [
+      {
+        q: "Üniversite mezununa ne hediye alınır?",
+        a: "İş hayatına hazırlayan hediyeler (laptop standı, kaliteli kalem, şık bir çanta) ya da yeni bir şey öğrenmesini sağlayan bir kurs aboneliği çok işe yarar.",
+      },
+      {
+        q: "Lise mezuniyetinde ne alınabilir?",
+        a: "Üniversiteye hazırlanan biri için tablet, kulaklık ya da sırt çantası gibi okul hayatında kullanılacak hediyeler; anı olarak da gravürlü bir bileklik uygundur.",
+      },
+      {
+        q: "Mezuniyet hediyesinde para vermek doğru mu?",
+        a: "Pek çok ailede gelenektir ve yeni mezun için faydalı olabilir. Daha kişisel olmasını istersen parayı bir hediyeyle ya da hedefine yönelik bir kartla birlikte verebilirsin.",
+      },
+    ],
+  },
+  {
+    slug: "1000-tl-alti-hediye",
+    title: "1000 TL altı hediye fikirleri",
+    metaTitle: "1000 TL Altı Hediye Fikirleri: Bütçe Dostu Ama Özel",
+    metaDescription:
+      "1000 TL altı hediye önerileri: sevgiliye, arkadaşa, anneye ve iş arkadaşına alınabilecek kullanışlı, kişiye özel ve bütçe dostu hediyeler.",
+    emoji: "💸",
+    intro: [
+      "Bin liranın altında da gerçekten kullanılacak, düşünülmüş hediyeler bulmak mümkün. Kişiye özel ürünler, kaliteli küçük aksesuarlar ve deneyim hediyeleri bu bütçede en çok tercih edilenler.",
+      "Listede 500 TL altı ve 500-1.500 TL aralığındaki fikirler var. İkinci gruptaki ürünlerde marka ve modele göre 1.000 TL altında seçenekler de bulunur; mağazalarda fiyat filtresiyle daraltmanı öneririz.",
+    ],
+    tips: [
+      "Mağaza sayfalarında fiyata göre sıralama ve filtreleme kullanarak bütçene uyan modelleri bul.",
+      "İki küçük hediyeyi bir tema altında birleştirmek, tek bir orta fiyatlı hediyeden daha etkileyici olabilir.",
+      "Kampanya dönemlerinde (yılbaşı, sevgililer günü öncesi) fiyatlar değişebilir; birkaç mağazayı karşılaştır.",
+    ],
+    filter: { budgets: [1, 2] },
+    faq: [
+      {
+        q: "1000 TL'ye ne hediye alınır?",
+        a: "Kablosuz kulaklıkların uygun modelleri, termos bardak, kaliteli bir kartlık, kişiye özel takılar ya da bir atölye kaydı bu bütçede alınabilecek seçenekler arasında.",
+      },
+      {
+        q: "Fiyatlar neden aralık olarak verilmiş?",
+        a: "Aynı ürünün fiyatı markaya, modele ve mağazaya göre çok değişebiliyor. Bu yüzden yaklaşık aralıklar veriyoruz; güncel fiyatlar için mağaza butonlarını kullanabilirsin.",
+      },
+      {
+        q: "Bu bütçede kişiye özel hediye bulunur mu?",
+        a: "Evet. İsim kolye, koordinat bileklik, baskılı kupa ve yıldız haritası gibi kişiye özel hediyelerin çoğu bu bütçenin rahatça altında kalır.",
+      },
+    ],
+  },
+  {
+    slug: "teknoloji-sevene-hediye",
+    title: "Teknoloji sevene hediye",
+    metaTitle: "Teknoloji Sevene Hediye: Gerçekten İşe Yarayan Fikirler",
+    metaDescription:
+      "Teknoloji meraklısına ne hediye alınır? Kulaklık, akıllı saat, mekanik klavye, akıllı ev ürünleri ve daha fazlası. Her bütçeye teknoloji hediyeleri.",
+    emoji: "🔌",
+    intro: [
+      "Teknoloji seven birine hediye almak hem kolay hem zordur: Ne sevdiği belli ama elinde zaten çok şey var. En iyi seçim genellikle sahip olduğu cihazları daha kullanışlı yapan aksesuarlar ya da henüz denemediği bir kategori.",
+      "Aşağıda küçük aksesuarlardan büyük cihazlara kadar farklı bütçelere uygun fikirler var. Satın almadan önce uyumluluk bilgilerini kontrol etmeyi unutma.",
+    ],
+    tips: [
+      "Telefon ve bilgisayarının marka ve modelini öğren; şarj, kablo ve aksesuarlarda uyumluluk çok önemli.",
+      "Zaten sahip olduğu cihazların bir üst modelini almak yerine tamamlayıcı bir ürün seçmek genellikle daha isabetli.",
+      "Garanti ve iade koşulları net olan mağazaları tercih et.",
+    ],
+    filter: { interests: ["teknoloji"] },
+    faq: [
+      {
+        q: "Her şeyi olan teknoloji meraklısına ne alınır?",
+        a: "Sahip olduğu cihazları tamamlayan ürünler (kablosuz şarj standı, laptop standı, akıllı takip cihazı) ya da henüz denemediği bir kategori (projeksiyon, drone, akıllı ev) iyi seçeneklerdir.",
+      },
+      {
+        q: "Teknoloji hediyesinde uyumluluğu nasıl kontrol ederim?",
+        a: "Ürün sayfasındaki uyumlu cihaz listesine bak ve kişinin telefon ile bilgisayar modelini önceden öğren. Emin değilsen değişim imkânı olan bir mağazadan al.",
+      },
+      {
+        q: "Bütçe dostu teknoloji hediyeleri neler?",
+        a: "Akıllı priz, LED gece lambası, bilek destekli mouse pad ve hızlı şarjlı powerbank gibi ürünler uygun fiyatlı ve günlük hayatta gerçekten kullanılan hediyelerdir.",
+      },
+    ],
+  },
 ];
+
+/** Her rehbere SSS'si bağlanmış hâli */
+export const guides: Guide[] = baseGuides.map((g) => ({ ...g, faq: g.faq ?? guideFaqs[g.slug] }));
 
 export function getGuide(slug: string) {
   return guides.find((g) => g.slug === slug);
