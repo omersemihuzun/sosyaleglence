@@ -223,104 +223,104 @@
   },
   "arkadas-grubundaki-rolun-testi": {
     "organizator": {
-      "organizator": 98,
-      "terapist": 4,
-      "kaos": 0,
-      "gozlemci": 1
+      "organizator": 93,
+      "terapist": 23,
+      "kaos": 9,
+      "gozlemci": 6
     },
     "terapist": {
-      "organizator": 3,
-      "terapist": 98,
-      "kaos": 0,
-      "gozlemci": 5
+      "organizator": 11,
+      "terapist": 93,
+      "kaos": 4,
+      "gozlemci": 22
     },
     "kaos-ajani": {
-      "organizator": 3,
-      "terapist": 0,
-      "kaos": 100,
-      "gozlemci": 0
+      "organizator": 10,
+      "terapist": 12,
+      "kaos": 98,
+      "gozlemci": 4
     },
     "gozlemci": {
-      "organizator": 3,
-      "terapist": 5,
-      "kaos": 0,
-      "gozlemci": 98
+      "organizator": 6,
+      "terapist": 15,
+      "kaos": 5,
+      "gozlemci": 95
     },
     "yapistirici": {
-      "organizator": 27,
-      "terapist": 26,
-      "kaos": 25,
-      "gozlemci": 26
+      "organizator": 31,
+      "terapist": 35,
+      "kaos": 29,
+      "gozlemci": 31
     }
   },
   "iliskide-kim-baskin-testi": {
     "kaptan": {
-      "kontrol": 96,
-      "uyum": 0,
-      "catisma": 6,
-      "yonlendirme": 0
+      "kontrol": 93,
+      "uyum": 5,
+      "catisma": 27,
+      "yonlendirme": 1
     },
     "fedakar": {
-      "kontrol": 0,
-      "uyum": 100,
-      "catisma": 0,
-      "yonlendirme": 0
+      "kontrol": 3,
+      "uyum": 98,
+      "catisma": 4,
+      "yonlendirme": 10
     },
     "munazara": {
-      "kontrol": 8,
-      "uyum": 0,
-      "catisma": 96,
+      "kontrol": 29,
+      "uyum": 8,
+      "catisma": 90,
       "yonlendirme": 1
     },
     "gizli-patron": {
-      "kontrol": 2,
-      "uyum": 0,
-      "catisma": 3,
-      "yonlendirme": 98
+      "kontrol": 12,
+      "uyum": 21,
+      "catisma": 4,
+      "yonlendirme": 94
     },
     "denge": {
-      "kontrol": 31,
-      "uyum": 31,
-      "catisma": 30,
-      "yonlendirme": 8
+      "kontrol": 39,
+      "uyum": 36,
+      "catisma": 38,
+      "yonlendirme": 11
     }
   },
   "toksik-arkadas-testi": {
     "altin-kalp": {
-      "kiskanclik": 10,
+      "kiskanclik": 8,
       "dedikodu": 6,
-      "cikar": 14,
+      "cikar": 7,
       "yargi": 7
     },
     "gizli-rakip": {
-      "kiskanclik": 92,
-      "dedikodu": 4,
+      "kiskanclik": 85,
+      "dedikodu": 11,
       "cikar": 11,
-      "yargi": 13
+      "yargi": 23
     },
     "haber-ajansi": {
-      "kiskanclik": 8,
-      "dedikodu": 90,
-      "cikar": 18,
-      "yargi": 7
+      "kiskanclik": 15,
+      "dedikodu": 80,
+      "cikar": 11,
+      "yargi": 22
     },
     "lazim-olunca": {
-      "kiskanclik": 10,
-      "dedikodu": 9,
-      "cikar": 92,
-      "yargi": 7
+      "kiskanclik": 21,
+      "dedikodu": 11,
+      "cikar": 84,
+      "yargi": 10
     },
     "acimasiz-juri": {
-      "kiskanclik": 21,
-      "dedikodu": 5,
-      "cikar": 9,
-      "yargi": 90
+      "kiskanclik": 29,
+      "dedikodu": 14,
+      "cikar": 12,
+      "yargi": 81
     },
     "zehirli-sarmasik": {
-      "kiskanclik": 41,
-      "dedikodu": 39,
-      "cikar": 42,
-      "yargi": 36
+      "kiskanclik": 49,
+      "dedikodu": 38,
+      "cikar": 40,
+      "yargi": 43
     }
   },
   "sofra-kur-sehir-testi": {
@@ -459,119 +459,119 @@
   },
   "situationship-testi": {
     "net-iliski": {
-      "belirsizlik": 5,
-      "tektaraf": 5,
-      "sicaksoguk": 5
+      "belirsizlik": 7,
+      "tektaraf": 7,
+      "sicaksoguk": 7
     },
     "gri-bolge": {
-      "belirsizlik": 96,
-      "tektaraf": 0,
-      "sicaksoguk": 4
+      "belirsizlik": 84,
+      "tektaraf": 17,
+      "sicaksoguk": 18
     },
     "tek-tarafli": {
-      "belirsizlik": 2,
-      "tektaraf": 97,
-      "sicaksoguk": 0
+      "belirsizlik": 20,
+      "tektaraf": 83,
+      "sicaksoguk": 18
     },
     "sicak-soguk": {
-      "belirsizlik": 5,
-      "tektaraf": 0,
-      "sicaksoguk": 96
+      "belirsizlik": 23,
+      "tektaraf": 20,
+      "sicaksoguk": 83
     },
     "tam-situationship": {
-      "belirsizlik": 35,
-      "tektaraf": 32,
-      "sicaksoguk": 34
+      "belirsizlik": 44,
+      "tektaraf": 45,
+      "sicaksoguk": 44
     }
   },
   "ne-kadar-delulusun-testi": {
     "ayaklari-yere-basan": {
-      "hayal": 5,
-      "isaret": 5,
-      "pembe": 6
+      "hayal": 7,
+      "isaret": 6,
+      "pembe": 7
     },
     "hayalperest": {
-      "hayal": 95,
-      "isaret": 0,
-      "pembe": 6
+      "hayal": 85,
+      "isaret": 10,
+      "pembe": 23
     },
     "isaret-avcisi": {
-      "hayal": 0,
-      "isaret": 97,
-      "pembe": 2
+      "hayal": 16,
+      "isaret": 85,
+      "pembe": 16
     },
     "pembe-gozluk": {
-      "hayal": 2,
-      "isaret": 4,
-      "pembe": 95
+      "hayal": 18,
+      "isaret": 16,
+      "pembe": 84
     },
     "tam-delulu": {
-      "hayal": 33,
-      "isaret": 34,
-      "pembe": 35
+      "hayal": 43,
+      "isaret": 41,
+      "pembe": 45
     }
   },
   "hangi-tip-sevgilisin-testi": {
     "golden-retriever": {
-      "coskun": 91,
-      "gizem": 1,
-      "sakin": 3,
-      "koruyucu": 5
+      "coskun": 94,
+      "gizem": 3,
+      "sakin": 6,
+      "koruyucu": 21
     },
     "kara-kedi": {
-      "coskun": 1,
-      "gizem": 91,
-      "sakin": 5,
-      "koruyucu": 3
+      "coskun": 7,
+      "gizem": 90,
+      "sakin": 28,
+      "koruyucu": 10
     },
     "kapibara": {
       "coskun": 3,
-      "gizem": 3,
-      "sakin": 91,
-      "koruyucu": 3
+      "gizem": 24,
+      "sakin": 92,
+      "koruyucu": 12
     },
     "ayi": {
-      "coskun": 5,
-      "gizem": 1,
-      "sakin": 3,
+      "coskun": 24,
+      "gizem": 4,
+      "sakin": 13,
       "koruyucu": 91
     }
   },
   "kavga-tarzi-testi": {
     "anlik-firtina": {
-      "patlama": 100,
-      "kacinma": 5,
-      "kusme": 4,
-      "cozum": 8,
-      "uzlasma": 4
+      "patlama": 96,
+      "kacinma": 7,
+      "kusme": 11,
+      "cozum": 25,
+      "uzlasma": 6
     },
     "hali-alti": {
-      "patlama": 2,
-      "kacinma": 99,
-      "kusme": 4,
-      "cozum": 2,
-      "uzlasma": 15
+      "patlama": 6,
+      "kacinma": 93,
+      "kusme": 17,
+      "cozum": 9,
+      "uzlasma": 29
     },
     "soguk-savas": {
-      "patlama": 5,
-      "kacinma": 8,
-      "kusme": 100,
-      "cozum": 4,
-      "uzlasma": 4
+      "patlama": 14,
+      "kacinma": 20,
+      "kusme": 96,
+      "cozum": 3,
+      "uzlasma": 5
     },
     "cozum-muhendisi": {
-      "patlama": 8,
-      "kacinma": 5,
-      "kusme": 5,
-      "cozum": 100,
-      "uzlasma": 15
+      "patlama": 29,
+      "kacinma": 10,
+      "kusme": 2,
+      "cozum": 95,
+      "uzlasma": 10
     },
     "baris-elcisi": {
-      "patlama": 3,
-      "kacinma": 22,
-      "kusme": 3,
-      "cozum": 6,
-      "uzlasma": 99
+      "patlama": 7,
+      "kacinma": 44,
+      "kusme": 8,
+      "cozum": 5,
+      "uzlasma": 94
     }
   },
   "iliskiye-hazir-misin-testi": {
