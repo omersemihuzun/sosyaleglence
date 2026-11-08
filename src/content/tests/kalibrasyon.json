@@ -53,7 +53,7 @@
     "volkan": {
       "manipulasyon": 5,
       "ofke": 87,
-      "mesafe": 4,
+      "mesafe": 3,
       "drama": 32
     },
     "drama": {
@@ -110,19 +110,19 @@
       "ozlem": 28,
       "takip": 86,
       "kirginlik": 7,
-      "kiyas": 18
+      "kiyas": 17
     },
     "hesap-kapanmadi": {
       "ozlem": 9,
-      "takip": 9,
+      "takip": 10,
       "kirginlik": 87,
       "kiyas": 22
     },
     "geri-donus": {
       "ozlem": 74,
-      "takip": 32,
+      "takip": 33,
       "kirginlik": 4,
-      "kiyas": 40
+      "kiyas": 39
     }
   },
   "sevgi-dili-testi": {
@@ -134,7 +134,7 @@
       "temas": 11
     },
     "zaman": {
-      "soz": 13,
+      "soz": 12,
       "zaman": 83,
       "hediye": 4,
       "hizmet": 7,
@@ -150,8 +150,8 @@
     "hizmet": {
       "soz": 8,
       "zaman": 11,
-      "hediye": 10,
-      "hizmet": 88,
+      "hediye": 11,
+      "hizmet": 87,
       "temas": 12
     },
     "temas": {
@@ -212,7 +212,7 @@
     },
     "sonen-yildiz": {
       "sosyal": 50,
-      "yenilenme": 47,
+      "yenilenme": 48,
       "spontan": 5
     },
     "battaniye-modu": {
@@ -241,16 +241,16 @@
       "gozlemci": 0
     },
     "gozlemci": {
-      "organizator": 2,
+      "organizator": 3,
       "terapist": 5,
       "kaos": 0,
       "gozlemci": 98
     },
     "yapistirici": {
-      "organizator": 28,
+      "organizator": 27,
       "terapist": 26,
       "kaos": 25,
-      "gozlemci": 25
+      "gozlemci": 26
     }
   },
   "iliskide-kim-baskin-testi": {
@@ -269,8 +269,8 @@
     "munazara": {
       "kontrol": 8,
       "uyum": 0,
-      "catisma": 97,
-      "yonlendirme": 0
+      "catisma": 96,
+      "yonlendirme": 1
     },
     "gizli-patron": {
       "kontrol": 2,
@@ -282,21 +282,21 @@
       "kontrol": 31,
       "uyum": 31,
       "catisma": 30,
-      "yonlendirme": 7
+      "yonlendirme": 8
     }
   },
   "toksik-arkadas-testi": {
     "altin-kalp": {
       "kiskanclik": 10,
-      "dedikodu": 7,
+      "dedikodu": 6,
       "cikar": 14,
-      "yargi": 6
+      "yargi": 7
     },
     "gizli-rakip": {
       "kiskanclik": 92,
-      "dedikodu": 5,
-      "cikar": 12,
-      "yargi": 14
+      "dedikodu": 4,
+      "cikar": 11,
+      "yargi": 13
     },
     "haber-ajansi": {
       "kiskanclik": 8,
@@ -314,11 +314,11 @@
       "kiskanclik": 21,
       "dedikodu": 5,
       "cikar": 9,
-      "yargi": 89
+      "yargi": 90
     },
     "zehirli-sarmasik": {
-      "kiskanclik": 40,
-      "dedikodu": 38,
+      "kiskanclik": 41,
+      "dedikodu": 39,
       "cikar": 42,
       "yargi": 36
     }
@@ -331,13 +331,13 @@
       "doga": 1
     },
     "izmir": {
-      "deniz": 73,
+      "deniz": 72,
       "gelenek": 1,
       "tempo": 36,
       "doga": 2
     },
     "antalya": {
-      "deniz": 60,
+      "deniz": 61,
       "gelenek": 3,
       "tempo": 4,
       "doga": 47
@@ -377,11 +377,11 @@
     "planli-sadik": {
       "romantizm": 2,
       "ozgurluk": 0,
-      "plan": 97,
+      "plan": 96,
       "macera": 2
     },
     "macera-ortagi": {
-      "romantizm": 2,
+      "romantizm": 3,
       "ozgurluk": 20,
       "plan": 5,
       "macera": 87
@@ -395,7 +395,7 @@
   },
   "gun-planla-mevsim-testi": {
     "ilkbahar": {
-      "tazelik": 96,
+      "tazelik": 97,
       "enerji": 2,
       "nostalji": 5,
       "huzur": 0
@@ -421,15 +421,15 @@
     "dort-mevsim": {
       "tazelik": 25,
       "enerji": 25,
-      "nostalji": 26,
-      "huzur": 27
+      "nostalji": 27,
+      "huzur": 26
     }
   },
   "kahve-siparisi-ruh-yasi-testi": {
     "ruhen-12": {
       "trend": 15,
       "oyun": 90,
-      "klasik": 4,
+      "klasik": 3,
       "sakinlik": 1
     },
     "ruhen-22": {
@@ -447,7 +447,7 @@
     "ruhen-50": {
       "trend": 0,
       "oyun": 1,
-      "klasik": 90,
+      "klasik": 89,
       "sakinlik": 11
     },
     "ruhen-80": {
@@ -488,7 +488,7 @@
     "ayaklari-yere-basan": {
       "hayal": 5,
       "isaret": 5,
-      "pembe": 5
+      "pembe": 6
     },
     "hayalperest": {
       "hayal": 95,
@@ -590,7 +590,7 @@
       "acele": 6
     },
     "kendi-krallik": {
-      "acilik": 6,
+      "acilik": 7,
       "gecmis": 4,
       "ozgurluk": 100,
       "temkin": 8,
@@ -599,15 +599,15 @@
     "yuksek-duvarlar": {
       "acilik": 5,
       "gecmis": 19,
-      "ozgurluk": 10,
+      "ozgurluk": 9,
       "temkin": 99,
       "acele": 8
     },
     "aska-asik": {
       "acilik": 17,
       "gecmis": 11,
-      "ozgurluk": 3,
-      "temkin": 4,
+      "ozgurluk": 2,
+      "temkin": 5,
       "acele": 100
     }
   },
@@ -623,7 +623,7 @@
       "rahat": 2,
       "kontrol": 100,
       "kaygi": 13,
-      "mesafe": 2,
+      "mesafe": 3,
       "sinama": 7
     },
     "gece-yarisi-senaristi": {
@@ -636,7 +636,7 @@
     "zirhli-kalp": {
       "rahat": 5,
       "kontrol": 6,
-      "kaygi": 7,
+      "kaygi": 6,
       "mesafe": 100,
       "sinama": 14
     },
@@ -644,7 +644,7 @@
       "rahat": 3,
       "kontrol": 16,
       "kaygi": 5,
-      "mesafe": 9,
+      "mesafe": 10,
       "sinama": 100
     }
   }
