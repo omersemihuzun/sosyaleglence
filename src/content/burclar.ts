@@ -187,7 +187,7 @@ export const burclar: Burc[] = [
     askta: "sevgisini yaptıklarıyla gösterir",
     arkadaslikta: "her sorunun pratik çözümünü bulan kişidir",
     verir: "özen ve düzen",
-    ister: "dürüstlük ve emeğinin görülmesi",
+    ister: "dürüstlük ve takdir",
     zaaf: "eleştirelliği",
   },
   {
@@ -281,7 +281,7 @@ export const burclar: Burc[] = [
     renk: "#3B2A6B",
     ozet: "Hırslı, disiplinli ve güvenilir.",
     genel: [
-      "Oğlak, zirveye adım adım tırmanan burçtur. Hedeflerini ciddiye alır, sorumluluktan kaçmaz ve sabırla çalışır. Kısa yoldan çok sağlam yolu seçer; bu yüzden zamanla en sağlam sonuçlara o ulaşır.",
+      "Oğlak, zirveye adım adım tırmanan burçtur. Hedeflerini ciddiye alır, sorumluluktan kaçmaz ve sabırla çalışır. Kısa yoldan çok sağlam yolu seçer; bu yüzden zamanla en kalıcı sonuçlara o ulaşır.",
       "Dışarıdan mesafeli ve ciddi görünebilir ama yakınlarına karşı kuru bir mizahı ve büyük bir şefkati vardır. Duygularını göstermek ona zor gelir; sevgisini sözle değil, güvence vererek ifade eder.",
     ],
     iliski:
@@ -292,7 +292,7 @@ export const burclar: Burc[] = [
     arkadaslikta: "sözüne en çok güvenilen kişidir",
     verir: "istikrar ve kararlılık",
     ister: "saygı ve ciddiyet",
-    zaaf: "mesafeliliği",
+    zaaf: "mesafeli duruşu",
   },
   {
     slug: "kova",

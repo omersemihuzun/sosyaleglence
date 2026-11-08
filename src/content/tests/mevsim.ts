@@ -119,7 +119,7 @@ export const mevsim: Test = {
       profile: { tazelik: 80, enerji: 20, nostalji: 15, huzur: 10 },
       color: "#DB2777",
       description: [
-        "Günün çiçek sulamakla başlıyor, parkta piknikle devam ediyor, pencere açık uykuyla bitiyor. Sen yeniliğe, tazeliğe ve küçük başlangıçlara açsın.",
+        "Günün çiçek sulamakla başlıyor, parkta piknikle devam ediyor, pencere açık uykuyla bitiyor. Sen yeniliğe, tazeliğe ve küçük başlangıçlara açıksın.",
         "İlkbahar ruhlu insanlar umutlu olur. Kötü bir dönemden sonra ilk toparlanan, \"Bir de böyle deneyelim\" diyen sensin. Etrafındakilere farkında olmadan cesaret veriyorsun.",
         "Sadece her şeye yeniden başlarken yarım kalanları da bir gün bitirmeyi unutma. Bahar gelir geçer, bazı tohumlar sabır ister.",
       ],

@@ -72,7 +72,7 @@ export const delulu: Test = {
         { text: "Uzak dururum, hikâye bitti.", scores: {} },
         { text: "Ayrıldıklarında hazır olacağım, ona göre planımı yaparım.", scores: { hayal: 3 } },
         { text: "Bana bakışı farklı, bence mutsuz.", scores: { isaret: 3 } },
-        { text: "\"Sevgilisi var\" dediğin şey de neyse, bu ciddi bir ilişki değil bence.", scores: { pembe: 3 } },
+        { text: "Sevgilisi var ama bence o ciddi bir ilişki değil.", scores: { pembe: 3 } },
       ],
     },
     {
@@ -103,7 +103,7 @@ export const delulu: Test = {
       ],
     },
     {
-      text: "Spotify'da paylaştığı yeni çalma listesinin adı \"gece\".",
+      text: "Müzik uygulamasında paylaştığı yeni çalma listesinin adı \"gece\".",
       options: [
         { text: "Güzel liste. Dinlerim belki.", scores: {} },
         { text: "Bu liste bizim hikâyemizin film müziği olur.", scores: { hayal: 3 } },
@@ -224,7 +224,7 @@ export const delulu: Test = {
     },
     {
       id: "tam-delulu",
-      name: "Delulu Kraliçesi",
+      name: "Delulu Hükümdarı",
       emoji: "👑",
       tagline: "Delulu bir aşama değil, bir yaşam tarzı.",
       profile: { hayal: 60, isaret: 60, pembe: 60 },

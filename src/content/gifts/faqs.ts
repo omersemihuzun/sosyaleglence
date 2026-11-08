@@ -46,12 +46,12 @@ export const guideFaqs: Record<string, Faq[]> = {
   ],
   "sevgililer-gunu-hediyesi": [
     {
-      q: "Sevgililer gününde hediye almak zorunda mıyım?",
+      q: "Sevgililer Günü'nde hediye almak zorunda mıyım?",
       a: "Zorunluluk yok, ama günü nasıl kutlamak istediğinizi önceden konuşmak hayal kırıklıklarını önler. Bazı çiftler hediye yerine birlikte bir deneyimi tercih ediyor.",
     },
     {
       q: "14 Şubat için ne zaman hazırlık yapmalıyım?",
-      a: "Restoran rezervasyonunu en az bir hafta önce, kişiye özel ürün siparişini ise Şubat'ın ilk günlerinde vermek en güvenlisi.",
+      a: "Restoran rezervasyonunu en az bir hafta önce, kişiye özel ürün siparişini ise şubatın ilk günlerinde vermek en güvenlisi.",
     },
     {
       q: "Çiçek yerine ne alınabilir?",
@@ -88,8 +88,8 @@ export const guideFaqs: Record<string, Faq[]> = {
   ],
   "anneye-hediye": [
     {
-      q: "Anneler günü ne zaman?",
-      a: "Türkiye'de anneler günü her yıl mayıs ayının ikinci pazarı kutlanır.",
+      q: "Anneler Günü ne zaman?",
+      a: "Türkiye'de Anneler Günü her yıl mayıs ayının ikinci pazarı kutlanır.",
     },
     {
       q: "\"Bana bir şey alma\" diyen anneye ne alınır?",
@@ -102,8 +102,8 @@ export const guideFaqs: Record<string, Faq[]> = {
   ],
   "babaya-hediye": [
     {
-      q: "Babalar günü ne zaman?",
-      a: "Türkiye'de babalar günü her yıl haziran ayının üçüncü pazarı kutlanır.",
+      q: "Babalar Günü ne zaman?",
+      a: "Türkiye'de Babalar Günü her yıl haziran ayının üçüncü pazarı kutlanır.",
     },
     {
       q: "Her şeyi olan babaya ne alınır?",

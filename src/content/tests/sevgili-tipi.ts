@@ -84,7 +84,7 @@ export const sevgiliTipi: Test = {
     {
       text: "Arkadaşların seni sevgili olarak nasıl tarif eder?",
       options: [
-        { text: "\"Aşık olduğunda kuyruğunu sallıyor.\"", scores: { coskun: 2 } },
+        { text: "\"Âşık olduğunda kuyruğunu sallıyor.\"", scores: { coskun: 2 } },
         { text: "\"Ne hissettiğini anlamak için şifre lazım.\"", scores: { gizem: 2 } },
         { text: "\"Yanında stres diye bir şey kalmıyor.\"", scores: { sakin: 2 } },
         { text: "\"Sevgilisine laf ettirmez.\"", scores: { koruyucu: 2 } },
@@ -213,7 +213,7 @@ export const sevgiliTipi: Test = {
       description: [
         "Senin sevgin bir kalkan gibi. Partnerin eve vardı mı, yemek yedi mi, onu üzen biri var mı... Hepsini düşünüyor, gerekirse araya giriyorsun. Seninle olan kişi kendini çok güvende hissediyor.",
         "Bu koruyuculuğun arkasında çok büyük bir şefkat var. Sevdiğinin hayatını kolaylaştırmak, sana en çok anlam veren şey.",
-        "Dikkat etmen gereken tek şey denge: Korumak ile karar vermek arasında ince bir çizgi var. Partnerinin kendi savaşlarını da verebileceğine güvenmek, sevginin bir başka hâli.",
+        "Dikkat etmen gereken tek şey denge: Korumak ile onun yerine karar vermek arasında ince bir çizgi var. Partnerinin kendi savaşlarını da verebileceğine güvenmek, sevginin bir başka hâli.",
       ],
       strengths: ["Güvenilir ve sadıksın", "Partnerinin ihtiyaçlarını önceden görüyorsun", "Zor zamanda hep oradasın"],
       watchOut: ["Aşırı korumacılık boğucu olabilir", "Kendi ihtiyaçlarını da unutma"],

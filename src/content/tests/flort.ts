@@ -59,7 +59,7 @@ export const flort: Test = {
       options: [
         { text: "\"Tekrar görüşelim\" diye ben söylerim.", scores: { cesaret: 3 } },
         { text: "Onun yazmasını beklerim.", scores: { oyun: 3 } },
-        { text: "Eve gidince arkadaşlarıma her saniyesini anlatırım. Galiba aşık oldum.", scores: { romantizm: 3 } },
+        { text: "Eve gidince arkadaşlarıma her saniyesini anlatırım. Galiba âşık oldum.", scores: { romantizm: 3 } },
         { text: "Buluşmadan kalan bir esprimizle mesaj atarım.", scores: { mizah: 2, cesaret: 1 } },
       ],
     },
@@ -195,7 +195,7 @@ export const flort: Test = {
       profile: { cesaret: 20, oyun: 15, romantizm: 75, mizah: 15 },
       color: "#E0567A",
       description: [
-        "Sen flört etmiyorsun, aşık oluyorsun. Küçük bir jest, güzel bir mesaj ya da derin bir sohbet aklında hemen bir hikâyeye dönüşüyor. Gelecek planları, ortak ev, belki bir köpek...",
+        "Sen flört etmiyorsun, âşık oluyorsun. Küçük bir jest, güzel bir mesaj ya da derin bir sohbet aklında hemen bir hikâyeye dönüşüyor. Gelecek planları, ortak ev, belki bir köpek...",
         "Bu açıklık ve samimiyet çok değerli. Seninle olan kişi gerçekten istendiğini hissediyor. Ama bazen hikâyeyi gerçek kişiden önce yazdığın için, karşındakini tanımadan ona âşık olabiliyorsun.",
         "Hayal kurmaya devam et, sadece biraz yavaş. Birini tanımanın da kendine has bir romantizmi var.",
       ],

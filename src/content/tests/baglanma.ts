@@ -172,7 +172,7 @@ export const baglanma: Test = {
       description: [
         "Yakınlık seni korkutmuyor, uzaklık da paniğe sokmuyor. Bir mesaj geç geldiğinde felaket senaryoları kurmuyorsun, ilişki ciddileştiğinde de kaçacak kapı aramıyorsun.",
         "Bu, hiç endişelenmediğin anlamına gelmiyor. Endişelendiğinde bunu söylemeyi biliyorsun. Tartışmaları bir tehdit olarak değil, çözülmesi gereken bir mesele olarak görüyorsun.",
-        "İnsanların yaklaşık yarısı bu stile yakın. İyi haber şu: Güvenli bağlanan biri, kaygılı ya da kaçıngan bir partnerin de zamanla daha güvende hissetmesine yardımcı olabilir.",
+        "Bu stil, sağlıklı ilişkilerin en sağlam zemini olarak görülür. İyi haber şu: Güvenli bağlanan biri, kaygılı ya da kaçıngan bir partnerin de zamanla daha güvende hissetmesine yardımcı olabilir.",
       ],
       strengths: ["İhtiyaçlarını açıkça söyleyebiliyorsun", "Tartışmalar ilişkini sarsmıyor", "Partnerine hem yakınlık hem alan tanıyorsun"],
       watchOut: ["Kaygılı ya da kaçıngan bir partnerin tepkilerini kişisel algılamamaya çalış", "Her şeyi çözebileceğine dair fazla iyimser olabilirsin"],
@@ -190,7 +190,7 @@ export const baglanma: Test = {
         "Bu yüzden güvence arıyorsun: daha sık konuşmak, daha çok \"seni seviyorum\" duymak, nerede olduğunu bilmek. Bunlar yanlış ihtiyaçlar değil. Sadece kaygı yükseldiğinde ne kadar güvence alırsan al yetmiyormuş gibi geliyor.",
         "Kaygılı bağlananlar çoğu zaman kaçıngan birine çekilir, çünkü o tanıdık kovalama hissi aşk gibi gelir. Seni gerçekten sakinleştiren şey, tutarlı ve sözünü tutan biridir.",
       ],
-      strengths: ["Derin bağ kuruyorsun ve çok sadıksın", "Partnerinin ruh halini hemen fark ediyorsun", "İlişkine emek vermekten kaçmıyorsun"],
+      strengths: ["Derin bağ kuruyorsun ve çok sadıksın", "Partnerinin ruh hâlini hemen fark ediyorsun", "İlişkine emek vermekten kaçmıyorsun"],
       watchOut: ["Belirsizliği kötüye yorma eğilimin var", "Güvence için fazla mesaj ya da test etme davranışı", "Kaçıngan partnerlere çekilme döngüsü"],
       bestMatch: "guvenli",
     },
@@ -203,7 +203,7 @@ export const baglanma: Test = {
       color: "#3B6FD9",
       description: [
         "Kendi başına iyi idare ediyorsun ve bundan gurur duyuyorsun. İlişkiler güzel ama biri fazla yaklaştığında, fazla beklentiye girdiğinde ya da ciddi bir konuşma kapıya dayandığında içinden bir ses \"Çık\" diyor.",
-        "Bu, sevmediğin anlamına gelmiyor. Muhtemelen bir noktada duygularını göstermenin karşılıksız kalacağını ya da seni zayıf göstereceğini öğrendin. Mesafe güvenli geliyor.",
+        "Sevmediğinden değil. Muhtemelen bir noktada duygularını göstermenin karşılıksız kalacağını ya da seni zayıf göstereceğini öğrendin. Mesafe güvenli geliyor.",
         "Partnerlerin çoğu zaman \"Seni tam tanıyamıyorum\" der. Duvarı yıkman gerekmiyor. Bazen içeri birini almak, bir kapı aralamak yeterli.",
       ],
       strengths: ["Bağımsız ve kendine yetensin", "Krizlerde soğukkanlısın", "Partnerinin alanına saygı duyuyorsun"],

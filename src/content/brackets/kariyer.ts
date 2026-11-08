@@ -19,7 +19,7 @@ export const kariyer: Bracket = {
     { id: "girisimci", name: "Kendi şirketini kuran girişimci", emoji: "💼", detail: "Sıfırdan büyük bir şey inşa etmek", meaning: "Hırslı ve risk almayı göze alan birisin. Başkasının hayalini değil, kendi hayalini kurmak istiyorsun." },
     { id: "veteriner", name: "Veteriner", emoji: "🐾", detail: "Her gün minik hastalar", meaning: "Şefkatin büyük. Kendini ifade edemeyenlere yardım etmek sana en derin mutluluğu veriyor." },
     { id: "astronot", name: "Astronot", emoji: "👩‍🚀", detail: "Dünyaya yukarıdan bakmak", meaning: "Sınırları zorlamayı seviyorsun. İmkânsız gibi görünen hayaller seni en çok heyecanlandıranlar." },
-    { id: "muzisyen", name: "Sahne müzisyeni", emoji: "🎸", detail: "Kalabalıklar, turneler, alkış", meaning: "Duygularını sanatla anlatmak istiyorsun. Bir şarkıyla binlerce insanı aynı anda hissettirmek senin rüyan." },
+    { id: "muzisyen", name: "Sahne müzisyeni", emoji: "🎸", detail: "Kalabalıklar, turneler, alkış", meaning: "Duygularını sanatla anlatmak istiyorsun. Bir şarkıyla binlerce insana aynı anda aynı şeyi hissettirmek senin rüyan." },
     { id: "ogretmen", name: "Öğretmen", emoji: "📚", detail: "Bir çocuğun hayatını değiştirmek", meaning: "Kalıcı bir iz bırakmak istiyorsun. Birine bir şey öğretmenin, dünyayı değiştirmenin en güzel yolu olduğuna inanıyorsun." },
     { id: "mimar", name: "Mimar", emoji: "📐", detail: "Şehirlerin silüetini çizmek", meaning: "Estetik ve düzen senin için çok önemli. Yıllarca ayakta kalacak bir şey üretmek seni motive ediyor." },
     { id: "fotografci", name: "Belgesel fotoğrafçısı", emoji: "📷", detail: "Dünyanın en uzak köşelerinde", meaning: "Hikâye anlatıcısısın. Başkalarının göremediği anları yakalamak ve göstermek senin yeteneğin." },

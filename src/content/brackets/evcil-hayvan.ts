@@ -27,6 +27,6 @@ export const evcilHayvan: Bracket = {
     { id: "kirpi", name: "Kirpi", emoji: "🦔", detail: "Dikenli ama tatlı", meaning: "Dışı sert içi yumuşak olanları anlıyorsun. Belki de biraz kendine benzettiğin için." },
     { id: "at", name: "At", emoji: "🐴", detail: "Çiftlikte, sabah binicilik", meaning: "Özgürlüğe ve doğaya âşıksın. Büyük ve güçlü bir bağın sorumluluğunu almaktan çekinmiyorsun." },
     { id: "tavuk", name: "Bahçede tavuklar", emoji: "🐓", detail: "Taze yumurta, sabah gıdaklamaları", meaning: "Toprağa yakın, üreten bir hayat hayal ediyorsun. Pratik ve doğal olan seni mutlu ediyor." },
-    { id: "van-kedisi", name: "Van kedisi", emoji: "🐱", detail: "Bir gözü mavi bir gözü yeşil, suyu seven", meaning: "Sıra dışı olanı seviyorsun. Farklılıklar sana sıradanlıktan çok daha çekici geliyor." },
+    { id: "van-kedisi", name: "Van kedisi", emoji: "🐱", detail: "Bir gözü mavi bir gözü kehribar, suyu seven", meaning: "Sıra dışı olanı seviyorsun. Farklılıklar sana sıradanlıktan çok daha çekici geliyor." },
   ],
 };
