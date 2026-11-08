@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Bricolage_Grotesque, Instrument_Sans } from "next/font/google";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { organizationJsonLd, toJsonLd, websiteJsonLd } from "@/lib/jsonld";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -45,6 +46,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <a href="#icerik" className="skip-link">
           İçeriğe geç
         </a>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: toJsonLd([organizationJsonLd(), websiteJsonLd()]) }}
+        />
         <SiteHeader />
         <main id="icerik" tabIndex={-1} className="flex-1 outline-none">
           {children}

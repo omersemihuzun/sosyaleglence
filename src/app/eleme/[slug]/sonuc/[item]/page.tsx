@@ -7,6 +7,7 @@ import { BracketResultPersonal } from "@/components/bracket-result-personal";
 import { BracketStats } from "@/components/live-stats";
 import { PageSkeleton } from "@/components/page-skeleton";
 import { brackets, getBracket } from "@/content/brackets";
+import { bracketResultDescription, bracketResultTitle, breadcrumbJsonLd, toJsonLd } from "@/lib/jsonld";
 import { absoluteUrl } from "@/lib/site";
 
 /** Tüm parametreler build sırasında bilinir: sayfa tamamen statik üretilir. */
@@ -21,12 +22,11 @@ export async function generateMetadata({ params }: PageProps<"/eleme/[slug]/sonu
   const b = getBracket(slug);
   const item = b?.items.find((i) => i.id === id);
   if (!b || !item) return {};
-  const title = `${item.emoji} ${item.name} | ${b.title}`;
   return {
-    title,
-    description: `${b.championLabel}: ${item.name}. ${b.title} oyununu oyna, senin şampiyonunu bul.`,
+    title: { absolute: bracketResultTitle(item.name, b.title) },
+    description: bracketResultDescription(item.name, b.championLabel, b.title),
     alternates: { canonical: `/eleme/${b.slug}/sonuc/${item.id}` },
-    openGraph: { title, description: item.meaning },
+    openGraph: { title: `${item.emoji} ${item.name} | ${b.title}`, description: item.meaning },
   };
 }
 
@@ -44,13 +44,25 @@ async function BracketResultContent({ params }: { params: PageProps<"/eleme/[slu
   const champion = bracket?.items.find((i) => i.id === id);
   if (!bracket || !champion) notFound();
   const others = brackets.filter((b) => b.slug !== bracket.slug).slice(0, 3);
+  const crumbs = breadcrumbJsonLd([
+    { name: "Eleme oyunları", path: "/eleme" },
+    { name: bracket.title, path: `/eleme/${bracket.slug}` },
+    { name: champion.name, path: `/eleme/${bracket.slug}/sonuc/${champion.id}` },
+  ]);
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: toJsonLd(crumbs) }} />
       <section className="mx-auto max-w-5xl px-4 pt-8 sm:px-6 sm:pt-12">
-        <Link href={`/eleme/${bracket.slug}`} className="text-sm font-semibold text-plum-soft hover:text-cherry">
-          ← {bracket.title}
-        </Link>
+        <nav aria-label="Konum" className="text-sm font-semibold text-plum-soft">
+          <Link href="/eleme" className="hover:text-cherry">
+            Eleme oyunları
+          </Link>
+          <span aria-hidden> / </span>
+          <Link href={`/eleme/${bracket.slug}`} className="hover:text-cherry">
+            {bracket.title}
+          </Link>
+        </nav>
         <div className="mt-5 grid items-start gap-8 lg:grid-cols-[1.15fr_1fr]">
           <div>
             <div

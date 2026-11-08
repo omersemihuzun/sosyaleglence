@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "kalibre": "node --experimental-strip-types --no-warnings scripts/kalibre.ts"
+    "kalibre": "node --experimental-strip-types --no-warnings scripts/kalibre.ts",
+    "seo": "node --experimental-strip-types --no-warnings scripts/seo-kontrol.ts"
   },
   "dependencies": {
     "@upstash/ratelimit": "^2.2.0",

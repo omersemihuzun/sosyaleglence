@@ -6,6 +6,8 @@ import { BracketCard } from "@/components/bracket-card";
 import { BracketGame } from "@/components/bracket-game";
 import { PageSkeleton } from "@/components/page-skeleton";
 import { brackets, getBracket } from "@/content/brackets";
+import { breadcrumbJsonLd, toJsonLd } from "@/lib/jsonld";
+import { absoluteUrl } from "@/lib/site";
 
 /** Tüm parametreler build sırasında bilinir: sayfa tamamen statik üretilir. */
 export const ensureStatic = "navigation";
@@ -39,13 +41,36 @@ async function BracketPageContent({ params }: { params: PageProps<"/eleme/[slug]
   const bracket = getBracket(slug);
   if (!bracket) notFound();
   const others = brackets.filter((b) => b.slug !== bracket.slug).slice(0, 3);
+  const jsonLd = [
+    breadcrumbJsonLd([
+      { name: "Eleme oyunları", path: "/eleme" },
+      { name: bracket.title, path: `/eleme/${bracket.slug}` },
+    ]),
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: bracket.title,
+      description: bracket.metaDescription,
+      url: absoluteUrl(`/eleme/${bracket.slug}`),
+      numberOfItems: bracket.items.length,
+      itemListElement: bracket.items.map((item, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        name: item.name,
+        url: absoluteUrl(`/eleme/${bracket.slug}/sonuc/${item.id}`),
+      })),
+    },
+  ];
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: toJsonLd(jsonLd) }} />
       <section className="mx-auto max-w-3xl px-4 pt-8 sm:pt-12">
-        <Link href="/eleme" className="text-sm font-semibold text-plum-soft hover:text-cherry">
-          ← Tüm eleme oyunları
-        </Link>
+        <nav aria-label="Konum" className="text-sm font-semibold text-plum-soft">
+          <Link href="/eleme" className="hover:text-cherry">
+            ← Tüm eleme oyunları
+          </Link>
+        </nav>
         <div className="mt-4 flex items-center gap-4">
           <span
             aria-hidden
@@ -59,7 +84,11 @@ async function BracketPageContent({ params }: { params: PageProps<"/eleme/[slug]
           </h1>
         </div>
         <div className="mt-8">
-          <BracketGame bracket={bracket} />
+          {/* Oyun karıştırma için Math.random kullanır ve yalnızca istemcide çizilir. Kendi Suspense
+              sınırı olmazsa başlık, açıklama ve JSON-LD de HTML'den düşer (SEO kaybı). */}
+          <Suspense fallback={<div className="sticker min-h-64 bg-white p-6 text-plum-soft">{bracket.summary}</div>}>
+            <BracketGame bracket={bracket} />
+          </Suspense>
         </div>
       </section>
 

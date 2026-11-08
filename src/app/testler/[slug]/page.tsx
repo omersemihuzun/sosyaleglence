@@ -6,6 +6,7 @@ import { PageSkeleton } from "@/components/page-skeleton";
 import { Quiz } from "@/components/quiz";
 import { TestCard } from "@/components/test-card";
 import { getTest, tests } from "@/content/tests";
+import { breadcrumbJsonLd, toJsonLd } from "@/lib/jsonld";
 import { absoluteUrl } from "@/lib/site";
 
 /** Tüm parametreler build sırasında bilinir: sayfa tamamen statik üretilir. */
@@ -48,17 +49,23 @@ async function TestPageContent({ params }: { params: PageProps<"/testler/[slug]"
     name: test.title,
     description: test.metaDescription,
     url: absoluteUrl(`/testler/${test.slug}`),
-    inLanguage: "tr",
-    numberOfQuestions: test.questions.length,
+    inLanguage: "tr-TR",
+    isPartOf: { "@id": absoluteUrl("/#website") },
   };
+  const crumbs = breadcrumbJsonLd([
+    { name: "Testler", path: "/testler" },
+    { name: test.title, path: `/testler/${test.slug}` },
+  ]);
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: toJsonLd([jsonLd, crumbs]) }} />
       <section className="mx-auto max-w-2xl px-4 pt-8 sm:pt-12">
-        <Link href="/testler" className="text-sm font-semibold text-plum-soft hover:text-cherry">
-          ← Tüm testler
-        </Link>
+        <nav aria-label="Konum" className="text-sm font-semibold text-plum-soft">
+          <Link href="/testler" className="hover:text-cherry">
+            ← Tüm testler
+          </Link>
+        </nav>
         <div className="mt-4 flex items-center gap-4">
           <span
             aria-hidden

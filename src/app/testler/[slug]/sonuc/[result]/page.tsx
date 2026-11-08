@@ -7,6 +7,7 @@ import { PageSkeleton } from "@/components/page-skeleton";
 import { ResultPersonal } from "@/components/result-personal";
 import { TestCard } from "@/components/test-card";
 import { getTest, tests } from "@/content/tests";
+import { breadcrumbJsonLd, testResultDescription, testResultTitle, toJsonLd } from "@/lib/jsonld";
 import { absoluteUrl } from "@/lib/site";
 
 /** Tüm parametreler build sırasında bilinir: sayfa tamamen statik üretilir. */
@@ -21,12 +22,11 @@ export async function generateMetadata({ params }: PageProps<"/testler/[slug]/so
   const test = getTest(slug);
   const result = test?.results.find((r) => r.id === id);
   if (!test || !result) return {};
-  const title = `${result.emoji} ${result.name} | ${test.title}`;
   return {
-    title,
-    description: `${result.tagline} ${test.title} testini çöz, sen hangisisin öğren.`,
+    title: { absolute: testResultTitle(result.name, test.title) },
+    description: testResultDescription(result.tagline, test.title),
     alternates: { canonical: `/testler/${test.slug}/sonuc/${result.id}` },
-    openGraph: { title, description: result.tagline },
+    openGraph: { title: `${result.emoji} ${result.name} | ${test.title}`, description: result.tagline },
   };
 }
 
@@ -47,12 +47,25 @@ async function ResultPageContent({ params }: { params: PageProps<"/testler/[slug
   const match = test.results.find((r) => r.id === result.bestMatch);
   const others = tests.filter((t) => t.slug !== test.slug).slice(0, 3);
 
+  const crumbs = breadcrumbJsonLd([
+    { name: "Testler", path: "/testler" },
+    { name: test.title, path: `/testler/${test.slug}` },
+    { name: result.name, path: `/testler/${test.slug}/sonuc/${result.id}` },
+  ]);
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: toJsonLd(crumbs) }} />
       <section className="mx-auto max-w-5xl px-4 pt-8 sm:px-6 sm:pt-12">
-        <Link href={`/testler/${test.slug}`} className="text-sm font-semibold text-plum-soft hover:text-cherry">
-          ← {test.title}
-        </Link>
+        <nav aria-label="Konum" className="text-sm font-semibold text-plum-soft">
+          <Link href="/testler" className="hover:text-cherry">
+            Testler
+          </Link>
+          <span aria-hidden> / </span>
+          <Link href={`/testler/${test.slug}`} className="hover:text-cherry">
+            {test.title}
+          </Link>
+        </nav>
 
         <div className="mt-5 grid items-start gap-8 lg:grid-cols-[1.15fr_1fr]">
           <div>
