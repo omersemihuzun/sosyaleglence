@@ -180,6 +180,7 @@ export function BracketGame({ bracket }: { bracket: Bracket }) {
                 key={item.id}
                 type="button"
                 onClick={() => choose(item, other)}
+                data-secenek={item.id}
                 className={`sticker sticker-press flex flex-col overflow-hidden text-left ${motion}`}
                 style={{ rotate: `${idx === 0 ? -0.8 : 0.8}deg` }}
               >
@@ -196,6 +197,7 @@ export function BracketGame({ bracket }: { bracket: Bracket }) {
               key={item.id}
               type="button"
               onClick={() => choose(item, other)}
+              data-secenek={item.id}
               className={`sticker sticker-press flex min-h-44 flex-col items-center justify-center px-5 py-6 text-center sm:min-h-72 ${motion}`}
               style={{ rotate: `${idx === 0 ? -0.8 : 0.8}deg` }}
             >

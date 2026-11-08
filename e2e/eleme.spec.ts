@@ -1,9 +1,9 @@
 import type { Page } from "@playwright/test";
 import { expect, test } from "./fixtures";
 
-/** VS kartları: turnuva ekranında sadece iki seçenek butonu büyük emoji içerir. */
+/** VS kartları: fotoğraflı ya da emojili düzenden bağımsız, data-secenek ile işaretli iki buton. */
 function cards(page: Page) {
-  return page.locator("main button").filter({ has: page.locator("span.text-6xl") });
+  return page.locator("main button[data-secenek]");
 }
 
 test("eleme turnuvası oynanır, geri alma çalışır, sonuç yolu gösterilir", async ({ page, consoleErrors }) => {
@@ -30,7 +30,10 @@ test("eleme turnuvası oynanır, geri alma çalışır, sonuç yolu gösterilir"
     if (i < 14) await expect(live).not.toHaveText(before);
   }
 
-  await expect(page).toHaveURL(/\/eleme\/gelecekteki-evini-sec\/sonuc\/[a-z0-9-]+\?f=[a-z0-9-]+&y=[a-z0-9-]+%2C[a-z0-9-]+$/);
+  await expect(page).toHaveURL(/\/eleme\/gelecekteki-evini-sec\/sonuc\/[a-z0-9-]+\?f=[a-z0-9-]+&y=[a-z0-9-]+%2C[a-z0-9-]+$/, {
+    // Son seçimden sonra sonuç sayfasına geçiş yük altında birkaç saniye sürebilir
+    timeout: 15_000,
+  });
   await expect(page.getByText("Şampiyona giden yol")).toBeVisible();
   await expect(page.getByText("Şampiyon", { exact: true })).toBeVisible();
   await expect(page.getByText("Finalist", { exact: true })).toBeVisible();

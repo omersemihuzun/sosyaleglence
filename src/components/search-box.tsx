@@ -35,15 +35,19 @@ export function SearchPanel() {
     };
   }, []);
 
-  // Adresi kısa bir gecikmeyle güncelle: paylaşılabilir, geri tuşuyla uyumlu
+  // Adresi kısa bir gecikmeyle güncelle: paylaşılabilir, geri tuşuyla uyumlu.
+  // Sadece sorgu gerçekten değiştiyse ve kullanıcı hâlâ bu sayfadaysa: aksi hâlde bir sonuca
+  // tıklandıktan hemen sonra tetiklenen replace kullanıcıyı arama sayfasına geri atıyordu.
+  const urlQuery = params.get("q") ?? "";
   useEffect(() => {
+    const q = query.trim();
+    if (q === urlQuery.trim()) return;
     const id = window.setTimeout(() => {
-      const q = query.trim();
-      const next = q ? `${pathname}?q=${encodeURIComponent(q)}` : pathname;
-      router.replace(next, { scroll: false });
+      if (window.location.pathname !== pathname) return;
+      router.replace(q ? `${pathname}?q=${encodeURIComponent(q)}` : pathname, { scroll: false });
     }, 250);
     return () => window.clearTimeout(id);
-  }, [query, pathname, router]);
+  }, [query, urlQuery, pathname, router]);
 
   const prepared = useMemo(() => (items ? prepare(items) : []), [items]);
   const results = useMemo(() => search(prepared, query), [prepared, query]);

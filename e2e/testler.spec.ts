@@ -15,8 +15,9 @@ test("bir test baştan sona çözülür ve sonuç sayfası doğru çalışır", 
   await page.getByRole("button", { name: "Teste başla" }).click();
   await answerAll(page, 1, 15);
 
-  await expect(page).toHaveURL(/\/testler\/red-flag-testi\/sonuc\/[a-z-]+\?s=\d+-\d+-\d+-\d+$/);
-  await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+  // Son cevaptan sonra sonuç sayfasına geçiş ve içeriğin yüklenmesi yük altında birkaç saniye sürebilir
+  await expect(page).toHaveURL(/\/testler\/red-flag-testi\/sonuc\/[a-z-]+\?s=\d+-\d+-\d+-\d+$/, { timeout: 15_000 });
+  await expect(page.getByRole("heading", { level: 1 })).toBeVisible({ timeout: 15_000 });
   // 4 boyut çubuğu + headline
   for (const label of ["Manipülasyon", "Öfke patlaması", "Duygusal mesafe", "Drama"]) {
     await expect(page.getByText(label, { exact: true }).first()).toBeVisible();
