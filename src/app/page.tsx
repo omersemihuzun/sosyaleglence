@@ -1,9 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { BracketCard } from "@/components/bracket-card";
+import { OyunKarti } from "@/components/cift/oyun-sayfasi";
 import { DailyPoll } from "@/components/daily-poll";
 import { LiveQuestion } from "@/components/live-question";
 import { TestCard } from "@/components/test-card";
 import { brackets } from "@/content/brackets";
+import { ciftOyunlari } from "@/content/cift";
 import { burclar } from "@/content/burclar";
 import { guides } from "@/content/gifts/guides";
 import { recipients, type Recipient } from "@/content/gifts/types";
@@ -43,6 +46,9 @@ function SectionHead({ title, blurb, href }: { title: string; blurb?: string; hr
     </div>
   );
 }
+
+// Başlık ve açıklama layout varsayılanından gelir; kanonik adres sadece ana sayfaya ait olduğu için burada
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 export default function Home() {
   const hero = getTest("kiskanclik-testi")!;
@@ -98,6 +104,19 @@ export default function Home() {
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {featuredTests.map((t, i) => (
             <TestCard key={t.slug} test={t} tilt={TILTS[i % TILTS.length]} />
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto mt-20 max-w-6xl px-4 sm:px-6">
+        <SectionHead
+          title="Sevgilinle oyna"
+          blurb="Linkle uzaktan ya da yan yana tek telefonda: çiftler için beş oyun."
+          href="/cift-oyunlari"
+        />
+        <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {ciftOyunlari.slice(0, 4).map((o, i) => (
+            <OyunKarti key={o.slug} oyun={o} tilt={TILTS[(i + 2) % TILTS.length]} />
           ))}
         </div>
       </section>

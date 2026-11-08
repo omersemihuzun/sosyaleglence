@@ -1,6 +1,6 @@
 /** Site içi arama: hem istemci (arama) hem sunucu (indeks üretimi) tarafından kullanılan saf yardımcılar. */
 
-export type SearchKind = "test" | "eleme" | "anket" | "burc" | "uyum" | "rehber" | "hediye";
+export type SearchKind = "test" | "cift" | "eleme" | "anket" | "burc" | "uyum" | "rehber" | "hediye";
 
 /** Kısa alan adları: indeks dosyası küçük kalsın. */
 export type SearchItem = {
@@ -18,6 +18,7 @@ export type SearchItem = {
 
 export const kindLabels: Record<SearchKind, string> = {
   test: "Testler",
+  cift: "Çift oyunları",
   eleme: "Eleme oyunları",
   anket: "Bunu mu O mu",
   burc: "Burçlar",
@@ -26,7 +27,7 @@ export const kindLabels: Record<SearchKind, string> = {
   hediye: "Hediye fikirleri",
 };
 
-export const kindOrder: SearchKind[] = ["test", "eleme", "burc", "uyum", "anket", "rehber", "hediye"];
+export const kindOrder: SearchKind[] = ["test", "cift", "eleme", "burc", "uyum", "anket", "rehber", "hediye"];
 
 /** Türkçe duyarsız biçim: küçük harf (tr), aksanlar ve ı/i, ş/s, ğ/g, ç/c, ö/o, ü/u farkı yok. */
 export function normalize(text: string): string {

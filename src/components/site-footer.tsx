@@ -28,6 +28,11 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
+              <Link className="inline-block py-1 hover:text-butter" href="/cift-oyunlari">
+                Çift oyunları
+              </Link>
+            </li>
+            <li>
               <Link className="inline-block py-1 hover:text-butter" href="/bunu-mu-o-mu">
                 Bunu mu o mu?
               </Link>

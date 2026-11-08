@@ -1,6 +1,7 @@
 /** Ana menü: header, mobil menü ve ana sayfa modül şeridi aynı listeyi kullanır. */
 export const navItems = [
   { href: "/testler", label: "Testler", emoji: "🧠", blurb: "Senaryolarla kişilik ve ilişki testleri" },
+  { href: "/cift-oyunlari", label: "Çiftler", emoji: "💞", blurb: "Sevgilinle birlikte oynanacak oyunlar" },
   { href: "/eleme", label: "Eleme", emoji: "🏆", blurb: "16 seçenek, tek şampiyon" },
   { href: "/bunu-mu-o-mu", label: "Bunu mu O mu", emoji: "⚖️", blurb: "Birini seç, herkes ne dedi gör" },
   { href: "/burclar", label: "Burçlar", emoji: "♈", blurb: "Burç profilleri ve uyum hesabı" },

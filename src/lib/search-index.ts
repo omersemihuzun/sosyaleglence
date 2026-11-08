@@ -5,6 +5,7 @@ import { ideas } from "@/content/gifts/ideas";
 import { guides } from "@/content/gifts/guides";
 import { budgets } from "@/content/gifts/types";
 import { polls } from "@/content/polls";
+import { ciftOyunlari } from "@/content/cift";
 import { tests } from "@/content/tests";
 import type { SearchItem } from "./search";
 
@@ -21,6 +22,9 @@ export function buildSearchIndex(): SearchItem[] {
     u: "/ask-testi",
     e: "💘",
   });
+  for (const o of ciftOyunlari) {
+    out.push({ k: "cift", t: o.baslik, s: short(o.ozet), u: `/cift-oyunlari/${o.slug}`, e: o.emoji });
+  }
   for (const b of brackets)
     out.push({ k: "eleme", t: b.title, s: short(b.summary), u: `/eleme/${b.slug}`, e: b.emoji });
   for (const b of burclar) {

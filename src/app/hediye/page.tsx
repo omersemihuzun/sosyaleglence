@@ -5,7 +5,7 @@ import { GiftFinder } from "@/components/gift-finder";
 import { guides } from "@/content/gifts/guides";
 
 export const metadata: Metadata = {
-  title: "Hediye Bulucu: Kime, Hangi Bütçeyle, Ne Alınır?",
+  title: "Hediye Bulucu: Kime Ne Alınır?",
   description:
     "Sevgiliye, anneye, babaya, arkadaşa ne hediye alınır? Kime aldığını, bütçeni ve ilgi alanlarını seç, sana uygun hediye fikirlerini gör.",
   alternates: { canonical: "/hediye" },
