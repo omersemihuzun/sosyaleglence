@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
+import { TestStats } from "@/components/live-stats";
 import { PageSkeleton } from "@/components/page-skeleton";
 import { ResultPersonal } from "@/components/result-personal";
 import { TestCard } from "@/components/test-card";
@@ -127,6 +128,14 @@ async function ResultPageContent({ params }: { params: PageProps<"/testler/[slug
           </aside>
         </div>
       </section>
+
+      <div className="mx-auto mt-12 max-w-5xl px-4 sm:px-6">
+        <TestStats
+          slug={test.slug}
+          current={result.id}
+          results={test.results.map((r) => ({ id: r.id, name: r.name, emoji: r.emoji }))}
+        />
+      </div>
 
       <section className="mx-auto mt-16 max-w-5xl px-4 sm:px-6">
         <h2 className="font-display text-2xl font-bold">Bu testin tüm sonuçları</h2>

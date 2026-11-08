@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import type { Bracket, BracketItem } from "@/lib/bracket-types";
 import { roundName } from "@/content/brackets";
+import { reportBracket } from "@/lib/client/stats";
 
 function shuffled<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -59,6 +60,7 @@ export function BracketGame({ bracket }: { bracket: Bracket }) {
     const final = all[all.length - 1];
     const semis = all.filter((p) => p.roundSize === 4).map((p) => p.loser);
     const qs = new URLSearchParams({ f: final.loser, y: semis.join(",") });
+    reportBracket(bracket.slug, all.map((p) => [p.winner, p.loser]));
     try {
       localStorage.setItem(`eleme:${bracket.slug}`, JSON.stringify({ champion: final.winner, ...Object.fromEntries(qs) }));
     } catch {

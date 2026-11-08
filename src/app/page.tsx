@@ -68,6 +68,21 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="mx-auto mt-16 max-w-6xl px-4 sm:px-6">
+        <Link
+          href="/bunu-mu-o-mu"
+          className="sticker sticker-press flex flex-col items-start gap-4 bg-plum p-6 text-paper sm:flex-row sm:items-center sm:justify-between sm:p-8"
+        >
+          <span>
+            <span className="block font-display text-3xl font-extrabold sm:text-4xl">Çay mı, kahve mi?</span>
+            <span className="mt-1 block text-paper/80">
+              Bunu mu o mu: birini seç, herkesin ne seçtiğini anında gör.
+            </span>
+          </span>
+          <span className="rounded-full border-2 border-paper bg-cherry px-5 py-2.5 font-display font-bold">Oyla</span>
+        </Link>
+      </section>
+
       <section className="mt-24 border-y-2 border-plum bg-butter">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1fr_1.2fr]">
           <div>

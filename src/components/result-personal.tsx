@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import type { Result, Test } from "@/lib/types";
 import { decodeScores, headlineScore } from "@/lib/scoring";
+import { CompareInvite } from "./compare-invite";
 import { ShareBar } from "./share-bar";
 
 export function ResultPersonal({ test, result, shareUrl }: { test: Test; result: Result; shareUrl: string }) {
@@ -71,6 +72,9 @@ export function ResultPersonal({ test, result, shareUrl }: { test: Test; result:
           imageUrl={`/api/kart/${test.slug}/${result.id}?s=${raw}`}
           fileName={`${test.slug}-${result.id}.png`}
         />
+      </div>
+      <div className="mt-4">
+        <CompareInvite slug={test.slug} s={raw!} testTitle={test.title} />
       </div>
     </div>
   );

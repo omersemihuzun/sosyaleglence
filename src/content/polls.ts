@@ -1,0 +1,52 @@
+export type Poll = {
+  id: string;
+  a: string;
+  b: string;
+  aEmoji: string;
+  bEmoji: string;
+  category: "ilişki" | "hayat" | "yemek" | "eğlence";
+};
+
+/** "Bunu mu O mu?" soruları. id'ler kalıcıdır: oy sayaçları bu id ile tutulur, değiştirme. */
+export const polls: Poll[] = [
+  { id: "ilk-mesaj", category: "ilişki", a: "İlk mesajı ben atarım", aEmoji: "📲", b: "İlk mesajı o atsın", bEmoji: "⏳" },
+  { id: "konum", category: "ilişki", a: "Sevgiliyle konum paylaşımı açık", aEmoji: "📍", b: "Konum paylaşımı asla", bEmoji: "🙅" },
+  { id: "telefon-sifre", category: "ilişki", a: "Telefon şifremi bilsin", aEmoji: "🔓", b: "Telefonum bana özel", bEmoji: "🔒" },
+  { id: "ex-arkadas", category: "ilişki", a: "Ex'le arkadaş kalınır", aEmoji: "🤝", b: "Ex geçmişte kalır", bEmoji: "🚪" },
+  { id: "hesap", category: "ilişki", a: "İlk buluşmada hesap ortak", aEmoji: "➗", b: "Davet eden öder", bEmoji: "💳" },
+  { id: "kavga-gece", category: "ilişki", a: "Kavgalı yatılmaz", aEmoji: "🌙", b: "Sabah sakin kafayla konuşulur", bEmoji: "☀️" },
+  { id: "surpriz-plan", category: "ilişki", a: "Sürpriz doğum günü partisi", aEmoji: "🎉", b: "Baş başa sakin bir akşam", bEmoji: "🕯️" },
+  { id: "uzak-mesafe", category: "ilişki", a: "Uzak mesafe ilişkisi yürür", aEmoji: "✈️", b: "Uzak mesafe olmaz", bEmoji: "🚫" },
+  { id: "story-cift", category: "ilişki", a: "Sevgiliyle story paylaşırım", aEmoji: "📸", b: "İlişkim sosyal medyada yok", bEmoji: "🤫" },
+  { id: "kiskanc-sevgili", category: "ilişki", a: "Biraz kıskanan sevgili", aEmoji: "👀", b: "Hiç kıskanmayan sevgili", bEmoji: "😌" },
+  { id: "evlilik-once", category: "ilişki", a: "Evlenmeden önce birlikte yaşamak", aEmoji: "🏠", b: "Evlendikten sonra aynı ev", bEmoji: "💍" },
+  { id: "cicek-hediye", category: "ilişki", a: "Çiçek", aEmoji: "💐", b: "Çikolata", bEmoji: "🍫" },
+  { id: "romantik-komik", category: "ilişki", a: "Romantik sevgili", aEmoji: "🌹", b: "Komik sevgili", bEmoji: "😂" },
+  { id: "esprili-zeki", category: "ilişki", a: "Seni güldüren biri", aEmoji: "🤣", b: "Seni düşündüren biri", bEmoji: "🧠" },
+  { id: "evcil", category: "hayat", a: "Kedi", aEmoji: "🐱", b: "Köpek", bEmoji: "🐶" },
+  { id: "deniz-dag", category: "hayat", a: "Deniz tatili", aEmoji: "🏖️", b: "Dağ tatili", bEmoji: "🏔️" },
+  { id: "sabah-gece", category: "hayat", a: "Sabah insanı", aEmoji: "🌅", b: "Gece kuşu", bEmoji: "🦉" },
+  { id: "sehir-koy", category: "hayat", a: "Büyük şehirde yaşamak", aEmoji: "🏙️", b: "Sakin bir kasabada yaşamak", bEmoji: "🌳" },
+  { id: "yaz-kis", category: "hayat", a: "Yaz", aEmoji: "☀️", b: "Kış", bEmoji: "❄️" },
+  { id: "evden-ofis", category: "hayat", a: "Evden çalışmak", aEmoji: "🛋️", b: "Ofiste çalışmak", bEmoji: "🏢" },
+  { id: "para-zaman", category: "hayat", a: "Çok para, az boş zaman", aEmoji: "💰", b: "Az para, çok boş zaman", bEmoji: "⏰" },
+  { id: "gecmis-gelecek", category: "hayat", a: "Geçmişe gitmek", aEmoji: "⏪", b: "Geleceği görmek", bEmoji: "⏩" },
+  { id: "plan-spontane", category: "hayat", a: "Her şey planlı", aEmoji: "🗓️", b: "Akışına bırak", bEmoji: "🌊" },
+  { id: "kitap-film", category: "eğlence", a: "Önce kitabı oku", aEmoji: "📖", b: "Filmini izle, yeter", bEmoji: "🎬" },
+  { id: "dizi-film", category: "eğlence", a: "Dizi", aEmoji: "📺", b: "Film", bEmoji: "🍿" },
+  { id: "konser-festival", category: "eğlence", a: "Küçük mekânda konser", aEmoji: "🎸", b: "Dev festival", bEmoji: "🎪" },
+  { id: "ev-partisi", category: "eğlence", a: "Evde arkadaş toplantısı", aEmoji: "🏡", b: "Dışarıda gece hayatı", bEmoji: "🪩" },
+  { id: "spoiler", category: "eğlence", a: "Spoiler umurumda değil", aEmoji: "🤷", b: "Spoiler veren düşmanımdır", bEmoji: "🤬" },
+  { id: "cay-kahve", category: "yemek", a: "Çay", aEmoji: "🫖", b: "Kahve", bEmoji: "☕" },
+  { id: "menemen-sogan", category: "yemek", a: "Soğanlı menemen", aEmoji: "🧅", b: "Soğansız menemen", bEmoji: "🍳" },
+  { id: "tatli-tuzlu", category: "yemek", a: "Tatlı", aEmoji: "🍰", b: "Tuzlu", bEmoji: "🥨" },
+  { id: "pizza-ananas", category: "yemek", a: "Ananaslı pizza olur", aEmoji: "🍍", b: "Ananaslı pizza suçtur", bEmoji: "🚨" },
+  { id: "doner-lahmacun", category: "yemek", a: "Döner", aEmoji: "🥙", b: "Lahmacun", bEmoji: "🫓" },
+  { id: "simit-pogaca", category: "yemek", a: "Simit", aEmoji: "🥯", b: "Poğaça", bEmoji: "🥐" },
+  { id: "ayran-kola", category: "yemek", a: "Ayran", aEmoji: "🥛", b: "Kola", bEmoji: "🥤" },
+  { id: "kahvalti-serpme", category: "yemek", a: "Serpme kahvaltı", aEmoji: "🧀", b: "Hızlı bir tost", bEmoji: "🥪" },
+  { id: "baklava-kunefe", category: "yemek", a: "Baklava", aEmoji: "🍯", b: "Künefe", bEmoji: "🧀" },
+  { id: "sushi-kebap", category: "yemek", a: "Sushi", aEmoji: "🍣", b: "Kebap", bEmoji: "🍢" },
+  { id: "mesaj-arama", category: "hayat", a: "Mesaj atmak", aEmoji: "💬", b: "Telefonla aramak", bEmoji: "📞" },
+  { id: "sesli-mesaj", category: "hayat", a: "Sesli mesaj hayat kurtarır", aEmoji: "🎙️", b: "Sesli mesaj atan yazsın", bEmoji: "⌨️" },
+];

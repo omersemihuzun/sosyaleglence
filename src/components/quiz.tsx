@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import type { Test } from "@/lib/types";
+import { reportTestResult } from "@/lib/client/stats";
 import { encodeScores, pickResult, scoreDimensions } from "@/lib/scoring";
 
 function shuffle(n: number): number[] {
@@ -16,7 +17,7 @@ function shuffle(n: number): number[] {
 
 const LETTERS = ["A", "B", "C", "D", "E"];
 
-export function Quiz({ test }: { test: Test }) {
+export function Quiz({ test, compare }: { test: Test; compare?: { code: string; name: string } }) {
   const router = useRouter();
   const params = useSearchParams();
   const total = test.questions.length;
@@ -45,10 +46,22 @@ export function Quiz({ test }: { test: Test }) {
     const scores = scoreDimensions(test, final);
     const result = pickResult(test, scores);
     const s = encodeScores(test, scores);
+    reportTestResult(test.slug, result.id);
     try {
       localStorage.setItem(`sonuc:${test.slug}`, JSON.stringify({ result: result.id, s }));
     } catch {
       /* gizli sekme vb. */
+    }
+    if (compare) {
+      // Karşılaştırma davetiyle gelindi: sonucu oturuma ekle, karşılaştırma sayfasına dön
+      fetch(`/api/cift/${compare.code}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ s, name: compare.name }),
+      })
+        .catch(() => {})
+        .finally(() => router.push(`/testler/${test.slug}/karsilastir/${compare.code}`));
+      return;
     }
     router.push(`/testler/${test.slug}/sonuc/${result.id}?s=${s}`);
   }

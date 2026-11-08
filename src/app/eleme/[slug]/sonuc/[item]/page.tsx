@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { BracketCard } from "@/components/bracket-card";
 import { BracketResultPersonal } from "@/components/bracket-result-personal";
+import { BracketStats } from "@/components/live-stats";
 import { PageSkeleton } from "@/components/page-skeleton";
 import { brackets, getBracket } from "@/content/brackets";
 import { absoluteUrl } from "@/lib/site";
@@ -89,6 +90,14 @@ async function BracketResultContent({ params }: { params: PageProps<"/eleme/[slu
           </aside>
         </div>
       </section>
+
+      <div className="mx-auto mt-12 max-w-5xl px-4 sm:px-6">
+        <BracketStats
+          slug={bracket.slug}
+          current={champion.id}
+          items={bracket.items.map((i) => ({ id: i.id, name: i.name, emoji: i.emoji }))}
+        />
+      </div>
 
       <section className="mx-auto mt-16 max-w-6xl px-4 sm:px-6">
         <h2 className="font-display text-2xl font-bold">Sıradaki oyunun</h2>

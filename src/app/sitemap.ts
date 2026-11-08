@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       t.results.map((r) => ({ url: absoluteUrl(`/testler/${t.slug}/sonuc/${r.id}`), changeFrequency: "monthly" as const, priority: 0.4 })),
     ),
     { url: absoluteUrl("/eleme"), changeFrequency: "weekly", priority: 0.9 },
+    { url: absoluteUrl("/bunu-mu-o-mu"), changeFrequency: "weekly", priority: 0.7 },
     ...brackets.map((b) => ({ url: absoluteUrl(`/eleme/${b.slug}`), changeFrequency: "monthly" as const, priority: 0.8 })),
     ...guides.map((g) => ({ url: absoluteUrl(`/hediye/${g.slug}`), changeFrequency: "monthly" as const, priority: 0.8 })),
     { url: absoluteUrl("/iletisim"), changeFrequency: "yearly", priority: 0.3 },
