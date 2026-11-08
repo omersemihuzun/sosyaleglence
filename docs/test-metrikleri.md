@@ -11,17 +11,17 @@ Bu dosya `npm run kalibre` tarafından üretilir, elle düzenleme.
 | ✓ | sevgi-dili-testi | 15 | %100 | %88 | %18–%21 | %12 | %0 | 0 | 0 | 0 |
 | ✓ | flort-tarzi-testi | 15 | %99 | %76 | %17–%27 | %11 | %0 | 0 | 0 | 0 |
 | ✓ | sosyal-pil-testi | 16 | %90 | %72 | %14–%29 | %11 | %34 | 0 | 0 | 0 |
-| ⚠ | arkadas-grubundaki-rolun-testi | 15 | %100 | %92 | %16–%33 | %11 | %90 | 0 | 0 | 3 |
-| ⚠ | iliskide-kim-baskin-testi | 15 | %100 | %90 | %16–%29 | %11 | %93 | 0 | 0 | 5 |
-| ⚠ | toksik-arkadas-testi | 15 | %99 | %82 | %4–%26 | %17 | %82 | 0 | 0 | 2 |
+| ✓ | arkadas-grubundaki-rolun-testi | 15 | %100 | %84 | %16–%32 | %13 | %38 | 0 | 0 | 0 |
+| ✓ | iliskide-kim-baskin-testi | 15 | %100 | %88 | %15–%28 | %12 | %38 | 0 | 0 | 0 |
+| ✓ | toksik-arkadas-testi | 15 | %99 | %81 | %4–%29 | %18 | %43 | 0 | 0 | 0 |
 | ✓ | sofra-kur-sehir-testi | 11 | %97 | %94 | %12–%23 | %9 | %16 | 0 | 0 | 0 |
 | ✓ | tatil-cantasi-ask-testi | 11 | %98 | %96 | %19–%21 | %9 | %11 | 0 | 0 | 0 |
 | ✓ | gun-planla-mevsim-testi | 11 | %99 | %95 | %17–%25 | %12 | %14 | 0 | 0 | 0 |
 | ✓ | kahve-siparisi-ruh-yasi-testi | 11 | %98 | %92 | %15–%23 | %8 | %18 | 0 | 0 | 0 |
-| ⚠ | situationship-testi | 15 | %99 | %88 | %6–%26 | %8 | %92 | 0 | 0 | 2 |
-| ⚠ | ne-kadar-delulusun-testi | 15 | %100 | %91 | %6–%26 | %8 | %88 | 0 | 0 | 3 |
-| ⚠ | hangi-tip-sevgilisin-testi | 15 | %100 | %99 | %25–%25 | %5 | %100 | 0 | 0 | 0 |
-| ⚠ | kavga-tarzi-testi | 12 | %100 | %100 | %18–%22 | %7 | %94 | 0 | 0 | 0 |
+| ✓ | situationship-testi | 15 | %98 | %79 | %8–%25 | %14 | %38 | 0 | 0 | 0 |
+| ✓ | ne-kadar-delulusun-testi | 15 | %99 | %82 | %8–%25 | %11 | %43 | 0 | 0 | 0 |
+| ✓ | hangi-tip-sevgilisin-testi | 15 | %100 | %99 | %23–%26 | %8 | %28 | 0 | 0 | 0 |
+| ✓ | kavga-tarzi-testi | 12 | %100 | %97 | %18–%24 | %11 | %35 | 0 | 0 | 0 |
 | ✓ | iliskiye-hazir-misin-testi | 12 | %100 | %99 | %18–%22 | %11 | %13 | 0 | 0 | 0 |
 | ✓ | guven-sorunu-testi | 12 | %100 | %99 | %19–%21 | %11 | %19 | 0 | 0 | 0 |
 
@@ -79,21 +79,18 @@ Not: "Bariz doğru şık" (sosyal beğenirlik) sayıyla ölçülemez; içerik in
 
 ### arkadas-grubundaki-rolun-testi
 
-- ⚠ tek boyutlu şık %90
-- ⚠ uzunluk ipucu: S2D, S3C, S6C
-- Sonuca en az katkı veren sorular (bilgi, %): S9 (24.3), S13 (25.6), S11 (26.5)
+- Uyarı yok
+- Sonuca en az katkı veren sorular (bilgi, %): S10 (21.5), S7 (22.8), S1 (23.2)
 
 ### iliskide-kim-baskin-testi
 
-- ⚠ tek boyutlu şık %93
-- ⚠ uzunluk ipucu: S3D, S8D, S9D, S11D, S12D
-- Sonuca en az katkı veren sorular (bilgi, %): S15 (23.2), S8 (25.3), S12 (25.5)
+- Uyarı yok
+- Sonuca en az katkı veren sorular (bilgi, %): S5 (18.2), S1 (23.6), S12 (24.1)
 
 ### toksik-arkadas-testi
 
-- ⚠ tek boyutlu şık %82
-- ⚠ uzunluk ipucu: S5D, S9B
-- Sonuca en az katkı veren sorular (bilgi, %): S3 (5.5), S11 (6.1), S10 (12.5)
+- Uyarı yok
+- Sonuca en az katkı veren sorular (bilgi, %): S10 (13.4), S15 (13.6), S7 (13.7)
 
 ### sofra-kur-sehir-testi
 
@@ -117,25 +114,23 @@ Not: "Bariz doğru şık" (sosyal beğenirlik) sayıyla ölçülemez; içerik in
 
 ### situationship-testi
 
-- ⚠ tek boyutlu şık %92
-- ⚠ uzunluk ipucu: S6D, S11D
-- Sonuca en az katkı veren sorular (bilgi, %): S9 (27.7), S6 (27.9), S5 (28.4)
+- Uyarı yok
+- Sonuca en az katkı veren sorular (bilgi, %): S11 (17.9), S14 (18.2), S8 (18.5)
 
 ### ne-kadar-delulusun-testi
 
-- ⚠ tek boyutlu şık %88
-- ⚠ uzunluk ipucu: S3C, S11D, S14C
-- Sonuca en az katkı veren sorular (bilgi, %): S12 (28.4), S14 (28.5), S11 (28.6)
+- Uyarı yok
+- Sonuca en az katkı veren sorular (bilgi, %): S5 (16.9), S1 (17.5), S15 (17.9)
 
 ### hangi-tip-sevgilisin-testi
 
-- ⚠ tek boyutlu şık %100
-- Sonuca en az katkı veren sorular (bilgi, %): S2 (27.0), S13 (27.1), S14 (27.1)
+- Uyarı yok
+- Sonuca en az katkı veren sorular (bilgi, %): S14 (24.7), S2 (25.3), S7 (26.1)
 
 ### kavga-tarzi-testi
 
-- ⚠ tek boyutlu şık %94
-- Sonuca en az katkı veren sorular (bilgi, %): S5 (26.9), S12 (29.0), S7 (29.2)
+- Uyarı yok
+- Sonuca en az katkı veren sorular (bilgi, %): S5 (20.6), S2 (20.8), S11 (21.2)
 
 ### iliskiye-hazir-misin-testi
 
