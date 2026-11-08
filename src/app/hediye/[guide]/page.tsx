@@ -51,9 +51,24 @@ async function GuidePageContent({ params }: { params: PageProps<"/hediye/[guide]
     itemListElement: list.map((idea, i) => ({ "@type": "ListItem", position: i + 1, name: idea.name })),
   };
 
+  const faq = guide.faq ?? [];
+  const faqLd =
+    faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faq.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      {faqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />}
       <article className="mx-auto max-w-6xl px-4 pt-8 sm:px-6 sm:pt-12">
         <nav aria-label="Konum" className="text-sm font-semibold text-plum-soft">
           <Link href="/hediye" className="hover:text-cherry">
@@ -104,6 +119,29 @@ async function GuidePageContent({ params }: { params: PageProps<"/hediye/[guide]
           </Link>
           <p className="text-plum-soft">Bütçene ve ilgi alanlarına göre listeyi daralt.</p>
         </div>
+
+        {faq.length > 0 && (
+          <section className="mt-14 max-w-prose" aria-labelledby="sss">
+            <h2 id="sss" className="font-display text-2xl font-bold">
+              Sık sorulanlar
+            </h2>
+            <div className="mt-5 space-y-3">
+              {faq.map((f) => (
+                <details key={f.q} className="group rounded-2xl border-2 border-plum bg-white p-5 open:bg-paper">
+                  <summary className="cursor-pointer list-none font-display text-lg leading-snug font-bold marker:hidden">
+                    <span className="flex items-start justify-between gap-4">
+                      {f.q}
+                      <span aria-hidden className="shrink-0 transition-transform group-open:rotate-45">
+                        +
+                      </span>
+                    </span>
+                  </summary>
+                  <p className="mt-3 text-[16px] leading-relaxed">{f.a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+        )}
       </article>
 
       <section className="mx-auto mt-16 max-w-6xl px-4 sm:px-6">

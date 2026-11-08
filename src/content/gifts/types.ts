@@ -36,7 +36,14 @@ export type Interest = keyof typeof interests;
 export type Budget = keyof typeof budgets;
 
 /** Sevgililer günü ve yıldönümü yalnızca romantik alıcılara uygulanır. */
-export type Occasion = "romantik" | "anneler-gunu" | "babalar-gunu" | "ev" | "yilbasi";
+export type Occasion =
+  | "romantik"
+  | "anneler-gunu"
+  | "babalar-gunu"
+  | "ev"
+  | "yilbasi"
+  | "ogretmen-gunu"
+  | "mezuniyet";
 
 export type GiftIdea = {
   id: string;
