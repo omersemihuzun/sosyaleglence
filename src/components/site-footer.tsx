@@ -40,7 +40,7 @@ export function SiteFooter() {
               </li>
             ))}
             <li>
-              <a className="hover:text-butter" href={`mailto:${site.email}`}>
+              <a className="inline-block py-1 hover:text-butter" href={`mailto:${site.email}`}>
                 {site.email}
               </a>
             </li>

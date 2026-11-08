@@ -127,10 +127,10 @@ async function ArticleContent({ params }: { params: PageProps<"/rehber/[slug]">[
             <h2 id="icindekiler" className="font-display text-lg font-bold">
               İçindekiler
             </h2>
-            <ol className="mt-3 list-decimal space-y-1.5 pl-5 text-[15px]">
+            <ol className="mt-3 list-decimal space-y-0.5 pl-5 text-[15px]">
               {article.sections.map((s) => (
                 <li key={s.heading}>
-                  <a href={`#${anchorId(s.heading)}`} className="underline-offset-4 hover:text-cherry hover:underline">
+                  <a href={`#${anchorId(s.heading)}`} className="inline-block py-1 underline-offset-4 hover:text-cherry hover:underline">
                     {s.heading}
                   </a>
                 </li>
