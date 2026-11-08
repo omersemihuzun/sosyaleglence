@@ -9,9 +9,9 @@ import { burclar, type Burc, type Element, type Nitelik } from "./burclar";
  * sekstil yüksek, karşıtlık çekici ama dengeli, kare ve kinkunks zorlu.
  */
 
-export type Aci = "kavusum" | "yarim-sekstil" | "sekstil" | "kare" | "ucgen" | "kinkunks" | "karsit";
+type Aci = "kavusum" | "yarim-sekstil" | "sekstil" | "kare" | "ucgen" | "kinkunks" | "karsit";
 
-export type UyumCift = {
+type UyumCift = {
   slug: string;
   a: string;
   b: string;
@@ -196,7 +196,7 @@ function nitelikKey(a: Nitelik, b: Nitelik) {
   return [a, b].sort((p, q) => p.localeCompare(q, "tr")).join("-");
 }
 
-export function ciftSlug(a: string, b: string) {
+function ciftSlug(a: string, b: string) {
   return `${a}-ve-${b}`;
 }
 

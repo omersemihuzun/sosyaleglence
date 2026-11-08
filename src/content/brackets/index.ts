@@ -62,7 +62,7 @@ export function getBracket(slug: string): Bracket | undefined {
   return brackets.find((b) => b.slug === slug);
 }
 
-export function roundName(size: number): string {
+function roundName(size: number): string {
   if (size === 2) return "Final";
   if (size === 4) return "Yarı final";
   if (size === 8) return "Çeyrek final";

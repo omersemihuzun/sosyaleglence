@@ -2,7 +2,7 @@
 
 export type Pick = { winner: string; loser: string; roundSize: number };
 
-export type BracketState = {
+type BracketState = {
   /** Mevcut turdaki seçenek id'leri (eşleşme sırasıyla) */
   round: string[];
   /** Mevcut turdaki eşleşme indeksi (0'dan) */

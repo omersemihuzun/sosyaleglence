@@ -56,6 +56,3 @@ export function reportBracket(slug: string, picks: [winner: string, loser: strin
   if (once(`b:${slug}`)) send("/api/istatistik/eleme", { slug, picks });
 }
 
-export function reportPollVote(id: string, choice: "a" | "b") {
-  send("/api/anket", { id, choice });
-}

@@ -7,7 +7,7 @@ export type Dimension = {
   high: string;
 };
 
-export type Option = {
+type Option = {
   /** "secim" formatında kısa etiket (≤ 4 kelime), "senaryo" formatında tam cümle */
   text: string;
   /** "secim" formatında kartta büyük gösterilen emoji */

@@ -6,7 +6,7 @@ import { absoluteUrl, site } from "./site";
  * ile basar. `toJsonLd` "<" karakterini kaçırır: içerikte "</script>" geçse bile etiket kapanmaz.
  */
 
-export type Crumb = { name: string; path: string };
+type Crumb = { name: string; path: string };
 
 export function toJsonLd(data: object | object[]): string {
   return JSON.stringify(data).replace(/</g, "\\u003c");
@@ -47,13 +47,13 @@ export function websiteJsonLd() {
 // Arama sonuçları ~60 karakterden sonrasını keser. Adaylardan sığan ilkini seçeriz.
 // Emoji başlığa konmaz (Google çoğu zaman siler); OG başlığında kalabilir.
 
-export const TITLE_MAX = 60;
-export const SITE_SUFFIX = ` | ${site.name}`;
+const TITLE_MAX = 60;
+const SITE_SUFFIX = ` | ${site.name}`;
 
 const segmenter = new Intl.Segmenter("tr", { granularity: "grapheme" });
-export const textLength = (s: string) => [...segmenter.segment(s)].length;
+const textLength = (s: string) => [...segmenter.segment(s)].length;
 
-export function fitTitle(...candidates: string[]): string {
+function fitTitle(...candidates: string[]): string {
   return candidates.find((c) => textLength(c) <= TITLE_MAX) ?? candidates[candidates.length - 1];
 }
 

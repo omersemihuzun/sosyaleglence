@@ -10,7 +10,7 @@ type Side = "a" | "b";
 type Cevap = { id: string; choice: Side; counts: Counts | null };
 
 /** Bir tur kaç soru: 40 soruyu art arda çözmek yorucu */
-export const TUR = 10;
+const TUR = 10;
 const GORULDU = "bmo:goruldu";
 
 function shuffled<T>(arr: T[]): T[] {

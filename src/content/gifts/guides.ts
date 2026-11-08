@@ -2,7 +2,7 @@ import { guideFaqs, type Faq } from "./faqs";
 import { ideas } from "./ideas";
 import type { Budget, GiftIdea, Interest, Occasion, Recipient } from "./types";
 
-export type Guide = {
+type Guide = {
   slug: string;
   /** Sayfa başlığı (h1) */
   title: string;
@@ -472,7 +472,7 @@ export function ideasForGuide(guide: Guide): GiftIdea[] {
     .slice(0, GUIDE_LIMIT);
 }
 
-export type FinderQuery = { recipient?: Recipient; budget?: Budget; interests: Interest[] };
+type FinderQuery = { recipient?: Recipient; budget?: Budget; interests: Interest[] };
 
 /** Hediye bulucu: alıcı ve bütçe zorunlu filtre, ilgi alanları sıralama ölçütü. */
 export function findIdeas(q: FinderQuery): GiftIdea[] {

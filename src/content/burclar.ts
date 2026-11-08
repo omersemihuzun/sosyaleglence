@@ -352,6 +352,3 @@ export function getBurc(slug: string): Burc | undefined {
   return burclar.find((b) => b.slug === slug);
 }
 
-export function burcIndex(slug: string): number {
-  return burclar.findIndex((b) => b.slug === slug);
-}

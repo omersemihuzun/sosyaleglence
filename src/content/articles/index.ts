@@ -40,7 +40,7 @@ export function getArticle(slug: string): Article | undefined {
 }
 
 /** Makalenin okunan metni (başlıklar, paragraflar, maddeler, SSS) */
-export function articleText(a: Article): string {
+function articleText(a: Article): string {
   const parts: string[] = [a.title, ...a.intro];
   for (const s of a.sections) {
     parts.push(s.heading, ...s.paragraphs, ...(s.bullets ?? []));

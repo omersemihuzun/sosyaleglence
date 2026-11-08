@@ -10,7 +10,7 @@ export function hasPhotos(bracket: Bracket): boolean {
 }
 
 /** Küçük sürümün yolu: /eleme/x/y.webp -> /eleme/x/y-k.webp */
-export function thumbSrc(src: string) {
+function thumbSrc(src: string) {
   return src.replace(/\.webp$/, "-k.webp");
 }
 

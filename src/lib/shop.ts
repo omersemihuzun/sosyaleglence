@@ -10,7 +10,7 @@
  *   belli olunca ilgili wrap fonksiyonuna eklenir.
  */
 
-export type Store = {
+type Store = {
   id: "trendyol" | "hepsiburada" | "amazon";
   name: string;
   color: string;
