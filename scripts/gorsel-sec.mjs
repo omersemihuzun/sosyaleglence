@@ -8,6 +8,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import sharp from "sharp";
+import { cleanCreator } from "./atif-temizle.mjs";
 
 const [slug, id, nStr, ...flags] = process.argv.slice(2);
 const n = Number(nStr);
@@ -41,7 +42,7 @@ const metaFile = join(metaDir, `${slug}.json`);
 const meta = existsSync(metaFile) ? JSON.parse(readFileSync(metaFile, "utf8")) : {};
 meta[id] = {
   src: `/eleme/${slug}/${id}.webp`,
-  creator: c.creator.slice(0, 120),
+  creator: cleanCreator(c.creator),
   license: c.license,
   licenseUrl: c.licenseUrl,
   source: c.source,

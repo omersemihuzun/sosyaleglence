@@ -11,6 +11,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import sharp from "sharp";
+import { cleanCreator } from "./atif-temizle.mjs";
 
 const [slug, id, query, ...flags] = process.argv.slice(2);
 if (!slug || !id || !query) {
@@ -41,7 +42,7 @@ async function commons(q) {
     gsrnamespace: "6",
     gsrlimit: "14",
     prop: "imageinfo",
-    iiprop: "url|extmetadata|size|mime",
+    iiprop: "url|extmetadata|size|mime|user",
     iiurlwidth: "900",
     format: "json",
   }).forEach(([k, v]) => u.searchParams.set(k, v));
@@ -61,7 +62,7 @@ async function commons(q) {
         full: i.thumburl, // 900px genişlik yeterli; tam boy dosyayı indirmeye gerek yok
         width: i.width,
         height: i.height,
-        creator: strip(m.Artist?.value) || "Bilinmiyor",
+        creator: cleanCreator(strip(m.Artist?.value), i.user),
         license: lic.code,
         licenseOk: lic.ok,
         licenseUrl: m.LicenseUrl?.value ?? "",
@@ -90,7 +91,7 @@ async function openverse(q) {
         full: r.url,
         width: r.width,
         height: r.height,
-        creator: r.creator ?? "Bilinmiyor",
+        creator: cleanCreator(r.creator ?? ""),
         license: lic.code,
         licenseOk: lic.ok,
         licenseUrl: r.license_url ?? "",

@@ -33,6 +33,10 @@ describe("eleme fotoğrafları", () => {
       expect(img.license, where).toMatch(ALLOWED);
       expect(img.creator.trim().length, `${where}: yapan`).toBeGreaterThan(0);
       expect(img.sourceUrl, `${where}: kaynak`).toMatch(/^https:\/\//);
+      // Atıf isteyen lisanslarda yazar bilinmeli; okunur ve kısa olmalı
+      if (img.license.startsWith("CC BY")) expect(img.creator, `${where}: CC BY yazar ister`).not.toBe("Bilinmiyor");
+      expect(img.creator.length, `${where}: atıf çok uzun`).toBeLessThanOrEqual(80);
+      expect(img.creator, `${where}: temizlenmemiş atıf`).not.toMatch(/&amp;|No machine-readable|^User:|taken by/i);
     }
   });
 });
