@@ -39,10 +39,12 @@ jobs:
       - name: Birim ve içerik testleri
         run: npm test
 
-      # Sonuçların ayrışıp ayrışmadığını doğrular; isabet %75'in altındaysa script hata verir.
-      # (Dosyayı yeniden yazar ama simülasyon rastgele olduğu için fark kontrolü yapılmaz.)
+      # Sonuçların ayrışıp ayrışmadığını doğrular (isabet ve dağılım eşikleri, bkz. docs/test-metrikleri.md).
+      # Simülasyon sabit tohumlu olduğu için çıktı belirlidir: commit'lenen kalibrasyon içerikle eşleşmeli.
       - name: Kalibrasyon doğrulaması
-        run: npm run kalibre
+        run: |
+          npm run kalibre
+          git diff --exit-code src/content/tests/kalibrasyon.json docs/test-metrikleri.md || (echo "Kalibrasyon güncel değil: npm run kalibre çalıştırıp commit'le" && exit 1)
 
       - name: Build
         run: npm run build
