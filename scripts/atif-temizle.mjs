@@ -24,6 +24,9 @@ export function cleanCreator(raw, uploader = "") {
   if (takenBy) s = takenBy[1];
   // Fotoğrafçının ek notunu kes: e-posta, "I'd appreciate", parantezli takma adlar
   s = s.replace(/\s*I'?d appreciate.*$/i, "").replace(/\s*\(?[\w.+-]+@[\w-]+\.[\w.]+\)?/g, "");
+  // "Ad This photo was taken with <kamera>" ve kapanmamış parantezle kesilmiş ekler: "Ad(from T…"
+  s = s.replace(/\s*This (?:photo|picture|image) was (?:taken|made|shot) with.*$/i, "");
+  s = s.replace(/\s*\([^)]*$/, "");
   s = s.replace(/\s*\(([^)]+)\)\s*$/, (m, inner) => (s.startsWith(inner) ? "" : m));
   // "Dosya.JPG: Ad derivative work: Ad2" -> "Ad (türev: Ad2)"
   const deriv = s.match(/^.*?\.(?:jpe?g|png|tiff?):\s*(.+?)\s+derivative work:\s*(.+)$/i);
