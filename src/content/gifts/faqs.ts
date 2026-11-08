@@ -19,7 +19,7 @@ export const guideFaqs: Record<string, Faq[]> = {
   "erkek-arkadasa-hediye": [
     {
       q: "Erkek arkadaşıma ne alacağımı bilmiyorum, nereden başlamalıyım?",
-      a: "Son zamanlarda neyden şikâyet ettiğini ya da neyi \"bir ara alırım\" dediğini hatırla. Bozulan kulaklık, eskiyen cüzdan ya da hep ertelediği bir etkinlik iyi başlangıç noktalarıdır.",
+      a: 'Son zamanlarda neyden şikâyet ettiğini ya da neyi "bir ara alırım" dediğini hatırla. Bozulan kulaklık, eskiyen cüzdan ya da hep ertelediği bir etkinlik iyi başlangıç noktalarıdır.',
     },
     {
       q: "Erkekler kişiye özel hediyeleri sever mi?",
@@ -92,7 +92,7 @@ export const guideFaqs: Record<string, Faq[]> = {
       a: "Türkiye'de Anneler Günü her yıl mayıs ayının ikinci pazarı kutlanır.",
     },
     {
-      q: "\"Bana bir şey alma\" diyen anneye ne alınır?",
+      q: '"Bana bir şey alma" diyen anneye ne alınır?',
       a: "Kendine almaya kıyamadığı şeyler: iyi bir parfüm, spa günü ya da kaliteli bir mutfak aleti. Aile fotoğraflarından bir albüm gibi duygusal hediyeler de annelerin en çok sakladığı hediyelerdir.",
     },
     {
@@ -117,7 +117,7 @@ export const guideFaqs: Record<string, Faq[]> = {
   "arkadasa-hediye": [
     {
       q: "En yakın arkadaşıma ne hediye alayım?",
-      a: "Ortak anılarınızı ve iç esprilerinizi kullan. Baskılı bir kupa, birlikte gideceğiniz bir konser ya da birlikte oynayacağınız bir kutu oyunu, \"Seni tanıyorum\" demenin eğlenceli yollarıdır.",
+      a: 'Ortak anılarınızı ve iç esprilerinizi kullan. Baskılı bir kupa, birlikte gideceğiniz bir konser ya da birlikte oynayacağınız bir kutu oyunu, "Seni tanıyorum" demenin eğlenceli yollarıdır.',
     },
     {
       q: "Arkadaş grubu olarak ortak hediye almak mantıklı mı?",

@@ -3,7 +3,7 @@ import type { Test } from "@/lib/types";
 export const ex: Test = {
   slug: "exini-unuttun-mu-testi",
   title: "Ex'ini Gerçekten Unuttun mu?",
-  summary: "\"Çoktan unuttum\" diyorsun. Bakalım story izleyenler listesi de aynı şeyi söylüyor mu?",
+  summary: '"Çoktan unuttum" diyorsun. Bakalım story izleyenler listesi de aynı şeyi söylüyor mu?',
   intro:
     "Unutmak, adını duyunca hiçbir şey hissetmemek demek değil. Bazen hâlâ özlersin, bazen gizlice bakarsın, bazen de kızgınlık bitmez. 15 senaryoda dürüstçe seç, nerede olduğunu gör.",
   emoji: "💔",
@@ -23,7 +23,7 @@ export const ex: Test = {
   ],
   questions: [
     {
-      text: "Kafede çalan şarkı, ikinizin \"o\" şarkısı.",
+      text: 'Kafede çalan şarkı, ikinizin "o" şarkısı.',
       options: [
         { text: "Güzel bir anı olarak gülümserim; o kadar, gün devam eder.", scores: {} },
         { text: "Boğazım düğümlenir; kimseyle öyle bir şarkım olmadı diye düşünürüm.", scores: { ozlem: 2, kiyas: 1 } },
@@ -36,7 +36,7 @@ export const ex: Test = {
       options: [
         { text: "Mutlu olsun derim; yine de o gün biraz durgun geçer.", scores: { ozlem: 1 } },
         { text: "Yeni sevgilisinin profilini en eski fotoğrafına kadar incelerim.", scores: { takip: 2, kiyas: 1 } },
-        { text: "\"Benden sonra bu mu yani?\" diye içimden geçiririm.", scores: { kiyas: 2, kirginlik: 1 } },
+        { text: '"Benden sonra bu mu yani?" diye içimden geçiririm.', scores: { kiyas: 2, kirginlik: 1 } },
         { text: "İçim burkulur; ben neden hâlâ yerimde sayıyorum diye düşünürüm.", scores: { ozlem: 2, kiyas: 1 } },
       ],
     },
@@ -44,8 +44,11 @@ export const ex: Test = {
       text: "Yeni biriyle ilk buluşmadasın. Sohbet güzel gidiyor.",
       options: [
         { text: "Anın tadını çıkarırım; geçmişi bu masaya hiç getirmem.", scores: {} },
-        { text: "\"O olsa burada şöyle bir espri yapardı\" diye geçiririm içimden.", scores: { kiyas: 2, ozlem: 1 } },
-        { text: "Sohbet bir yerde ex'ime gelir; beni ne kadar yorduğunu anlatırım.", scores: { kirginlik: 2, kiyas: 1 } },
+        { text: '"O olsa burada şöyle bir espri yapardı" diye geçiririm içimden.', scores: { kiyas: 2, ozlem: 1 } },
+        {
+          text: "Sohbet bir yerde ex'ime gelir; beni ne kadar yorduğunu anlatırım.",
+          scores: { kirginlik: 2, kiyas: 1 },
+        },
         { text: "Buluşmadan bir story paylaşırım; görür mü diye de bakarım.", scores: { takip: 2, ozlem: 1 } },
       ],
     },
@@ -59,11 +62,11 @@ export const ex: Test = {
       ],
     },
     {
-      text: "Ortak bir arkadaşın \"Seni sordu\" dedi.",
+      text: 'Ortak bir arkadaşın "Seni sordu" dedi.',
       options: [
-        { text: "\"Selam söyle\" derim; ama nasıl sorduğunu da merak ederim.", scores: { ozlem: 1, takip: 1 } },
+        { text: '"Selam söyle" derim; ama nasıl sorduğunu da merak ederim.', scores: { ozlem: 1, takip: 1 } },
         { text: "Kalbim hızlanır; ne dedi, nasıl sordu, her detayı isterim.", scores: { ozlem: 2, kiyas: 1 } },
-        { text: "\"Sormasın, beni hiç ilgilendirmez\" derim, biraz da sertçe.", scores: { kirginlik: 2, ozlem: 1 } },
+        { text: '"Sormasın, beni hiç ilgilendirmez" derim, biraz da sertçe.', scores: { kirginlik: 2, ozlem: 1 } },
         { text: "Hemen son paylaşımlarına bakıp ne durumda olduğunu anlarım.", scores: { takip: 2, ozlem: 1 } },
       ],
     },
@@ -81,7 +84,7 @@ export const ex: Test = {
       options: [
         { text: "Listeye pek bakmam; kim izlediyse izledi, umrumda değil.", scores: {} },
         { text: "İlk onu ararım: izlemiş mi, kaçta izlemiş?", scores: { takip: 2, ozlem: 1 } },
-        { text: "İzlemişse \"Hâlâ bakıyor demek\" diye içim kıpırdar.", scores: { ozlem: 2, takip: 1 } },
+        { text: 'İzlemişse "Hâlâ bakıyor demek" diye içim kıpırdar.', scores: { ozlem: 2, takip: 1 } },
         { text: "İzlemişse sinir olurum; ne işi var benim story'mde?", scores: { kirginlik: 2, takip: 1 } },
       ],
     },
@@ -90,7 +93,10 @@ export const ex: Test = {
       options: [
         { text: "Arşivde duruyor; hayatımın bir parçası, silmeye gerek duymam.", scores: {} },
         { text: "Arada açıp bakarım; o zamanki halimizi özlerim.", scores: { ozlem: 2, kiyas: 1 } },
-        { text: "Hepsini sildim; birkaçını da arkadaşlarıma dert yanarken gösterdim.", scores: { kirginlik: 2, ozlem: 1 } },
+        {
+          text: "Hepsini sildim; birkaçını da arkadaşlarıma dert yanarken gösterdim.",
+          scores: { kirginlik: 2, ozlem: 1 },
+        },
         { text: "Galeriden sildim ama bulutta bir klasörde yedeği duruyor.", scores: { ozlem: 2, takip: 1 } },
       ],
     },
@@ -98,7 +104,7 @@ export const ex: Test = {
       text: "Yeni flörtün bir şey yaptı ve bu sana ex'ini hatırlattı.",
       options: [
         { text: "Fark ederim ama karşımdakini kendi haliyle görmeye çalışırım.", scores: {} },
-        { text: "\"O bunu daha güzel yapardı\" diye geçiririm içimden.", scores: { kiyas: 2, ozlem: 1 } },
+        { text: '"O bunu daha güzel yapardı" diye geçiririm içimden.', scores: { kiyas: 2, ozlem: 1 } },
         { text: "Ex'imin kötü bir huyuna benziyorsa hemen sert tepki veririm.", scores: { kirginlik: 2, kiyas: 1 } },
         { text: "Birden hüzünlenirim; eve gidince eski fotoğraflarına bakarım.", scores: { ozlem: 2, takip: 1 } },
       ],
@@ -116,13 +122,13 @@ export const ex: Test = {
       text: "Arkadaşların ex'in konusunda seninle ilgili ne söylüyor?",
       options: [
         { text: "Konusu bile açılmıyor; açılırsa da geçip gidiyor.", scores: {} },
-        { text: "\"Yine mi o?\" diyorlar; sık sık bahsettiğim doğru.", scores: { ozlem: 2, kirginlik: 1 } },
+        { text: '"Yine mi o?" diyorlar; sık sık bahsettiğim doğru.', scores: { ozlem: 2, kirginlik: 1 } },
         { text: "Onunla ilgili her haberi gruba ilk ben getiriyorum.", scores: { takip: 2, kiyas: 1 } },
-        { text: "\"Herkesi onunla kıyaslıyorsun\" diye takılıyorlar.", scores: { kiyas: 2, ozlem: 1 } },
+        { text: '"Herkesi onunla kıyaslıyorsun" diye takılıyorlar.', scores: { kiyas: 2, ozlem: 1 } },
       ],
     },
     {
-      text: "Ex'inden gece yarısı \"naber\" mesajı geldi.",
+      text: 'Ex\'inden gece yarısı "naber" mesajı geldi.',
       options: [
         { text: "Sabah kısa ve nazik bir cevap yazarım; devamını getirmem.", scores: {} },
         { text: "Kalbim yerinden çıkar; o saatte hemen cevap yazarım.", scores: { ozlem: 2, kiyas: 1 } },
@@ -131,11 +137,11 @@ export const ex: Test = {
       ],
     },
     {
-      text: "Biri \"İdeal partnerin nasıl biri?\" diye sorsa...",
+      text: 'Biri "İdeal partnerin nasıl biri?" diye sorsa...',
       options: [
         { text: "Kendi listemi yaparım; ex'imle bir ilgisi olmaz.", scores: {} },
         { text: "Farkında olmadan ex'imi tarif ettiğimi sonradan fark ederim.", scores: { kiyas: 2, ozlem: 1 } },
-        { text: "\"Ex'imin tam tersi biri\" derim, hiç düşünmeden.", scores: { kirginlik: 2, kiyas: 1 } },
+        { text: '"Ex\'imin tam tersi biri" derim, hiç düşünmeden.', scores: { kirginlik: 2, kiyas: 1 } },
         { text: "Cevap veremem; aklıma hâlâ tek bir isim geliyor.", scores: { ozlem: 2, kiyas: 1 } },
       ],
     },
@@ -187,8 +193,16 @@ export const ex: Test = {
         "Nostaljinin bir tuzağı var: Hafıza kötü günleri siliyor, iyi günleri büyütüyor. Özlediğin şey belki o kişi değil, o dönemde nasıl hissettiğin.",
         "Özlemek normal ve geçici. Ama ona dair her anıyı ziyaret etmek yarayı açık tutuyor. Eski mesajları okumayı bir süre bırakmak bile fark yaratır.",
       ],
-      strengths: ["Sevdiğin insanlara gerçekten değer veriyorsun", "Güzel anıları kıymetli tutuyorsun", "Kin tutmuyorsun"],
-      watchOut: ["Geçmişi idealleştirme", "Eski mesajları okumak iyileşmeyi geciktirir", "Yeni insanlara şans vermeyi erteleme"],
+      strengths: [
+        "Sevdiğin insanlara gerçekten değer veriyorsun",
+        "Güzel anıları kıymetli tutuyorsun",
+        "Kin tutmuyorsun",
+      ],
+      watchOut: [
+        "Geçmişi idealleştirme",
+        "Eski mesajları okumak iyileşmeyi geciktirir",
+        "Yeni insanlara şans vermeyi erteleme",
+      ],
       bestMatch: "tamamen-bitti",
     },
     {
@@ -199,12 +213,20 @@ export const ex: Test = {
       profile: { ozlem: 35, takip: 80, kirginlik: 25, kiyas: 25 },
       color: "#3B2A6B",
       description: [
-        "Ne paylaştığını, kimlerle takıldığını, yeni sevgilisinin adını biliyorsun. Yazmadığın için \"Ben çoktan geçtim\" diyorsun ama parmakların her gece aynı profile gidiyor.",
+        'Ne paylaştığını, kimlerle takıldığını, yeni sevgilisinin adını biliyorsun. Yazmadığın için "Ben çoktan geçtim" diyorsun ama parmakların her gece aynı profile gidiyor.',
         "Takip etmek kontrol hissi veriyor: Neler olduğunu bilirsen sürpriz bir acı yaşamazsın. Ama gördüğün her story yarayı yeniden açıyor ve iyileşmeyi sürekli başa sarıyor.",
         "En etkili adım genellikle en basit olanı: sessize almak, arşivlemek, gerekirse engellemek. Bu ona bir mesaj değil, kendine bir iyilik.",
       ],
-      strengths: ["Duygularını kontrol altında tutmaya çalışıyorsun", "Dışarıya karşı güçlü bir duruşun var", "Sınırları zorlamadan uzak kalabiliyorsun"],
-      watchOut: ["Her bakış iyileşmeyi geciktirir", "Onun hayatı senin hayatından daha çok yer kaplamaya başlayabilir", "Sessize alma ve arşivleme butonları senin dostun"],
+      strengths: [
+        "Duygularını kontrol altında tutmaya çalışıyorsun",
+        "Dışarıya karşı güçlü bir duruşun var",
+        "Sınırları zorlamadan uzak kalabiliyorsun",
+      ],
+      watchOut: [
+        "Her bakış iyileşmeyi geciktirir",
+        "Onun hayatı senin hayatından daha çok yer kaplamaya başlayabilir",
+        "Sessize alma ve arşivleme butonları senin dostun",
+      ],
       bestMatch: "tamamen-bitti",
     },
     {
@@ -219,8 +241,12 @@ export const ex: Test = {
         "Öfke bazen yas sürecinin en güçlü aşamasıdır ve kendini korumana yardım eder. Ama öfkeyi ne kadar uzun taşırsan, o kişiyi hayatında o kadar uzun tutmuş oluyorsun.",
         "Affetmek ona iyilik yapmak değil, o yükü sırtından indirmek. Özür beklemeden kapanış yaşamak mümkün.",
       ],
-      strengths: ["Kendine saygın yüksek", "Yanlış olana \"yanlış\" diyebiliyorsun", "Aynı hatayı tekrar etmezsin"],
-      watchOut: ["Öfke onu hayatında tutmanın başka bir yolu", "Yeni ilişkileri ex'inin hatalarına karşı savunarak yaşama", "Her sohbeti ex'ine getirmek çevreni yorabilir"],
+      strengths: ["Kendine saygın yüksek", 'Yanlış olana "yanlış" diyebiliyorsun', "Aynı hatayı tekrar etmezsin"],
+      watchOut: [
+        "Öfke onu hayatında tutmanın başka bir yolu",
+        "Yeni ilişkileri ex'inin hatalarına karşı savunarak yaşama",
+        "Her sohbeti ex'ine getirmek çevreni yorabilir",
+      ],
       bestMatch: "tamamen-bitti",
     },
     {
@@ -236,7 +262,11 @@ export const ex: Test = {
         "Kendine şunu sor: Özlediğim kişi o mu, yoksa yalnız olmamak mı? Cevap ne olursa olsun, hayatını onun bir mesajına göre beklemeye almak sana haksızlık.",
       ],
       strengths: ["Sevdiğinde gerçekten bağlanıyorsun", "Umut etmekten vazgeçmiyorsun", "Duygularında samimisin"],
-      watchOut: ["Beklemek hayatını askıya alabilir", "Ayrılığın sebebini görmezden gelme", "Yeni insanlara haksız kıyaslarla yaklaşma"],
+      watchOut: [
+        "Beklemek hayatını askıya alabilir",
+        "Ayrılığın sebebini görmezden gelme",
+        "Yeni insanlara haksız kıyaslarla yaklaşma",
+      ],
       bestMatch: "nostaljik",
     },
   ],

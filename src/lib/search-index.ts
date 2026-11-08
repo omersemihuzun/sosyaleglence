@@ -14,10 +14,23 @@ const short = (s: string, n = 90) => (s.length > n ? `${s.slice(0, n - 1).trimEn
 export function buildSearchIndex(): SearchItem[] {
   const out: SearchItem[] = [];
   for (const t of tests) out.push({ k: "test", t: t.title, s: short(t.summary), u: `/testler/${t.slug}`, e: t.emoji });
-  out.push({ k: "test", t: "İsimle aşk testi", s: "İki ismi yaz, aşk uyumunuzu yüzde olarak gör", u: "/ask-testi", e: "💘" });
-  for (const b of brackets) out.push({ k: "eleme", t: b.title, s: short(b.summary), u: `/eleme/${b.slug}`, e: b.emoji });
+  out.push({
+    k: "test",
+    t: "İsimle aşk testi",
+    s: "İki ismi yaz, aşk uyumunuzu yüzde olarak gör",
+    u: "/ask-testi",
+    e: "💘",
+  });
+  for (const b of brackets)
+    out.push({ k: "eleme", t: b.title, s: short(b.summary), u: `/eleme/${b.slug}`, e: b.emoji });
   for (const b of burclar) {
-    out.push({ k: "burc", t: `${b.ad} burcu`, s: `${b.tarih}, ${b.element} grubu, yönetici ${b.gezegen}`, u: `/burclar/${b.slug}`, e: b.emoji });
+    out.push({
+      k: "burc",
+      t: `${b.ad} burcu`,
+      s: `${b.tarih}, ${b.element} grubu, yönetici ${b.gezegen}`,
+      u: `/burclar/${b.slug}`,
+      e: b.emoji,
+    });
   }
   for (const u of uyumlar) {
     const A = getBurc(u.a);
@@ -32,12 +45,25 @@ export function buildSearchIndex(): SearchItem[] {
     });
   }
   for (const p of polls) {
-    out.push({ k: "anket", t: `${p.a} ya da ${p.b}`, s: "Bunu mu O mu: birini seç, herkes ne dedi gör", u: `/bunu-mu-o-mu?soru=${p.id}`, e: p.aEmoji });
+    out.push({
+      k: "anket",
+      t: `${p.a} ya da ${p.b}`,
+      s: "Bunu mu O mu: birini seç, herkes ne dedi gör",
+      u: `/bunu-mu-o-mu?soru=${p.id}`,
+      e: p.aEmoji,
+    });
   }
-  for (const g of guides) out.push({ k: "rehber", t: g.title, s: short(g.metaDescription), u: `/hediye/${g.slug}`, e: g.emoji });
+  for (const g of guides)
+    out.push({ k: "rehber", t: g.title, s: short(g.metaDescription), u: `/hediye/${g.slug}`, e: g.emoji });
   for (const i of ideas) {
     const params = new URLSearchParams({ kime: i.recipients[0], ilgi: i.interests[0] });
-    out.push({ k: "hediye", t: i.name, s: `yaklaşık ${budgets[i.budget]}`, u: `/hediye?${params.toString()}#bulucu`, e: i.emoji });
+    out.push({
+      k: "hediye",
+      t: i.name,
+      s: `yaklaşık ${budgets[i.budget]}`,
+      u: `/hediye?${params.toString()}#bulucu`,
+      e: i.emoji,
+    });
   }
   return out;
 }

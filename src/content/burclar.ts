@@ -351,4 +351,3 @@ export const burclar: Burc[] = [
 export function getBurc(slug: string): Burc | undefined {
   return burclar.find((b) => b.slug === slug);
 }
-

@@ -15,8 +15,15 @@ export default async function Image({ params }: { params: Promise<{ slug: string
   const { slug, item } = await params;
   const bracket = getBracket(slug)!;
   const champion = bracket.items.find((i) => i.id === item);
-  return new ImageResponse(<OgBracketCard bracket={bracket} champion={champion} photo={await loadItemPhoto(champion, { width: 420, height: 420 })} />, {
-    ...size,
-    fonts: await loadOgFonts(),
-  });
+  return new ImageResponse(
+    <OgBracketCard
+      bracket={bracket}
+      champion={champion}
+      photo={await loadItemPhoto(champion, { width: 420, height: 420 })}
+    />,
+    {
+      ...size,
+      fonts: await loadOgFonts(),
+    },
+  );
 }

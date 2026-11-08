@@ -27,7 +27,13 @@ function useJson<T>(url: string) {
   return data;
 }
 
-function Bars({ rows, counts, total, highlight, hrefFor }: {
+function Bars({
+  rows,
+  counts,
+  total,
+  highlight,
+  hrefFor,
+}: {
   rows: Row[];
   counts: Record<string, number>;
   total: number;
@@ -52,7 +58,10 @@ function Bars({ rows, counts, total, highlight, hrefFor }: {
                 <span className="font-display font-bold tabular-nums">%{p}</span>
               </div>
               <div className="mt-1 h-2.5 overflow-hidden rounded-full border-2 border-plum bg-paper">
-                <div className={`h-full ${mine ? "bg-cherry" : "bg-plum-soft/50"}`} style={{ width: `${Math.max(2, p)}%` }} />
+                <div
+                  className={`h-full ${mine ? "bg-cherry" : "bg-plum-soft/50"}`}
+                  style={{ width: `${Math.max(2, p)}%` }}
+                />
               </div>
             </Link>
           </li>
@@ -72,8 +81,8 @@ export function TestStats({ slug, current, results }: { slug: string; current: s
     <section className="rounded-[18px] border-2 border-plum bg-white p-6">
       <h2 className="font-display text-xl font-bold">Herkes ne çıktı?</h2>
       <p className="mt-1 text-plum-soft">
-        Bu testi çözen {data.total.toLocaleString("tr-TR")} kişinin <strong className="text-plum">%{mine}</strong>&apos;i bu
-        sonucu aldı.
+        Bu testi çözen {data.total.toLocaleString("tr-TR")} kişinin <strong className="text-plum">%{mine}</strong>
+        &apos;i bu sonucu aldı.
       </p>
       <Bars
         rows={results}
@@ -102,7 +111,8 @@ export function BracketStats({ slug, current, items }: { slug: string; current: 
     <section className="rounded-[18px] border-2 border-plum bg-white p-6">
       <h2 className="font-display text-xl font-bold">Herkesin şampiyonu</h2>
       <p className="mt-1 text-plum-soft">
-        {data.total.toLocaleString("tr-TR")} oyunun <strong className="text-plum">%{pct(counts[current] ?? 0, data.total)}</strong>
+        {data.total.toLocaleString("tr-TR")} oyunun{" "}
+        <strong className="text-plum">%{pct(counts[current] ?? 0, data.total)}</strong>
         &apos;inde şampiyon bu oldu.
         {me?.winRate != null && <> Karşılaşmaların %{me.winRate}&apos;ini kazanıyor.</>}
       </p>

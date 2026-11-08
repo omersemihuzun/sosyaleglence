@@ -46,7 +46,15 @@ export function SearchLinkView({ pathname }: { pathname: string }) {
       aria-current={active ? "page" : undefined}
       className={`grid size-10 place-items-center rounded-full border-2 border-plum ${active ? "bg-plum text-paper" : "bg-white hover:bg-blush"}`}
     >
-      <svg aria-hidden viewBox="0 0 24 24" className="size-5" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+      <svg
+        aria-hidden
+        viewBox="0 0 24 24"
+        className="size-5"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+      >
         <circle cx="10.5" cy="10.5" r="6.5" />
         <path d="m20 20-4.8-4.8" />
       </svg>

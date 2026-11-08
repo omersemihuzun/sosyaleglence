@@ -51,7 +51,8 @@ const TITLE_MAX = 60;
 const SITE_SUFFIX = ` | ${site.name}`;
 
 const segmenter = new Intl.Segmenter("tr", { granularity: "grapheme" });
-const textLength = (s: string) => [...segmenter.segment(s)].length;
+/** Görünen karakter sayısı (emoji ve birleşik harfler tek sayılır). @public scripts/seo-kontrol.ts kullanır */
+export const textLength = (s: string) => [...segmenter.segment(s)].length;
 
 function fitTitle(...candidates: string[]): string {
   return candidates.find((c) => textLength(c) <= TITLE_MAX) ?? candidates[candidates.length - 1];
@@ -59,12 +60,20 @@ function fitTitle(...candidates: string[]): string {
 
 /** Test sonuç sayfası <title> metni (site adı dahil, mutlak). */
 export function testResultTitle(resultName: string, testTitle: string) {
-  return fitTitle(`${resultName} | ${testTitle}${SITE_SUFFIX}`, `${resultName} | ${testTitle}`, `${resultName}${SITE_SUFFIX}`);
+  return fitTitle(
+    `${resultName} | ${testTitle}${SITE_SUFFIX}`,
+    `${resultName} | ${testTitle}`,
+    `${resultName}${SITE_SUFFIX}`,
+  );
 }
 
 /** Eleme oyunu sonuç sayfası <title> metni (site adı dahil, mutlak). */
 export function bracketResultTitle(itemName: string, bracketTitle: string) {
-  return fitTitle(`${itemName} | ${bracketTitle}${SITE_SUFFIX}`, `${itemName} | ${bracketTitle}`, `${itemName}${SITE_SUFFIX}`);
+  return fitTitle(
+    `${itemName} | ${bracketTitle}${SITE_SUFFIX}`,
+    `${itemName} | ${bracketTitle}`,
+    `${itemName}${SITE_SUFFIX}`,
+  );
 }
 
 export function testResultDescription(tagline: string, testTitle: string) {

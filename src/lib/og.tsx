@@ -84,14 +84,24 @@ export function StoryCard({
         <div style={{ display: "flex", alignItems: "center", marginTop: 16 }}>
           <div style={{ fontSize: 150, lineHeight: 1 }}>{result.emoji}</div>
         </div>
-        <div style={{ fontFamily: "Display, DisplayExt", fontSize: 104, lineHeight: 1.0, marginTop: 24, letterSpacing: -2 }}>
+        <div
+          style={{
+            fontFamily: "Display, DisplayExt",
+            fontSize: 104,
+            lineHeight: 1.0,
+            marginTop: 24,
+            letterSpacing: -2,
+          }}
+        >
           {result.name}
         </div>
         <div style={{ fontSize: 40, lineHeight: 1.35, marginTop: 28, color: "#5A3E5E" }}>{result.tagline}</div>
 
         {headline !== null && test.headline && (
           <div style={{ display: "flex", alignItems: "baseline", marginTop: 40 }}>
-            <div style={{ fontFamily: "Display, DisplayExt", fontSize: 120, color: "#D7102F", lineHeight: 1 }}>{`%${headline}`}</div>
+            <div
+              style={{ fontFamily: "Display, DisplayExt", fontSize: 120, color: "#D7102F", lineHeight: 1 }}
+            >{`%${headline}`}</div>
             <div style={{ fontSize: 36, marginLeft: 20 }}>{test.headline.label.toLocaleLowerCase("tr")}</div>
           </div>
         )}
@@ -181,7 +191,9 @@ export function OgResultCard({ test, result }: { test: Test; result: Result }) {
         <div style={{ fontSize: 190, lineHeight: 1, marginRight: 48 }}>{result.emoji}</div>
         <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
           <div style={{ fontSize: 30, color: "#5A3E5E" }}>{test.title}</div>
-          <div style={{ fontFamily: "Display, DisplayExt", fontSize: 84, lineHeight: 1, marginTop: 12, letterSpacing: -1 }}>
+          <div
+            style={{ fontFamily: "Display, DisplayExt", fontSize: 84, lineHeight: 1, marginTop: 12, letterSpacing: -1 }}
+          >
             {result.name}
           </div>
           <div style={{ fontSize: 32, lineHeight: 1.3, marginTop: 20, color: "#5A3E5E" }}>{result.tagline}</div>
@@ -229,9 +241,7 @@ export function OgTestCard({ test }: { test: Test }) {
         <div style={{ fontSize: 34, lineHeight: 1.35, color: "#5A3E5E" }}>{test.summary}</div>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <div style={{ fontFamily: "Display, DisplayExt", fontSize: 36 }}>sosyaleglence.com</div>
-          <div style={{ fontSize: 30 }}>
-            {`${test.questions.length} soru, ${test.results.length} farklı sonuç`}
-          </div>
+          <div style={{ fontSize: 30 }}>{`${test.questions.length} soru, ${test.results.length} farklı sonuç`}</div>
         </div>
       </div>
     </div>

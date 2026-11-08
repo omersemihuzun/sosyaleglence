@@ -20,9 +20,7 @@ export function TestCard({ test, tilt = 0 }: { test: Test; tilt?: number }) {
           {test.format === "secim" && (
             <span className="rounded-full bg-butter px-2.5 py-1 text-xs font-semibold">Seç</span>
           )}
-          <span className="rounded-full bg-blush px-2.5 py-1 text-xs font-semibold">
-            {test.questions.length} soru
-          </span>
+          <span className="rounded-full bg-blush px-2.5 py-1 text-xs font-semibold">{test.questions.length} soru</span>
         </span>
       </div>
       <h3 className="mt-4 font-display text-xl leading-tight font-bold">{test.title}</h3>

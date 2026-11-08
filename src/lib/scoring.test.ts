@@ -22,8 +22,21 @@ const test: Test = {
     { id: "b", label: "B", low: "", high: "" },
   ],
   questions: [
-    { text: "q1", options: [{ text: "x", scores: { a: 3 } }, { text: "y", scores: { b: 2 } }, { text: "z", scores: {} }] },
-    { text: "q2", options: [{ text: "x", scores: { a: 1, b: 1 } }, { text: "y", scores: { b: 3 } }] },
+    {
+      text: "q1",
+      options: [
+        { text: "x", scores: { a: 3 } },
+        { text: "y", scores: { b: 2 } },
+        { text: "z", scores: {} },
+      ],
+    },
+    {
+      text: "q2",
+      options: [
+        { text: "x", scores: { a: 1, b: 1 } },
+        { text: "y", scores: { b: 3 } },
+      ],
+    },
   ],
   results: [
     { ...resultBase, id: "low", name: "Low", profile: { a: 0, b: 0 }, bestMatch: "high" },

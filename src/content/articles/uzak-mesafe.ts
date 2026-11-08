@@ -6,7 +6,8 @@ export const uzakMesafeRehber: Article = {
   metaTitle: "Uzak Mesafe İlişkisi Nasıl Yürür? Pratik Rehber",
   metaDescription:
     "Uzak mesafe ilişkisi nasıl yürür? İletişim düzeni, güven, buluşma planı, kıskançlık ve özlemle başa çıkmak için pratik öneriler ve sorulması gereken sorular.",
-  excerpt: "Aranızda kilometreler var ama bağ güçlü kalabilir. Uzak mesafe ilişkisini ayakta tutan şey, iki kişinin aynı plana inanması.",
+  excerpt:
+    "Aranızda kilometreler var ama bağ güçlü kalabilir. Uzak mesafe ilişkisini ayakta tutan şey, iki kişinin aynı plana inanması.",
   emoji: "✈️",
   color: "#3B6FD9",
   updated: "2026-11-08",
@@ -18,7 +19,7 @@ export const uzakMesafeRehber: Article = {
     {
       heading: "Ortak bir hedef olmadan zor",
       paragraphs: [
-        "Uzak mesafe ilişkilerinde en önemli şeylerden biri, mesafenin bir gün biteceğine dair ortak bir plandır. Bu plan kesin bir tarih olmak zorunda değil, ama iki tarafın da aynı yöne baktığını bilmek motivasyon verir. \"Önümüzdeki yaz aynı şehirde olmayı hedefliyoruz\" gibi bir hedef, zor günleri anlamlı kılar.",
+        'Uzak mesafe ilişkilerinde en önemli şeylerden biri, mesafenin bir gün biteceğine dair ortak bir plandır. Bu plan kesin bir tarih olmak zorunda değil, ama iki tarafın da aynı yöne baktığını bilmek motivasyon verir. "Önümüzdeki yaz aynı şehirde olmayı hedefliyoruz" gibi bir hedef, zor günleri anlamlı kılar.',
         "Hedef konuşulmadığında, taraflardan biri ilişkinin süresiz bir bekleme odası olduğunu hissedebilir. Bu yüzden ilişkinin başında ya da uygun bir zamanda şu soruyu açıkça konuşmak önemlidir: Bu mesafe ne kadar sürecek ve sonra ne olacak?",
       ],
     },
@@ -51,7 +52,7 @@ export const uzakMesafeRehber: Article = {
     {
       heading: "Birlikte vakit geçirmenin yolları",
       paragraphs: [
-        "Aynı odada olamasanız da ortak deneyimler yaratabilirsiniz. Bunlar ilişkiye \"birlikte bir şey yapıyoruz\" hissini getirir:",
+        'Aynı odada olamasanız da ortak deneyimler yaratabilirsiniz. Bunlar ilişkiye "birlikte bir şey yapıyoruz" hissini getirir:',
       ],
       bullets: [
         "Aynı anda aynı filmi ya da diziyi açıp görüntülü konuşarak izlemek.",
@@ -66,7 +67,7 @@ export const uzakMesafeRehber: Article = {
       heading: "Güven ve kıskançlık",
       paragraphs: [
         "Mesafe, belirsizlik yaratır; belirsizlik de kıskançlığı tetikleyebilir. Karşındakinin günü nasıl geçirdiğini, kimlerle vakit geçirdiğini görememek zaman zaman huzursuz edebilir. Bu duygular doğaldır, ama kontrol etmeye dönüştüğünde ilişkiyi yıpratır.",
-        "Güveni besleyen şeyler genellikle basittir: tutarlılık, sözünü tutmak ve şeffaflık. \"Bu akşam arkadaşlarla dışarıdayım, dönünce yazarım\" demek, karşı tarafın kafasında soru işaretlerinin oluşmasını engeller. Kıskançlık hissettiğinde bunu suçlama olmadan ifade etmek de önemli: \"Bugün seni çok özledim ve biraz huzursuz hissettim\" demek, \"Neden bana yazmadın?\" diye sormaktan çok daha yapıcıdır.",
+        'Güveni besleyen şeyler genellikle basittir: tutarlılık, sözünü tutmak ve şeffaflık. "Bu akşam arkadaşlarla dışarıdayım, dönünce yazarım" demek, karşı tarafın kafasında soru işaretlerinin oluşmasını engeller. Kıskançlık hissettiğinde bunu suçlama olmadan ifade etmek de önemli: "Bugün seni çok özledim ve biraz huzursuz hissettim" demek, "Neden bana yazmadın?" diye sormaktan çok daha yapıcıdır.',
       ],
     },
     {

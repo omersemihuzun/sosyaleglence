@@ -25,7 +25,6 @@ function shuffled<T>(arr: T[]): T[] {
   return a;
 }
 
-
 /**
  * Eleme turnuvası. Her turda seçenekler ikişer ikişer eşleşir, kazananlar bir sonraki tura geçer.
  * Durum yalnızca seçim geçmişinden türetilir: "geri al" tek satırlık bir işlem.
@@ -79,9 +78,15 @@ export function BracketGame({ bracket }: { bracket: Bracket }) {
     setFinishing(true);
     const sum = summarize(all)!;
     const qs = new URLSearchParams({ f: sum.finalist, y: sum.semis.join(",") });
-    reportBracket(bracket.slug, all.map((p) => [p.winner, p.loser]));
+    reportBracket(
+      bracket.slug,
+      all.map((p) => [p.winner, p.loser]),
+    );
     try {
-      localStorage.setItem(`eleme:${bracket.slug}`, JSON.stringify({ champion: sum.champion, ...Object.fromEntries(qs) }));
+      localStorage.setItem(
+        `eleme:${bracket.slug}`,
+        JSON.stringify({ champion: sum.champion, ...Object.fromEntries(qs) }),
+      );
     } catch {
       /* gizli sekme */
     }
@@ -186,7 +191,9 @@ export function BracketGame({ bracket }: { bracket: Bracket }) {
               >
                 <ItemVisual item={item} className="aspect-[4/3] w-full border-b-2 border-plum" />
                 <span className="flex flex-1 flex-col p-3 sm:p-4">
-                  <span className="font-display text-base leading-tight font-bold text-balance sm:text-xl">{item.name}</span>
+                  <span className="font-display text-base leading-tight font-bold text-balance sm:text-xl">
+                    {item.name}
+                  </span>
                   <span className="mt-1 hidden text-sm leading-snug text-plum-soft sm:block">{item.detail}</span>
                 </span>
               </button>
@@ -204,7 +211,9 @@ export function BracketGame({ bracket }: { bracket: Bracket }) {
               <span aria-hidden className="text-6xl leading-none sm:text-7xl">
                 {item.emoji}
               </span>
-              <span className="mt-4 font-display text-xl leading-tight font-bold text-balance sm:text-2xl">{item.name}</span>
+              <span className="mt-4 font-display text-xl leading-tight font-bold text-balance sm:text-2xl">
+                {item.name}
+              </span>
               <span className="mt-2 max-w-xs text-[15px] leading-snug text-plum-soft">{item.detail}</span>
             </button>
           );

@@ -24,14 +24,21 @@ mkdirSync(dir, { recursive: true });
 
 /** Kabul edilen lisanslar: değiştirme + ticari kullanım serbest */
 function normalizeLicense(raw) {
-  const s = String(raw ?? "").toLowerCase().trim();
-  if (/^cc0|cc-zero|public domain|^pd\b|pdm/.test(s)) return { code: s.includes("cc0") ? "CC0" : "Kamu malı", ok: true };
+  const s = String(raw ?? "")
+    .toLowerCase()
+    .trim();
+  if (/^cc0|cc-zero|public domain|^pd\b|pdm/.test(s))
+    return { code: s.includes("cc0") ? "CC0" : "Kamu malı", ok: true };
   const m = s.match(/cc[ -]by(-sa)?[ -]?(\d\.\d)?/);
   if (m && !/nc|nd/.test(s)) return { code: `CC BY${m[1] ? "-SA" : ""}${m[2] ? " " + m[2] : ""}`, ok: true };
   return { code: s, ok: false };
 }
 
-const strip = (html) => String(html ?? "").replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
+const strip = (html) =>
+  String(html ?? "")
+    .replace(/<[^>]+>/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
 
 async function commons(q) {
   const u = new URL("https://commons.wikimedia.org/w/api.php");
@@ -83,7 +90,9 @@ async function openverse(q) {
   return (j.results ?? [])
     .filter((r) => (r.width ?? 0) >= 640)
     .map((r) => {
-      const lic = normalizeLicense(`${r.license === "cc0" ? "cc0" : r.license === "pdm" ? "pdm" : "cc " + r.license} ${r.license_version ?? ""}`);
+      const lic = normalizeLicense(
+        `${r.license === "cc0" ? "cc0" : r.license === "pdm" ? "pdm" : "cc " + r.license} ${r.license_version ?? ""}`,
+      );
       return {
         source: r.source === "wikimedia" ? "Wikimedia Commons" : `Openverse (${r.source})`,
         title: r.title ?? "",
@@ -125,7 +134,9 @@ for (const [n, c] of list.entries()) {
     );
     const idx = kept.length;
     tiles.push({
-      input: await sharp(img).composite([{ input: label }]).toBuffer(),
+      input: await sharp(img)
+        .composite([{ input: label }])
+        .toBuffer(),
       left: (idx % cols) * CELL_W,
       top: Math.floor(idx / cols) * CELL_H,
     });

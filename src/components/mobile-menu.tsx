@@ -20,7 +20,7 @@ export function MobileMenuFallback() {
   );
 }
 
-const FOCUSABLE ='a[href], button:not([disabled]), input, [tabindex]:not([tabindex="-1"])';
+const FOCUSABLE = 'a[href], button:not([disabled]), input, [tabindex]:not([tabindex="-1"])';
 
 /**
  * Mobil menü (lg altı). Tam ekran çekmece: odak içeride döner, Esc kapatır,

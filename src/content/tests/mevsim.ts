@@ -129,7 +129,7 @@ export const mevsim: Test = {
       color: "#DB2777",
       description: [
         "Günün çiçek sulamakla başlıyor, parkta piknikle devam ediyor, pencere açık uykuyla bitiyor. Sen yeniliğe, tazeliğe ve küçük başlangıçlara açıksın.",
-        "İlkbahar ruhlu insanlar umutlu olur. Kötü bir dönemden sonra ilk toparlanan, \"Bir de böyle deneyelim\" diyen sensin. Etrafındakilere farkında olmadan cesaret veriyorsun.",
+        'İlkbahar ruhlu insanlar umutlu olur. Kötü bir dönemden sonra ilk toparlanan, "Bir de böyle deneyelim" diyen sensin. Etrafındakilere farkında olmadan cesaret veriyorsun.',
         "Sadece her şeye yeniden başlarken yarım kalanları da bir gün bitirmeyi unutma. Bahar gelir geçer, bazı tohumlar sabır ister.",
       ],
       strengths: ["Umutlu ve iyimsersin", "Değişime kolay uyum sağlarsın", "İnsanlara enerji verirsin"],
@@ -146,7 +146,7 @@ export const mevsim: Test = {
       description: [
         "Denizle başlayan, voleybolla devam eden, yıldızların altında biten bir gün. Senin enerjin yüksek ve günün her saatini dolu dolu yaşamak istiyorsun.",
         "Yaz ruhlu insanlar sosyal ve spontanedir. Plan yapmadan çıkılan yollar, kalabalık sofralar, gece yarısı yüzmeleri. Hayat senin için bir festival.",
-        "Bu enerji bulaşıcı. Ama sürekli \"açık\" olmak seni de yorabilir. Arada gölgede oturmak da yazın bir parçası.",
+        'Bu enerji bulaşıcı. Ama sürekli "açık" olmak seni de yorabilir. Arada gölgede oturmak da yazın bir parçası.',
       ],
       strengths: ["Enerjik ve sosyalsin", "Anı yaşamayı bilirsin", "Ortamı hemen canlandırırsın"],
       watchOut: ["Dinlenmeyi ihmal edebilirsin", "Sakin dönemlerde sıkılırsın"],

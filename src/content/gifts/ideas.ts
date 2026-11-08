@@ -73,9 +73,9 @@ export const ideas: GiftIdea[] = [
   },
   {
     id: "mektup-kutusu",
-    name: "\"Şu an aç\" mektup seti",
+    name: '"Şu an aç" mektup seti',
     emoji: "💌",
-    why: "\"Canın sıkılınca aç\", \"Bizi özleyince aç\" gibi zarflar. Neredeyse bedava, etkisi ise aylarca sürer.",
+    why: '"Canın sıkılınca aç", "Bizi özleyince aç" gibi zarflar. Neredeyse bedava, etkisi ise aylarca sürer.',
     query: "aç mektup seti zarf",
     budget: 1,
     recipients: [...SEVGILI, "arkadas"],
@@ -773,7 +773,7 @@ export const ideas: GiftIdea[] = [
   },
   {
     id: "sorulu-defter",
-    name: "\"Birbirimizi tanıyalım\" soru kartları",
+    name: '"Birbirimizi tanıyalım" soru kartları',
     emoji: "🃏",
     why: "Çiftler ya da arkadaşlar için derin sohbet başlatan soru kartları. Telefonları bırakıp gerçekten konuşmanın eğlenceli bir yolu.",
     query: "çiftler için soru kartları",

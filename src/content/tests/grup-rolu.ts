@@ -19,39 +19,51 @@ export const grupRolu: Test = {
   ],
   questions: [
     {
-      text: "Grupta biri \"Bu hafta sonu bir şey yapalım\" yazdı. Sonra iki gün sessizlik.",
+      text: 'Grupta biri "Bu hafta sonu bir şey yapalım" yazdı. Sonra iki gün sessizlik.',
       options: [
         { text: "Anket açarım; cevap gelmezse tarihi ve yeri kendim koyarım.", scores: { organizator: 2, kaos: 1 } },
-        { text: "\"Cumartesi Şile, 9'da yola çıkıyoruz\" yazarım, gelen gelir.", scores: { kaos: 2, organizator: 1 } },
+        { text: '"Cumartesi Şile, 9\'da yola çıkıyoruz" yazarım, gelen gelir.', scores: { kaos: 2, organizator: 1 } },
         { text: "Beklerim; karar çıkınca gelirim, çıkmazsa da dert etmem.", scores: { gozlemci: 3 } },
-        { text: "Grubu bırakır, son günlerde sesi çıkmayan arkadaşa özelden yazarım.", scores: { terapist: 2, gozlemci: 1 } },
+        {
+          text: "Grubu bırakır, son günlerde sesi çıkmayan arkadaşa özelden yazarım.",
+          scores: { terapist: 2, gozlemci: 1 },
+        },
       ],
     },
     {
       text: "Gece 03:00. Telefonun çalıyor. Gruptan biri ayrılmış ve yarın senin erkenden işin var.",
       options: [
         { text: "Açarım, sabaha kadar dinlerim; işe uykusuz gitmek de olur.", scores: { terapist: 3 } },
-        { text: "Kısa dinler, ertesi akşam herkesin geleceği bir moral gecesi kurarım.", scores: { organizator: 2, terapist: 1 } },
-        { text: "\"Giyin, dışarı çıkıyoruz\" derim; ağlamak sonra da olur.", scores: { kaos: 2, terapist: 1 } },
+        {
+          text: "Kısa dinler, ertesi akşam herkesin geleceği bir moral gecesi kurarım.",
+          scores: { organizator: 2, terapist: 1 },
+        },
+        { text: '"Giyin, dışarı çıkıyoruz" derim; ağlamak sonra da olur.', scores: { kaos: 2, terapist: 1 } },
         { text: "Uyuyor olurum; sabah mesajları okuyup ne olduğunu çözerim.", scores: { gozlemci: 3 } },
       ],
     },
     {
-      text: "Restoranda hesap geldi. Biri sadece çorba içti ama \"eşit bölelim\" sesleri yükseliyor.",
+      text: 'Restoranda hesap geldi. Biri sadece çorba içti ama "eşit bölelim" sesleri yükseliyor.',
       options: [
         { text: "Hesabı kalem kalem bölüp herkese kişi başını söylerim.", scores: { organizator: 2, gozlemci: 1 } },
-        { text: "\"Yazı tura atalım, kaybeden öder\" derim; bazen ben kaybederim.", scores: { kaos: 2, gozlemci: 1 } },
+        { text: '"Yazı tura atalım, kaybeden öder" derim; bazen ben kaybederim.', scores: { kaos: 2, gozlemci: 1 } },
         { text: "Kimin ne yediği aklımda; biri sorarsa söylerim, sormazsa susarım.", scores: { gozlemci: 3 } },
-        { text: "Çorba içen arkadaşın sıkıldığını görür, farkı sessizce öderim.", scores: { terapist: 2, gozlemci: 1 } },
+        {
+          text: "Çorba içen arkadaşın sıkıldığını görür, farkı sessizce öderim.",
+          scores: { terapist: 2, gozlemci: 1 },
+        },
       ],
     },
     {
       text: "İki arkadaşın arasında gerginlik var ve herkes bunu hissediyor. Kimse adını koymuyor.",
       options: [
         { text: "İkisiyle ayrı ayrı konuşup ne olduğunu anlamaya çalışırım.", scores: { terapist: 2, gozlemci: 1 } },
-        { text: "İkisini aynı masaya oturtup \"Hadi, dökülün\" derim.", scores: { kaos: 2, organizator: 1 } },
+        { text: 'İkisini aynı masaya oturtup "Hadi, dökülün" derim.', scores: { kaos: 2, organizator: 1 } },
         { text: "Kimin haklı olduğunu çoktan anladım ama taraf tutmam.", scores: { gozlemci: 3 } },
-        { text: "İkisini de çağıracağım bir plan kurar, barışacakları ortamı hazırlarım.", scores: { organizator: 2, terapist: 1 } },
+        {
+          text: "İkisini de çağıracağım bir plan kurar, barışacakları ortamı hazırlarım.",
+          scores: { organizator: 2, terapist: 1 },
+        },
       ],
     },
     {
@@ -67,7 +79,10 @@ export const grupRolu: Test = {
       text: "Grubun en çok anlatılan anısı hangisiyle ilgili?",
       options: [
         { text: "Benim yüzümden yolda kaldığımız ve sabaha kadar güldüğümüz gece.", scores: { kaos: 3 } },
-        { text: "Aylar önce planladığım ve sonunda her şeyin ters gittiği tatil.", scores: { organizator: 2, kaos: 1 } },
+        {
+          text: "Aylar önce planladığım ve sonunda her şeyin ters gittiği tatil.",
+          scores: { organizator: 2, kaos: 1 },
+        },
         { text: "Birimizin en zor zamanında sabaha kadar yanında oturduğumuz gece.", scores: { terapist: 3 } },
         { text: "Ben hatırlatmasam herkesin unutacağı küçük ama çok komik bir an.", scores: { gozlemci: 2, kaos: 1 } },
       ],
@@ -78,7 +93,10 @@ export const grupRolu: Test = {
         { text: "Rahatlasın diye sorular sorar, onu sohbete katarım.", scores: { terapist: 2, organizator: 1 } },
         { text: "Grubun iç esprilerini anlatırım; ilk günden bizden biri olsun.", scores: { kaos: 2, terapist: 1 } },
         { text: "Bütün gece izlerim; nasıl biri olduğuna dair kanaatimi oluştururum.", scores: { gozlemci: 3 } },
-        { text: "Gece bitmeden onu da gruba ekler, haftaya bir plan yaparım.", scores: { organizator: 2, terapist: 1 } },
+        {
+          text: "Gece bitmeden onu da gruba ekler, haftaya bir plan yaparım.",
+          scores: { organizator: 2, terapist: 1 },
+        },
       ],
     },
     {
@@ -87,7 +105,10 @@ export const grupRolu: Test = {
         { text: "Uçak, otel, rota: tablo benden; herkes kendi satırını doldursun.", scores: { organizator: 3 } },
         { text: "Plan ne olursa olsun ilk gün bozarım; en iyi anılar plansız olur.", scores: { kaos: 3 } },
         { text: "Kimin bütçesi sıkışık bilirim; ona göre seçenek öneririm.", scores: { terapist: 2, organizator: 1 } },
-        { text: "Söyleneni yaparım; kimin neyi istemeyip söylemediğini görürüm.", scores: { gozlemci: 2, terapist: 1 } },
+        {
+          text: "Söyleneni yaparım; kimin neyi istemeyip söylemediğini görürüm.",
+          scores: { gozlemci: 2, terapist: 1 },
+        },
       ],
     },
     {
@@ -95,8 +116,14 @@ export const grupRolu: Test = {
       options: [
         { text: "Hemen yanına gidip yalnız konuşmak isterim.", scores: { terapist: 3 } },
         { text: "Bir espriyle konuyu değiştiririm; ilgi ondan dağılsın.", scores: { kaos: 2, terapist: 1 } },
-        { text: "Lafı edenin bunu neden söylediğini anlarım; sonra ona söylerim.", scores: { gozlemci: 2, terapist: 1 } },
-        { text: "Akşamın kalanını ona iyi gelecek şekilde yeniden düzenlerim.", scores: { organizator: 2, terapist: 1 } },
+        {
+          text: "Lafı edenin bunu neden söylediğini anlarım; sonra ona söylerim.",
+          scores: { gozlemci: 2, terapist: 1 },
+        },
+        {
+          text: "Akşamın kalanını ona iyi gelecek şekilde yeniden düzenlerim.",
+          scores: { organizator: 2, terapist: 1 },
+        },
       ],
     },
     {
@@ -105,7 +132,7 @@ export const grupRolu: Test = {
         { text: "Hatırlatmalar, saatler, konumlar; okunmasa da atarım.", scores: { organizator: 3 } },
         { text: "Gece yarısı saçma videolar; moral bozuk olan varsa daha çok.", scores: { kaos: 2, terapist: 1 } },
         { text: "Okurum, nadiren yazarım; yazınca herkes güler.", scores: { gozlemci: 2, kaos: 1 } },
-        { text: "\"Herkes iyi mi?\" soruları ve gruptan taşan özel mesajlar.", scores: { terapist: 2, organizator: 1 } },
+        { text: '"Herkes iyi mi?" soruları ve gruptan taşan özel mesajlar.', scores: { terapist: 2, organizator: 1 } },
       ],
     },
     {
@@ -121,9 +148,9 @@ export const grupRolu: Test = {
       text: "Bir arkadaşın büyük bir karar vermek üzere: işi bırakıp başka şehre gidecek.",
       options: [
         { text: "Artılarını eksilerini birlikte bir listeye dökeriz.", scores: { organizator: 2, terapist: 1 } },
-        { text: "\"Yap! Hayat kısa!\" derim; taşınmasına da ben yardım ederim.", scores: { kaos: 2, organizator: 1 } },
+        { text: '"Yap! Hayat kısa!" derim; taşınmasına da ben yardım ederim.', scores: { kaos: 2, organizator: 1 } },
         { text: "Ne hissettiğini, neden korktuğunu sorar, dinlerim.", scores: { terapist: 2, gozlemci: 1 } },
-        { text: "Aylardır düşündüğünü fark etmiştim; sadece \"Hazırsın\" derim.", scores: { gozlemci: 3 } },
+        { text: 'Aylardır düşündüğünü fark etmiştim; sadece "Hazırsın" derim.', scores: { gozlemci: 3 } },
       ],
     },
     {
@@ -141,7 +168,7 @@ export const grupRolu: Test = {
         { text: "Her şeyin planladığım gibi gittiğini gördüğüm an.", scores: { organizator: 2, terapist: 1 } },
         { text: "Herkesin gülmekten yere yattığı ve sebebinin ben olduğum an.", scores: { kaos: 3 } },
         { text: "Gece sonunda biriyle baş başa derin bir sohbete daldığım an.", scores: { terapist: 2, gozlemci: 1 } },
-        { text: "Köşeden herkesi izleyip \"Ne güzel bir grup\" dediğim an.", scores: { gozlemci: 3 } },
+        { text: 'Köşeden herkesi izleyip "Ne güzel bir grup" dediğim an.', scores: { gozlemci: 3 } },
       ],
     },
     {
@@ -159,16 +186,20 @@ export const grupRolu: Test = {
       id: "organizator",
       name: "Grubun Organizatörü",
       emoji: "📋",
-      tagline: "Sen olmasan bu grup hâlâ \"bir ara görüşelim\" diyor olurdu.",
+      tagline: 'Sen olmasan bu grup hâlâ "bir ara görüşelim" diyor olurdu.',
       profile: { organizator: 75, terapist: 20, kaos: 10, gozlemci: 20 },
       color: "#3B6FD9",
       description: [
-        "Grubun buluşmalarını gerçeğe dönüştüren kişi sensin. Anketleri açan, rezervasyonu yapan, hesabı bölen ve \"Saat 8'de oradayız, değil mi?\" diye hatırlatan hep sensin.",
+        'Grubun buluşmalarını gerçeğe dönüştüren kişi sensin. Anketleri açan, rezervasyonu yapan, hesabı bölen ve "Saat 8\'de oradayız, değil mi?" diye hatırlatan hep sensin.',
         "Bunu yapıyorsun çünkü arkadaşlarını bir arada görmek seni mutlu ediyor. Planlar suya düştüğünde en çok senin canının sıkılması da bu yüzden.",
-        "Dikkat: Organizatörler çoğu zaman emeklerinin görünmez olduğunu hisseder. Arada bir \"Bu sefer başkası ayarlasın\" demek hem seni dinlendirir hem de grubun sorumluluğu paylaşmasını sağlar.",
+        'Dikkat: Organizatörler çoğu zaman emeklerinin görünmez olduğunu hisseder. Arada bir "Bu sefer başkası ayarlasın" demek hem seni dinlendirir hem de grubun sorumluluğu paylaşmasını sağlar.',
       ],
       strengths: ["Planları gerçeğe dönüştürüyorsun", "Güvenilir ve düzenlisin", "Grubu bir arada tutan kişisin"],
-      watchOut: ["Her şeyi üstlenmek seni yorabilir", "Planlar bozulduğunda bunu kişisel algılama", "Kontrolü bırakmak bazen en güzel anları yaratır"],
+      watchOut: [
+        "Her şeyi üstlenmek seni yorabilir",
+        "Planlar bozulduğunda bunu kişisel algılama",
+        "Kontrolü bırakmak bazen en güzel anları yaratır",
+      ],
       bestMatch: "kaos-ajani",
       giftLink: { href: "/hediye/arkadasa-hediye", label: "Gruptaki herkes için arkadaş hediyeleri" },
     },
@@ -184,7 +215,11 @@ export const grupRolu: Test = {
         "Grupta kimin keyifsiz olduğunu herkesten önce sen fark ediyorsun. Kalabalık bir masada bile bir arkadaşının sessizleştiğini görüp yanına gidiyorsun.",
         "Ama herkesin derdini taşıyan birinin de dinlenmeye ihtiyacı var. Kendi kötü gününde arayabileceğin birinin olduğundan emin ol. Terapistlerin de terapiste ihtiyacı olur.",
       ],
-      strengths: ["Empati yeteneğin çok güçlü", "İnsanlar yanında kendini güvende hissediyor", "Grubun duygusal dengesini koruyorsun"],
+      strengths: [
+        "Empati yeteneğin çok güçlü",
+        "İnsanlar yanında kendini güvende hissediyor",
+        "Grubun duygusal dengesini koruyorsun",
+      ],
       watchOut: ["Herkesin yükünü taşımak seni tüketebilir", "Kendi ihtiyaçlarını söylemeyi ertelediğin olabilir"],
       bestMatch: "gozlemci",
     },
@@ -196,12 +231,20 @@ export const grupRolu: Test = {
       profile: { organizator: 10, terapist: 15, kaos: 75, gozlemci: 10 },
       color: "#D7102F",
       description: [
-        "\"Hadi şimdi gidelim\" diyen, sürprizi yanlışlıkla ağzından kaçıran, sıradan bir akşamı unutulmaz bir maceraya dönüştüren kişi sensin. Sen olmadığında buluşmalarda hep bir şey eksik kalıyor.",
+        '"Hadi şimdi gidelim" diyen, sürprizi yanlışlıkla ağzından kaçıran, sıradan bir akşamı unutulmaz bir maceraya dönüştüren kişi sensin. Sen olmadığında buluşmalarda hep bir şey eksik kalıyor.',
         "Enerjin bulaşıcı ve insanlar seninle kendilerini daha özgür hissediyor. Grubun anlatmaktan hiç bıkmadığı hikâyelerin çoğunda başrol sende.",
         "Kaosun güzel bir tarafı var ama bazen birinin planını ya da sınırını aşabiliyor. Ortamı okumayı bilen bir kaos ajanı, grubun en sevilen kişisi olur.",
       ],
-      strengths: ["Hiçbir anı sıradan bırakmıyorsun", "Spontan ve cesursun", "Gergin ortamları bir anda yumuşatabiliyorsun"],
-      watchOut: ["Herkes her gün maceraya hazır değil", "Ciddi anlarda espri yapmak birini kırabilir", "Planları bozmak organizatörü yorabilir"],
+      strengths: [
+        "Hiçbir anı sıradan bırakmıyorsun",
+        "Spontan ve cesursun",
+        "Gergin ortamları bir anda yumuşatabiliyorsun",
+      ],
+      watchOut: [
+        "Herkes her gün maceraya hazır değil",
+        "Ciddi anlarda espri yapmak birini kırabilir",
+        "Planları bozmak organizatörü yorabilir",
+      ],
       bestMatch: "organizator",
       giftLink: { href: "/hediye?kime=arkadas&ilgi=oyun#bulucu", label: "Grup geceleri için kutu oyunları" },
     },
@@ -215,10 +258,13 @@ export const grupRolu: Test = {
       description: [
         "Grupta en çok konuşan sen değilsin ama en çok gören sensin. Kimin kimden hoşlandığını, kimin neden alındığını, kimin aslında iyi olmadığını herkesten önce fark ediyorsun.",
         "Nadiren yorum yapıyorsun, ama yaptığında herkes susup dinliyor. Bir cümleyle hem en komik hem en isabetli tespiti yapabilen kişi sensin.",
-        "Gözlemlerin çok değerli. Arada bir onları paylaşmak, örneğin bir arkadaşına \"Son zamanlarda biraz durgunsun\" demek, sandığından çok daha büyük bir fark yaratabilir.",
+        'Gözlemlerin çok değerli. Arada bir onları paylaşmak, örneğin bir arkadaşına "Son zamanlarda biraz durgunsun" demek, sandığından çok daha büyük bir fark yaratabilir.',
       ],
       strengths: ["İnsanları çok iyi okuyorsun", "Sakin ve dengelisin", "Az ama isabetli konuşuyorsun"],
-      watchOut: ["Fazla geride durmak, arkadaşlarının seni yeterince tanımamasına yol açabilir", "Gördüklerini kendine saklamak bazen fırsatları kaçırmak demek"],
+      watchOut: [
+        "Fazla geride durmak, arkadaşlarının seni yeterince tanımamasına yol açabilir",
+        "Gördüklerini kendine saklamak bazen fırsatları kaçırmak demek",
+      ],
       bestMatch: "terapist",
     },
     {
@@ -233,8 +279,15 @@ export const grupRolu: Test = {
         "Bu esneklik seni grubun farklı insanları arasında bir köprü yapıyor. Herkesle ayrı ayrı iyi anlaşan, alt grupları birbirine bağlayan kişi sensin.",
         "Tek risk: Herkese her şey olmaya çalışırken kendi tercihlerini unutmak. Sen gerçekten hangi rolde en mutlusun? Bunu bilmek iyi gelir.",
       ],
-      strengths: ["Çok yönlüsün ve her role uyum sağlıyorsun", "Grubun farklı insanlarını birbirine bağlıyorsun", "İhtiyacı fark edip boşluğu dolduruyorsun"],
-      watchOut: ["Herkesin beklentisine göre şekil değiştirmek yorucu olabilir", "Kendi isteklerini de söylemeyi unutma"],
+      strengths: [
+        "Çok yönlüsün ve her role uyum sağlıyorsun",
+        "Grubun farklı insanlarını birbirine bağlıyorsun",
+        "İhtiyacı fark edip boşluğu dolduruyorsun",
+      ],
+      watchOut: [
+        "Herkesin beklentisine göre şekil değiştirmek yorucu olabilir",
+        "Kendi isteklerini de söylemeyi unutma",
+      ],
       bestMatch: "organizator",
     },
   ],

@@ -6,7 +6,8 @@ export const exRehber: Article = {
   metaTitle: "Ex'i Unutmak: Ayrılık Sonrası Neler Normal?",
   metaDescription:
     "Ayrılık sonrası özlem, öfke, story kontrol etmek normal mi? Ex'i unutma sürecini ve iyileşmeyi geciktiren alışkanlıkları anlattık.",
-  excerpt: "Hâlâ aklına geliyor, ara sıra profiline bakıyorsun. Bunların çoğu normal. Peki ne zaman iyileşmeyi geciktirmeye başlar?",
+  excerpt:
+    "Hâlâ aklına geliyor, ara sıra profiline bakıyorsun. Bunların çoğu normal. Peki ne zaman iyileşmeyi geciktirmeye başlar?",
   emoji: "💔",
   color: "#8E3B63",
   updated: "2026-11-08",
@@ -18,7 +19,7 @@ export const exRehber: Article = {
     {
       heading: "Ayrılık neden bu kadar acıtır?",
       paragraphs: [
-        "Bir ilişki biterken sadece bir insanı değil, onunla birlikte kurduğun rutinleri, gelecek planlarını ve kendinin o ilişki içindeki hâlini de kaybedersin. Sabah gelen \"günaydın\" mesajı, hafta sonu planları, ortak arkadaşlar... Hepsi bir anda değişir.",
+        'Bir ilişki biterken sadece bir insanı değil, onunla birlikte kurduğun rutinleri, gelecek planlarını ve kendinin o ilişki içindeki hâlini de kaybedersin. Sabah gelen "günaydın" mesajı, hafta sonu planları, ortak arkadaşlar... Hepsi bir anda değişir.',
         "Bu yüzden ayrılık, adı konmamış bir yas gibidir. Kimse ölmemiştir ama bir şey bitmiştir. Bu kaybın acısını hissetmek zayıflık değil, değer verdiğin bir bağın doğal sonucudur.",
       ],
     },
@@ -30,7 +31,7 @@ export const exRehber: Article = {
       bullets: [
         "Özlem: Güzel anıları tekrar tekrar düşünmek, eski mesajları okumak istemek.",
         "Öfke: Haksızlığa uğradığını hissetmek, ona ya da kendine kızmak.",
-        "Pazarlık: \"Biraz daha çabalasaydık olur muydu?\" sorusunu sürekli sormak.",
+        'Pazarlık: "Biraz daha çabalasaydık olur muydu?" sorusunu sürekli sormak.',
         "Rahatlama: Özellikle zor bir ilişkiden sonra hafiflemek ve bundan dolayı suçluluk duymak.",
         "Kıyaslama: Yeni tanıştığın insanları farkında olmadan onunla karşılaştırmak.",
         "Kimlik karmaşası: Ondan önceki ve sonraki hâlin arasında kendini yeniden tanımak.",
@@ -55,7 +56,7 @@ export const exRehber: Article = {
           ],
         },
         {
-          heading: "\"Arkadaş kalalım\" aceleciliği",
+          heading: '"Arkadaş kalalım" aceleciliği',
           paragraphs: [
             "Ayrılıktan sonra arkadaş kalmak mümkün olabilir, ama genellikle hemen değil. Duygular hâlâ tazeyken kurulan arkadaşlık, çoğu zaman bir tarafın umutla beklemesine dönüşür.",
           ],
@@ -63,16 +64,14 @@ export const exRehber: Article = {
         {
           heading: "Duyguları bastırmak",
           paragraphs: [
-            "\"Çoktan geçtim\" demek, kendini sürekli meşgul etmek ya da hemen yeni bir ilişkiye atlamak. Bastırılan duygular kaybolmaz, genellikle daha sonra ve daha yoğun geri döner.",
+            '"Çoktan geçtim" demek, kendini sürekli meşgul etmek ya da hemen yeni bir ilişkiye atlamak. Bastırılan duygular kaybolmaz, genellikle daha sonra ve daha yoğun geri döner.',
           ],
         },
       ],
     },
     {
       heading: "Kendine yardım etmenin yolları",
-      paragraphs: [
-        "İyileşme bir anda olmaz, ama bazı adımlar süreci hafifletir:",
-      ],
+      paragraphs: ["İyileşme bir anda olmaz, ama bazı adımlar süreci hafifletir:"],
       bullets: [
         "Duygularına izin ver: Ağlamak, kızmak, özlemek normal. Bunları yazmak ya da güvendiğin biriyle konuşmak yardımcı olur.",
         "Dijital mesafe koy: Bir süre sessize al, fotoğrafları gözünün önünden kaldır. Silmek zorunda değilsin, bir klasöre taşımak da yeter.",

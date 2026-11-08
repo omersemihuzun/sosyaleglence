@@ -5,13 +5,14 @@ export const situationshipRehber: Article = {
   title: "Situationship Nedir? Belirsiz İlişkiden Nasıl Çıkılır?",
   metaTitle: "Situationship Nedir? Belirsiz İlişkiden Nasıl Çıkılır?",
   metaDescription:
-    "Situationship nedir, normal flörtten farkı ne? Belirsiz bir ilişkide olduğunu gösteren işaretleri, \"Biz neyiz?\" konuşmasını ve nasıl çıkılacağını anlattık.",
-  excerpt: "Sevgili değilsiniz ama sadece arkadaş da değilsiniz. Bu belirsiz alanın adı situationship. Peki içinde kalmalı mısın?",
+    'Situationship nedir, normal flörtten farkı ne? Belirsiz bir ilişkide olduğunu gösteren işaretleri, "Biz neyiz?" konuşmasını ve nasıl çıkılacağını anlattık.',
+  excerpt:
+    "Sevgili değilsiniz ama sadece arkadaş da değilsiniz. Bu belirsiz alanın adı situationship. Peki içinde kalmalı mısın?",
   emoji: "🌫️",
   color: "#6B2FA0",
   updated: "2026-11-08",
   intro: [
-    "Her gün mesajlaşıyorsunuz, hafta sonları birlikte vakit geçiriyorsunuz, belki arkadaşlarınız sizi çift gibi görüyor. Ama \"Biz neyiz?\" sorusu sorulmadı, sorulduğunda da cevap havada kaldı. Ne tam sevgilisiniz ne de sadece arkadaş.",
+    'Her gün mesajlaşıyorsunuz, hafta sonları birlikte vakit geçiriyorsunuz, belki arkadaşlarınız sizi çift gibi görüyor. Ama "Biz neyiz?" sorusu sorulmadı, sorulduğunda da cevap havada kaldı. Ne tam sevgilisiniz ne de sadece arkadaş.',
     "Bu belirsiz alanın son yıllarda bir adı var: situationship. Bazıları için rahat ve özgür bir ara durak, bazıları için ise aylarca süren bir bekleme odası. Bu rehberde situationship'in ne olduğunu, işaretlerini ve içinde kalmak ya da çıkmak için neler yapabileceğini konuşuyoruz.",
   ],
   sections: [
@@ -30,10 +31,10 @@ export const situationshipRehber: Article = {
       bullets: [
         "Planlar genellikle son dakika yapılıyor, birkaç hafta sonrası hiç konuşulmuyor.",
         "Arkadaş çevrelerinize ya da ailelerinize pek tanıştırılmadınız.",
-        "\"Biz neyiz?\" konusu açıldığında konu değişiyor ya da \"Akışına bırakalım\" deniyor.",
+        '"Biz neyiz?" konusu açıldığında konu değişiyor ya da "Akışına bırakalım" deniyor.',
         "Sosyal medyada birbirinizi paylaşmıyorsunuz ama story'lerinizi ilk izleyen yine birbiriniz.",
         "Diğer insanlarla görüşüp görüşmediğinizi bilmiyorsunuz ve sormaya çekiniyorsunuz.",
-        "Ona \"sevgilim\" diyemiyorsun ama başka biriyle görüşse kıskanacağını biliyorsun.",
+        'Ona "sevgilim" diyemiyorsun ama başka biriyle görüşse kıskanacağını biliyorsun.',
       ],
     },
     {
@@ -45,7 +46,7 @@ export const situationshipRehber: Article = {
         {
           heading: "Kaybetme korkusu",
           paragraphs: [
-            "\"Konuyu açarsam kaçar\" düşüncesi en sık görülen nedendir. Belirsiz de olsa bir şeye sahip olmak, hiç olmamasından iyi gibi gelir. Bu durum özellikle kaygılı bağlanma eğilimi olanlar için tanıdıktır.",
+            '"Konuyu açarsam kaçar" düşüncesi en sık görülen nedendir. Belirsiz de olsa bir şeye sahip olmak, hiç olmamasından iyi gibi gelir. Bu durum özellikle kaygılı bağlanma eğilimi olanlar için tanıdıktır.',
           ],
         },
         {
@@ -66,17 +67,17 @@ export const situationshipRehber: Article = {
       heading: "Situationship sana iyi geliyor mu?",
       paragraphs: [
         "Bir situationship'in sana iyi gelip gelmediğini anlamanın en basit yolu, ondan sonra nasıl hissettiğine bakmaktır. Görüşmelerden sonra mutlu ve hafif mi hissediyorsun, yoksa kaygılı ve belirsiz mi? Telefonun ekranına bakarak saatler mi geçiriyorsun?",
-        "Kendine şunu da sor: Bu ilişkiden ne istiyorum? Eğer cevabın \"daha fazlası\" ise ve karşı taraf bunu vermeye niyetli değilse, beklemek seni hayal kırıklığına ve öz değerinin yıpranmasına götürebilir.",
+        'Kendine şunu da sor: Bu ilişkiden ne istiyorum? Eğer cevabın "daha fazlası" ise ve karşı taraf bunu vermeye niyetli değilse, beklemek seni hayal kırıklığına ve öz değerinin yıpranmasına götürebilir.',
       ],
     },
     {
-      heading: "\"Biz neyiz?\" konuşması nasıl yapılır?",
+      heading: '"Biz neyiz?" konuşması nasıl yapılır?',
       paragraphs: [
         "Bu konuşma korkutucu gelebilir, ama belirsizlik genellikle cevabın kendisinden daha yorucudur. Birkaç öneri:",
       ],
       bullets: [
         "Sakin bir an seç: Tartışma sırasında ya da mesajla değil, yüz yüze ve rahat bir ortamda konuş.",
-        "Kendi isteğinle başla: \"Ne düşünüyorsun?\" yerine \"Ben bu ilişkinin bir yöne gitmesini istiyorum\" demek daha net bir zemin kurar.",
+        'Kendi isteğinle başla: "Ne düşünüyorsun?" yerine "Ben bu ilişkinin bir yöne gitmesini istiyorum" demek daha net bir zemin kurar.',
         "Suçlama yapma: Amaç onu köşeye sıkıştırmak değil, ikinizin de nerede durduğunu anlamak.",
         "Cevaba hazırlıklı ol: Cevap senin istediğin gibi olmayabilir. Bu da bir cevaptır ve seni beklemekten kurtarır.",
       ],
@@ -91,9 +92,9 @@ export const situationshipRehber: Article = {
     {
       heading: "Kendi isteğini netleştirmek",
       paragraphs: [
-        "\"Biz neyiz?\" konuşmasından önce belki de daha önemli bir soru var: Ben ne istiyorum? Situationship'lerde insanlar çoğu zaman karşı tarafın ne düşündüğüne o kadar odaklanır ki kendi isteklerini netleştirmeyi unutur.",
+        '"Biz neyiz?" konuşmasından önce belki de daha önemli bir soru var: Ben ne istiyorum? Situationship\'lerde insanlar çoğu zaman karşı tarafın ne düşündüğüne o kadar odaklanır ki kendi isteklerini netleştirmeyi unutur.',
         "Kendine şunları sorabilirsin: Bu kişiyle gerçekten bir ilişki mi istiyorum, yoksa sadece belirsizlikten mi rahatsızım? Tek eşli bir ilişki benim için önemli mi? Bu belirsizliği ne kadar süre daha kabul edebilirim? Bu soruların cevapları, konuşmada ne söyleyeceğini ve cevaba nasıl tepki vereceğini belirler.",
-        "İsteklerini bilmek, karşı tarafın cevabına göre kendini şekillendirmekten seni korur. \"Ne istersen olur\" demek ilk anda kolay gelir ama genellikle senin ihtiyaçlarının görünmez kalmasıyla sonuçlanır.",
+        'İsteklerini bilmek, karşı tarafın cevabına göre kendini şekillendirmekten seni korur. "Ne istersen olur" demek ilk anda kolay gelir ama genellikle senin ihtiyaçlarının görünmez kalmasıyla sonuçlanır.',
       ],
     },
     {
@@ -133,7 +134,7 @@ export const situationshipRehber: Article = {
       a: "Evet, dönüşebilir, özellikle iki taraf da isteklerini açıkça konuşursa. Ancak bunun için bir tarafın beklemesi değil, iki tarafın da aynı şeyi istemesi gerekir.",
     },
     {
-      q: "\"Biz neyiz?\" sorusunu ne zaman sormalıyım?",
+      q: '"Biz neyiz?" sorusunu ne zaman sormalıyım?',
       a: "Belirsizlik seni rahatsız etmeye başladığında. Kesin bir süre yok, ama aylar geçmesine rağmen hâlâ nerede durduğunu bilmiyorsan, sormak için doğru zamandır.",
     },
   ],

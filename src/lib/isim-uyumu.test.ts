@@ -23,7 +23,23 @@ describe("isim uyumu", () => {
   });
 
   it("puanlar aralıkta ve dağılım makul", () => {
-    const isimler = ["ayşe", "fatma", "zeynep", "elif", "merve", "ali", "mehmet", "can", "emre", "burak", "deniz", "ece", "kerem", "selin", "mert"];
+    const isimler = [
+      "ayşe",
+      "fatma",
+      "zeynep",
+      "elif",
+      "merve",
+      "ali",
+      "mehmet",
+      "can",
+      "emre",
+      "burak",
+      "deniz",
+      "ece",
+      "kerem",
+      "selin",
+      "mert",
+    ];
     const puanlar: number[] = [];
     for (const a of isimler) for (const b of isimler) if (a < b) puanlar.push(isimUyumu(a, b)!.puan);
     expect(Math.min(...puanlar)).toBeGreaterThanOrEqual(12);

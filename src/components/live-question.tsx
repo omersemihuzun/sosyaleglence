@@ -17,7 +17,10 @@ export function LiveQuestion({ test }: { test: Test }) {
   }
 
   return (
-    <div className="sticker relative rotate-[0.6deg] bg-white p-5 sm:p-7" style={{ boxShadow: "6px 8px 0 0 var(--color-plum)" }}>
+    <div
+      className="sticker relative rotate-[0.6deg] bg-white p-5 sm:p-7"
+      style={{ boxShadow: "6px 8px 0 0 var(--color-plum)" }}
+    >
       <div className="flex items-center justify-between gap-3 text-sm font-semibold">
         <span className="rounded-full bg-cherry px-3 py-1 text-white">
           {test.emoji} {test.title}

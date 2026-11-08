@@ -3,25 +3,10 @@
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import { findIdeas } from "@/content/gifts/guides";
-import {
-  budgets,
-  interests,
-  recipients,
-  type Budget,
-  type Interest,
-  type Recipient,
-} from "@/content/gifts/types";
+import { budgets, interests, recipients, type Budget, type Interest, type Recipient } from "@/content/gifts/types";
 import { GiftCard } from "./gift-card";
 
-function Chip({
-  active,
-  onClick,
-  children,
-}: {
-  active: boolean;
-  onClick: () => void;
-  children: React.ReactNode;
-}) {
+function Chip({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
   return (
     <button
       type="button"
@@ -135,7 +120,9 @@ export function GiftFinder() {
           {results.length > 0 ? `${results.length} fikir bulduk` : "Bu seçimlere uyan fikir yok"}
         </p>
         {results.length === 0 && (
-          <p className="mt-2 text-plum-soft">Bütçeyi ya da ilgi alanı seçimini kaldırırsan daha çok fikir görebilirsin.</p>
+          <p className="mt-2 text-plum-soft">
+            Bütçeyi ya da ilgi alanı seçimini kaldırırsan daha çok fikir görebilirsin.
+          </p>
         )}
         <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {results.slice(0, limit).map((idea) => (

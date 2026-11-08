@@ -6,12 +6,13 @@ export const sevgiliyeHediye: Article = {
   metaTitle: "Sevgiliye Ne Hediye Alınır? Sevgi Diline Göre Rehber",
   metaDescription:
     "Sevgiliye ne hediye alınır? Onu gerçekten mutlu edecek hediyeyi sevgi diline göre seç: söz, zaman, hediye, hizmet ve temas için somut fikirler.",
-  excerpt: "Pahalı bir hediye bazen hiçbir şey ifade etmez, küçük bir not ise aylarca saklanır. Fark, sevgilinin sevgiyi hangi dilde aldığında.",
+  excerpt:
+    "Pahalı bir hediye bazen hiçbir şey ifade etmez, küçük bir not ise aylarca saklanır. Fark, sevgilinin sevgiyi hangi dilde aldığında.",
   emoji: "🎁",
   color: "#E0567A",
   updated: "2026-11-08",
   intro: [
-    "Sevgiliye hediye almak çoğu zaman bir bütçe meselesi gibi görünür: Ne kadar harcamalıyım, neyi alırsam etkilenir? Oysa en çok hatırlanan hediyeler genellikle en pahalı olanlar değil, en isabetli olanlardır. Bir insanı gerçekten mutlu eden şey, \"Bunu görünce seni düşündüm\" hissidir.",
+    'Sevgiliye hediye almak çoğu zaman bir bütçe meselesi gibi görünür: Ne kadar harcamalıyım, neyi alırsam etkilenir? Oysa en çok hatırlanan hediyeler genellikle en pahalı olanlar değil, en isabetli olanlardır. Bir insanı gerçekten mutlu eden şey, "Bunu görünce seni düşündüm" hissidir.',
     "Bu isabeti yakalamanın pratik bir yolu var: sevgilinin sevgiyi nasıl aldığını anlamak. Beş sevgi dili yaklaşımı, insanların sevgiyi farklı biçimlerde ifade ettiğini ve hissettiğini söyler. Bu rehberde her sevgi dili için somut hediye fikirlerini, sık yapılan hataları ve son dakikada ne yapılabileceğini konuşuyoruz.",
   ],
   sections: [
@@ -31,7 +32,7 @@ export const sevgiliyeHediye: Article = {
         {
           heading: "Onay sözleri: Söylenen ve yazılan sevgi",
           paragraphs: [
-            "Bu dili konuşan biri için kelimeler hediyenin kendisidir. Uzun, el yazısıyla bir mektup; \"Canın sıkılınca aç\", \"Beni özleyince aç\" gibi zarflardan oluşan bir set; birlikte geçirdiğiniz yılı anlatan küçük bir defter ya da ortak fotoğraflarınızın altına notlar yazdığın bir albüm çok değerli olur. Hediye ne olursa olsun, yanına mutlaka içten bir not ekle; bu kişi için not, hediyeden daha uzun ömürlüdür.",
+            'Bu dili konuşan biri için kelimeler hediyenin kendisidir. Uzun, el yazısıyla bir mektup; "Canın sıkılınca aç", "Beni özleyince aç" gibi zarflardan oluşan bir set; birlikte geçirdiğiniz yılı anlatan küçük bir defter ya da ortak fotoğraflarınızın altına notlar yazdığın bir albüm çok değerli olur. Hediye ne olursa olsun, yanına mutlaka içten bir not ekle; bu kişi için not, hediyeden daha uzun ömürlüdür.',
           ],
         },
         {
@@ -49,7 +50,7 @@ export const sevgiliyeHediye: Article = {
         {
           heading: "Hizmet: Yükü hafifletmek",
           paragraphs: [
-            "Bu kişi \"Seni seviyorum\" duymaktan çok, birinin onun hayatını kolaylaştırmasından etkilenir. Uzun süredir ertelediği bir işi halletmek, sabahları işini kolaylaştıracak pratik bir alet, ona bir günlük tam dinlenme hediye etmek ya da evini düzenlemek için birlikte bir gün ayırmak iyi seçeneklerdir. Kâğıda yazılmış bir \"Bu ay bulaşıklar benden\" kuponu bile içtenlikle yapıldığında beklenmedik kadar etkili olabilir.",
+            'Bu kişi "Seni seviyorum" duymaktan çok, birinin onun hayatını kolaylaştırmasından etkilenir. Uzun süredir ertelediği bir işi halletmek, sabahları işini kolaylaştıracak pratik bir alet, ona bir günlük tam dinlenme hediye etmek ya da evini düzenlemek için birlikte bir gün ayırmak iyi seçeneklerdir. Kâğıda yazılmış bir "Bu ay bulaşıklar benden" kuponu bile içtenlikle yapıldığında beklenmedik kadar etkili olabilir.',
           ],
         },
         {
@@ -62,11 +63,9 @@ export const sevgiliyeHediye: Article = {
     },
     {
       heading: "Sevgilinin sevgi dilini bilmiyorsan",
-      paragraphs: [
-        "Bunu tahmin etmek sandığından kolay. Şu soruları düşün:",
-      ],
+      paragraphs: ["Bunu tahmin etmek sandığından kolay. Şu soruları düşün:"],
       bullets: [
-        "En çok neyden şikâyet ediyor? \"Hiç vakit geçirmiyoruz\" diyorsa zaman, \"Hiç söylemiyorsun\" diyorsa söz önemlidir.",
+        'En çok neyden şikâyet ediyor? "Hiç vakit geçirmiyoruz" diyorsa zaman, "Hiç söylemiyorsun" diyorsa söz önemlidir.',
         "Sana sevgisini nasıl gösteriyor? İnsanlar çoğu zaman almak istedikleri biçimde verir.",
         "Hangi anı en sık anlatıyor? Birlikte yaptığınız bir gezi mi, ona aldığın bir hediye mi, zor bir gününde yanında olman mı?",
         "Küçük jestlerden hangisine en çok seviniyor? Bir mesaja, bir sarılmaya, kapıda bekleyen bir kahveye?",
@@ -74,13 +73,11 @@ export const sevgiliyeHediye: Article = {
     },
     {
       heading: "Sık yapılan hediye hataları",
-      paragraphs: [
-        "İyi niyetle verilen ama karşılık bulmayan hediyelerin çoğu birkaç ortak hatadan kaynaklanır.",
-      ],
+      paragraphs: ["İyi niyetle verilen ama karşılık bulmayan hediyelerin çoğu birkaç ortak hatadan kaynaklanır."],
       bullets: [
         "Kendi istediğin bir şeyi almak: Sen oyun konsolunu çok sevebilirsin ama hediye onun için.",
         "Kişiselleştirilmemiş, her yerde bulunan bir hediye almak ve yanına tek kelime eklememek.",
-        "Bir \"değişim\" mesajı taşıyan hediyeler: Kilo vermesi, kendine bakması ya da farklı giyinmesi gerektiğini ima eden hediyeler kırıcı olabilir.",
+        'Bir "değişim" mesajı taşıyan hediyeler: Kilo vermesi, kendine bakması ya da farklı giyinmesi gerektiğini ima eden hediyeler kırıcı olabilir.',
         "Son dakikaya bırakmak: Kişiye özel ürünlerin üretimi ve kargosu zaman alır, özellikle özel günlerde.",
         "Bütçeyi ilişkinin aşamasına göre ayarlamamak: Yeni bir ilişkide çok pahalı bir hediye karşı tarafı baskı altında hissettirebilir.",
       ],
@@ -89,13 +86,13 @@ export const sevgiliyeHediye: Article = {
       heading: "Bütçe kısıtlıysa",
       paragraphs: [
         "İyi bir hediye için çok para harcamak gerekmez. Birçok değerli hediye neredeyse bedavadır: el yazısıyla bir mektup, ortak anılarınızdan hazırlanmış bir çalma listesi, ilk buluştuğunuz yere yapılacak sürpriz bir yürüyüş, onun için pişirdiğin bir akşam yemeği.",
-        "Küçük bir hediyeyi değerli kılan şey, ona eklediğin hikâyedir. Bir kupa tek başına sıradandır; ama içine \"Her sabah ilk kahveni benimle iç\" notu koyduğunda bambaşka bir anlam kazanır.",
+        'Küçük bir hediyeyi değerli kılan şey, ona eklediğin hikâyedir. Bir kupa tek başına sıradandır; ama içine "Her sabah ilk kahveni benimle iç" notu koyduğunda bambaşka bir anlam kazanır.',
       ],
     },
     {
       heading: "Son dakika kurtarıcıları",
       paragraphs: [
-        "Zaman daraldıysa paniğe gerek yok. Hızlı ama düşünülmüş görünen birkaç seçenek var: Deneyim hediyeleri (konser, atölye, restoran rezervasyonu) dijital olarak anında alınabilir. Bir hediye kutusunu kendi notlarınla kişiselleştirebilirsin. Ya da hediyeyi bir \"vaat\"e çevirebilirsin: Önümüzdeki hafta sonu için planladığın bir günü güzel bir kartla anlatmak, hediyenin kendisi kadar heyecan yaratır.",
+        'Zaman daraldıysa paniğe gerek yok. Hızlı ama düşünülmüş görünen birkaç seçenek var: Deneyim hediyeleri (konser, atölye, restoran rezervasyonu) dijital olarak anında alınabilir. Bir hediye kutusunu kendi notlarınla kişiselleştirebilirsin. Ya da hediyeyi bir "vaat"e çevirebilirsin: Önümüzdeki hafta sonu için planladığın bir günü güzel bir kartla anlatmak, hediyenin kendisi kadar heyecan yaratır.',
       ],
     },
     {

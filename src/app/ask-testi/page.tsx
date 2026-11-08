@@ -54,7 +54,11 @@ export default function AskTestiPage() {
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      mainEntity: SSS.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })),
+      mainEntity: SSS.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
     },
     breadcrumbJsonLd([{ name: "İsimle aşk testi", path: "/ask-testi" }]),
   ];
@@ -63,7 +67,9 @@ export default function AskTestiPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: toJsonLd(jsonLd) }} />
       <section className="mx-auto max-w-3xl px-4 pt-10 sm:px-6 sm:pt-14">
-        <h1 className="font-display text-5xl leading-[1] font-extrabold tracking-tight sm:text-6xl">İsimle aşk testi</h1>
+        <h1 className="font-display text-5xl leading-[1] font-extrabold tracking-tight sm:text-6xl">
+          İsimle aşk testi
+        </h1>
         <p className="mt-5 max-w-xl text-lg leading-relaxed text-plum-soft">
           Senin adını ve onun adını yaz, isimlerinizin ne kadar uyumlu olduğunu görelim. Tutku, iletişim, güven ve
           eğlence: dört başlıkta puanınız hazır.
@@ -84,9 +90,24 @@ export default function AskTestiPage() {
         </p>
         <ul className="mt-6 grid gap-4 sm:grid-cols-2">
           {[
-            { href: "/testler/sevgi-dili-testi", e: "💌", t: "Sevgi Dilin Ne?", s: "Sevgini nasıl gösteriyor, nasıl bekliyorsun?" },
-            { href: "/testler/baglanma-stili-testi", e: "🧷", t: "Bağlanma Stilin Ne?", s: "Yakınlık ve mesafeyle ilişkin" },
-            { href: "/testler/hangi-tip-sevgilisin-testi", e: "💞", t: "Hangi Tip Sevgilisin?", s: "İlişkide nasıl birisin?" },
+            {
+              href: "/testler/sevgi-dili-testi",
+              e: "💌",
+              t: "Sevgi Dilin Ne?",
+              s: "Sevgini nasıl gösteriyor, nasıl bekliyorsun?",
+            },
+            {
+              href: "/testler/baglanma-stili-testi",
+              e: "🧷",
+              t: "Bağlanma Stilin Ne?",
+              s: "Yakınlık ve mesafeyle ilişkin",
+            },
+            {
+              href: "/testler/hangi-tip-sevgilisin-testi",
+              e: "💞",
+              t: "Hangi Tip Sevgilisin?",
+              s: "İlişkide nasıl birisin?",
+            },
             { href: "/burclar", e: "♈", t: "Burç uyumu", s: "İki burç seç, aşk uyumunuzu oku" },
           ].map((l) => (
             <li key={l.href}>

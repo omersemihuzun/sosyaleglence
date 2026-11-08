@@ -7,8 +7,8 @@ export const burcSecenekleri = burclar.map((b) => ({ slug: b.slug, ad: b.ad, emo
 export function BurcNotu() {
   return (
     <p className="mx-auto mt-16 max-w-6xl px-4 text-sm text-plum-soft sm:px-6">
-      Burçlar eğlence amaçlıdır, bilimsel bir dayanağı yoktur. Bir ilişkinin nasıl gideceğini doğum tarihleri değil,
-      iki insanın birbirine nasıl davrandığı belirler.
+      Burçlar eğlence amaçlıdır, bilimsel bir dayanağı yoktur. Bir ilişkinin nasıl gideceğini doğum tarihleri değil, iki
+      insanın birbirine nasıl davrandığı belirler.
     </p>
   );
 }
@@ -23,7 +23,10 @@ export function UyumBar({ puan, renk }: { puan: number; renk: string }) {
 
 /** WCAG göreli parlaklığı. */
 function luminance(hex: string) {
-  const c = hex.replace("#", "").match(/../g)!.map((x) => parseInt(x, 16) / 255);
+  const c = hex
+    .replace("#", "")
+    .match(/../g)!
+    .map((x) => parseInt(x, 16) / 255);
   const [r, g, b] = c.map((v) => (v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4));
   return 0.2126 * r + 0.7152 * g + 0.0722 * b;
 }

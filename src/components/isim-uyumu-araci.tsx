@@ -183,7 +183,11 @@ export function IsimUyumuAraci({ siteUrl }: { siteUrl: string }) {
               >
                 WhatsApp&apos;ta gönder
               </a>
-              <button type="button" onClick={kopyala} className="sticker sticker-press bg-white px-5 py-3 font-display font-bold">
+              <button
+                type="button"
+                onClick={kopyala}
+                className="sticker sticker-press bg-white px-5 py-3 font-display font-bold"
+              >
                 Sonucu kopyala
               </button>
             </div>

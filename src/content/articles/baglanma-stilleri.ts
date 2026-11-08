@@ -6,12 +6,13 @@ export const baglanmaStilleri: Article = {
   metaTitle: "Bağlanma Stilleri Nedir? Güvenli, Kaygılı, Kaçıngan",
   metaDescription:
     "Bağlanma stilleri nedir, ilişkilere nasıl yansır? Güvenli, kaygılı, kaçıngan ve korkulu-kaçıngan stilleri, işaretlerini ve değişip değişmediğini anlattık.",
-  excerpt: "Neden bazılarımız mesaj gelmeyince panikliyor, bazılarımız yakınlaşınca kaçıyor? Cevap çoğu zaman bağlanma stilinde.",
+  excerpt:
+    "Neden bazılarımız mesaj gelmeyince panikliyor, bazılarımız yakınlaşınca kaçıyor? Cevap çoğu zaman bağlanma stilinde.",
   emoji: "🧲",
   color: "#3B6FD9",
   updated: "2026-11-08",
   intro: [
-    "Bir ilişkide aynı olaya iki kişi çok farklı tepki verebilir. Sevgili akşam yemeğinde telefonuna biraz fazla baktığında biri hiç fark etmez, diğeri bütün gece \"Benden sıkıldı mı?\" diye düşünür. Bir başkası ise tam tersine, ilişki ciddileştikçe içinden bir ses \"Biraz uzaklaş\" demeye başlar.",
+    'Bir ilişkide aynı olaya iki kişi çok farklı tepki verebilir. Sevgili akşam yemeğinde telefonuna biraz fazla baktığında biri hiç fark etmez, diğeri bütün gece "Benden sıkıldı mı?" diye düşünür. Bir başkası ise tam tersine, ilişki ciddileştikçe içinden bir ses "Biraz uzaklaş" demeye başlar.',
     "Bu farkların arkasında çoğu zaman bağlanma stili denen şey vardır. Bağlanma stili, yakınlık kurduğumuz insanlarla ilişkimizde kendimizi ne kadar güvende hissettiğimizi ve bu güveni korumak için hangi stratejileri kullandığımızı anlatan bir kavramdır. Bu rehberde dört temel stili, günlük hayattaki işaretlerini ve en önemlisi değişip değişemeyeceğini sade bir dille anlatıyoruz.",
   ],
   sections: [
@@ -19,7 +20,7 @@ export const baglanmaStilleri: Article = {
       heading: "Bağlanma kuramı kısaca ne söyler?",
       paragraphs: [
         "Bağlanma kuramı, ilk olarak bebeklerin bakım verenleriyle kurduğu bağı açıklamak için geliştirildi. Temel fikir şu: Bir çocuk ihtiyaç duyduğunda kendisine tutarlı şekilde yanıt verildiğini görürse, dünyayı ve insanları genel olarak güvenli bir yer olarak algılamayı öğrenir. Yanıtlar tutarsızsa ya da ihtiyaçları sık sık geri çevrilirse, kendini korumak için farklı stratejiler geliştirir.",
-        "Sonraki yıllarda araştırmacılar aynı örüntülerin yetişkin romantik ilişkilerde de görüldüğünü fark etti. Bugün yetişkin bağlanması genellikle iki eksende düşünülür: terk edilme kaygısı ve yakınlıktan kaçınma. Kaygı ekseni \"Sevilmeye ve kalınmaya değer miyim?\" sorusuyla, kaçınma ekseni ise \"Birine yaslanmak güvenli mi?\" sorusuyla ilgilidir. Dört stil, bu iki eksenin birleşiminden çıkar.",
+        'Sonraki yıllarda araştırmacılar aynı örüntülerin yetişkin romantik ilişkilerde de görüldüğünü fark etti. Bugün yetişkin bağlanması genellikle iki eksende düşünülür: terk edilme kaygısı ve yakınlıktan kaçınma. Kaygı ekseni "Sevilmeye ve kalınmaya değer miyim?" sorusuyla, kaçınma ekseni ise "Birine yaslanmak güvenli mi?" sorusuyla ilgilidir. Dört stil, bu iki eksenin birleşiminden çıkar.',
         "Burada önemli bir not var: Bağlanma stili bir hastalık ya da tanı değildir. İnsanları kutulara koymak için değil, kendi tepkilerimizi anlamak için kullanışlı bir harita gibi düşünmek gerekir. Çoğumuz tek bir stile tam oturmayız, farklı ilişkilerde farklı yanlarımız öne çıkabilir.",
       ],
     },
@@ -39,7 +40,7 @@ export const baglanmaStilleri: Article = {
         {
           heading: "Kaygılı bağlanma",
           paragraphs: [
-            "Kaygılı bağlanan kişi çok derin bağ kurar ama aynı derinlikte kaybetme korkusu taşır. Kısa bir cevap, değişen bir ses tonu ya da iptal edilen bir plan zihninde hemen alarm zillerini çaldırabilir. Bu yüzden güvence arar: daha sık konuşmak, daha çok \"seni seviyorum\" duymak, nerede olunduğunu bilmek.",
+            'Kaygılı bağlanan kişi çok derin bağ kurar ama aynı derinlikte kaybetme korkusu taşır. Kısa bir cevap, değişen bir ses tonu ya da iptal edilen bir plan zihninde hemen alarm zillerini çaldırabilir. Bu yüzden güvence arar: daha sık konuşmak, daha çok "seni seviyorum" duymak, nerede olunduğunu bilmek.',
             "Bu ihtiyaçlar yanlış değildir. Zorluk, kaygı yükseldiğinde hiçbir güvencenin yetmiyormuş gibi gelmesidir. Kaygılı bağlananlar sık sık kaçıngan partnerlere çekildiklerini fark eder, çünkü o tanıdık kovalama hissi aşk gibi gelir.",
           ],
         },
@@ -47,7 +48,7 @@ export const baglanmaStilleri: Article = {
           heading: "Kaçıngan bağlanma",
           paragraphs: [
             "Kaçıngan bağlanan kişi bağımsızlığına çok değer verir. İlişkiler hoşuna gider ama biri fazla yaklaştığında, beklenti arttığında ya da ciddi bir konuşma kapıya dayandığında geri çekilme isteği duyar. Duygularını paylaşmak ona savunmasız hissettirebilir.",
-            "Bu, sevmedikleri anlamına gelmez. Çoğu zaman bir noktada duygularını göstermenin karşılıksız kalacağını öğrenmişlerdir ve mesafe onlara güvenli gelir. Partnerleri sık sık \"Seni tam tanıyamıyorum\" der.",
+            'Bu, sevmedikleri anlamına gelmez. Çoğu zaman bir noktada duygularını göstermenin karşılıksız kalacağını öğrenmişlerdir ve mesafe onlara güvenli gelir. Partnerleri sık sık "Seni tam tanıyamıyorum" der.',
           ],
         },
         {
@@ -65,17 +66,17 @@ export const baglanmaStilleri: Article = {
       ],
       bullets: [
         "Partnerin birkaç saat cevap vermediğinde aklından ilk ne geçiyor?",
-        "Bir ilişki çok iyi gittiğinde rahatlıyor musun, yoksa \"Bir şey olacak\" diye mi bekliyorsun?",
+        'Bir ilişki çok iyi gittiğinde rahatlıyor musun, yoksa "Bir şey olacak" diye mi bekliyorsun?',
         "Tartışma sırasında hemen çözmek mi istiyorsun, yoksa odadan çıkmak mı?",
-        "Biri sana \"Seni seviyorum\" dediğinde ilk hissin sevinç mi, baskı mı?",
+        'Biri sana "Seni seviyorum" dediğinde ilk hissin sevinç mi, baskı mı?',
         "Zor bir gün geçirdiğinde anlatmak mı istiyorsun, tek başına halletmek mi?",
       ],
     },
     {
       heading: "Bağlanma stili değişir mi?",
       paragraphs: [
-        "Kısa cevap: evet, değişebilir. Bağlanma stili doğuştan gelen sabit bir özellik değil, yaşantıyla şekillenen bir örüntüdür. Uzun süre güvenilir, tutarlı ve sözünü tutan bir partnerle olmak, kaygılı ya da kaçıngan birinin zamanla daha güvende hissetmesine yardım edebilir. Psikolojide buna bazen \"kazanılmış güvenli bağlanma\" denir.",
-        "Değişim genellikle farkındalıkla başlar. Tetiklendiğin anı fark etmek, \"Şu an kaygım konuşuyor\" diyebilmek bile tepkiyi yumuşatır. Kaygılı biri için bu, felaket senaryosu kurmak yerine ihtiyacını açıkça söylemek olabilir. Kaçıngan biri için ise geri çekilme isteği geldiğinde tamamen kaybolmak yerine \"Biraz alana ihtiyacım var ama yarın konuşalım\" demek.",
+        'Kısa cevap: evet, değişebilir. Bağlanma stili doğuştan gelen sabit bir özellik değil, yaşantıyla şekillenen bir örüntüdür. Uzun süre güvenilir, tutarlı ve sözünü tutan bir partnerle olmak, kaygılı ya da kaçıngan birinin zamanla daha güvende hissetmesine yardım edebilir. Psikolojide buna bazen "kazanılmış güvenli bağlanma" denir.',
+        'Değişim genellikle farkındalıkla başlar. Tetiklendiğin anı fark etmek, "Şu an kaygım konuşuyor" diyebilmek bile tepkiyi yumuşatır. Kaygılı biri için bu, felaket senaryosu kurmak yerine ihtiyacını açıkça söylemek olabilir. Kaçıngan biri için ise geri çekilme isteği geldiğinde tamamen kaybolmak yerine "Biraz alana ihtiyacım var ama yarın konuşalım" demek.',
         "Eğer bu örüntüler ilişkilerini sürekli zorluyorsa ya da geçmişte seni derinden etkileyen deneyimler varsa, bir psikolog ya da terapistle çalışmak süreci çok hızlandırabilir. Bu bir zayıflık değil, kendine yapılan bir yatırımdır.",
       ],
     },
@@ -89,7 +90,7 @@ export const baglanmaStilleri: Article = {
     {
       heading: "Bağlanma stilini bilmek ne işe yarar?",
       paragraphs: [
-        "Bağlanma stilini bilmek, tepkilerini mazur göstermek için değil, onları anlamak için faydalıdır. \"Ben kaygılıyım, o yüzden sürekli mesaj atarım\" demek bir açıklama olabilir ama bir çözüm değildir. Asıl değer, tetiklendiğin anı fark edip farklı bir seçim yapabilmekte yatar.",
+        'Bağlanma stilini bilmek, tepkilerini mazur göstermek için değil, onları anlamak için faydalıdır. "Ben kaygılıyım, o yüzden sürekli mesaj atarım" demek bir açıklama olabilir ama bir çözüm değildir. Asıl değer, tetiklendiğin anı fark edip farklı bir seçim yapabilmekte yatar.',
         "Aynı şekilde partnerinin eğilimini anlamak da onun davranışlarını daha az kişisel algılamana yardım eder. Geri çekilen bir partner seni sevmediği için değil, yakınlık ona o an fazla geldiği için uzaklaşıyor olabilir. Bu bilgi, tartışmayı suçlamadan ihtiyaç konuşmasına çevirir.",
       ],
     },

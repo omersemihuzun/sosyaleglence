@@ -4,11 +4,11 @@ Yeni site şu an **https://sosyaleglence.vercel.app** adresinde yayında. Eski W
 
 ## Mevcut durum (8 Kasım 2026'da okundu)
 
-| Kayıt | Değer | Ne işe yarıyor |
-|---|---|---|
-| NS | ns1/ns2.dns-parking.com | DNS'i Hostinger yönetiyor |
-| A `@` ve `www` | 92.113.19.98 | Eski WordPress sitesi (Hostinger, LiteSpeed) |
-| MX | mx1/mx2.hostinger.com | **info@sosyaleglence.com e-postası. DOKUNMA.** |
+| Kayıt          | Değer                   | Ne işe yarıyor                                 |
+| -------------- | ----------------------- | ---------------------------------------------- |
+| NS             | ns1/ns2.dns-parking.com | DNS'i Hostinger yönetiyor                      |
+| A `@` ve `www` | 92.113.19.98            | Eski WordPress sitesi (Hostinger, LiteSpeed)   |
+| MX             | mx1/mx2.hostinger.com   | **info@sosyaleglence.com e-postası. DOKUNMA.** |
 
 ## Adımlar
 
@@ -22,16 +22,16 @@ Yeni site şu an **https://sosyaleglence.vercel.app** adresinde yayında. Eski W
    **Yapıldı (8 Kasım 2026):** İki alan adı da projeye eklendi ve doğrulandı; `www` kalıcı (308) olarak `sosyaleglence.com`'a yönleniyor.
 3. **Hostinger DNS paneli** (Alan adları > sosyaleglence.com > DNS / Nameservers > DNS kayıtları). Vercel'in istediği kayıtlar:
 
-   | İşlem | Tür | Ad | Değer |
-   |---|---|---|---|
-   | Değiştir | A | `@` | `216.198.79.1` |
-   | Ekle | A | `@` | `64.29.17.1` |
-   | **Sil** | AAAA | `@` | `2a02:4780:...` (Hostinger IPv6; kalırsa ziyaretçilerin bir kısmı eski siteye gider) |
-   | Değiştir | CNAME | `www` | `2473d5126338f824.vercel-dns-017.com` |
-   | Sil | AAAA | `www` | varsa |
-
+   | İşlem    | Tür   | Ad    | Değer                                                                                |
+   | -------- | ----- | ----- | ------------------------------------------------------------------------------------ |
+   | Değiştir | A     | `@`   | `216.198.79.1`                                                                       |
+   | Ekle     | A     | `@`   | `64.29.17.1`                                                                         |
+   | **Sil**  | AAAA  | `@`   | `2a02:4780:...` (Hostinger IPv6; kalırsa ziyaretçilerin bir kısmı eski siteye gider) |
+   | Değiştir | CNAME | `www` | `2473d5126338f824.vercel-dns-017.com`                                                |
+   | Sil      | AAAA  | `www` | varsa                                                                                |
    - **MX, TXT (SPF/DKIM) ve diğer mail kayıtlarına dokunma.** E-posta Hostinger'da çalışmaya devam eder.
    - TTL'i en düşük değere (örn. 300) almak geçişi hızlandırır.
+
 4. **Site adresini güncelle:**
    ```bash
    vercel env rm NEXT_PUBLIC_SITE_URL production --yes

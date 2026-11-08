@@ -22,21 +22,33 @@ export const situationship: Test = {
   ],
   questions: [
     {
-      text: "Arkadaşın soruyor: \"Siz ne oluyorsunuz şimdi?\" Cevabın:",
+      text: 'Arkadaşın soruyor: "Siz ne oluyorsunuz şimdi?" Cevabın:',
       options: [
-        { text: "\"Sevgiliyiz\" derim; geçen ay konuştuk, ikimiz de biliyoruz.", scores: {} },
-        { text: "\"Görüşüyoruz işte\" derim; adını koymak isteyen hep ben oluyorum.", scores: { belirsizlik: 2, tektaraf: 1 } },
-        { text: "\"Ben ciddiyim, o bazen ciddi bazen değil\" derim.", scores: { tektaraf: 2, sicaksoguk: 1 } },
-        { text: "\"Bu hafta iyiyiz, geçen hafta değildik\" derim; adı da yok zaten.", scores: { sicaksoguk: 2, belirsizlik: 1 } },
+        { text: '"Sevgiliyiz" derim; geçen ay konuştuk, ikimiz de biliyoruz.', scores: {} },
+        {
+          text: '"Görüşüyoruz işte" derim; adını koymak isteyen hep ben oluyorum.',
+          scores: { belirsizlik: 2, tektaraf: 1 },
+        },
+        { text: '"Ben ciddiyim, o bazen ciddi bazen değil" derim.', scores: { tektaraf: 2, sicaksoguk: 1 } },
+        {
+          text: '"Bu hafta iyiyiz, geçen hafta değildik" derim; adı da yok zaten.',
+          scores: { sicaksoguk: 2, belirsizlik: 1 },
+        },
       ],
     },
     {
       text: "Hafta sonu için bir şeyler planlamak istiyorsun.",
       options: [
-        { text: "\"Cumartesi ne yapıyoruz?\" diye sorarım; bazen o, bazen ben planlarım.", scores: {} },
-        { text: "Plan yapmayız; cuma gecesi \"müsait misin?\" mesajı gelir ya da gelmez.", scores: { belirsizlik: 2, sicaksoguk: 1 } },
-        { text: "Ben üç öneri sunarım, o \"bakarız\" der; hiç bakılmaz.", scores: { tektaraf: 2, belirsizlik: 1 } },
-        { text: "Bazen bütün hafta sonu beraberiz, bazen cevabı pazartesi gelir.", scores: { sicaksoguk: 2, tektaraf: 1 } },
+        { text: '"Cumartesi ne yapıyoruz?" diye sorarım; bazen o, bazen ben planlarım.', scores: {} },
+        {
+          text: 'Plan yapmayız; cuma gecesi "müsait misin?" mesajı gelir ya da gelmez.',
+          scores: { belirsizlik: 2, sicaksoguk: 1 },
+        },
+        { text: 'Ben üç öneri sunarım, o "bakarız" der; hiç bakılmaz.', scores: { tektaraf: 2, belirsizlik: 1 } },
+        {
+          text: "Bazen bütün hafta sonu beraberiz, bazen cevabı pazartesi gelir.",
+          scores: { sicaksoguk: 2, tektaraf: 1 },
+        },
       ],
     },
     {
@@ -45,34 +57,52 @@ export const situationship: Test = {
         { text: "Birkaçıyla tanıştım; hepsine bayıldığımı söyleyemem ama gruptayım.", scores: {} },
         { text: "Hayır; ilişkimiz sadece ikimiz arasında var gibi.", scores: { belirsizlik: 3 } },
         { text: "Ben onu benimkilerle tanıştırdım; o beni hâlâ tanıştırmadı.", scores: { tektaraf: 2, sicaksoguk: 1 } },
-        { text: "Bir kere tanıştım, çok iyi geçti; sonra bir daha hiç çağrılmadım.", scores: { sicaksoguk: 2, belirsizlik: 1 } },
+        {
+          text: "Bir kere tanıştım, çok iyi geçti; sonra bir daha hiç çağrılmadım.",
+          scores: { sicaksoguk: 2, belirsizlik: 1 },
+        },
       ],
     },
     {
       text: "Sosyal medyada birbirinizin varlığı:",
       options: [
         { text: "Birlikte fotoğrafımız var; çok paylaşmıyoruz ama saklamıyoruz.", scores: {} },
-        { text: "Takipleşiyoruz, o kadar; ben bir şey paylaşmaya çekiniyorum.", scores: { belirsizlik: 2, tektaraf: 1 } },
+        {
+          text: "Takipleşiyoruz, o kadar; ben bir şey paylaşmaya çekiniyorum.",
+          scores: { belirsizlik: 2, tektaraf: 1 },
+        },
         { text: "Ben onun her paylaşımını beğeniyorum, o benimkini nadiren.", scores: { tektaraf: 2, belirsizlik: 1 } },
         { text: "Bazen story'sinde ben varım, sonra bir anda arşivliyor.", scores: { sicaksoguk: 3 } },
       ],
     },
     {
-      text: "Gece 23:30, telefonun titredi. Ondan: \"naber 👀\"",
+      text: 'Gece 23:30, telefonun titredi. Ondan: "naber 👀"',
       options: [
         { text: "Bu bizim normal saatimiz; gün içinde de zaten konuşuyoruz.", scores: {} },
-        { text: "Genelde sadece bu saatlerde yazıyor; gündüz pek sesi çıkmıyor.", scores: { belirsizlik: 2, sicaksoguk: 1 } },
+        {
+          text: "Genelde sadece bu saatlerde yazıyor; gündüz pek sesi çıkmıyor.",
+          scores: { belirsizlik: 2, sicaksoguk: 1 },
+        },
         { text: "Hemen cevap veririm; bütün gün bu mesajı bekledim.", scores: { tektaraf: 3 } },
-        { text: "Üç gündür yoktu, şimdi hiçbir şey olmamış gibi yazıyor; yine de dönerim.", scores: { sicaksoguk: 2, tektaraf: 1 } },
+        {
+          text: "Üç gündür yoktu, şimdi hiçbir şey olmamış gibi yazıyor; yine de dönerim.",
+          scores: { sicaksoguk: 2, tektaraf: 1 },
+        },
       ],
     },
     {
-      text: "\"Biz neyiz?\" konuşmasını açmayı düşündün.",
+      text: '"Biz neyiz?" konuşmasını açmayı düşündün.',
       options: [
         { text: "Açtık, konuştuk; tam istediğim cevap değildi ama netleştik.", scores: {} },
         { text: "Açmıyorum; cevabından korkuyorum.", scores: { belirsizlik: 3 } },
-        { text: "Açtım; \"Şimdilik böyle güzel\" dedi, ben de güzelmiş gibi yaptım.", scores: { tektaraf: 2, belirsizlik: 1 } },
-        { text: "Açtım; bir hafta çok ilgiliydi, sonra yine eskisi gibi oldu.", scores: { sicaksoguk: 2, belirsizlik: 1 } },
+        {
+          text: 'Açtım; "Şimdilik böyle güzel" dedi, ben de güzelmiş gibi yaptım.',
+          scores: { tektaraf: 2, belirsizlik: 1 },
+        },
+        {
+          text: "Açtım; bir hafta çok ilgiliydi, sonra yine eskisi gibi oldu.",
+          scores: { sicaksoguk: 2, belirsizlik: 1 },
+        },
       ],
     },
     {
@@ -81,16 +111,25 @@ export const situationship: Test = {
         { text: "Ararım; her zaman doğru şeyi söylemez ama dinler.", scores: {} },
         { text: "Anlatıp anlatmamakta kararsızım; o kadar yakın mıyız?", scores: { belirsizlik: 2, tektaraf: 1 } },
         { text: "Anlatırım ama konu bir şekilde onun gününe döner.", scores: { tektaraf: 3 } },
-        { text: "Hangi moddaysa: ya çok ilgilenir ya \"üzüldüm\" yazar geçer.", scores: { sicaksoguk: 2, tektaraf: 1 } },
+        { text: 'Hangi moddaysa: ya çok ilgilenir ya "üzüldüm" yazar geçer.', scores: { sicaksoguk: 2, tektaraf: 1 } },
       ],
     },
     {
       text: "Doğum günün yaklaşıyor.",
       options: [
         { text: "Birlikte kutlayacağız; yer konusunda hâlâ anlaşamadık.", scores: {} },
-        { text: "Hiç konuşmadık; o güne kadar ne olacağımız da belli değil.", scores: { belirsizlik: 2, sicaksoguk: 1 } },
-        { text: "Ben onunkini kutlamıştım; benimki aklında mı, emin değilim.", scores: { tektaraf: 2, belirsizlik: 1 } },
-        { text: "Geçen özel günde ortadan kaybolmuştu; bu sefer ne yapacak merak ediyorum.", scores: { sicaksoguk: 2, tektaraf: 1 } },
+        {
+          text: "Hiç konuşmadık; o güne kadar ne olacağımız da belli değil.",
+          scores: { belirsizlik: 2, sicaksoguk: 1 },
+        },
+        {
+          text: "Ben onunkini kutlamıştım; benimki aklında mı, emin değilim.",
+          scores: { tektaraf: 2, belirsizlik: 1 },
+        },
+        {
+          text: "Geçen özel günde ortadan kaybolmuştu; bu sefer ne yapacak merak ediyorum.",
+          scores: { sicaksoguk: 2, tektaraf: 1 },
+        },
       ],
     },
     {
@@ -108,14 +147,14 @@ export const situationship: Test = {
         { text: "Seneye bir tatil konuştuk; detaylarda hâlâ farklıyız.", scores: {} },
         { text: "Gelecekten hiç bahsetmiyoruz; sadece bugün var.", scores: { belirsizlik: 2, tektaraf: 1 } },
         { text: "Ben bahsediyorum; o gülüp konuyu değiştiriyor.", scores: { tektaraf: 2, sicaksoguk: 1 } },
-        { text: "Bir gün \"Seninle evlenirim\" diyor, ertesi gün iki gün yazmıyor.", scores: { sicaksoguk: 3 } },
+        { text: 'Bir gün "Seninle evlenirim" diyor, ertesi gün iki gün yazmıyor.', scores: { sicaksoguk: 3 } },
       ],
     },
     {
       text: "Bir buluşmayı son anda iptal etti.",
       options: [
         { text: "Nedenini söyledi, yeni gün önerdi; biraz bozuldum yine de.", scores: {} },
-        { text: "\"Başka zaman\" dedi; o başka zaman henüz gelmedi.", scores: { belirsizlik: 2, sicaksoguk: 1 } },
+        { text: '"Başka zaman" dedi; o başka zaman henüz gelmedi.', scores: { belirsizlik: 2, sicaksoguk: 1 } },
         { text: "Hazırlanmıştım bile; yine anlayışlı davranan ben oldum.", scores: { tektaraf: 2, sicaksoguk: 1 } },
         { text: "Ertesi gün çok güzel bir sürpriz yaptı; sonra yine iptal.", scores: { sicaksoguk: 2, tektaraf: 1 } },
       ],
@@ -126,16 +165,19 @@ export const situationship: Test = {
         { text: "Gün içinde ara ara; ikimiz de yazıyoruz, bazen ikimiz de unutuyoruz.", scores: {} },
         { text: "Ne zaman konuşacağımız hiç belli değil.", scores: { belirsizlik: 2, sicaksoguk: 1 } },
         { text: "Konuşmaları hep ben başlatıyorum.", scores: { tektaraf: 3 } },
-        { text: "Ya saatlerce yazışıyoruz ya da günlerce hiç; ben bekliyorum.", scores: { sicaksoguk: 2, tektaraf: 1 } },
+        {
+          text: "Ya saatlerce yazışıyoruz ya da günlerce hiç; ben bekliyorum.",
+          scores: { sicaksoguk: 2, tektaraf: 1 },
+        },
       ],
     },
     {
       text: "Arkadaşların bu durum hakkında ne diyor?",
       options: [
-        { text: "\"Yakışıyorsunuz\" diyen de var, \"acele etme\" diyen de.", scores: {} },
-        { text: "\"Bu nasıl bir ilişki, anlamadık.\"", scores: { belirsizlik: 2, tektaraf: 1 } },
-        { text: "\"Bu kadar emek vermene değer mi?\"", scores: { tektaraf: 2, sicaksoguk: 1 } },
-        { text: "\"Yine mi küstünüz, yine mi barıştınız?\"", scores: { sicaksoguk: 2, belirsizlik: 1 } },
+        { text: '"Yakışıyorsunuz" diyen de var, "acele etme" diyen de.', scores: {} },
+        { text: '"Bu nasıl bir ilişki, anlamadık."', scores: { belirsizlik: 2, tektaraf: 1 } },
+        { text: '"Bu kadar emek vermene değer mi?"', scores: { tektaraf: 2, sicaksoguk: 1 } },
+        { text: '"Yine mi küstünüz, yine mi barıştınız?"', scores: { sicaksoguk: 2, belirsizlik: 1 } },
       ],
     },
     {
@@ -148,7 +190,7 @@ export const situationship: Test = {
       ],
     },
     {
-      text: "Bir sabah \"Bu durumu bitirsem mi?\" diye düşündün.",
+      text: 'Bir sabah "Bu durumu bitirsem mi?" diye düşündün.',
       options: [
         { text: "Her ilişkide olduğu gibi aklımdan geçti; konuştuk, geçti.", scores: {} },
         { text: "Bitirmek için önce başlamış olmamız lazım, değil mi?", scores: { belirsizlik: 2, sicaksoguk: 1 } },
@@ -166,7 +208,7 @@ export const situationship: Test = {
       profile: { belirsizlik: 8, tektaraf: 8, sicaksoguk: 8 },
       color: "#2F7D6D",
       description: [
-        "Ne olduğunuzu biliyorsunuz, planlarınız var, emek karşılıklı. Arkadaşların sana \"Siz ne oluyorsunuz?\" diye sormuyor bile, çünkü cevap belli.",
+        'Ne olduğunuzu biliyorsunuz, planlarınız var, emek karşılıklı. Arkadaşların sana "Siz ne oluyorsunuz?" diye sormuyor bile, çünkü cevap belli.',
         "Her şey kusursuz demek değil bu. Ama belirsizliğin yarattığı o sürekli tahmin etme yorgunluğunu yaşamıyorsun. Enerjini ilişkiyi anlamaya değil, yaşamaya harcıyorsun.",
         "Bu netliği korumanın yolu da aynı: konuşmaya devam etmek. Bugün net olan şey, konuşulmazsa yarın griye dönebilir.",
       ],
@@ -187,7 +229,11 @@ export const situationship: Test = {
         "Gri bölgeden çıkmanın tek yolu bir soru sormak. Cevap ne olursa olsun, netlik belirsizlikten daha az acıtır.",
       ],
       strengths: ["Baskısız ve rahat bir bağınız var", "Birbirinize alan tanıyorsunuz"],
-      watchOut: ["Konuşulmayan beklentiler birikiyor", "\"Hakkım var mı?\" sorusu seni yıpratabilir", "Netlik istemek talepkârlık değil"],
+      watchOut: [
+        "Konuşulmayan beklentiler birikiyor",
+        '"Hakkım var mı?" sorusu seni yıpratabilir',
+        "Netlik istemek talepkârlık değil",
+      ],
       bestMatch: "net-iliski",
     },
     {
@@ -203,7 +249,11 @@ export const situationship: Test = {
         "Küçük bir deney yap: Bir süre ilk adımı atma. Ne olacağı sana çok şey anlatacak.",
       ],
       strengths: ["Sadık ve emek veren birisin", "Sevdiğin için çabalamaktan korkmuyorsun"],
-      watchOut: ["Emeğin karşılıksız kalıyor olabilir", "Kendi ihtiyaçlarını sürekli erteliyorsun", "Sevgi pazarlıkla kazanılmaz"],
+      watchOut: [
+        "Emeğin karşılıksız kalıyor olabilir",
+        "Kendi ihtiyaçlarını sürekli erteliyorsun",
+        "Sevgi pazarlıkla kazanılmaz",
+      ],
       bestMatch: "net-iliski",
     },
     {
@@ -219,7 +269,11 @@ export const situationship: Test = {
         "Kendine sor: Beni mutlu eden o, yoksa geri döndüğü anın rahatlaması mı? İstikrar sıkıcı değil; huzurlu.",
       ],
       strengths: ["Güçlü bir çekim yaşıyorsunuz", "İyi anlarınız gerçekten çok iyi"],
-      watchOut: ["Döngü seni duygusal olarak tüketebilir", "Kayboluşları normalleştirme", "Rahatlama hissi, mutlulukla karıştırılabilir"],
+      watchOut: [
+        "Döngü seni duygusal olarak tüketebilir",
+        "Kayboluşları normalleştirme",
+        "Rahatlama hissi, mutlulukla karıştırılabilir",
+      ],
       bestMatch: "net-iliski",
     },
     {
@@ -235,7 +289,11 @@ export const situationship: Test = {
         "İki yol var: Ya açık bir konuşmayla netlik istersin ya da kendine daha net davranan birini hak ettiğini kabul edersin. İkisi de cesaret ister, ikisi de seni bu askıdan kurtarır.",
       ],
       strengths: ["Durumu fark edecek kadar kendine dürüstsün", "Duygularını derin yaşıyorsun"],
-      watchOut: ["Belirsizlik özgüvenini aşındırabilir", "Beklemek bir plan değil", "Hak ettiğin netliği istemekten çekinme"],
+      watchOut: [
+        "Belirsizlik özgüvenini aşındırabilir",
+        "Beklemek bir plan değil",
+        "Hak ettiğin netliği istemekten çekinme",
+      ],
       bestMatch: "net-iliski",
     },
   ],

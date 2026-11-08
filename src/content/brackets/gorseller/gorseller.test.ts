@@ -16,7 +16,10 @@ describe("eleme fotoğrafları", () => {
     for (const { slug, id } of entries) {
       const b = brackets.find((x) => x.slug === slug);
       expect(b, `bilinmeyen oyun: ${slug}`).toBeDefined();
-      expect(b!.items.some((i) => i.id === id), `${slug}: bilinmeyen seçenek ${id}`).toBe(true);
+      expect(
+        b!.items.some((i) => i.id === id),
+        `${slug}: bilinmeyen seçenek ${id}`,
+      ).toBe(true);
     }
   });
 

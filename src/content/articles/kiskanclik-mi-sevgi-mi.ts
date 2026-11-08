@@ -6,12 +6,13 @@ export const kiskanclikMiSevgiMi: Article = {
   metaTitle: "Kıskançlık mı Sevgi mi? Sağlıklı İlişkinin İşaretleri",
   metaDescription:
     "Kıskançlık sevginin göstergesi mi? Sağlıklı ilgi ile kontrol arasındaki farkı, sağlıklı bir ilişkinin işaretlerini ve kıskançlığı konuşmanın yollarını anlattık.",
-  excerpt: "\"Kıskanıyorsa seviyordur\" diye bir inanç var. Ama sevgi ile kontrol arasındaki çizgi, sandığımızdan daha belirgin.",
+  excerpt:
+    '"Kıskanıyorsa seviyordur" diye bir inanç var. Ama sevgi ile kontrol arasındaki çizgi, sandığımızdan daha belirgin.',
   emoji: "💗",
   color: "#D7102F",
   updated: "2026-11-08",
   intro: [
-    "\"Hiç kıskanmıyorsa beni sevmiyordur\" ya da \"Kıskanıyor, demek ki değer veriyor\" gibi cümleler çok tanıdık. Romantik filmlerden şarkı sözlerine kadar birçok yerde kıskançlık, sevginin kanıtı gibi sunulur. Bu yüzden birçok insan bir parça kıskançlığı ilişkinin tuzu biberi olarak görür.",
+    '"Hiç kıskanmıyorsa beni sevmiyordur" ya da "Kıskanıyor, demek ki değer veriyor" gibi cümleler çok tanıdık. Romantik filmlerden şarkı sözlerine kadar birçok yerde kıskançlık, sevginin kanıtı gibi sunulur. Bu yüzden birçok insan bir parça kıskançlığı ilişkinin tuzu biberi olarak görür.',
     "Kıskançlık insani bir duygu; hissetmek kimseyi kötü bir partner yapmaz. Ama kıskançlığın nasıl ifade edildiği, sağlıklı bir ilişki ile yıpratıcı bir ilişki arasındaki farkı belirler. Bu rehberde sevgi ile kontrol arasındaki çizgiyi, sağlıklı ilişkinin işaretlerini ve kıskançlığı yapıcı bir şekilde konuşmanın yollarını ele alıyoruz.",
   ],
   sections: [
@@ -28,8 +29,8 @@ export const kiskanclikMiSevgiMi: Article = {
         "Aynı duygu çok farklı davranışlara dönüşebilir. Aşağıdaki karşılaştırmalar bu farkı somutlaştırıyor:",
       ],
       bullets: [
-        "Sağlıklı: \"O ortamda biraz huzursuz hissettim, konuşabilir miyiz?\" Kontrol: \"Bir daha o arkadaşınla görüşmeyeceksin.\"",
-        "Sağlıklı: \"Akşam eve varınca haber verir misin?\" Kontrol: Sürekli konum istemek ve nerede olduğunu sorgulamak.",
+        'Sağlıklı: "O ortamda biraz huzursuz hissettim, konuşabilir miyiz?" Kontrol: "Bir daha o arkadaşınla görüşmeyeceksin."',
+        'Sağlıklı: "Akşam eve varınca haber verir misin?" Kontrol: Sürekli konum istemek ve nerede olduğunu sorgulamak.',
         "Sağlıklı: Partnerinin mahremiyetine saygı göstermek. Kontrol: Gizlice telefonunu karıştırmak.",
         "Sağlıklı: Kendi duygunu ifade etmek. Kontrol: Suçluluk duygusu yaratmak ya da küsmek.",
         "Sağlıklı: Arkadaşlıklarını desteklemek. Kontrol: Onu çevresinden yavaş yavaş uzaklaştırmak.",
@@ -73,7 +74,7 @@ export const kiskanclikMiSevgiMi: Article = {
         "Kıskançlık duygusunu bastırmaya çalışmak genellikle işe yaramaz. Onun yerine duyguyu anlamaya ve yapıcı şekilde ifade etmeye çalışmak daha faydalıdır.",
       ],
       bullets: [
-        "Duyguyu adlandır: \"Şu an kıskanıyorum\" demek bile duygunun gücünü azaltır.",
+        'Duyguyu adlandır: "Şu an kıskanıyorum" demek bile duygunun gücünü azaltır.',
         "Tetikleyiciyi bul: Bu his bir somut olaydan mı, yoksa kendi güvensizliğinden mi geliyor?",
         "Hemen tepki verme: Yoğun duygu anında yazılan mesajlar genellikle pişmanlıkla sonuçlanır.",
         "Sakin bir anda konuş: Suçlama yerine kendi duygun üzerinden anlat.",
@@ -89,21 +90,19 @@ export const kiskanclikMiSevgiMi: Article = {
     },
     {
       heading: "Kıskançlık hakkında sık duyulan yanılgılar",
-      paragraphs: [
-        "Bazı yaygın inançlar, kıskançlığı olduğundan daha masum gösterebilir:",
-      ],
+      paragraphs: ["Bazı yaygın inançlar, kıskançlığı olduğundan daha masum gösterebilir:"],
       bullets: [
-        "\"Kıskanmıyorsa sevmiyordur.\" Kıskanmamak çoğu zaman güven ve rahatlıktan gelir.",
-        "\"Biraz kıskançlık ilişkiye heyecan katar.\" Heyecan, korku ve belirsizlikten değil, ilgi ve yakınlıktan beslendiğinde daha sağlıklıdır.",
-        "\"Beni korumak için yapıyor.\" Koruma ile kısıtlama arasındaki fark, senin seçim özgürlüğüne saygı gösterilip gösterilmediğidir.",
+        '"Kıskanmıyorsa sevmiyordur." Kıskanmamak çoğu zaman güven ve rahatlıktan gelir.',
+        '"Biraz kıskançlık ilişkiye heyecan katar." Heyecan, korku ve belirsizlikten değil, ilgi ve yakınlıktan beslendiğinde daha sağlıklıdır.',
+        '"Beni korumak için yapıyor." Koruma ile kısıtlama arasındaki fark, senin seçim özgürlüğüne saygı gösterilip gösterilmediğidir.',
       ],
     },
     {
       heading: "Kıskançlığı birlikte konuşmak",
       paragraphs: [
-        "Kıskançlık hakkında konuşmak, çoğu çift için zor bir konudur; çünkü konuşma kolayca suçlamaya dönüşebilir. Bunu önlemenin bir yolu, konuşmayı sakin bir anda ve ortak bir sorun olarak ele almaktır: \"Bazen ikimiz de kıskançlık hissediyoruz, bununla nasıl başa çıkabiliriz?\"",
+        'Kıskançlık hakkında konuşmak, çoğu çift için zor bir konudur; çünkü konuşma kolayca suçlamaya dönüşebilir. Bunu önlemenin bir yolu, konuşmayı sakin bir anda ve ortak bir sorun olarak ele almaktır: "Bazen ikimiz de kıskançlık hissediyoruz, bununla nasıl başa çıkabiliriz?"',
         "Böyle bir konuşmada her iki tarafın da neye ihtiyaç duyduğunu söylemesi faydalıdır. Biri daha sık haber almaya, diğeri daha fazla özgür alana ihtiyaç duyabilir. Bu ihtiyaçları açıkça konuşup ikinizin de rahat edeceği bir orta yol bulmak, kıskançlığın yarattığı gerginliği büyük ölçüde azaltır.",
-        "Konuşurken geçmiş hataları sıralamak yerine geleceğe odaklanmak da işe yarar. \"Geçen sefer şunu yaptın\" yerine \"Bundan sonra şöyle yapabilir miyiz?\" diye sormak, konuşmayı bir çözüm arayışına çevirir.",
+        'Konuşurken geçmiş hataları sıralamak yerine geleceğe odaklanmak da işe yarar. "Geçen sefer şunu yaptın" yerine "Bundan sonra şöyle yapabilir miyiz?" diye sormak, konuşmayı bir çözüm arayışına çevirir.',
       ],
     },
     {

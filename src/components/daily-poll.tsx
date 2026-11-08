@@ -49,7 +49,9 @@ export function DailyPoll({ polls }: { polls: Poll[] }) {
         </span>
         <span className="mt-1 block text-paper/80">Birini seç, herkesin ne seçtiğini anında gör.</span>
       </span>
-      <span className="shrink-0 rounded-full border-2 border-paper bg-cherry px-5 py-2.5 font-display font-bold">Oyla</span>
+      <span className="shrink-0 rounded-full border-2 border-paper bg-cherry px-5 py-2.5 font-display font-bold">
+        Oyla
+      </span>
     </Link>
   );
 }

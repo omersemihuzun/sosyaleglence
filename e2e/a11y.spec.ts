@@ -46,7 +46,9 @@ for (const path of pages) {
       .map((v) => ({
         id: v.id,
         impact: v.impact,
-        nodes: v.nodes.slice(0, 5).map((n) => `${n.target.join(" ")} :: ${n.failureSummary?.split("\n")[1]?.trim() ?? ""}`),
+        nodes: v.nodes
+          .slice(0, 5)
+          .map((n) => `${n.target.join(" ")} :: ${n.failureSummary?.split("\n")[1]?.trim() ?? ""}`),
       }));
     expect(serious, "kritik/ciddi erişilebilirlik ihlali olmamalı").toEqual([]);
 

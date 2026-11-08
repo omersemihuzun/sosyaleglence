@@ -55,4 +55,3 @@ export function reportTestFinish(slug: string, cevaplar: number[], baslangic: nu
 export function reportBracket(slug: string, picks: [winner: string, loser: string][]) {
   if (once(`b:${slug}`)) send("/api/istatistik/eleme", { slug, picks });
 }
-

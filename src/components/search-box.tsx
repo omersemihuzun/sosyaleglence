@@ -51,9 +51,7 @@ export function SearchPanel() {
 
   const prepared = useMemo(() => (items ? prepare(items) : []), [items]);
   const results = useMemo(() => search(prepared, query), [prepared, query]);
-  const groups = kindOrder
-    .map((k) => ({ k, rows: results.filter((r) => r.k === k) }))
-    .filter((g) => g.rows.length > 0);
+  const groups = kindOrder.map((k) => ({ k, rows: results.filter((r) => r.k === k) })).filter((g) => g.rows.length > 0);
 
   // Ok tuşlarıyla kutu ve sonuçlar arasında gezinme
   function onKeyDown(e: React.KeyboardEvent) {

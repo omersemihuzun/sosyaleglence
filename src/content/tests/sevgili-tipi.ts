@@ -19,12 +19,18 @@ export const sevgiliTipi: Test = {
   ],
   questions: [
     {
-      text: "Sevgilin işten eve döndü, yüzü asık. \"Bir şey yok\" diyor.",
+      text: 'Sevgilin işten eve döndü, yüzü asık. "Bir şey yok" diyor.',
       options: [
-        { text: "Sarılır, \"Anlat bakalım\" derim; susmak istese de biraz üstüne giderim.", scores: { coskun: 2, koruyucu: 1 } },
+        {
+          text: 'Sarılır, "Anlat bakalım" derim; susmak istese de biraz üstüne giderim.',
+          scores: { coskun: 2, koruyucu: 1 },
+        },
         { text: "Gülümser, kendi işime dönerim; anlatmak isterse yanıma gelir.", scores: { gizem: 2, sakin: 1 } },
         { text: "Çayını koyar, kanepede yer açarım; gerisini akışına bırakırım.", scores: { sakin: 3 } },
-        { text: "\"Yemek yedin mi?\" diye sorar, hemen sevdiği yemeği sipariş ederim.", scores: { koruyucu: 2, coskun: 1 } },
+        {
+          text: '"Yemek yedin mi?" diye sorar, hemen sevdiği yemeği sipariş ederim.',
+          scores: { koruyucu: 2, coskun: 1 },
+        },
       ],
     },
     {
@@ -32,8 +38,8 @@ export const sevgiliTipi: Test = {
       options: [
         { text: "Konuyu hemen başka yere çeker, ortamı güldürerek dağıtırım.", scores: { coskun: 2, sakin: 1 } },
         { text: "Ona bir bakış atarım; ikimiz anlarız, eve dönünce konuşuruz.", scores: { gizem: 2, koruyucu: 1 } },
-        { text: "Büyütmem; sonra baş başa kalınca \"Takıldın mı?\" diye sorarım.", scores: { sakin: 2, gizem: 1 } },
-        { text: "\"Tamam, yeter\" deyip şakayı keserim; ortam gerilse de.", scores: { koruyucu: 3 } },
+        { text: 'Büyütmem; sonra baş başa kalınca "Takıldın mı?" diye sorarım.', scores: { sakin: 2, gizem: 1 } },
+        { text: '"Tamam, yeter" deyip şakayı keserim; ortam gerilse de.', scores: { koruyucu: 3 } },
       ],
     },
     {
@@ -51,7 +57,7 @@ export const sevgiliTipi: Test = {
         { text: "Beş dakikadan uzun küs kalamam; çözülmeden yanına giderim.", scores: { coskun: 2, koruyucu: 1 } },
         { text: "Biraz çekilirim; ne hissettiğimi önce kendim anlamam lazım.", scores: { gizem: 3 } },
         { text: "Sesimi hiç yükseltmem; bu sakinlik bazen onu daha çok kızdırır.", scores: { sakin: 2, gizem: 1 } },
-        { text: "Haklı olsam da \"Sen iyi misin?\" diye sorup kavgayı bırakırım.", scores: { koruyucu: 2, sakin: 1 } },
+        { text: 'Haklı olsam da "Sen iyi misin?" diye sorup kavgayı bırakırım.', scores: { koruyucu: 2, sakin: 1 } },
       ],
     },
     {
@@ -60,7 +66,10 @@ export const sevgiliTipi: Test = {
         { text: "Sabah kahvaltı, öğlen sahil, akşam konser; boş saat kalmasın.", scores: { coskun: 3 } },
         { text: "Ona söylemeden, kimsenin bilmediği bir yere götürürüm.", scores: { gizem: 2, coskun: 1 } },
         { text: "Hiç plan yok: battaniye, dizi, telefonlar sessizde.", scores: { sakin: 3 } },
-        { text: "Onun dinlenebileceği bir gün kurar, ayak işlerini ben hallederim.", scores: { koruyucu: 2, sakin: 1 } },
+        {
+          text: "Onun dinlenebileceği bir gün kurar, ayak işlerini ben hallederim.",
+          scores: { koruyucu: 2, sakin: 1 },
+        },
       ],
     },
     {
@@ -84,10 +93,10 @@ export const sevgiliTipi: Test = {
     {
       text: "Arkadaşların seni sevgili olarak nasıl tarif eder?",
       options: [
-        { text: "\"Âşık olunca bütün mahalle duyuyor.\"", scores: { coskun: 3 } },
-        { text: "\"Az konuşur ama sevgilisi için dağları deler.\"", scores: { gizem: 2, koruyucu: 1 } },
-        { text: "\"Yanında stres diye bir şey kalmıyor.\"", scores: { sakin: 3 } },
-        { text: "\"Sevgilisine laf ettirmez, çantası da hep dolu.\"", scores: { koruyucu: 2, coskun: 1 } },
+        { text: '"Âşık olunca bütün mahalle duyuyor."', scores: { coskun: 3 } },
+        { text: '"Az konuşur ama sevgilisi için dağları deler."', scores: { gizem: 2, koruyucu: 1 } },
+        { text: '"Yanında stres diye bir şey kalmıyor."', scores: { sakin: 3 } },
+        { text: '"Sevgilisine laf ettirmez, çantası da hep dolu."', scores: { koruyucu: 2, coskun: 1 } },
       ],
     },
     {
@@ -95,7 +104,7 @@ export const sevgiliTipi: Test = {
       options: [
         { text: "Çığlık atar, herkese anlatır, hemen bir kutlama ayarlarım.", scores: { coskun: 3 } },
         { text: "Gururla gülümserim; akşam ona küçük bir sürpriz hazırlarım.", scores: { gizem: 2, coskun: 1 } },
-        { text: "\"Biliyordum zaten\" der, sakin sakin kutlarız; abartmam.", scores: { sakin: 2, gizem: 1 } },
+        { text: '"Biliyordum zaten" der, sakin sakin kutlarız; abartmam.', scores: { sakin: 2, gizem: 1 } },
         { text: "Yeni pozisyonda onu neyin yoracağını şimdiden düşünürüm.", scores: { koruyucu: 2, sakin: 1 } },
       ],
     },
@@ -123,7 +132,7 @@ export const sevgiliTipi: Test = {
         { text: "Bol emoji, sesli mesaj, gün içinde onlarca mesaj.", scores: { coskun: 3 } },
         { text: "Kısa ama yerinde; bazen saatlerce sessiz kalırım.", scores: { gizem: 2, sakin: 1 } },
         { text: "Rahat; cevap gelmese de dert etmem, ben de geç dönerim.", scores: { sakin: 2, gizem: 1 } },
-        { text: "\"Eve vardın mı?\" mesajım eksik olmaz, cevap gelene kadar.", scores: { koruyucu: 2, coskun: 1 } },
+        { text: '"Eve vardın mı?" mesajım eksik olmaz, cevap gelene kadar.', scores: { koruyucu: 2, coskun: 1 } },
       ],
     },
     {
@@ -183,7 +192,11 @@ export const sevgiliTipi: Test = {
         "Sevgin küçük ve derin işaretlerle gelir: sadece onun anlayacağı bir not, tam ihtiyacı olduğu anda yapılan bir jest. Kalabalık kutlamalar değil, baş başa anlar senin dilin.",
         "Partnerin bazen ne hissettiğini anlamakta zorlanabilir. Arada bir duygularını söze dökmek, gizemini bozmaz; ilişkiye güven katar.",
       ],
-      strengths: ["Derin ve sadık bir bağ kuruyorsun", "Alan tanımayı ve beklemeyi biliyorsun", "Jestlerin çok anlamlı"],
+      strengths: [
+        "Derin ve sadık bir bağ kuruyorsun",
+        "Alan tanımayı ve beklemeyi biliyorsun",
+        "Jestlerin çok anlamlı",
+      ],
       watchOut: ["Mesafen ilgisizlik gibi algılanabilir", "Duygularını arada bir yüksek sesle söyle"],
       bestMatch: "golden-retriever",
     },

@@ -53,8 +53,14 @@ describe("rehber makaleleri", () => {
 
   it("test eşlemesi mevcut test ve makalelere işaret ediyor", () => {
     for (const [test, article] of Object.entries(articleByTest)) {
-      expect(tests.some((t) => t.slug === test), test).toBe(true);
-      expect(articles.some((a) => a.slug === article), article).toBe(true);
+      expect(
+        tests.some((t) => t.slug === test),
+        test,
+      ).toBe(true);
+      expect(
+        articles.some((a) => a.slug === article),
+        article,
+      ).toBe(true);
     }
   });
 });

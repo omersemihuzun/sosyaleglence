@@ -6,7 +6,8 @@ export const toksikArkadaslik: Article = {
   metaTitle: "Toksik Arkadaşlık: İşaretler ve Sınır Koymak",
   metaDescription:
     "Toksik arkadaşlık nedir, nasıl anlaşılır? Rekabet, dedikodu, çıkarcılık gibi işaretleri, sınır koymanın yollarını ve bir arkadaşlığı bitirmeyi anlattık.",
-  excerpt: "Her görüşmeden sonra yorgun mu hissediyorsun? Bazı arkadaşlıklar sessizce enerjini tüketir. İşaretleri ve sınır koymanın yollarını anlattık.",
+  excerpt:
+    "Her görüşmeden sonra yorgun mu hissediyorsun? Bazı arkadaşlıklar sessizce enerjini tüketir. İşaretleri ve sınır koymanın yollarını anlattık.",
   emoji: "☢️",
   color: "#65A30D",
   updated: "2026-11-08",
@@ -63,18 +64,16 @@ export const toksikArkadaslik: Article = {
     {
       heading: "Belki toksik olan sen misin?",
       paragraphs: [
-        "Dürüst olmak gerekirse, bu işaretlerin bazılarını hepimiz zaman zaman yaparız. Bir arkadaşımızın başarısına içten içe kıskanmak, \"aramızda kalsın\" diye başlayan bir hikâyeyi anlatmak ya da sadece ihtiyacımız olduğunda aramak. Kendi davranışlarını fark etmek, arkadaşlıklarını iyileştirmenin en güçlü adımıdır.",
+        'Dürüst olmak gerekirse, bu işaretlerin bazılarını hepimiz zaman zaman yaparız. Bir arkadaşımızın başarısına içten içe kıskanmak, "aramızda kalsın" diye başlayan bir hikâyeyi anlatmak ya da sadece ihtiyacımız olduğunda aramak. Kendi davranışlarını fark etmek, arkadaşlıklarını iyileştirmenin en güçlü adımıdır.',
         "Bu bir suçluluk listesi değil. Amaç, ilişkilerinde hangi kalıpların tekrar ettiğini görmek ve bilinçli olarak farklı seçimler yapabilmektir.",
       ],
     },
     {
       heading: "Sınır koymanın yolları",
-      paragraphs: [
-        "Her zorlu arkadaşlığı bitirmek gerekmez. Çoğu zaman net sınırlar ilişkiyi kurtarır:",
-      ],
+      paragraphs: ["Her zorlu arkadaşlığı bitirmek gerekmez. Çoğu zaman net sınırlar ilişkiyi kurtarır:"],
       bullets: [
-        "Davranışı somut olarak adlandır: \"Haberimi paylaştığımda konuyu hemen değiştirmen beni üzdü.\"",
-        "Ne istediğini söyle: \"Bir şey anlattığımda önce dinlemeni isterim.\"",
+        'Davranışı somut olarak adlandır: "Haberimi paylaştığımda konuyu hemen değiştirmen beni üzdü."',
+        'Ne istediğini söyle: "Bir şey anlattığımda önce dinlemeni isterim."',
         "Hayır demeyi öğren: Her iyiliğe, her plana, her gece telefonuna evet demek zorunda değilsin.",
         "Bilgi paylaşımını sınırla: Sırlarını taşıyan birine özel şeyleri anlatmayı bırakabilirsin.",
         "Görüşme sıklığını ayarla: Bazı arkadaşlıklar haftalık değil aylık görüşmelerde daha sağlıklıdır.",
@@ -97,7 +96,7 @@ export const toksikArkadaslik: Article = {
       heading: "Grup içinde toksik dinamikler",
       paragraphs: [
         "Toksiklik bazen tek bir kişiden değil, bir grubun genel havasından gelir. Bir arkadaş grubunda sürekli birinin hedef alınması, şakaların hep aynı kişi üzerinden yapılması ya da gruptan biri yokken onun hakkında konuşulması, herkesin farkında olmadan katıldığı bir örüntü olabilir.",
-        "Böyle bir dinamikte sessiz kalmak çoğu zaman en kolayıdır, ama küçük bir müdahale bile atmosferi değiştirebilir. \"Bence bu konuyu o yokken konuşmayalım\" ya da \"Bu şaka biraz fazla oldu\" demek, grubun normlarını yavaş yavaş dönüştürür.",
+        'Böyle bir dinamikte sessiz kalmak çoğu zaman en kolayıdır, ama küçük bir müdahale bile atmosferi değiştirebilir. "Bence bu konuyu o yokken konuşmayalım" ya da "Bu şaka biraz fazla oldu" demek, grubun normlarını yavaş yavaş dönüştürür.',
         "Eğer gruptaki hedef sensen, bunu bir arkadaşınla bire bir konuşmak, tüm grubun önünde yüzleşmekten genellikle daha etkilidir. Grubun tamamı değişmiyorsa, içindeki sağlıklı ilişkileri bire bir sürdürmek de bir seçenektir.",
       ],
     },
@@ -105,7 +104,7 @@ export const toksikArkadaslik: Article = {
       heading: "Kendini korurken empatiyi kaybetmemek",
       paragraphs: [
         "Toksik davranışlar çoğu zaman kişinin kendi kaygılarından, güvensizliklerinden ya da zor bir döneminden kaynaklanır. Bunu anlamak davranışı haklı çıkarmaz, ama tepkini yumuşatabilir. Bir arkadaşının kıskançlığının arkasında kendi hayatındaki hayal kırıklıkları olabilir.",
-        "Empati ile sınır birbirinin alternatifi değildir. \"Zor bir dönemden geçtiğini biliyorum, ama bana böyle konuşmanı istemiyorum\" cümlesi ikisini birden içerir. Kendini korumak, karşı tarafa düşman olmak anlamına gelmez.",
+        'Empati ile sınır birbirinin alternatifi değildir. "Zor bir dönemden geçtiğini biliyorum, ama bana böyle konuşmanı istemiyorum" cümlesi ikisini birden içerir. Kendini korumak, karşı tarafa düşman olmak anlamına gelmez.',
       ],
     },
     {

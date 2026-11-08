@@ -2,16 +2,24 @@
   "name": "sosyaleglence",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=22.6"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "typecheck": "next typegen && tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "knip": "knip",
+    "test": "vitest run",
+    "e2e": "playwright test",
     "kalibre": "node --experimental-strip-types --no-warnings scripts/kalibre.ts",
     "seo": "node --experimental-strip-types --no-warnings scripts/seo-kontrol.ts",
-    "test": "vitest run",
     "rapor": "node --experimental-strip-types --no-warnings scripts/rapor.ts",
-    "e2e": "playwright test"
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run knip && npm test && npm run kalibre && npm run seo"
   },
   "dependencies": {
     "@upstash/ratelimit": "^2.2.0",
@@ -33,6 +41,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.5",
+    "knip": "^5.88.1",
+    "prettier": "^3.9.10",
     "tailwindcss": "^4",
     "typescript": "^5",
     "vitest": "^4.1.12"

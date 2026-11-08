@@ -26,14 +26,19 @@ test("eleme turnuvası oynanır, geri alma çalışır, sonuç yolu gösterilir"
   for (let i = 0; i < 15; i++) {
     await expect(cards(page)).toHaveCount(2);
     const before = await live.innerText();
-    await cards(page).nth(i % 2).click();
+    await cards(page)
+      .nth(i % 2)
+      .click();
     if (i < 14) await expect(live).not.toHaveText(before);
   }
 
-  await expect(page).toHaveURL(/\/eleme\/gelecekteki-evini-sec\/sonuc\/[a-z0-9-]+\?f=[a-z0-9-]+&y=[a-z0-9-]+%2C[a-z0-9-]+$/, {
-    // Son seçimden sonra sonuç sayfasına geçiş yük altında birkaç saniye sürebilir
-    timeout: 15_000,
-  });
+  await expect(page).toHaveURL(
+    /\/eleme\/gelecekteki-evini-sec\/sonuc\/[a-z0-9-]+\?f=[a-z0-9-]+&y=[a-z0-9-]+%2C[a-z0-9-]+$/,
+    {
+      // Son seçimden sonra sonuç sayfasına geçiş yük altında birkaç saniye sürebilir
+      timeout: 15_000,
+    },
+  );
   await expect(page.getByText("Şampiyona giden yol")).toBeVisible();
   await expect(page.getByText("Şampiyon", { exact: true })).toBeVisible();
   await expect(page.getByText("Finalist", { exact: true })).toBeVisible();

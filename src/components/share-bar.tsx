@@ -79,7 +79,11 @@ export function ShareBar({ shareUrl, shareText, imageUrl, fileName }: Props) {
           >
             X&apos;te paylaş
           </a>
-          <button type="button" onClick={copy} className="sticker sticker-press bg-white px-4 py-3 font-display font-bold">
+          <button
+            type="button"
+            onClick={copy}
+            className="sticker sticker-press bg-white px-4 py-3 font-display font-bold"
+          >
             Linki kopyala
           </button>
         </div>

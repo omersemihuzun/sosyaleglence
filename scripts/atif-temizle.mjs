@@ -36,10 +36,15 @@ export function cleanCreator(raw, uploader = "") {
   // pixabay profil adresi -> kullanıcı adı
   const pix = s.match(/pixabay\.com\/users\/([a-z0-9_-]+?)(?:-\d+)?\/?$/i);
   if (pix) s = `${pix[1]} (Pixabay)`;
-  s = s.replace(/\s+/g, " ").replace(/[\s.,;:]+$/, "").trim();
+  s = s
+    .replace(/\s+/g, " ")
+    .replace(/[\s.,;:]+$/, "")
+    .trim();
 
   if (!s || /^bilinmiyor$/i.test(s)) {
-    const u = String(uploader).replace(/~commonswiki/gi, "").trim();
+    const u = String(uploader)
+      .replace(/~commonswiki/gi, "")
+      .trim();
     // Commons'ta yazar belirtilmemişse telif beyanına göre yükleyen kişi yazar sayılır
     return u ? `${u} (Wikimedia Commons)` : "Bilinmiyor";
   }

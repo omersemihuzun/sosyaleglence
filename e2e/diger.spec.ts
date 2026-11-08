@@ -24,7 +24,9 @@ test("hediye bulucu adresten ön seçimi okur, bütçe sonuçları değiştirir"
   await expect(heading).not.toHaveText(before);
   await expect(page).toHaveURL(/kime=anne&butce=1/);
 
-  const hrefs = await page.locator("a.store-btn").evaluateAll((els) => els.slice(0, 3).map((e) => (e as HTMLAnchorElement).href));
+  const hrefs = await page
+    .locator("a.store-btn")
+    .evaluateAll((els) => els.slice(0, 3).map((e) => (e as HTMLAnchorElement).href));
   expect(hrefs[0]).toMatch(/^https:\/\/www\.trendyol\.com\/sr\?q=/);
   expect(hrefs[1]).toMatch(/^https:\/\/www\.hepsiburada\.com\/ara\?q=/);
   expect(hrefs[2]).toMatch(/^https:\/\/www\.amazon\.com\.tr\/s\?k=/);
@@ -53,7 +55,10 @@ test("eski WordPress adresleri yeni sayfalara yönlenir", async ({ page }) => {
   await expect(page).toHaveURL(/\/iletisim$/);
 });
 
-test("isimle aşk testi: boş isimde uyarır, iki isimle sıradan bağımsız aynı puanı verir", async ({ page, consoleErrors }) => {
+test("isimle aşk testi: boş isimde uyarır, iki isimle sıradan bağımsız aynı puanı verir", async ({
+  page,
+  consoleErrors,
+}) => {
   void consoleErrors;
   await page.goto("/ask-testi");
   const hesapla = page.locator("[data-hesapla]");
@@ -91,7 +96,10 @@ test("isimle aşk testi: story kartı tarayıcıda PNG olarak üretilir", async 
   expect(d.suggestedFilename()).toBe("isim-uyumu.png");
 });
 
-test("Bunu mu O mu: oy değiştirilebilir, soru atlanır, tur istenince biter ve 10 soruda özet gelir", async ({ page, consoleErrors }) => {
+test("Bunu mu O mu: oy değiştirilebilir, soru atlanır, tur istenince biter ve 10 soruda özet gelir", async ({
+  page,
+  consoleErrors,
+}) => {
   void consoleErrors;
   const istekler: { id: string; choice: string; degistir?: boolean }[] = [];
   await page.route("**/api/anket", async (route) => {
@@ -108,7 +116,10 @@ test("Bunu mu O mu: oy değiştirilebilir, soru atlanır, tur istenince biter ve
   await options.last().click();
   await expect(options.last()).toHaveAttribute("aria-pressed", "true");
   await expect(options.first()).toHaveAttribute("aria-pressed", "false");
-  expect(istekler.map((i) => [i.choice, Boolean(i.degistir)])).toEqual([["a", false], ["b", true]]);
+  expect(istekler.map((i) => [i.choice, Boolean(i.degistir)])).toEqual([
+    ["a", false],
+    ["b", true],
+  ]);
 
   // Sıradaki, sonra atla
   await page.getByRole("button", { name: "Sıradaki" }).click();

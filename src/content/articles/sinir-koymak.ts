@@ -6,12 +6,13 @@ export const sinirKoymakRehber: Article = {
   metaTitle: "Arkadaşlıkta Sınır Koymak: Hayır Demeyi Öğrenmek",
   metaDescription:
     "Arkadaşlıkta sınır koymak neden zor, nasıl yapılır? Hayır demeyi öğrenmek, suçluluk duygusuyla başa çıkmak ve kırmadan sınır çizmek için örnek cümleler.",
-  excerpt: "Her davete evet, her ricaya tamam. Sonunda yorgun ve kırgın hissediyorsun. Sınır koymak arkadaşlığı bitirmez, çoğu zaman kurtarır.",
+  excerpt:
+    "Her davete evet, her ricaya tamam. Sonunda yorgun ve kırgın hissediyorsun. Sınır koymak arkadaşlığı bitirmez, çoğu zaman kurtarır.",
   emoji: "🧱",
   color: "#2F7D6D",
   updated: "2026-11-08",
   intro: [
-    "Gece yarısı gelen \"Biraz konuşabilir miyiz?\" mesajına her seferinde cevap vermek, istemediğin bir plana sırf ayıp olmasın diye katılmak, sürekli borç para isteyen bir arkadaşa hayır diyememek... Arkadaşlıklar hayatımızın en değerli parçalarından biri, ama sınırları olmayan arkadaşlıklar zamanla insanı tüketebilir.",
+    'Gece yarısı gelen "Biraz konuşabilir miyiz?" mesajına her seferinde cevap vermek, istemediğin bir plana sırf ayıp olmasın diye katılmak, sürekli borç para isteyen bir arkadaşa hayır diyememek... Arkadaşlıklar hayatımızın en değerli parçalarından biri, ama sınırları olmayan arkadaşlıklar zamanla insanı tüketebilir.',
     "Sınır koymak çoğu zaman bencillik ya da soğukluk gibi algılanır. Oysa sağlıklı sınırlar, arkadaşlıkların uzun ömürlü olmasını sağlayan şeylerden biridir. Bu rehberde sınırın ne olduğunu, neden koymakta zorlandığımızı ve kırmadan hayır demenin pratik yollarını konuşuyoruz.",
   ],
   sections: [
@@ -19,19 +20,17 @@ export const sinirKoymakRehber: Article = {
       heading: "Sınır nedir, ne değildir?",
       paragraphs: [
         "Sınır, neyin senin için uygun olduğunu ve neyin olmadığını belirleyen kişisel bir çizgidir. Zamanın, enerjin, paran, mahremiyetin ve duygusal kapasiten için koyduğun bu çizgiler, başkalarına seninle nasıl bir ilişki kurabileceklerini gösterir.",
-        "Sınır, karşı tarafı kontrol etmek değildir. \"Onunla görüşmeyeceksin\" bir sınır değil, kontrol girişimidir. \"Ben o ortamda rahat hissetmiyorum, gelmeyeceğim\" ise bir sınırdır. Fark şu: Sınır, başkasının ne yapacağını değil, senin ne yapacağını belirler.",
+        'Sınır, karşı tarafı kontrol etmek değildir. "Onunla görüşmeyeceksin" bir sınır değil, kontrol girişimidir. "Ben o ortamda rahat hissetmiyorum, gelmeyeceğim" ise bir sınırdır. Fark şu: Sınır, başkasının ne yapacağını değil, senin ne yapacağını belirler.',
       ],
     },
     {
       heading: "Neden hayır demekte zorlanırız?",
-      paragraphs: [
-        "Hayır diyememenin arkasında genellikle birkaç tanıdık neden vardır.",
-      ],
+      paragraphs: ["Hayır diyememenin arkasında genellikle birkaç tanıdık neden vardır."],
       subsections: [
         {
           heading: "Sevilmeme korkusu",
           paragraphs: [
-            "\"Hayır dersem benden uzaklaşır\" düşüncesi çok yaygındır. Özellikle başkalarını memnun etmeye alışkın kişiler, reddetmeyi ilişkiyi kaybetme riskiyle eşitler.",
+            '"Hayır dersem benden uzaklaşır" düşüncesi çok yaygındır. Özellikle başkalarını memnun etmeye alışkın kişiler, reddetmeyi ilişkiyi kaybetme riskiyle eşitler.',
           ],
         },
         {
@@ -64,26 +63,24 @@ export const sinirKoymakRehber: Article = {
     },
     {
       heading: "Kırmadan sınır koymanın yolları",
-      paragraphs: [
-        "Sınır koymak sert olmak zorunda değil. Açık, sakin ve kısa olmak genellikle en iyi sonucu verir.",
-      ],
+      paragraphs: ["Sınır koymak sert olmak zorunda değil. Açık, sakin ve kısa olmak genellikle en iyi sonucu verir."],
       subsections: [
         {
           heading: "Kendi duygundan başla",
           paragraphs: [
-            "Suçlayan cümleler yerine kendi ihtiyacını anlatan cümleler kur. \"Sen hep geç saatte arıyorsun\" yerine \"Gece geç saatte konuşunca ertesi gün çok yorgun oluyorum, akşam erken saatlerde konuşabilir miyiz?\" demek, karşı tarafı savunmaya geçirmez.",
+            'Suçlayan cümleler yerine kendi ihtiyacını anlatan cümleler kur. "Sen hep geç saatte arıyorsun" yerine "Gece geç saatte konuşunca ertesi gün çok yorgun oluyorum, akşam erken saatlerde konuşabilir miyiz?" demek, karşı tarafı savunmaya geçirmez.',
           ],
         },
         {
           heading: "Uzun açıklamalar yapmak zorunda değilsin",
           paragraphs: [
-            "Hayır demek için ayrıntılı bir gerekçe sunman gerekmez. \"Bu hafta sonu gelemeyeceğim, kendime biraz zaman ayırmam lazım\" yeterlidir. Ne kadar çok açıklama yaparsan, karşı taraf o kadar pazarlık alanı bulabilir.",
+            'Hayır demek için ayrıntılı bir gerekçe sunman gerekmez. "Bu hafta sonu gelemeyeceğim, kendime biraz zaman ayırmam lazım" yeterlidir. Ne kadar çok açıklama yaparsan, karşı taraf o kadar pazarlık alanı bulabilir.',
           ],
         },
         {
           heading: "Alternatif sun",
           paragraphs: [
-            "Bir şeye hayır derken ilişkiyi korumak istiyorsan, bir alternatif önerebilirsin: \"Bu akşam olmaz ama perşembe kahve içelim mi?\" Bu, reddettiğin şeyin kişi değil, sadece o istek olduğunu gösterir.",
+            'Bir şeye hayır derken ilişkiyi korumak istiyorsan, bir alternatif önerebilirsin: "Bu akşam olmaz ama perşembe kahve içelim mi?" Bu, reddettiğin şeyin kişi değil, sadece o istek olduğunu gösterir.',
           ],
         },
         {
@@ -96,15 +93,13 @@ export const sinirKoymakRehber: Article = {
     },
     {
       heading: "Örnek cümleler",
-      paragraphs: [
-        "Farklı durumlarda kullanabileceğin birkaç örnek:",
-      ],
+      paragraphs: ["Farklı durumlarda kullanabileceğin birkaç örnek:"],
       bullets: [
-        "Para isteğine: \"Şu an borç veremiyorum, ama başka bir şekilde yardım edebilir miyim?\"",
-        "Son dakika plan iptallerine: \"Planlar sık değişince zorlanıyorum, bir dahakine daha önceden haber verebilir misin?\"",
-        "Dedikoduya: \"Onun hakkında konuşmak istemiyorum, o burada değil.\"",
-        "Sürekli dert dinlemeye: \"Seni dinlemek istiyorum ama bugün enerjim çok düşük, yarın konuşalım mı?\"",
-        "İstemediğin bir davete: \"Davet için teşekkürler, bu sefer katılmayacağım.\"",
+        'Para isteğine: "Şu an borç veremiyorum, ama başka bir şekilde yardım edebilir miyim?"',
+        'Son dakika plan iptallerine: "Planlar sık değişince zorlanıyorum, bir dahakine daha önceden haber verebilir misin?"',
+        'Dedikoduya: "Onun hakkında konuşmak istemiyorum, o burada değil."',
+        'Sürekli dert dinlemeye: "Seni dinlemek istiyorum ama bugün enerjim çok düşük, yarın konuşalım mı?"',
+        'İstemediğin bir davete: "Davet için teşekkürler, bu sefer katılmayacağım."',
       ],
     },
     {
@@ -118,13 +113,13 @@ export const sinirKoymakRehber: Article = {
       heading: "Dijital sınırlar",
       paragraphs: [
         "Mesajlaşma uygulamaları, arkadaşlarımıza her an ulaşılabilir olmamızı neredeyse zorunlu hâle getirdi. Okundu bilgisi, son görülme ve sesli mesajlar, hemen cevap verme baskısı yaratabilir. Oysa her mesaja anında dönmek zorunda değilsin.",
-        "Dijital sınırlar da diğer sınırlar gibi konuşulabilir. \"Gün içinde yoğun oluyorum, akşam cevap veriyorum\" demek, karşı tarafın beklentisini netleştirir. Grup sohbetlerinde bildirimleri sessize almak, gece belirli bir saatten sonra telefonu kenara bırakmak ya da uzun sesli mesajlar yerine kısa bir arama önermek de enerjini korumanın yollarıdır.",
+        'Dijital sınırlar da diğer sınırlar gibi konuşulabilir. "Gün içinde yoğun oluyorum, akşam cevap veriyorum" demek, karşı tarafın beklentisini netleştirir. Grup sohbetlerinde bildirimleri sessize almak, gece belirli bir saatten sonra telefonu kenara bırakmak ya da uzun sesli mesajlar yerine kısa bir arama önermek de enerjini korumanın yollarıdır.',
       ],
     },
     {
       heading: "Başkalarının sınırlarına saygı göstermek",
       paragraphs: [
-        "Sınır koymayı öğrenmek, başkalarının sınırlarını fark etmeyi de kolaylaştırır. Bir arkadaşın sana hayır dediğinde bunu kişisel bir reddediş olarak değil, onun kendi ihtiyaçlarını tanıması olarak görmek ilişkiyi güçlendirir. \"Tamam, anladım, sonra konuşuruz\" demek, ona güvenli bir alan sunduğunu gösterir.",
+        'Sınır koymayı öğrenmek, başkalarının sınırlarını fark etmeyi de kolaylaştırır. Bir arkadaşın sana hayır dediğinde bunu kişisel bir reddediş olarak değil, onun kendi ihtiyaçlarını tanıması olarak görmek ilişkiyi güçlendirir. "Tamam, anladım, sonra konuşuruz" demek, ona güvenli bir alan sunduğunu gösterir.',
         "Sağlıklı arkadaşlıklarda iki taraf da hayır diyebilir ve bu hayır, ilişkiyi tehdit etmez. Hatta zamanla, birbirinizin sınırlarını bilmek ilişkiyi daha rahat, daha dürüst ve daha uzun ömürlü kılar. Sınırlar, arkadaşlığın etrafına örülmüş duvarlar değil, onu koruyan çitlerdir.",
       ],
     },

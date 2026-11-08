@@ -6,12 +6,13 @@ export const burcUyumuRehber: Article = {
   metaTitle: "Burç Uyumu Gerçek mi? Astrolojiye Eğlenceli Bakış",
   metaDescription:
     "Burç uyumu gerçek mi? Astrolojinin bilimsel dayanağı yok ama neden bu kadar seviliyor? Burç uyumunu eğlenceli ve dürüst bir şekilde kullanmanın yolları.",
-  excerpt: "Koç ile Aslan anlaşır mı? Bilim \"bu soruya yıldızlar cevap vermez\" der. Ama burç sohbetleri neden bu kadar keyifli, onu da konuşalım.",
+  excerpt:
+    'Koç ile Aslan anlaşır mı? Bilim "bu soruya yıldızlar cevap vermez" der. Ama burç sohbetleri neden bu kadar keyifli, onu da konuşalım.',
   emoji: "🔮",
   color: "#4C1D95",
   updated: "2026-11-08",
   intro: [
-    "\"Sen hangi burçsun?\" sorusu belki de en sık sorulan tanışma sorularından biri. Birçok insan sevgilisinin burcuna bakar, uyum tablolarını inceler, bir tartışmadan sonra \"Zaten Akrep\" diye iç geçirir. Burç uyumu sohbetleri arkadaş gruplarının ve sosyal medyanın vazgeçilmez eğlencelerinden biri.",
+    '"Sen hangi burçsun?" sorusu belki de en sık sorulan tanışma sorularından biri. Birçok insan sevgilisinin burcuna bakar, uyum tablolarını inceler, bir tartışmadan sonra "Zaten Akrep" diye iç geçirir. Burç uyumu sohbetleri arkadaş gruplarının ve sosyal medyanın vazgeçilmez eğlencelerinden biri.',
     "Peki burç uyumu gerçek mi? Bu rehberde soruyu dürüstçe yanıtlıyoruz: Astrolojinin bilimsel bir dayanağı yok. Ama bu, burç sohbetlerinin değersiz olduğu anlamına gelmiyor. Astrolojinin neden bu kadar sevildiğini ve burç uyumunu ilişkine zarar vermeden nasıl eğlenceli bir şekilde kullanabileceğini konuşuyoruz.",
   ],
   sections: [
@@ -25,13 +26,13 @@ export const burcUyumuRehber: Article = {
     {
       heading: "O zaman neden bu kadar doğru geliyor?",
       paragraphs: [
-        "Burç yorumlarının çoğu kişiye \"Tam beni anlatıyor\" dedirtir. Bunun birkaç psikolojik açıklaması var.",
+        'Burç yorumlarının çoğu kişiye "Tam beni anlatıyor" dedirtir. Bunun birkaç psikolojik açıklaması var.',
       ],
       subsections: [
         {
           heading: "Herkese uyan cümleler",
           paragraphs: [
-            "\"Dışarıdan güçlü görünürsün ama içten içe hassassın\" gibi cümleler neredeyse herkese uyar. Psikolojide bu durum, genel ifadelerin kişiye özelmiş gibi algılanması olarak bilinir. Burç yorumları genellikle bu tür geniş, olumlu ve esnek cümlelerden oluşur.",
+            '"Dışarıdan güçlü görünürsün ama içten içe hassassın" gibi cümleler neredeyse herkese uyar. Psikolojide bu durum, genel ifadelerin kişiye özelmiş gibi algılanması olarak bilinir. Burç yorumları genellikle bu tür geniş, olumlu ve esnek cümlelerden oluşur.',
           ],
         },
         {
@@ -54,7 +55,7 @@ export const burcUyumuRehber: Article = {
         "Bilimsel olmaması, astrolojinin insanlara bir şey vermediği anlamına gelmiyor. Burç sohbetleri birçok kişi için şu işlevleri görüyor:",
       ],
       bullets: [
-        "Kendini düşünmek için bir çerçeve: \"Ben gerçekten inatçı mıyım?\" sorusu, burçtan bağımsız olarak faydalı bir öz düşünce başlatabilir.",
+        'Kendini düşünmek için bir çerçeve: "Ben gerçekten inatçı mıyım?" sorusu, burçtan bağımsız olarak faydalı bir öz düşünce başlatabilir.',
         "Kolay bir sohbet açıcı: Tanışma anlarında konuşacak hafif bir konu sunar.",
         "Belirsizlikte rahatlama: Hayat karmaşıklaştığında, her şeyin bir anlamı olduğunu düşünmek teselli edebilir.",
         "Ortak bir dil: Arkadaş gruplarında espri ve paylaşım için eğlenceli bir zemin oluşturur.",
@@ -63,12 +64,10 @@ export const burcUyumuRehber: Article = {
     },
     {
       heading: "Burç uyumunu eğlenceli kullanmanın yolları",
-      paragraphs: [
-        "Burç uyumuna bir eğlence ve sohbet aracı olarak bakmak, onu keyifli kılar. Birkaç öneri:",
-      ],
+      paragraphs: ["Burç uyumuna bir eğlence ve sohbet aracı olarak bakmak, onu keyifli kılar. Birkaç öneri:"],
       bullets: [
-        "Uyum yazısını birlikte oku ve gülün: \"Bu kısım bize hiç benzemiyor\" demek de bir sohbet konusu.",
-        "Yorumları birbirinizi tanımak için soru olarak kullanın: \"Sence gerçekten inatçı mıyım?\"",
+        'Uyum yazısını birlikte oku ve gülün: "Bu kısım bize hiç benzemiyor" demek de bir sohbet konusu.',
+        'Yorumları birbirinizi tanımak için soru olarak kullanın: "Sence gerçekten inatçı mıyım?"',
         "Düşük uyum puanını ciddiye alma: Tabloda yüzde 40 çıkan bir çift, gerçekte harika anlaşabilir.",
         "Yüksek uyum puanına da körü körüne güvenme: İlişkiyi taşıyan şey yıldızlar değil, emek.",
       ],
@@ -80,7 +79,7 @@ export const burcUyumuRehber: Article = {
       ],
       bullets: [
         "Birini sadece burcu yüzünden tanımaya bile çalışmamak.",
-        "Bir ilişkideki gerçek sorunları burca bağlayıp konuşmaktan kaçınmak: \"O Kova, zaten mesafeli\" demek, iletişim sorununu çözmez.",
+        'Bir ilişkideki gerçek sorunları burca bağlayıp konuşmaktan kaçınmak: "O Kova, zaten mesafeli" demek, iletişim sorununu çözmez.',
         "Kendi davranışlarının sorumluluğunu burca yüklemek.",
         "Önemli hayat kararlarını yalnızca astrolojik yorumlara göre vermek.",
       ],
@@ -104,7 +103,7 @@ export const burcUyumuRehber: Article = {
       heading: "Burç yerine kendini tanımanın yolları",
       paragraphs: [
         "Burçlar eğlenceli bir başlangıç olabilir, ama kendini ve ilişkilerini daha iyi anlamak istiyorsan başka araçlar da var. Örneğin bağlanma stilleri, yakınlık ve bağımsızlık ihtiyacını anlamana yardım eder. Sevgi dilleri, sevgiyi nasıl verip aldığını gösterir. Çatışma tarzları ise tartışma anlarında nasıl davrandığını fark ettirir.",
-        "Bu yaklaşımlar da kesin cevaplar sunmaz, ama kendi davranışların üzerine düşünmen için daha somut bir çerçeve sağlar. Bir tanışma sohbetinde \"Hangi burçsun?\" sorusunun yanına \"Sevgiyi nasıl göstermeyi seversin?\" sorusunu da eklemek, çok daha ilginç cevaplar getirebilir.",
+        'Bu yaklaşımlar da kesin cevaplar sunmaz, ama kendi davranışların üzerine düşünmen için daha somut bir çerçeve sağlar. Bir tanışma sohbetinde "Hangi burçsun?" sorusunun yanına "Sevgiyi nasıl göstermeyi seversin?" sorusunu da eklemek, çok daha ilginç cevaplar getirebilir.',
       ],
     },
     {

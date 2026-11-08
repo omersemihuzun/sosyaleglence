@@ -36,7 +36,8 @@ describe("arama indeksi", () => {
   const index = buildSearchIndex();
   it("bütün türleri kapsar ve adresler benzersiz", () => {
     const kinds = new Set(index.map((i) => i.k));
-    for (const k of ["test", "eleme", "anket", "burc", "uyum", "rehber", "hediye"]) expect(kinds.has(k as SearchItem["k"])).toBe(true);
+    for (const k of ["test", "eleme", "anket", "burc", "uyum", "rehber", "hediye"])
+      expect(kinds.has(k as SearchItem["k"])).toBe(true);
     expect(index.filter((i) => i.k === "uyum")).toHaveLength(78);
     expect(index.filter((i) => i.k === "burc")).toHaveLength(12);
   });

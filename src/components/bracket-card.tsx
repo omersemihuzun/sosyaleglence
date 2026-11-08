@@ -21,7 +21,10 @@ export function BracketCard({ bracket, tilt = 0 }: { bracket: Bracket; tilt?: nu
           </span>
         </div>
       ) : (
-        <div className="flex items-center justify-center gap-2 border-b-2 border-plum px-4 py-5" style={{ background: bracket.color }}>
+        <div
+          className="flex items-center justify-center gap-2 border-b-2 border-plum px-4 py-5"
+          style={{ background: bracket.color }}
+        >
           <span aria-hidden className="grid size-12 place-items-center rounded-xl bg-white/90 text-2xl">
             {preview[0].emoji}
           </span>

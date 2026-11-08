@@ -11,7 +11,20 @@ import { absoluteUrl } from "@/lib/site";
 /** Tüm parametreler build sırasında bilinir: sayfa tamamen statik üretilir. */
 export const ensureStatic = "navigation";
 
-const TR_MONTHS = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
+const TR_MONTHS = [
+  "Ocak",
+  "Şubat",
+  "Mart",
+  "Nisan",
+  "Mayıs",
+  "Haziran",
+  "Temmuz",
+  "Ağustos",
+  "Eylül",
+  "Ekim",
+  "Kasım",
+  "Aralık",
+];
 
 /** "2026-11-08" -> "8 Kasım 2026" (Date kullanmadan: statik üretimde saat dilimi sürprizi olmasın) */
 function formatTrDate(iso: string) {

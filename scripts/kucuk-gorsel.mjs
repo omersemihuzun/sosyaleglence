@@ -15,7 +15,10 @@ for (const slug of readdirSync(root)) {
     if (!f.endsWith(".webp") || f.endsWith("-k.webp")) continue;
     const out = join(root, slug, f.replace(/\.webp$/, "-k.webp"));
     if (!all && existsSync(out)) continue;
-    await sharp(join(root, slug, f)).resize(400, 300, { fit: "cover" }).webp({ quality: 66 }).toFile(out);
+    await sharp(join(root, slug, f))
+      .resize(400, 300, { fit: "cover" })
+      .webp({ quality: 66 })
+      .toFile(out);
     made++;
   }
 }

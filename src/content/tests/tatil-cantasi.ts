@@ -162,7 +162,7 @@ export const tatilCantasi: Test = {
       description: [
         "Valizinde her havaya kıyafet, iki powerbank, güneş kremi ve gün gün plan var. Sen sürprizden çok güvenilirliğe inanıyorsun ve bu aşk hayatına da yansıyor.",
         "Seninle ilişki sağlam bir zemin. Doğum günleri unutulmaz, sözler tutulur, gelecek konuşulur. Partnerin nerede durduğunu her zaman bilir.",
-        "Planlamak sana güven veriyor. Ama ilişkinin de biraz nefes alması lazım. Arada bir planı bozup \"Hadi gidelim\" demek, en çok seni şaşırtacak.",
+        'Planlamak sana güven veriyor. Ama ilişkinin de biraz nefes alması lazım. Arada bir planı bozup "Hadi gidelim" demek, en çok seni şaşırtacak.',
       ],
       strengths: ["Güvenilir ve sadıksın", "İlişkiye emek verirsin", "Geleceği birlikte kurmayı seversin"],
       watchOut: ["Her şeyi kontrol etmek istemek partnerini yorabilir", "Plan dışı durumlarda gerilirsin"],
@@ -177,7 +177,7 @@ export const tatilCantasi: Test = {
       color: "#C2410C",
       description: [
         "Çantanda trekking botu, pusula, drone ve acı sos var. Sen tatilde dinlenmek değil, bir şey yaşamak istiyorsun. Aşkta da aynı: birlikte keşfetmek, birlikte cesaret etmek.",
-        "Senin için ideal partner, \"Bunu hiç denemedik\" dediğinde gözleri parlayan biri. Rutin ve sıkıcılık, ilişkinin en büyük düşmanı.",
+        'Senin için ideal partner, "Bunu hiç denemedik" dediğinde gözleri parlayan biri. Rutin ve sıkıcılık, ilişkinin en büyük düşmanı.',
         "Heyecanı canlı tutmak harika. Ama ilişkinin sakin günleri de var. Koltukta geçen bir pazar da bir macera olabilir, eğer doğru kişiyle geçiyorsa.",
       ],
       strengths: ["İlişkiyi hep canlı tutarsın", "Cesur ve meraklısın", "Birlikte büyümeyi seversin"],

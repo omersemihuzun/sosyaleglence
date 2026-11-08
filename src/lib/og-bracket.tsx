@@ -65,7 +65,15 @@ export function BracketStoryCard({
         ) : (
           <div style={{ fontSize: 220, lineHeight: 1, marginTop: 36 }}>{champion.emoji}</div>
         )}
-        <div style={{ fontFamily: "Display, DisplayExt", fontSize: 92, lineHeight: 1.02, marginTop: 36, letterSpacing: -2 }}>
+        <div
+          style={{
+            fontFamily: "Display, DisplayExt",
+            fontSize: 92,
+            lineHeight: 1.02,
+            marginTop: 36,
+            letterSpacing: -2,
+          }}
+        >
           {champion.name}
         </div>
         <div style={{ fontSize: 38, lineHeight: 1.35, marginTop: 28, color: "#5A3E5E" }}>{champion.detail}</div>
@@ -158,7 +166,9 @@ export function OgBracketCard({
         ) : (
           <div style={{ display: "flex", alignItems: "center", marginRight: 44 }}>
             <div style={{ fontSize: 110 }}>{bracket.items[0].emoji}</div>
-            <div style={{ fontFamily: "Display, DisplayExt", fontSize: 40, color: "#D7102F", margin: "0 18px" }}>VS</div>
+            <div style={{ fontFamily: "Display, DisplayExt", fontSize: 40, color: "#D7102F", margin: "0 18px" }}>
+              VS
+            </div>
             <div style={{ fontSize: 110 }}>{bracket.items[1].emoji}</div>
           </div>
         )}
@@ -166,7 +176,15 @@ export function OgBracketCard({
           <div style={{ fontSize: 30, color: "#5A3E5E" }}>
             {champion ? `🏆 ${bracket.championLabel}` : "Eleme oyunu"}
           </div>
-          <div style={{ fontFamily: "Display, DisplayExt", fontSize: 72, lineHeight: 1.02, marginTop: 12, letterSpacing: -1 }}>
+          <div
+            style={{
+              fontFamily: "Display, DisplayExt",
+              fontSize: 72,
+              lineHeight: 1.02,
+              marginTop: 12,
+              letterSpacing: -1,
+            }}
+          >
             {champion ? champion.name : bracket.title}
           </div>
           <div style={{ fontFamily: "Display, DisplayExt", fontSize: 30, marginTop: 28, color: "#D7102F" }}>

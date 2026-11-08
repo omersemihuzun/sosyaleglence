@@ -19,7 +19,8 @@ export function ResultPersonal({ test, result, shareUrl }: { test: Test; result:
       <div className="sticker bg-white p-6">
         <p className="font-display text-2xl font-bold">Sen hangisisin?</p>
         <p className="mt-2 text-plum-soft">
-          Bu, &quot;{test.title}&quot; testinin {test.results.length} sonucundan biri. {test.questions.length} soruda kendi tipini bul.
+          Bu, &quot;{test.title}&quot; testinin {test.results.length} sonucundan biri. {test.questions.length} soruda
+          kendi tipini bul.
         </p>
         <Link
           href={`/testler/${test.slug}`}

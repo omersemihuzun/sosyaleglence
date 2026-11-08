@@ -39,7 +39,9 @@ export function CompareInvite({ slug, s, testTitle }: { slug: string; s: string;
     return (
       <div className="rounded-2xl border-2 border-plum bg-blush p-5">
         <p className="font-display text-lg font-bold">Bağlantın hazır</p>
-        <p className="mt-1 text-sm text-plum-soft">O testi çözdüğünde ikiniz de karşılaştırmayı bu bağlantıda görürsünüz.</p>
+        <p className="mt-1 text-sm text-plum-soft">
+          O testi çözdüğünde ikiniz de karşılaştırmayı bu bağlantıda görürsünüz.
+        </p>
         <p className="mt-3 rounded-xl border-2 border-plum bg-white px-3 py-2 text-sm break-all">{link}</p>
         <div className="mt-3 grid grid-cols-2 gap-2">
           <a

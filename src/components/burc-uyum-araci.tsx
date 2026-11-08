@@ -14,8 +14,7 @@ export function BurcUyumAraci({ burclar, baslangic }: { burclar: Secenek[]; basl
   const [b, setB] = useState<string | null>(null);
 
   const index = (s: string) => burclar.findIndex((x) => x.slug === s);
-  const hedef =
-    a && b ? (index(a) <= index(b) ? `/burc-uyumu/${a}-ve-${b}` : `/burc-uyumu/${b}-ve-${a}`) : null;
+  const hedef = a && b ? (index(a) <= index(b) ? `/burc-uyumu/${a}-ve-${b}` : `/burc-uyumu/${b}-ve-${a}`) : null;
   const adOf = (s: string | null) => burclar.find((x) => x.slug === s)?.ad;
 
   function Satir({ label, value, onChange }: { label: string; value: string | null; onChange: (s: string) => void }) {

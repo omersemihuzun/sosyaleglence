@@ -3,7 +3,7 @@ import type { Test } from "@/lib/types";
 export const delulu: Test = {
   slug: "ne-kadar-delulusun-testi",
   title: "Ne Kadar Delulusun?",
-  summary: "Bir \"günaydın\" mesajından düğün planı çıkarıyorsan, bu test tam senlik.",
+  summary: 'Bir "günaydın" mesajından düğün planı çıkarıyorsan, bu test tam senlik.',
   intro:
     "Delulu: Aşkta gerçeği biraz fazla süslemek. Kimimiz geleceği hayal eder, kimimiz her emojide gizli bir anlam arar, kimimiz de kırmızı bayrakları pembe görür. 15 durumda içinden geçeni seç.",
   emoji: "🦄",
@@ -42,18 +42,18 @@ export const delulu: Test = {
     {
       text: "İki buluşmadan sonra arkadaşlarına onu nasıl anlatıyorsun?",
       options: [
-        { text: "\"İyi biri, bakalım\" derim; heyecanımı biraz saklarım.", scores: {} },
-        { text: "\"Galiba hayatımın aşkını buldum.\"", scores: { hayal: 3 } },
-        { text: "Mesajlarını atıp \"Sizce ne demek istiyor?\" diye sorarım.", scores: { isaret: 2, hayal: 1 } },
-        { text: "\"Biraz kaba ama aslında çok iyi kalpli\" derim.", scores: { pembe: 2, hayal: 1 } },
+        { text: '"İyi biri, bakalım" derim; heyecanımı biraz saklarım.', scores: {} },
+        { text: '"Galiba hayatımın aşkını buldum."', scores: { hayal: 3 } },
+        { text: 'Mesajlarını atıp "Sizce ne demek istiyor?" diye sorarım.', scores: { isaret: 2, hayal: 1 } },
+        { text: '"Biraz kaba ama aslında çok iyi kalpli" derim.', scores: { pembe: 2, hayal: 1 } },
       ],
     },
     {
-      text: "Mesajına üç saat sonra \"hıhı\" diye cevap geldi.",
+      text: 'Mesajına üç saat sonra "hıhı" diye cevap geldi.',
       options: [
         { text: "Meşguldür; ben de akşam müsait olunca yazarım.", scores: {} },
         { text: "Yorgun olmalı; akşam ona çorba götürsem mi?", scores: { hayal: 2, pembe: 1 } },
-        { text: "\"Hıhı\" mı, \"hı hı\" mı? İkisi çok farklı.", scores: { isaret: 3 } },
+        { text: '"Hıhı" mı, "hı hı" mı? İkisi çok farklı.', scores: { isaret: 3 } },
         { text: "Mesajlaşmayı sevmiyor; yüz yüze bambaşka biri.", scores: { pembe: 2, isaret: 1 } },
       ],
     },
@@ -81,7 +81,7 @@ export const delulu: Test = {
         { text: "Güzel sahne; belki biraz duygulanırım, o kadar.", scores: {} },
         { text: "Kafamda düğün mekânımızı seçtim bile.", scores: { hayal: 3 } },
         { text: "O sahnede elimi sıktı mı? Sıktı. Bir şey demek istedi.", scores: { isaret: 2, hayal: 1 } },
-        { text: "\"Evlilik saçmalık\" dedi ama benimle evlenmek ister bence.", scores: { pembe: 2, isaret: 1 } },
+        { text: '"Evlilik saçmalık" dedi ama benimle evlenmek ister bence.', scores: { pembe: 2, isaret: 1 } },
       ],
     },
     {
@@ -94,7 +94,7 @@ export const delulu: Test = {
       ],
     },
     {
-      text: "Hoşlandığın kişi \"Hiç ciddi ilişki istemiyorum\" dedi.",
+      text: 'Hoşlandığın kişi "Hiç ciddi ilişki istemiyorum" dedi.',
       options: [
         { text: "İnanırım; beklentimi ayarlarım, zor da olsa.", scores: {} },
         { text: "Benimle tanıştıkça fikri değişecek.", scores: { hayal: 2, pembe: 1 } },
@@ -103,7 +103,7 @@ export const delulu: Test = {
       ],
     },
     {
-      text: "Müzik uygulamasında paylaştığı yeni çalma listesinin adı \"gece\".",
+      text: 'Müzik uygulamasında paylaştığı yeni çalma listesinin adı "gece".',
       options: [
         { text: "Güzel liste; birkaç şarkıyı kendime eklerim.", scores: {} },
         { text: "Bu liste bizim hikâyemizin film müziği olur.", scores: { hayal: 3 } },
@@ -130,7 +130,7 @@ export const delulu: Test = {
       ],
     },
     {
-      text: "Bir falcı \"Yakında hayatına biri girecek\" dedi.",
+      text: 'Bir falcı "Yakında hayatına biri girecek" dedi.',
       options: [
         { text: "Eğlenceli; ciddiye almam ama aklımda kalır.", scores: {} },
         { text: "Kim olacağını ve nasıl tanışacağımızı hayal etmeye başlarım.", scores: { hayal: 3 } },
@@ -139,7 +139,7 @@ export const delulu: Test = {
       ],
     },
     {
-      text: "Arkadaşın \"Bence seninle ilgilenmiyor\" dedi.",
+      text: 'Arkadaşın "Bence seninle ilgilenmiyor" dedi.',
       options: [
         { text: "Haklı olabilir; canım sıkılır ama düşünürüm.", scores: {} },
         { text: "O bizim hikâyemizi bilmiyor; bilse böyle demezdi.", scores: { hayal: 2, pembe: 1 } },
@@ -153,7 +153,7 @@ export const delulu: Test = {
         { text: "Karşılıklı ve gerçek; filmlerdeki kadar parlak olmasa da.", scores: {} },
         { text: "Film gibi: tesadüfi tanışma, yağmurda öpüşme, mutlu son.", scores: { hayal: 2, pembe: 1 } },
         { text: "Söylemeden anlaştığımız, bakışlardan okuduğumuz bir ilişki.", scores: { isaret: 2, hayal: 1 } },
-        { text: "Herkesin \"olmaz\" dediği ama bizim kanıtladığımız bir aşk.", scores: { pembe: 2, hayal: 1 } },
+        { text: 'Herkesin "olmaz" dediği ama bizim kanıtladığımız bir aşk.', scores: { pembe: 2, hayal: 1 } },
       ],
     },
   ],
@@ -199,11 +199,15 @@ export const delulu: Test = {
       color: "#3B6FD9",
       description: [
         "Mesajları dedektif titizliğiyle okuyorsun. Cevap süresi, emoji seçimi, noktalama, beğeni saati... Her şey bir şifre ve sen o şifreyi çözmeye kararlısın.",
-        "Bu dikkatin bir güç. Detayları kaçırmıyorsun ve insanların ruh hâlini çabuk sezebiliyorsun. Ama çoğu zaman bir \"hıhı\", sadece bir \"hıhı\"dır. Anlam aradıkça, olmayan anlamlar da buluyorsun.",
+        'Bu dikkatin bir güç. Detayları kaçırmıyorsun ve insanların ruh hâlini çabuk sezebiliyorsun. Ama çoğu zaman bir "hıhı", sadece bir "hıhı"dır. Anlam aradıkça, olmayan anlamlar da buluyorsun.',
         "En kısa yol hâlâ en etkilisi: Merak ediyorsan sor. Bir soru, yüz ekran görüntüsünden daha net cevap verir.",
       ],
       strengths: ["Çok dikkatlisin", "İnsanları iyi sezebiliyorsun", "İlgini belli etmekten çekinmiyorsun"],
-      watchOut: ["Aşırı analiz kaygıyı büyütür", "Arkadaş grubunu ekran görüntüsüne boğma", "Doğrudan sormak her zaman daha kısa"],
+      watchOut: [
+        "Aşırı analiz kaygıyı büyütür",
+        "Arkadaş grubunu ekran görüntüsüne boğma",
+        "Doğrudan sormak her zaman daha kısa",
+      ],
       bestMatch: "ayaklari-yere-basan",
     },
     {
@@ -215,11 +219,15 @@ export const delulu: Test = {
       color: "#E0567A",
       description: [
         "Sevdiğin insanlarda hep en iyiyi görüyorsun. Kabalık yorgunluktur, ilgisizlik yoğunluktur, unutkanlık rahatlıktır. Bu iyi niyet çok değerli; ama bazen seni korumuyor.",
-        "Uyarı işaretlerini görmezden gelmek, çoğu zaman \"Bu sefer farklı olacak\" umudundan geliyor. Umut güzel, ama tekrar eden davranışlar genelde tesadüf değildir.",
+        'Uyarı işaretlerini görmezden gelmek, çoğu zaman "Bu sefer farklı olacak" umudundan geliyor. Umut güzel, ama tekrar eden davranışlar genelde tesadüf değildir.',
         "Pembe gözlüğünü çıkarman gerekmiyor. Arada bir kenara koyup çıplak gözle bakman yeterli. Arkadaşlarının uyarıları bazen o gözlüğün göremediğini görüyor.",
       ],
       strengths: ["İnsanlara ikinci şans veriyorsun", "Çok anlayışlısın", "Kalbin iyi"],
-      watchOut: ["Tekrar eden kötü davranışları mazur gösterme", "Arkadaşlarının uyarılarını dinle", "Anlayış ile sınır çizmek birbirini dışlamaz"],
+      watchOut: [
+        "Tekrar eden kötü davranışları mazur gösterme",
+        "Arkadaşlarının uyarılarını dinle",
+        "Anlayış ile sınır çizmek birbirini dışlamaz",
+      ],
       bestMatch: "ayaklari-yere-basan",
     },
     {
@@ -230,12 +238,16 @@ export const delulu: Test = {
       profile: { hayal: 60, isaret: 60, pembe: 60 },
       color: "#7C3AED",
       description: [
-        "Hayal ediyorsun, işaret arıyorsun ve gördüğün bayrakları süslüyorsun. Üçü bir arada. İnternetin deyişiyle \"Delulu is the solulu\" sloganının canlı örneğisin.",
+        'Hayal ediyorsun, işaret arıyorsun ve gördüğün bayrakları süslüyorsun. Üçü bir arada. İnternetin deyişiyle "Delulu is the solulu" sloganının canlı örneğisin.',
         "Bunun çok eğlenceli bir yanı var: Senin aşk hikâyelerin hiç sıkıcı değil ve umudunu kolay kaybetmiyorsun. Ama gerçek ile hayal arasındaki mesafe açıldıkça, hayal kırıklığı da büyüyor.",
         "Kendine küçük bir kural koy: Bir hayali büyütmeden önce bir gerçek kanıt bul. Delulu kalabilirsin, sadece biraz daha güvenli bir delulu.",
       ],
       strengths: ["Umudunu hiç kaybetmiyorsun", "Hayal gücün çok geniş", "Aşkı coşkuyla yaşıyorsun"],
-      watchOut: ["Hayal kırıklıkları birikebilir", "Gerçeklik kontrolü için güvendiğin bir arkadaşa danış", "Hayal ile beklentiyi ayır"],
+      watchOut: [
+        "Hayal kırıklıkları birikebilir",
+        "Gerçeklik kontrolü için güvendiğin bir arkadaşa danış",
+        "Hayal ile beklentiyi ayır",
+      ],
       bestMatch: "ayaklari-yere-basan",
     },
   ],

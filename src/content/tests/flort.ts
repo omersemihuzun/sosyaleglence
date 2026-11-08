@@ -42,14 +42,20 @@ export const flort: Test = {
         { text: "Manzaralı, sakin bir yer; rezervasyonu da ben yaparım.", scores: { romantizm: 2, cesaret: 1 } },
         { text: "Bowling, karaoke ya da tuhaf bir müze; eğlenceli olsun.", scores: { mizah: 2, cesaret: 1 } },
         { text: "Kısa bir kahve; sıkılırsam şık bir kaçış planım olsun.", scores: { oyun: 2, mizah: 1 } },
-        { text: "Bir akşam yemeği planlar, saatine kadar her şeyi ben ayarlarım.", scores: { cesaret: 2, romantizm: 1 } },
+        {
+          text: "Bir akşam yemeği planlar, saatine kadar her şeyi ben ayarlarım.",
+          scores: { cesaret: 2, romantizm: 1 },
+        },
       ],
     },
     {
       text: "Buluşmanın ortasında masaya tuhaf bir sessizlik çöktü.",
       options: [
         { text: "Kendimle dalga geçen bir espriyle buzları kırarım.", scores: { mizah: 2, cesaret: 1 } },
-        { text: "\"Sence ideal bir pazar nasıl olur?\" gibi derin bir soru sorarım.", scores: { romantizm: 2, cesaret: 1 } },
+        {
+          text: '"Sence ideal bir pazar nasıl olur?" gibi derin bir soru sorarım.',
+          scores: { romantizm: 2, cesaret: 1 },
+        },
         { text: "Sessizlik bana sorun değil; gülümser, onun konuşmasını beklerim.", scores: { oyun: 2, romantizm: 1 } },
         { text: "Konuyu tamamen değiştirip sohbetin dümenini ben alırım.", scores: { cesaret: 2, oyun: 1 } },
       ],
@@ -57,26 +63,26 @@ export const flort: Test = {
     {
       text: "Buluşma beklediğinden çok daha iyi geçti. Şimdi ne olacak?",
       options: [
-        { text: "\"Tekrar görüşelim\" diye daha ayrılmadan ben söylerim.", scores: { cesaret: 2, romantizm: 1 } },
+        { text: '"Tekrar görüşelim" diye daha ayrılmadan ben söylerim.', scores: { cesaret: 2, romantizm: 1 } },
         { text: "Onun yazmasını beklerim; ilk adım bu sefer onda olsun.", scores: { oyun: 2, romantizm: 1 } },
-        { text: "Eve gider gitmez \"Çok güzeldi\" diye uzun bir mesaj atarım.", scores: { romantizm: 2, cesaret: 1 } },
+        { text: 'Eve gider gitmez "Çok güzeldi" diye uzun bir mesaj atarım.', scores: { romantizm: 2, cesaret: 1 } },
         { text: "Buluşmadan kalan bir iç espriyle ertesi sabah yazarım.", scores: { mizah: 2, cesaret: 1 } },
       ],
     },
     {
       text: "Beğendiğin kişi bir süredir eskisi kadar ilgili değil.",
       options: [
-        { text: "Direkt sorarım: \"Aramızda bir şey var mı, yok mu?\"", scores: { cesaret: 2, romantizm: 1 } },
+        { text: 'Direkt sorarım: "Aramızda bir şey var mı, yok mu?"', scores: { cesaret: 2, romantizm: 1 } },
         { text: "Ben de geri çekilirim; kaybettiğini o da anlasın.", scores: { oyun: 2, romantizm: 1 } },
         { text: "Bunun neden olduğuna dair kafamda romanlar yazarım.", scores: { romantizm: 2, oyun: 1 } },
-        { text: "\"Hayattasın değil mi?\" diye şakayla bir dürterim.", scores: { mizah: 2, cesaret: 1 } },
+        { text: '"Hayattasın değil mi?" diye şakayla bir dürterim.', scores: { mizah: 2, cesaret: 1 } },
       ],
     },
     {
       text: "Flört ettiğin kişi sana beklemediğin bir anda iltifat etti.",
       options: [
         { text: "Utanır, bir şey diyemem ama içten içe eririm.", scores: { romantizm: 2, oyun: 1 } },
-        { text: "\"Biliyorum\" der, göz kırparım; kolay etkilenmem.", scores: { oyun: 2, mizah: 1 } },
+        { text: '"Biliyorum" der, göz kırparım; kolay etkilenmem.', scores: { oyun: 2, mizah: 1 } },
         { text: "Komik bir cevapla geçiştiririm; ciddi anlar bana zor gelir.", scores: { mizah: 2, oyun: 1 } },
         { text: "Teşekkür edip ben de ona hiç beklemediği bir iltifat ederim.", scores: { cesaret: 2, romantizm: 1 } },
       ],
@@ -85,7 +91,7 @@ export const flort: Test = {
       text: "Uygulamada biriyle eşleştin. İlk mesajın nasıl olur?",
       options: [
         { text: "Profilindeki bir detayla ilgili esprili bir soru sorarım.", scores: { mizah: 2, cesaret: 1 } },
-        { text: "\"Merhaba, bu hafta bir kahve içelim mi?\" diye direkt yazarım.", scores: { cesaret: 2, romantizm: 1 } },
+        { text: '"Merhaba, bu hafta bir kahve içelim mi?" diye direkt yazarım.', scores: { cesaret: 2, romantizm: 1 } },
         { text: "İlk mesajı ben atmam; ilgisini çektiysem o yazar.", scores: { oyun: 2, romantizm: 1 } },
         { text: "Profilinde beni etkileyen şeyi samimiyetle yazarım.", scores: { romantizm: 2, cesaret: 1 } },
       ],
@@ -102,19 +108,19 @@ export const flort: Test = {
     {
       text: "Arkadaşların seni flörtte nasıl tarif eder?",
       options: [
-        { text: "\"Gözüne birini kestirdi mi çekinmeden gider.\"", scores: { cesaret: 2, romantizm: 1 } },
-        { text: "\"Kimse ne düşündüğünü bilmez; bazen kendisi de.\"", scores: { oyun: 2, mizah: 1 } },
-        { text: "\"İkinci buluşmada düğün şarkısını seçmiş oluyor.\"", scores: { romantizm: 2, mizah: 1 } },
-        { text: "\"Herkesi güldürüyor ama ciddi olduğunu anlamak zor.\"", scores: { mizah: 2, oyun: 1 } },
+        { text: '"Gözüne birini kestirdi mi çekinmeden gider."', scores: { cesaret: 2, romantizm: 1 } },
+        { text: '"Kimse ne düşündüğünü bilmez; bazen kendisi de."', scores: { oyun: 2, mizah: 1 } },
+        { text: '"İkinci buluşmada düğün şarkısını seçmiş oluyor."', scores: { romantizm: 2, mizah: 1 } },
+        { text: '"Herkesi güldürüyor ama ciddi olduğunu anlamak zor."', scores: { mizah: 2, oyun: 1 } },
       ],
     },
     {
-      text: "\"Biz neyiz?\" konuşması gelmek üzere.",
+      text: '"Biz neyiz?" konuşması gelmek üzere.',
       options: [
         { text: "Konuyu ilk ben açarım; belirsizlik bana göre değil.", scores: { cesaret: 2, romantizm: 1 } },
         { text: "Açmam; fazla netlik bence işin büyüsünü bozar.", scores: { oyun: 2, romantizm: 1 } },
         { text: "Bu konuşmayı haftalardır bekliyordum; kalbim küt küt atar.", scores: { romantizm: 2, oyun: 1 } },
-        { text: "\"Bence biz bir sitcom'uz\" diye espriyle açar, sonra konuşurum.", scores: { mizah: 2, cesaret: 1 } },
+        { text: '"Bence biz bir sitcom\'uz" diye espriyle açar, sonra konuşurum.', scores: { mizah: 2, cesaret: 1 } },
       ],
     },
     {
@@ -164,7 +170,7 @@ export const flort: Test = {
       color: "#D7102F",
       description: [
         "Flörtte oyun oynamıyorsun. Beğendiğin birine yaklaşıyor, plan yapıyor, ne istediğini açıkça söylüyorsun. Mesaj saymak, beklemek, ima etmek sana zaman kaybı gibi geliyor.",
-        "Bu netlik çoğu insanı rahatlatıyor. Seninle \"Acaba beni beğeniyor mu?\" sorusu çok uzun sürmüyor. Reddedilmek de seni dünyadan soğutmuyor.",
+        'Bu netlik çoğu insanı rahatlatıyor. Seninle "Acaba beni beğeniyor mu?" sorusu çok uzun sürmüyor. Reddedilmek de seni dünyadan soğutmuyor.',
         "Dikkat etmen gereken tek şey tempo. Herkes senin hızında ilerlemeyebilir. Bazen bir adım geri durmak, karşı tarafa da adım atma fırsatı verir.",
       ],
       strengths: ["Netsin ve kendine güveniyorsun", "Reddedilmeden korkmuyorsun", "Zaman kaybettirmiyorsun"],
@@ -184,7 +190,7 @@ export const flort: Test = {
         "Kendini zor buldurmak flörtü heyecanlı tutar. İlişkiye geçtikten sonra ise biraz açık kart oynamak gerçek yakınlığın anahtarı.",
       ],
       strengths: ["Gizemli ve çekicisin", "Kendine değer veriyorsun", "Duygularını kolay kolay ele vermiyorsun"],
-      watchOut: ["Çok fazla oyun, ilgisizlik olarak algılanabilir", "Doğru kişiyi \"beklemekten\" kaçırabilirsin"],
+      watchOut: ["Çok fazla oyun, ilgisizlik olarak algılanabilir", 'Doğru kişiyi "beklemekten" kaçırabilirsin'],
       bestMatch: "avci",
     },
     {
@@ -213,7 +219,7 @@ export const flort: Test = {
       color: "#C2410C",
       description: [
         "Senin flört dilin mizah. İç esprilerle, komik mesajlarla, absürt fikirlerle yakınlaşıyorsun. Seninle buluşmak hiç sıkıcı olmuyor ve insanlar yanında kendilerini rahat hissediyor.",
-        "Ama espri bazen bir kaçış yolu da olabiliyor. Ciddi bir an geldiğinde, örneğin \"Biz neyiz?\" konuşmasında, şaka yapmak karşı tarafın seni anlamasını zorlaştırabilir.",
+        'Ama espri bazen bir kaçış yolu da olabiliyor. Ciddi bir an geldiğinde, örneğin "Biz neyiz?" konuşmasında, şaka yapmak karşı tarafın seni anlamasını zorlaştırabilir.',
         "En güçlü hâlin, güldürdükten sonra bir an ciddileşip gerçekten ne hissettiğini söylediğin an.",
       ],
       strengths: ["Buzları anında kırıyorsun", "Birlikte olmak çok keyifli", "Gerginliği dağıtmakta ustasın"],

@@ -6,25 +6,26 @@ Tarih: 2026-11-08. Ölçümler production build (`next build` + `next start`) ü
 
 Oranlar WCAG göreli parlaklık formülüyle hesaplandı. Normal metin için eşik 4.5:1, büyük/kalın başlık için 3:1.
 
-| Kombinasyon | Oran | Durum |
-|---|---|---|
+| Kombinasyon                           | Oran | Durum |
+| ------------------------------------- | ---- | ----- |
 | `plum-soft #5A3E5E` / `paper #FFF7F3` | 8.69 | Geçer |
-| `plum-soft` / beyaz kart | 9.19 | Geçer |
-| `plum-soft` / `blush #FFD6DE` | 6.97 | Geçer |
-| Beyaz / `cherry #D7102F` (butonlar) | 5.24 | Geçer |
-| `cherry` / `paper` (link metni) | 4.96 | Geçer |
-| `plum` / WhatsApp yeşili | 8.68 | Geçer |
+| `plum-soft` / beyaz kart              | 9.19 | Geçer |
+| `plum-soft` / `blush #FFD6DE`         | 6.97 | Geçer |
+| Beyaz / `cherry #D7102F` (butonlar)   | 5.24 | Geçer |
+| `cherry` / `paper` (link metni)       | 4.96 | Geçer |
+| `plum` / WhatsApp yeşili              | 8.68 | Geçer |
 
 Renkli sonuç kartlarında `paper` rengi yazı:
 
-| Kart rengi | Oran | Durum |
-|---|---|---|
-| `#E0567A` (pembe: Dengeli Romantik, Söz Ustası, Sevgilinle…) | **3.43** | Başlık geçer, normal metin **geçmez** |
-| `#3B6FD9` (mavi) | **4.45** | Sınırda |
-| `#2F7D6D`, `#C2410C`, `#D7102F` | 4.6 – 5.0 | Geçer |
-| `#B0287A`, `#8E3B63`, `#6B2FA0` ve koyu tonlar | 5.8 – 16 | Geçer |
+| Kart rengi                                                   | Oran      | Durum                                 |
+| ------------------------------------------------------------ | --------- | ------------------------------------- |
+| `#E0567A` (pembe: Dengeli Romantik, Söz Ustası, Sevgilinle…) | **3.43**  | Başlık geçer, normal metin **geçmez** |
+| `#3B6FD9` (mavi)                                             | **4.45**  | Sınırda                               |
+| `#2F7D6D`, `#C2410C`, `#D7102F`                              | 4.6 – 5.0 | Geçer                                 |
+| `#B0287A`, `#8E3B63`, `#6B2FA0` ve koyu tonlar               | 5.8 – 16  | Geçer                                 |
 
 **Yapılan:**
+
 - Kartlardaki `text-paper/85` ve `text-paper/90` şeffaflıkları, renkli kart içinde tam opaklığa çekildi (`globals.css`). Şeffaflık gerçek oranı tablodakinin de altına düşürüyordu.
 - Renkli kartlara hafif mürdüm yazı gölgesi eklendi (`0 1px 2px rgb(43 16 48 / .45)`). Bu okunurluğu artırır ama WCAG ölçümünde sayılmaz.
 - Mağaza butonlarının hover durumunda beyaz yazı turuncu Trendyol zemininde yaklaşık 2.8:1 kalıyordu. Hover artık mağaza renginin %22'lik açık tonu üzerinde mürdüm yazı kullanıyor.
@@ -34,6 +35,7 @@ Renkli sonuç kartlarında `paper` rengi yazı:
 ## Klavye ve ekran okuyucu
 
 **Yapılan:**
+
 - **İçeriğe geç bağlantısı:** Sayfanın ilk odaklanılabilir öğesi. Odaklanınca görünür, `main#icerik` öğesine atlar.
 - **Test (quiz):**
   - Her yeni soruda odak soru başlığına taşınıyor (zaten vardı).
@@ -50,6 +52,7 @@ Renkli sonuç kartlarında `paper` rengi yazı:
 **Zaten doğru olanlar:** Bütün etkileşimler gerçek `<button>` ve `<a>` öğeleri. `:focus-visible` halkası 3px kiraz rengi. Hediye bulucu çipleri `aria-pressed` kullanıyor. Sonuç sayısı `aria-live` ile duyuruluyor. Paylaşım durumu `role="status"`.
 
 **Öneriler (bu turda yapılmadı):**
+
 - Header menüsünde aktif sayfa için `aria-current="page"`. Bunun için `usePathname` gerekiyor ve header'ın client bileşene dönüşmesi lazım; küçük bir JS maliyeti karşılığında yapılabilir.
 - Turnuva kartlarında görünür odak halkası çıkartma gölgesiyle birleşiyor. Halka görünüyor ama daha kalın bir varyant düşünülebilir.
 
@@ -64,20 +67,21 @@ Renkli sonuç kartlarında `paper` rengi yazı:
 
 Ölçüm: production sunucusundan her sayfanın HTML'i ve yüklediği bütün `<script>` dosyaları indirildi, gzip -9 ile sıkıştırılmış boyutları toplandı.
 
-| Sayfa | HTML (gz) | JS (gz) |
-|---|---|---|
-| `/` | 14.6 KB | 175.2 KB |
-| `/testler` | 5.5 KB | 174.4 KB |
-| `/testler/kiskanclik-testi` | 11.1 KB | 176.5 KB |
-| Test sonucu | 12.3 KB | 176.8 KB |
-| `/eleme` | 6.2 KB | 174.4 KB |
-| `/eleme/gelecekteki-evini-sec` | 7.4 KB | **188.8 → 176.5 KB** |
-| Turnuva sonucu | 8.2 KB | 176.4 KB |
-| `/hediye` | 5.3 KB | 182.2 KB |
-| `/hediye/anneye-hediye` | 15.1 KB | 174.4 KB |
-| `/iletisim` | 4.1 KB | 174.4 KB |
+| Sayfa                          | HTML (gz) | JS (gz)              |
+| ------------------------------ | --------- | -------------------- |
+| `/`                            | 14.6 KB   | 175.2 KB             |
+| `/testler`                     | 5.5 KB    | 174.4 KB             |
+| `/testler/kiskanclik-testi`    | 11.1 KB   | 176.5 KB             |
+| Test sonucu                    | 12.3 KB   | 176.8 KB             |
+| `/eleme`                       | 6.2 KB    | 174.4 KB             |
+| `/eleme/gelecekteki-evini-sec` | 7.4 KB    | **188.8 → 176.5 KB** |
+| Turnuva sonucu                 | 8.2 KB    | 176.4 KB             |
+| `/hediye`                      | 5.3 KB    | 182.2 KB             |
+| `/hediye/anneye-hediye`        | 15.1 KB   | 174.4 KB             |
+| `/iletisim`                    | 4.1 KB    | 174.4 KB             |
 
 **Bulgular:**
+
 - Bütün sayfalarda ortak ~174 KB taban var: React 19 ve Next.js çalışma zamanı. Bu framework'ün sabiti; sayfa kodu bunun üstüne en fazla birkaç KB ekliyor.
 - **Düzeltilen:** Turnuva bileşeni `roundName` için `@/content/brackets` modülünü import ediyordu. Bu, 8 turnuvanın bütün metnini (örneğin "Kenya safarisi") her turnuva sayfasının tarayıcı paketine taşıyordu. Fonksiyon bileşene alındı. Turnuva sayfası 12.3 KB (gz) hafifledi, metin artık client paketinde yok (`grep` ile doğrulandı).
 - Hediye bulucu +8 KB taşıyor. Bunun sebebi 59 hediye fikri verisi ve bu veri filtreleme için tarayıcıda gerekli. Rehber metinleri pakete girmiyor, tree-shaking ile ayıklanıyor (doğrulandı).

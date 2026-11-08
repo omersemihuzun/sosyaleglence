@@ -49,18 +49,24 @@ export function BracketResultPersonal({
       <p className="font-display text-lg font-bold">Şampiyona giden yol</p>
       <ol className="mt-4 space-y-3">
         <li className="flex items-center gap-3 rounded-xl border-2 border-plum bg-butter px-3 py-2.5">
-          <span aria-hidden className="text-2xl">🏆</span>
+          <span aria-hidden className="text-2xl">
+            🏆
+          </span>
           <span className="flex-1 font-semibold">{champion.name}</span>
           <span className="text-xs font-bold">Şampiyon</span>
         </li>
         <li className="flex items-center gap-3 rounded-xl border-2 border-plum px-3 py-2.5">
-          <span aria-hidden className="text-2xl">{finalist.emoji}</span>
+          <span aria-hidden className="text-2xl">
+            {finalist.emoji}
+          </span>
           <span className="flex-1 font-semibold">{finalist.name}</span>
           <span className="text-xs font-bold text-plum-soft">Finalist</span>
         </li>
         {semis.map((s) => (
           <li key={s.id} className="flex items-center gap-3 rounded-xl border-2 border-line px-3 py-2.5">
-            <span aria-hidden className="text-2xl">{s.emoji}</span>
+            <span aria-hidden className="text-2xl">
+              {s.emoji}
+            </span>
             <span className="flex-1">{s.name}</span>
             <span className="text-xs font-bold text-plum-soft">Yarı final</span>
           </li>
@@ -75,7 +81,10 @@ export function BracketResultPersonal({
           fileName={`${bracket.slug}-${champion.id}.png`}
         />
       </div>
-      <Link href={`/eleme/${bracket.slug}`} className="mt-2 inline-block font-display font-bold text-cherry hover:underline">
+      <Link
+        href={`/eleme/${bracket.slug}`}
+        className="mt-2 inline-block font-display font-bold text-cherry hover:underline"
+      >
         Tekrar oyna
       </Link>
     </div>

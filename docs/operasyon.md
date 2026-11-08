@@ -14,10 +14,10 @@ Node 24 kullanılır (CI ile aynı sürüm).
 
 ## Ortam değişkenleri
 
-| Değişken | Zorunlu | Açıklama |
-|---|---|---|
-| `NEXT_PUBLIC_SITE_URL` | Hayır | Kanonik adres. Varsayılan `https://sosyaleglence.com`. Sitemap, canonical ve paylaşım linkleri bunu kullanır. Önizleme ortamında kendi adresini vermek istersen ayarla. |
-| `NEXT_PUBLIC_AMAZON_TAG` | Hayır | Amazon Associates takip etiketi (ör. `sosyaleglence-21`). Tanımlıysa tüm Amazon linklerine `tag=` eklenir. |
+| Değişken                 | Zorunlu | Açıklama                                                                                                                                                                |
+| ------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `NEXT_PUBLIC_SITE_URL`   | Hayır   | Kanonik adres. Varsayılan `https://sosyaleglence.com`. Sitemap, canonical ve paylaşım linkleri bunu kullanır. Önizleme ortamında kendi adresini vermek istersen ayarla. |
+| `NEXT_PUBLIC_AMAZON_TAG` | Hayır   | Amazon Associates takip etiketi (ör. `sosyaleglence-21`). Tanımlıysa tüm Amazon linklerine `tag=` eklenir.                                                              |
 
 `NEXT_PUBLIC_` ile başlayanlar tarayıcıya gömülür; buraya gizli bilgi konmaz. Değişken değişince yeniden build gerekir.
 
@@ -31,6 +31,7 @@ Vercel'de: Project → Settings → Environment Variables, ya da `vercel env add
 4. Alan adı: Vercel → Domains'e `sosyaleglence.com` ve `www.sosyaleglence.com` ekle, DNS kayıtlarını Vercel'in verdiği değerlere göre güncelle. Eski WordPress hostingindeki kayıtları ancak yeni site doğrulandıktan sonra kaldır.
 
 Deploy sonrası kontrol listesi:
+
 - `/`, `/testler`, `/eleme`, `/hediye` 200 dönüyor mu?
 - `/quizmaker` ve `/hediye-önerileri` kalıcı yönlendirme yapıyor mu?
 - Bir testi bitirip "Story kartını paylaş" ile görselin indiğini doğrula.

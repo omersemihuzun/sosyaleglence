@@ -64,16 +64,19 @@ const ELEMENT_CUMLE: Record<string, string> = {
 };
 
 const NITELIK_CUMLE: Record<string, string> = {
-  "Öncü-Öncü": "İkisi de öncü burç: ikisi de yön vermek ister, kimin direksiyona geçeceği zaman zaman tartışma konusu olur.",
-  "Sabit-Sabit": "İkisi de sabit burç: sadakat çok yüksektir, ama iki inatçı karşı karşıya geldiğinde geri adım atmak zorlaşır.",
-  "Değişken-Değişken": "İkisi de değişken burç: esnek ve uyumludurlar, ama ikisinin birden kararsız kaldığı anlar olur.",
+  "Öncü-Öncü":
+    "İkisi de öncü burç: ikisi de yön vermek ister, kimin direksiyona geçeceği zaman zaman tartışma konusu olur.",
+  "Sabit-Sabit":
+    "İkisi de sabit burç: sadakat çok yüksektir, ama iki inatçı karşı karşıya geldiğinde geri adım atmak zorlaşır.",
+  "Değişken-Değişken":
+    "İkisi de değişken burç: esnek ve uyumludurlar, ama ikisinin birden kararsız kaldığı anlar olur.",
   "Öncü-Sabit": "Biri başlatır, diğeri sürdürür: doğru kullanıldığında çok verimli bir ikili.",
   "Değişken-Öncü": "Biri yön verir, diğeri uyum sağlar; bu günlük hayatı epey kolaylaştırır.",
   "Değişken-Sabit": "Biri yerinde sağlam durur, diğeri akışa uyar; denge ile esneklik bir araya gelir.",
 };
 
 const key = (x: string, y: string) => [x, y].sort((p, q) => p.localeCompare(q, "tr")).join("-");
-const pick = <T,>(list: T[], h: number) => list[h % list.length];
+const pick = <T>(list: T[], h: number) => list[h % list.length];
 
 const BASLIK: Record<Aci, string[]> = {
   kavusum: ["Aynaya bakmak gibi", "Birbirini en iyi anlayan ikili", "Aynı ritimde iki kalp"],
@@ -143,7 +146,7 @@ function aspectTexts(aci: Aci, A: Burc, B: Burc, h: number) {
     ],
     "yarim-sekstil": [
       "Arkadaşlıkta birbirlerini tamamlayan küçük farkları keşfettikçe bağları güçlenir.",
-      "İlk başta \"Hiç benzemiyoruz\" derler, birkaç yıl sonra birbirlerinin en sağlam dostu olurlar.",
+      'İlk başta "Hiç benzemiyoruz" derler, birkaç yıl sonra birbirlerinin en sağlam dostu olurlar.',
     ],
     sekstil: [
       "Arkadaşlıkta birbirlerini kolayca motive ederler; ortak projeler ve planlar bu ikiliye çok iyi gelir.",
@@ -222,9 +225,7 @@ function build(): UyumCift[] {
       const t = aspectTexts(aci, A, B, h);
       const sameSign = i === j;
 
-      const askGiris = sameSign
-        ? `${A.ad} ${A.askta}. `
-        : `${A.ad} ${A.askta}, ${B.ad} ise ${B.askta}. `;
+      const askGiris = sameSign ? `${A.ad} ${A.askta}. ` : `${A.ad} ${A.askta}, ${B.ad} ise ${B.askta}. `;
       const arkadasGiris = sameSign
         ? `${A.ad} ${A.arkadaslikta}; iki ${A.ad} bir araya geldiğinde bu iki katına çıkar. `
         : `${A.ad} ${A.arkadaslikta}; ${B.ad} ise ${B.arkadaslikta}. `;
@@ -245,7 +246,9 @@ function build(): UyumCift[] {
         ],
         zorluk: [
           t.zorluk,
-          sameSign ? `${A.gen} ${A.zaaf} iki katına çıkabilir` : `${A.gen} ${A.zaaf} ile ${B.gen} ${B.zaaf} çatışabilir`,
+          sameSign
+            ? `${A.gen} ${A.zaaf} iki katına çıkabilir`
+            : `${A.gen} ${A.zaaf} ile ${B.gen} ${B.zaaf} çatışabilir`,
         ],
       });
     }

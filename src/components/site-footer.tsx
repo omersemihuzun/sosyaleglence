@@ -10,23 +10,63 @@ export function SiteFooter() {
             sosyal<span className="text-blush-deep">eğlence</span>
           </p>
           <p className="mt-3 text-sm leading-relaxed text-paper/75">
-            Testlerimiz eğlence ve kendini tanıma amaçlıdır; psikolojik tanı yerine geçmez.
-            Hediye bağlantılarından yapılan alışverişlerden komisyon alabiliriz.
+            Testlerimiz eğlence ve kendini tanıma amaçlıdır; psikolojik tanı yerine geçmez. Hediye bağlantılarından
+            yapılan alışverişlerden komisyon alabiliriz.
           </p>
         </div>
         <div>
           <p className="font-display font-bold">Keşfet</p>
           <ul className="mt-3 space-y-1 text-sm text-paper/80">
-            <li><Link className="inline-block py-1 hover:text-butter" href="/testler">Tüm testler</Link></li>
-            <li><Link className="inline-block py-1 hover:text-butter" href="/eleme">Eleme oyunları</Link></li>
-            <li><Link className="inline-block py-1 hover:text-butter" href="/bunu-mu-o-mu">Bunu mu o mu?</Link></li>
-            <li><Link className="inline-block py-1 hover:text-butter" href="/burclar">Burç uyumu</Link></li>
-            <li><Link className="inline-block py-1 hover:text-butter" href="/ask-testi">İsimle aşk testi</Link></li>
-            <li><Link className="inline-block py-1 hover:text-butter" href="/rehber">Rehberler</Link></li>
-            <li><Link className="inline-block py-1 hover:text-butter" href="/hediye">Hediye bulucu</Link></li>
-            <li><Link className="inline-block py-1 hover:text-butter" href="/iletisim">İletişim</Link></li>
-            <li><Link className="inline-block py-1 hover:text-butter" href="/gizlilik">Gizlilik</Link></li>
-            <li><Link className="inline-block py-1 hover:text-butter" href="/gorsel-kaynaklari">Görsel kaynakları</Link></li>
+            <li>
+              <Link className="inline-block py-1 hover:text-butter" href="/testler">
+                Tüm testler
+              </Link>
+            </li>
+            <li>
+              <Link className="inline-block py-1 hover:text-butter" href="/eleme">
+                Eleme oyunları
+              </Link>
+            </li>
+            <li>
+              <Link className="inline-block py-1 hover:text-butter" href="/bunu-mu-o-mu">
+                Bunu mu o mu?
+              </Link>
+            </li>
+            <li>
+              <Link className="inline-block py-1 hover:text-butter" href="/burclar">
+                Burç uyumu
+              </Link>
+            </li>
+            <li>
+              <Link className="inline-block py-1 hover:text-butter" href="/ask-testi">
+                İsimle aşk testi
+              </Link>
+            </li>
+            <li>
+              <Link className="inline-block py-1 hover:text-butter" href="/rehber">
+                Rehberler
+              </Link>
+            </li>
+            <li>
+              <Link className="inline-block py-1 hover:text-butter" href="/hediye">
+                Hediye bulucu
+              </Link>
+            </li>
+            <li>
+              <Link className="inline-block py-1 hover:text-butter" href="/iletisim">
+                İletişim
+              </Link>
+            </li>
+            <li>
+              <Link className="inline-block py-1 hover:text-butter" href="/gizlilik">
+                Gizlilik
+              </Link>
+            </li>
+            <li>
+              <Link className="inline-block py-1 hover:text-butter" href="/gorsel-kaynaklari">
+                Görsel kaynakları
+              </Link>
+            </li>
           </ul>
         </div>
         <div>

@@ -18,7 +18,9 @@ export function ArticleCard({ article, tilt = 0 }: { article: Article; tilt?: nu
         >
           {article.emoji}
         </span>
-        <span className="rounded-full bg-blush px-2.5 py-1 text-xs font-semibold">{readingMinutes(article)} dk okuma</span>
+        <span className="rounded-full bg-blush px-2.5 py-1 text-xs font-semibold">
+          {readingMinutes(article)} dk okuma
+        </span>
       </div>
       <h3 className="mt-4 font-display text-xl leading-tight font-bold">{article.title}</h3>
       <p className="mt-2 flex-1 text-[15px] leading-relaxed text-plum-soft">{article.excerpt}</p>
@@ -30,7 +32,10 @@ export function ArticleCard({ article, tilt = 0 }: { article: Article; tilt?: nu
 /** Makale içi ve test sayfasındaki çağrı kartı */
 export function ArticleCta({ href, label, text }: { href: string; label: string; text: string }) {
   return (
-    <Link href={href} className="sticker sticker-press my-8 flex flex-col gap-2 bg-butter p-5 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
+    <Link
+      href={href}
+      className="sticker sticker-press my-8 flex flex-col gap-2 bg-butter p-5 sm:flex-row sm:items-center sm:justify-between sm:gap-6"
+    >
       <span>
         <span className="block font-display text-xl font-bold">{label}</span>
         <span className="mt-1 block text-[15px] leading-snug">{text}</span>

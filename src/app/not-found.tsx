@@ -4,7 +4,9 @@ import { SearchForm } from "@/components/search-box";
 export default function NotFound() {
   return (
     <section className="mx-auto max-w-2xl px-4 pt-16 text-center">
-      <p aria-hidden className="text-7xl">🫥</p>
+      <p aria-hidden className="text-7xl">
+        🫥
+      </p>
       <h1 className="mt-6 font-display text-4xl font-extrabold">Bu sayfa bulunamadı</h1>
       <p className="mt-4 text-lg text-plum-soft">Adres değişmiş ya da yanlış yazılmış olabilir. Aradığını bulalım:</p>
       <div className="mx-auto mt-6 max-w-md text-left">

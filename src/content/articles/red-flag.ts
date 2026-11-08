@@ -6,12 +6,13 @@ export const redFlagRehber: Article = {
   metaTitle: "İlişkide Red Flag'ler: Erken Fark Edilecek 12 İşaret",
   metaDescription:
     "İlişkide red flag nedir? Manipülasyondan kontrole, erken fark edilmesi gereken 12 kırmızı bayrağı ve gördüğünde ne yapacağını anlattık.",
-  excerpt: "Bazı kırmızı bayraklar ilk haftada belli olur, bazıları aylar sonra. Erken fark etmen gereken 12 işareti ve sarı bayraklarla farkını anlattık.",
+  excerpt:
+    "Bazı kırmızı bayraklar ilk haftada belli olur, bazıları aylar sonra. Erken fark etmen gereken 12 işareti ve sarı bayraklarla farkını anlattık.",
   emoji: "🚩",
   color: "#C2410C",
   updated: "2026-11-08",
   intro: [
-    "\"Red flag\" kelimesi sosyal medyada o kadar çok kullanılıyor ki bazen pizzaya ananas koymak bile kırmızı bayrak sayılıyor. Şakası bir yana, ilişkilerde gerçekten dikkat edilmesi gereken bazı davranış örüntüleri var. Bunlar başta küçük ve masum görünür, zamanla ilişkinin dengesini bozar.",
+    '"Red flag" kelimesi sosyal medyada o kadar çok kullanılıyor ki bazen pizzaya ananas koymak bile kırmızı bayrak sayılıyor. Şakası bir yana, ilişkilerde gerçekten dikkat edilmesi gereken bazı davranış örüntüleri var. Bunlar başta küçük ve masum görünür, zamanla ilişkinin dengesini bozar.',
     "Bu rehberde erken fark edilmesi gereken 12 işareti, sarı bayraklarla kırmızı bayraklar arasındaki farkı ve bir bayrak gördüğünde ne yapabileceğini anlatıyoruz. Amaç kimseyi etiketlemek değil, sağlıklı bir ilişkinin neye benzediğini netleştirmek.",
   ],
   sections: [
@@ -31,7 +32,7 @@ export const redFlagRehber: Article = {
         {
           heading: "1. Seni arkadaşlarından ve ailenden uzaklaştırmak",
           paragraphs: [
-            "\"Onlar sana kötü etki ediyor\", \"Benimle vakit geçirmek yerine neden onlarla buluşuyorsun?\" Zamanla sosyal çevren daralıyorsa bu en ciddi işaretlerden biridir. Yalnızlaşan biri ilişkiden çıkmakta daha çok zorlanır.",
+            '"Onlar sana kötü etki ediyor", "Benimle vakit geçirmek yerine neden onlarla buluşuyorsun?" Zamanla sosyal çevren daralıyorsa bu en ciddi işaretlerden biridir. Yalnızlaşan biri ilişkiden çıkmakta daha çok zorlanır.',
           ],
         },
         {
@@ -43,13 +44,13 @@ export const redFlagRehber: Article = {
         {
           heading: "3. Gerçekliğini sorgulatmak",
           paragraphs: [
-            "\"Öyle bir şey olmadı\", \"Sen yanlış hatırlıyorsun\", \"Fazla hassassın\" cümleleri sürekli tekrarlanıyor ve sonunda kendi hafızandan şüphe etmeye başlıyorsan, bu ciddi bir manipülasyon biçimi olabilir.",
+            '"Öyle bir şey olmadı", "Sen yanlış hatırlıyorsun", "Fazla hassassın" cümleleri sürekli tekrarlanıyor ve sonunda kendi hafızandan şüphe etmeye başlıyorsan, bu ciddi bir manipülasyon biçimi olabilir.',
           ],
         },
         {
           heading: "4. Suçluluk duygusuyla yönetmek",
           paragraphs: [
-            "\"Beni sevseydin bunu yapmazdın.\" İsteklerin doğrudan değil, suçluluk duygusu üzerinden dile getirilmesi zamanla kendi kararlarını veremez hâle gelmene yol açabilir.",
+            '"Beni sevseydin bunu yapmazdın." İsteklerin doğrudan değil, suçluluk duygusu üzerinden dile getirilmesi zamanla kendi kararlarını veremez hâle gelmene yol açabilir.',
           ],
         },
         {
@@ -73,7 +74,7 @@ export const redFlagRehber: Article = {
         {
           heading: "8. Çok hızlı ve yoğun başlangıç",
           paragraphs: [
-            "Birkaç haftada \"Ruh eşimsin\", sürekli hediyeler, her anını seninle geçirme isteği. Bu yoğunluk ilk başta romantik gelir ama bazen sınırların hızla aşılmasının bir yoludur. Hız kendi başına kötü değildir, ama sınır koyduğunda nasıl tepki verdiğine dikkat et.",
+            'Birkaç haftada "Ruh eşimsin", sürekli hediyeler, her anını seninle geçirme isteği. Bu yoğunluk ilk başta romantik gelir ama bazen sınırların hızla aşılmasının bir yoludur. Hız kendi başına kötü değildir, ama sınır koyduğunda nasıl tepki verdiğine dikkat et.',
           ],
         },
         {
@@ -91,7 +92,7 @@ export const redFlagRehber: Article = {
         {
           heading: "11. Sınırlarını tekrar tekrar zorlamak",
           paragraphs: [
-            "\"Hayır\" dediğinde ısrar ediyor, pazarlık ediyor ya da trip atıyorsa, sınırlarına saygı duymuyor demektir. Bu sadece büyük konularda değil, küçük gündelik kararlarda da görünür.",
+            '"Hayır" dediğinde ısrar ediyor, pazarlık ediyor ya da trip atıyorsa, sınırlarına saygı duymuyor demektir. Bu sadece büyük konularda değil, küçük gündelik kararlarda da görünür.',
           ],
         },
         {
@@ -129,7 +130,7 @@ export const redFlagRehber: Article = {
         "Sadece neye dikkat edeceğini değil, neyi arayacağını bilmek de önemlidir. Sağlıklı bir ilişkinin işaretleri genellikle sessizdir ama çok değerlidir:",
       ],
       bullets: [
-        "\"Hayır\" dediğinde saygı görüyorsun ve bunu açıklamak zorunda hissetmiyorsun.",
+        '"Hayır" dediğinde saygı görüyorsun ve bunu açıklamak zorunda hissetmiyorsun.',
         "Hata yaptığında özür diliyor, sen hata yaptığında seni küçültmüyor.",
         "Arkadaşlarınla ve ailenle vakit geçirmeni destekliyor.",
         "Kıskançlık hissettiğinde bunu kontrol etmeden, konuşarak dile getiriyor.",

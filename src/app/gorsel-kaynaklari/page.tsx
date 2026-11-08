@@ -20,9 +20,9 @@ export default function CreditsPage() {
     <article className="mx-auto max-w-3xl px-4 pt-10 sm:pt-14">
       <h1 className="font-display text-5xl leading-[1] font-extrabold tracking-tight">Görsel kaynakları</h1>
       <p className="mt-5 text-lg leading-relaxed text-plum-soft">
-        Eleme oyunlarındaki {total} fotoğrafın tamamı Creative Commons (CC BY, CC BY-SA, CC0) ya da kamu malı lisanslıdır
-        ve Wikimedia Commons gibi açık arşivlerden alınmıştır. Fotoğraflar sitemizde kırpılıp küçültülmüştür. Emeği
-        geçen herkese teşekkürler.
+        Eleme oyunlarındaki {total} fotoğrafın tamamı Creative Commons (CC BY, CC BY-SA, CC0) ya da kamu malı
+        lisanslıdır ve Wikimedia Commons gibi açık arşivlerden alınmıştır. Fotoğraflar sitemizde kırpılıp
+        küçültülmüştür. Emeği geçen herkese teşekkürler.
       </p>
       <p className="mt-3 text-sm text-plum-soft">
         Bir fotoğrafın sahibiysen ve atıfta hata görüyorsan ya da kaldırılmasını istiyorsan{" "}

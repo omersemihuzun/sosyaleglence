@@ -23,7 +23,12 @@ const FEATURED_TESTS = [
   "sofra-kur-sehir-testi",
   "baglanma-stili-testi",
 ];
-const FEATURED_GUIDES = ["sevgiliye-yilbasi-hediyesi", "erkek-arkadasa-hediye", "kiz-arkadasa-hediye", "500-tl-alti-hediye"];
+const FEATURED_GUIDES = [
+  "sevgiliye-yilbasi-hediyesi",
+  "erkek-arkadasa-hediye",
+  "kiz-arkadasa-hediye",
+  "500-tl-alti-hediye",
+];
 
 function SectionHead({ title, blurb, href }: { title: string; blurb?: string; href: string }) {
   return (
@@ -54,11 +59,14 @@ export default function Home() {
             Kendini tanıdığını mı sanıyorsun?
           </h1>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-plum-soft">
-            Gerçek hayattan senaryolarla hazırlanmış ilişki ve kişilik testleri. Kolay cevap yok, tek bir puan da
-            yok. Sonunda seni anlatan bir profil ve paylaşabileceğin bir kart var.
+            Gerçek hayattan senaryolarla hazırlanmış ilişki ve kişilik testleri. Kolay cevap yok, tek bir puan da yok.
+            Sonunda seni anlatan bir profil ve paylaşabileceğin bir kart var.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/testler" className="sticker sticker-press bg-cherry px-6 py-3.5 font-display text-lg font-bold text-white">
+            <Link
+              href="/testler"
+              className="sticker sticker-press bg-cherry px-6 py-3.5 font-display text-lg font-bold text-white"
+            >
               Testlere göz at
             </Link>
             <Link href="/hediye" className="sticker sticker-press bg-white px-6 py-3.5 font-display text-lg font-bold">
@@ -123,10 +131,16 @@ export default function Home() {
             </ul>
           </div>
           <div className="flex flex-wrap gap-3">
-            <Link href="/burc-uyumu/koc-ve-aslan" className="sticker sticker-press bg-white px-5 py-3 font-display font-bold">
+            <Link
+              href="/burc-uyumu/koc-ve-aslan"
+              className="sticker sticker-press bg-white px-5 py-3 font-display font-bold"
+            >
               Koç ve Aslan
             </Link>
-            <Link href="/burclar" className="sticker sticker-press bg-cherry px-5 py-3 font-display font-bold text-white">
+            <Link
+              href="/burclar"
+              className="sticker sticker-press bg-cherry px-5 py-3 font-display font-bold text-white"
+            >
               Burç uyumunu hesapla
             </Link>
           </div>

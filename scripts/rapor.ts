@@ -33,7 +33,8 @@ async function hashes(pattern: string) {
   do {
     const [next, keys] = await redis.scan(cursor, { match: pattern, count: 200 });
     cursor = String(next);
-    for (const k of keys) out.push([k, ((await redis.hgetall<Record<string, number>>(k)) ?? {}) as Record<string, number>]);
+    for (const k of keys)
+      out.push([k, ((await redis.hgetall<Record<string, number>>(k)) ?? {}) as Record<string, number>]);
   } while (cursor !== "0");
   return out;
 }
@@ -87,7 +88,10 @@ for (const t of icerik) {
 
 console.log("\n=== GERÇEK ŞIK DAĞILIMI (güncel soru sürümü; %5 altı = ölü şık, %70 üstü = bariz şık) ===");
 for (const t of icerik) {
-  const h = ((await redis.hgetall<Record<string, number>>(`s:${t.slug}:${testSurum(t)}`)) ?? {}) as Record<string, number>;
+  const h = ((await redis.hgetall<Record<string, number>>(`s:${t.slug}:${testSurum(t)}`)) ?? {}) as Record<
+    string,
+    number
+  >;
   const n = Number(h._n ?? 0);
   if (n < 30) {
     if (n) console.log(`${t.slug.padEnd(34)} ${n} çözüm (yorum için en az 30 gerekir)`);

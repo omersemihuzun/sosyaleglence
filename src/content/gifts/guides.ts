@@ -55,11 +55,11 @@ const baseGuides: Guide[] = [
       "Erkek arkadaşa ne hediye alınır? Teknolojiden kişiye özel aksesuarlara, deneyimden bakım setlerine kadar onun ilgi alanına göre hediye önerileri.",
     emoji: "🎁",
     intro: [
-      "Erkeklere hediye seçerken en sık yapılan hata, \"erkek hediyesi\" kalıplarına takılmak. Oysa en iyi hediye, onun gerçekten ilgilendiği bir şeyi bir adım ileri taşıyan hediyedir: kahve seviyorsa iyi bir demleme seti, oyun oynuyorsa yeni bir oyun kolu.",
+      'Erkeklere hediye seçerken en sık yapılan hata, "erkek hediyesi" kalıplarına takılmak. Oysa en iyi hediye, onun gerçekten ilgilendiği bir şeyi bir adım ileri taşıyan hediyedir: kahve seviyorsa iyi bir demleme seti, oyun oynuyorsa yeni bir oyun kolu.',
       "Ne sevdiğinden emin değilsen kullanım süresi uzun olan ürünlere yönel. Kartlık, kulaklık, sırt çantası gibi her gün elde olan şeyler hediyenin sık sık hatırlanmasını sağlar.",
     ],
     tips: [
-      "Son zamanlarda neyin bozulduğunu ya da neyi \"bir ara alırım\" dediğini hatırla. En isabetli hediyeler genelde orada saklıdır.",
+      'Son zamanlarda neyin bozulduğunu ya da neyi "bir ara alırım" dediğini hatırla. En isabetli hediyeler genelde orada saklıdır.',
       "Kişiselleştirme (isim, tarih, koordinat) sıradan bir aksesuarı özel bir hediyeye dönüştürür.",
       "Deneyim hediyeleri (konser, atölye, maç bileti) erkekler arasında beklenenden çok daha fazla seviliyor.",
     ],
@@ -93,7 +93,7 @@ const baseGuides: Guide[] = [
       "Sevgililer Günü için anlamlı hediye fikirleri. Kişiye özel hediyeler, romantik deneyimler ve her bütçeye uygun 14 Şubat önerileri.",
     emoji: "❤️",
     intro: [
-      "14 Şubat hediyesi pahalı olmak zorunda değil, ama düşünülmüş olmak zorunda. Kişiye özel bir poster, birlikte gidilecek bir atölye ya da \"Şu an aç\" mektupları, sıradan bir çiçek buketinden çok daha uzun süre hatırlanır.",
+      '14 Şubat hediyesi pahalı olmak zorunda değil, ama düşünülmüş olmak zorunda. Kişiye özel bir poster, birlikte gidilecek bir atölye ya da "Şu an aç" mektupları, sıradan bir çiçek buketinden çok daha uzun süre hatırlanır.',
       "Aşağıda romantik olduğu kadar özgün olan fikirler var. Bütçene ve sevgilinin tarzına göre seçebilirsin.",
     ],
     tips: [
@@ -148,7 +148,7 @@ const baseGuides: Guide[] = [
       "Anneye ne hediye alınır? Anneler Günü ve doğum günü için kişiye özel, işe yarayan ve duygusal hediye önerileri.",
     emoji: "🌷",
     intro: [
-      "Annelerin çoğu \"Bana bir şey alma\" der. Ama bu, onları en çok mutlu edecek şeyin düşünülmüş olmak olduğu anlamına gelir. Kendine almaya kıyamadığı şeyler (spa, iyi bir parfüm, kaliteli bir mutfak aleti) çoğu zaman en isabetli seçimdir.",
+      'Annelerin çoğu "Bana bir şey alma" der. Ama bu, onları en çok mutlu edecek şeyin düşünülmüş olmak olduğu anlamına gelir. Kendine almaya kıyamadığı şeyler (spa, iyi bir parfüm, kaliteli bir mutfak aleti) çoğu zaman en isabetli seçimdir.',
       "Duygusal hediyeler de anneler için çok değerli: aile fotoğraflarından bir albüm ya da torunların fotoğraflarını uzaktan yükleyebileceğin dijital bir çerçeve.",
     ],
     tips: [
@@ -183,7 +183,7 @@ const baseGuides: Guide[] = [
       "En yakın arkadaşa ne hediye alınır? Doğum günü ve yılbaşı için eğlenceli, kişiye özel ve bütçe dostu arkadaş hediyesi fikirleri.",
     emoji: "🫶",
     intro: [
-      "Arkadaş hediyeleri, iç esprilerin ve ortak anıların en iyi değerlendirildiği hediyelerdir. Baskılı bir kupa, birlikte oynayacağınız bir kutu oyunu ya da birlikte gideceğiniz bir konser, \"Seni tanıyorum\" demenin en eğlenceli yolları.",
+      'Arkadaş hediyeleri, iç esprilerin ve ortak anıların en iyi değerlendirildiği hediyelerdir. Baskılı bir kupa, birlikte oynayacağınız bir kutu oyunu ya da birlikte gideceğiniz bir konser, "Seni tanıyorum" demenin en eğlenceli yolları.',
     ],
     tips: [
       "Arkadaş grubunda ortak hediye alıyorsanız bütçeyi birleştirip daha büyük bir şeye yönelebilirsiniz.",
@@ -305,7 +305,7 @@ const baseGuides: Guide[] = [
       },
       {
         q: "Bütçem kısıtlı, yine de özel bir hediye verebilir miyim?",
-        a: "Evet. Ortak fotoğraflardan bir albüm, yıldız haritası posteri ya da \"Şu an aç\" mektupları gibi hediyeler düşük bütçeyle çok kişisel olabilir.",
+        a: 'Evet. Ortak fotoğraflardan bir albüm, yıldız haritası posteri ya da "Şu an aç" mektupları gibi hediyeler düşük bütçeyle çok kişisel olabilir.',
       },
     ],
   },

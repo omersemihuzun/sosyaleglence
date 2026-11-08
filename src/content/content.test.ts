@@ -88,7 +88,9 @@ describe("testler", () => {
         expect(q.options.length, `${qi + 1}. soru 4 şık olmalı`).toBe(4);
         for (const o of q.options) {
           expect(o.emoji, `${qi + 1}. soru "${o.text}": emoji eksik`).toBeTruthy();
-          expect(o.text.trim().split(/\s+/).length, `${qi + 1}. soru "${o.text}": etiket çok uzun`).toBeLessThanOrEqual(4);
+          expect(o.text.trim().split(/\s+/).length, `${qi + 1}. soru "${o.text}": etiket çok uzun`).toBeLessThanOrEqual(
+            4,
+          );
         }
       });
     });

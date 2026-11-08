@@ -111,19 +111,19 @@ Tarih: Kasım 2026. Kaynaklar sayfa sonunda. İçerikler özetlenmiştir, alınt
 
 ## Sosyal Eğlence için yapılacaklar (öncelik sırasıyla)
 
-| # | İş | Etki | Efor |
-|---|----|------|------|
-| 1 | Oy ve istatistik altyapısı ("%34 bunu seçti", "12.400 kişi çözdü") | Yüksek | Orta (veritabanı) |
-| 2 | "Bunu mu O mu?" günlük anket serisi (numaralı, her gün yeni) | Yüksek | Düşük-orta |
-| 3 | Hediye rehberlerine SSS bölümü + FAQPage JSON-LD + "son güncelleme" tarihi | Yüksek (SEO) | Düşük |
-| 4 | Dolaylı tahmin testleri ("Bir sofra kur, sana hangi şehri yakıştıralım", "Bir kombin seç, aşk hayatını tahmin edelim") | Yüksek | Orta (içerik) |
-| 5 | Trend testi hattı: viral kavramları 48 saat içinde teste çevirme (Egen/Teto, situationship, delulu…) | Orta-yüksek | Düşük (içerik) |
-| 6 | Burç temalı testler ve elemeler (arama hacmi yüksek) | Orta-yüksek | Düşük |
-| 7 | Sonuç sayfalarına "Bu sonucu alanların %X'i" ve "uyumlu tip" karşılaştırması (istatistik ile) | Orta | Orta |
-| 8 | Testten hediyeye köprü: "Sevgi dilin 'hediye' çıktı → sana uygun hediyeler" | Orta (gelir) | Düşük |
-| 9 | Affiliate beyanını rehber sayfasının başına taşımak | Orta (güven, yasal) | Çok düşük |
-| 10 | Markalı test teklif paketi (B2B gelir) | Orta | Orta (satış) |
-| 11 | Kullanıcı turnuvası oluşturma, sadece moderasyon kuyruğuyla | Yüksek ama riskli | Yüksek |
+| #   | İş                                                                                                                     | Etki                | Efor              |
+| --- | ---------------------------------------------------------------------------------------------------------------------- | ------------------- | ----------------- |
+| 1   | Oy ve istatistik altyapısı ("%34 bunu seçti", "12.400 kişi çözdü")                                                     | Yüksek              | Orta (veritabanı) |
+| 2   | "Bunu mu O mu?" günlük anket serisi (numaralı, her gün yeni)                                                           | Yüksek              | Düşük-orta        |
+| 3   | Hediye rehberlerine SSS bölümü + FAQPage JSON-LD + "son güncelleme" tarihi                                             | Yüksek (SEO)        | Düşük             |
+| 4   | Dolaylı tahmin testleri ("Bir sofra kur, sana hangi şehri yakıştıralım", "Bir kombin seç, aşk hayatını tahmin edelim") | Yüksek              | Orta (içerik)     |
+| 5   | Trend testi hattı: viral kavramları 48 saat içinde teste çevirme (Egen/Teto, situationship, delulu…)                   | Orta-yüksek         | Düşük (içerik)    |
+| 6   | Burç temalı testler ve elemeler (arama hacmi yüksek)                                                                   | Orta-yüksek         | Düşük             |
+| 7   | Sonuç sayfalarına "Bu sonucu alanların %X'i" ve "uyumlu tip" karşılaştırması (istatistik ile)                          | Orta                | Orta              |
+| 8   | Testten hediyeye köprü: "Sevgi dilin 'hediye' çıktı → sana uygun hediyeler"                                            | Orta (gelir)        | Düşük             |
+| 9   | Affiliate beyanını rehber sayfasının başına taşımak                                                                    | Orta (güven, yasal) | Çok düşük         |
+| 10  | Markalı test teklif paketi (B2B gelir)                                                                                 | Orta                | Orta (satış)      |
+| 11  | Kullanıcı turnuvası oluşturma, sadece moderasyon kuyruğuyla                                                            | Yüksek ama riskli   | Yüksek            |
 
 ---
 
@@ -144,19 +144,19 @@ Tarih: Kasım 2026. Kaynaklar sayfa sonunda. İçerikler özetlenmiştir, alınt
 
 Uyarı sayısı **102'den 11'e** indi (185 sayfa denetlendi). Kalan 11 uyarı içerik dosyalarından geliyor. Bu dosyalar sonraki turda düzeltildi; o anki liste:
 
-| Sayfa | Sorun | Kaynak dosya |
-|-------|-------|--------------|
-| /testler/sevgi-dili-testi | Açıklama 162/160 | `src/content/tests/sevgi-dili.ts` → `metaDescription` |
-| /hediye/sevgiliye-yilbasi-hediyesi | Başlık 64/60 | `src/content/gifts/guides.ts` → `metaTitle` |
-| /hediye/erkek-arkadasa-hediye | Başlık 70/60 | aynı |
-| /hediye/kiz-arkadasa-hediye | Başlık 66/60 | aynı |
-| /hediye/sevgililer-gunu-hediyesi | Başlık 65/60 | aynı |
-| /hediye/yildonumu-hediyesi | Başlık 73/60 | aynı |
-| /hediye/anneye-hediye | Başlık 72/60 | aynı |
-| /hediye/babaya-hediye | Başlık 72/60 | aynı |
-| /hediye/arkadasa-hediye | Başlık 63/60 | aynı |
-| /hediye/500-tl-alti-hediye | Başlık 62/60 | aynı |
-| /hediye/is-arkadasina-hediye | Başlık 76/60 | aynı |
+| Sayfa                              | Sorun            | Kaynak dosya                                          |
+| ---------------------------------- | ---------------- | ----------------------------------------------------- |
+| /testler/sevgi-dili-testi          | Açıklama 162/160 | `src/content/tests/sevgi-dili.ts` → `metaDescription` |
+| /hediye/sevgiliye-yilbasi-hediyesi | Başlık 64/60     | `src/content/gifts/guides.ts` → `metaTitle`           |
+| /hediye/erkek-arkadasa-hediye      | Başlık 70/60     | aynı                                                  |
+| /hediye/kiz-arkadasa-hediye        | Başlık 66/60     | aynı                                                  |
+| /hediye/sevgililer-gunu-hediyesi   | Başlık 65/60     | aynı                                                  |
+| /hediye/yildonumu-hediyesi         | Başlık 73/60     | aynı                                                  |
+| /hediye/anneye-hediye              | Başlık 72/60     | aynı                                                  |
+| /hediye/babaya-hediye              | Başlık 72/60     | aynı                                                  |
+| /hediye/arkadasa-hediye            | Başlık 63/60     | aynı                                                  |
+| /hediye/500-tl-alti-hediye         | Başlık 62/60     | aynı                                                  |
+| /hediye/is-arkadasina-hediye       | Başlık 76/60     | aynı                                                  |
 
 **Öneri:** Rehber sayfası `metaTitle` alanlarına " | Sosyal Eğlence" eki eklenmeden önce en fazla 43 karakter yazılmalı. Bir başka yol, `src/app/hediye/[guide]/page.tsx` içinde de `fitTitle` kullanmak. Bu dosya bu görevin kapsamı dışında kaldı.
 

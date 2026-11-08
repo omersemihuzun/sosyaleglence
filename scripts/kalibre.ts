@@ -28,7 +28,9 @@ const root = process.cwd();
 const scoring = await import(pathToFileURL(join(root, "src/lib/scoring.ts")).href);
 const strict = process.argv.includes("--sıkı") || process.argv.includes("--strict");
 
-const { testDosyalari: files } = await import(pathToFileURL(join(root, "scripts/test-dosyalari.ts")).href) as { testDosyalari: [string, string][] };
+const { testDosyalari: files } = (await import(pathToFileURL(join(root, "scripts/test-dosyalari.ts")).href)) as {
+  testDosyalari: [string, string][];
+};
 
 type Opt = { text: string; scores: Record<string, number> };
 type Q = { text: string; options: Opt[] };
@@ -67,7 +69,9 @@ const detaylar: string[] = [];
 /** İlk iki sonuca uzaklık */
 function ikiUzaklik(test: T, scores: Record<string, number>) {
   const d = test.results
-    .map((r) => Math.sqrt(test.dimensions.reduce((t, dim) => t + ((scores[dim.id] ?? 0) - (r.profile[dim.id] ?? 50)) ** 2, 0)))
+    .map((r) =>
+      Math.sqrt(test.dimensions.reduce((t, dim) => t + ((scores[dim.id] ?? 0) - (r.profile[dim.id] ?? 50)) ** 2, 0)),
+    )
     .sort((a, b) => a - b);
   return [d[0], d[1] ?? Infinity];
 }
@@ -130,7 +134,8 @@ for (const [file, name] of files) {
     let hit = 0;
     for (const r of test.results)
       for (let i = 0; i < 400; i++)
-        if (scoring.pickResult(calibrated, scoring.scoreDimensions(calibrated, answer(r.profile, gurultu))).id === r.id) hit++;
+        if (scoring.pickResult(calibrated, scoring.scoreDimensions(calibrated, answer(r.profile, gurultu))).id === r.id)
+          hit++;
     return (hit / (400 * test.results.length)) * 100;
   };
   const hitRate = isabetOlc(3);
@@ -213,7 +218,9 @@ for (const [file, name] of files) {
     .map((x) => `S${x.i + 1} (${(x.k * 100).toFixed(1)})`);
   detaylar.push(
     `### ${test.slug}\n\n` +
-      (hatalar.length || uyarilar.length ? [...hatalar.map((h) => `- ✖ ${h}`), ...uyarilar.map((u) => `- ⚠ ${u}`)].join("\n") + "\n" : "- Uyarı yok\n") +
+      (hatalar.length || uyarilar.length
+        ? [...hatalar.map((h) => `- ✖ ${h}`), ...uyarilar.map((u) => `- ⚠ ${u}`)].join("\n") + "\n"
+        : "- Uyarı yok\n") +
       `- Sonuca en az katkı veren sorular (bilgi, %): ${enAz.join(", ")}\n`,
   );
 }

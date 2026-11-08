@@ -6,12 +6,13 @@ export const kiskanclikRehber: Article = {
   metaTitle: "Kıskançlık Nereden Gelir, Nasıl Yönetilir?",
   metaDescription:
     "Kıskançlık neden olur, ne zaman sağlıklı, ne zaman zarar verir? Kıskançlığın kaynaklarını, türlerini ve ilişkide onu yönetmenin yollarını anlattık.",
-  excerpt: "Biraz kıskançlık sevgi midir, yoksa güvensizlik mi? Kıskançlığın nereden geldiğini ve onu ilişkini yormadan nasıl yöneteceğini anlattık.",
+  excerpt:
+    "Biraz kıskançlık sevgi midir, yoksa güvensizlik mi? Kıskançlığın nereden geldiğini ve onu ilişkini yormadan nasıl yöneteceğini anlattık.",
   emoji: "👀",
   color: "#D7102F",
   updated: "2026-11-08",
   intro: [
-    "Kıskançlık neredeyse herkesin bir noktada tanıdığı bir duygudur. Sevgilinin telefonuna gece gelen bir mesaj, bir düğünde eski bir sınıf arkadaşıyla koyu bir sohbet ya da \"O çok eğlenceli biri\" diye bahsedilen yeni bir iş arkadaşı. Kalp bir an sıkışır, zihin hemen senaryolar kurmaya başlar.",
+    'Kıskançlık neredeyse herkesin bir noktada tanıdığı bir duygudur. Sevgilinin telefonuna gece gelen bir mesaj, bir düğünde eski bir sınıf arkadaşıyla koyu bir sohbet ya da "O çok eğlenceli biri" diye bahsedilen yeni bir iş arkadaşı. Kalp bir an sıkışır, zihin hemen senaryolar kurmaya başlar.',
     "Kıskançlık kendi başına kötü bir duygu değildir. Değer verdiğimiz bir bağı kaybetme ihtimaline karşı verilen doğal bir tepkidir. Sorun, bu duygunun ne kadar sık geldiği, ne kadar yoğun olduğu ve onunla ne yaptığımızdır. Bu rehberde kıskançlığın kaynaklarını, farklı yüzlerini ve onu ilişkini yormadan yönetmenin yollarını konuşuyoruz.",
   ],
   sections: [
@@ -19,16 +20,14 @@ export const kiskanclikRehber: Article = {
       heading: "Kıskançlık aslında neyi korumaya çalışır?",
       paragraphs: [
         "Kıskançlık bir alarm sistemine benzer. Değer verdiğimiz bir ilişkinin tehdit altında olduğunu algıladığımızda devreye girer. Alarm doğru çalıştığında işe yarar: Gerçekten bir sorun varsa onu fark etmemizi ve konuşmamızı sağlar.",
-        "Ama alarm aşırı hassas ayarlandığında, yani gerçek bir tehdit olmadığı hâlde sürekli çaldığında, hem kişiyi hem ilişkiyi yorar. Bu noktada soru \"Kıskanıyor muyum?\" değil, \"Bu alarm neden bu kadar kolay çalıyor?\" olmalıdır.",
+        'Ama alarm aşırı hassas ayarlandığında, yani gerçek bir tehdit olmadığı hâlde sürekli çaldığında, hem kişiyi hem ilişkiyi yorar. Bu noktada soru "Kıskanıyor muyum?" değil, "Bu alarm neden bu kadar kolay çalıyor?" olmalıdır.',
       ],
     },
     {
       heading: "Kıskançlığın olası kaynakları",
-      paragraphs: [
-        "Kıskançlığın tek bir sebebi yoktur. Çoğu zaman birkaç etken bir araya gelir:",
-      ],
+      paragraphs: ["Kıskançlığın tek bir sebebi yoktur. Çoğu zaman birkaç etken bir araya gelir:"],
       bullets: [
-        "Öz değer ve kıyaslama: \"Ben yeterli değilim, o daha iyi\" düşüncesi kıskançlığın en sık yakıtıdır.",
+        'Öz değer ve kıyaslama: "Ben yeterli değilim, o daha iyi" düşüncesi kıskançlığın en sık yakıtıdır.',
         "Geçmiş deneyimler: Daha önce aldatılmış ya da terk edilmiş olmak, zihnin benzer işaretlere karşı aşırı tetikte olmasına yol açabilir.",
         "Bağlanma kaygısı: Kaygılı bağlanma eğilimi olan kişiler belirsizliği daha zor tolere eder.",
         "İlişkideki belirsizlik: Sınırların konuşulmadığı, neyin normal neyin olmadığının netleşmediği ilişkilerde kıskançlık daha kolay filizlenir.",
@@ -44,7 +43,7 @@ export const kiskanclikRehber: Article = {
         {
           heading: "Sahiplenme",
           paragraphs: [
-            "\"Benim olan benimdir\" duygusu. Sahiplenen kişi tepkisini genellikle saklamaz, açıkça söyler. Bu dürüstlük iyi bir şeydir, ama \"Onunla görüşme\", \"Engelle\" gibi taleplere dönüştüğünde partneri kısıtlamaya başlar.",
+            '"Benim olan benimdir" duygusu. Sahiplenen kişi tepkisini genellikle saklamaz, açıkça söyler. Bu dürüstlük iyi bir şeydir, ama "Onunla görüşme", "Engelle" gibi taleplere dönüştüğünde partneri kısıtlamaya başlar.',
           ],
         },
         {
@@ -56,7 +55,7 @@ export const kiskanclikRehber: Article = {
         {
           heading: "Güvensizlik ve kıyaslama",
           paragraphs: [
-            "Bu yüzde kıskançlık öfke olarak değil, kendine yönelen bir soru olarak gelir: \"Benimle neden hiç öyle konuşmuyor?\" Kişi çoğu zaman bunu belli etmez ama içten içe geri çekilir.",
+            'Bu yüzde kıskançlık öfke olarak değil, kendine yönelen bir soru olarak gelir: "Benimle neden hiç öyle konuşmuyor?" Kişi çoğu zaman bunu belli etmez ama içten içe geri çekilir.',
           ],
         },
         {
@@ -80,9 +79,9 @@ export const kiskanclikRehber: Article = {
         "Kıskançlığı tamamen yok etmek gerçekçi bir hedef değil. Hedef, duygu geldiğinde onu fark etmek ve ilişkiye zarar vermeden ifade edebilmektir.",
       ],
       bullets: [
-        "Duyguyu adlandır: \"Şu an kıskanıyorum\" demek, duyguyla aranıza küçük bir mesafe koyar.",
+        'Duyguyu adlandır: "Şu an kıskanıyorum" demek, duyguyla aranıza küçük bir mesafe koyar.',
         "Kanıtla duyguyu ayır: Elindeki gerçek bilgi ne, zihninin eklediği senaryo ne?",
-        "Suçlamadan söyle: \"Sen hep...\" yerine \"Bu durum beni huzursuz etti, konuşabilir miyiz?\"",
+        'Suçlamadan söyle: "Sen hep..." yerine "Bu durum beni huzursuz etti, konuşabilir miyiz?"',
         "Sınırları birlikte konuşun: Konum paylaşımı, eski sevgililerle iletişim, gece mesajları... İkinizin de rahat ettiği kuralları birlikte belirleyin.",
         "Kontrol dürtüsünü ertele: Telefona bakma isteği geldiğinde birkaç dakika bekle ve kendine ne aradığını sor.",
         "Kendi değerini ilişkinin dışında da besle: Arkadaşlıklar, hobiler ve kişisel hedefler kıyaslama tuzağını zayıflatır.",
@@ -91,7 +90,7 @@ export const kiskanclikRehber: Article = {
     {
       heading: "Partnerin kıskançsa ne yapabilirsin?",
       paragraphs: [
-        "Kıskanç bir partnerle yaşamak yorucu olabilir. Yardımcı olabilecek şey, onun duygusunu küçümsemeden ama kendi sınırlarını da koruyarak konuşmaktır. \"Bunu hissetmeni anlıyorum, ama telefonumu karıştırman beni rahatsız ediyor\" gibi bir cümle hem empati hem sınır içerir.",
+        'Kıskanç bir partnerle yaşamak yorucu olabilir. Yardımcı olabilecek şey, onun duygusunu küçümsemeden ama kendi sınırlarını da koruyarak konuşmaktır. "Bunu hissetmeni anlıyorum, ama telefonumu karıştırman beni rahatsız ediyor" gibi bir cümle hem empati hem sınır içerir.',
         "Güven bir günde inşa edilmez. Tutarlı davranmak ve şeffaf olmak yardımcı olur, ama karşı tarafın kaygısını tek başına sen çözemezsin. Kıskançlık ilişkinin merkezine yerleştiyse, çift terapisi iki taraf için de iyi bir alan olabilir.",
       ],
     },

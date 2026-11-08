@@ -27,17 +27,27 @@ jobs:
       - name: Bağımlılıklar
         run: npm ci
 
-      - name: Route tipleri
-        run: npx next typegen
+      - name: Format
+        run: npm run format:check
 
       - name: TypeScript
-        run: npx tsc --noEmit
+        run: npm run typecheck
 
       - name: Lint
         run: npm run lint
 
+      - name: Kullanılmayan dosya, export ve bağımlılık
+        run: npm run knip
+
+      # Sadece siteye giden bağımlılıklar; geliştirme araçlarındaki orta seviye bulgular build'i durdurmaz
+      - name: Güvenlik açığı taraması
+        run: npm audit --omit=dev --audit-level=high
+
       - name: Birim ve içerik testleri
         run: npm test
+
+      - name: SEO denetimi
+        run: npm run seo
 
       # Sonuçların ayrışıp ayrışmadığını doğrular (isabet ve dağılım eşikleri, bkz. docs/test-metrikleri.md).
       # Simülasyon sabit tohumlu olduğu için çıktı belirlidir: commit'lenen kalibrasyon içerikle eşleşmeli.

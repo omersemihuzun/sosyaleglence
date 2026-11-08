@@ -27,11 +27,23 @@ export async function isimKartiOlustur(s: IsimUyumu, host: string): Promise<Blob
   g.font = `120px ${body}`;
   g.fillStyle = CHERRY;
   g.globalAlpha = 0.12;
-  for (const [x, y] of [[120, 260], [900, 330], [170, 1560], [930, 1700], [880, 980], [110, 1050]]) g.fillText("❤", x, y);
+  for (const [x, y] of [
+    [120, 260],
+    [900, 330],
+    [170, 1560],
+    [930, 1700],
+    [880, 980],
+    [110, 1050],
+  ])
+    g.fillText("❤", x, y);
   g.globalAlpha = 1;
 
   // Kart
-  const kx = 80, ky = 360, kw = W - 160, kh = 1180, r = 48;
+  const kx = 80,
+    ky = 360,
+    kw = W - 160,
+    kh = 1180,
+    r = 48;
   const yuvarlak = (x: number, y: number, w: number, h: number) => {
     g.beginPath();
     g.roundRect(x, y, w, h, r);
@@ -70,7 +82,8 @@ export async function isimKartiOlustur(s: IsimUyumu, host: string): Promise<Blob
   g.fillText(s.baslik, W / 2, ky + 580);
 
   // Alt puanlar
-  const bx = kx + 80, bw = kw - 160;
+  const bx = kx + 80,
+    bw = kw - 160;
   s.alt.forEach((a, i) => {
     const y = ky + 690 + i * 115;
     g.textAlign = "left";

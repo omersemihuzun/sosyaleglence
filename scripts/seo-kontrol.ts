@@ -86,11 +86,14 @@ for (const b of brackets) {
       desc: seo.bracketResultDescription(i.name, b.championLabel, b.title),
     });
 }
-for (const g of guides) rows.push({ url: `/hediye/${g.slug}`, title: seo.guideTitle(g.metaTitle, g.title), desc: g.metaDescription });
-for (const a of articles) rows.push({ url: `/rehber/${a.slug}`, title: seo.pageTitle(a.metaTitle), desc: a.metaDescription });
+for (const g of guides)
+  rows.push({ url: `/hediye/${g.slug}`, title: seo.guideTitle(g.metaTitle, g.title), desc: g.metaDescription });
+for (const a of articles)
+  rows.push({ url: `/rehber/${a.slug}`, title: seo.pageTitle(a.metaTitle), desc: a.metaDescription });
 
 rows.push({ url: "/burclar", title: burcMod.BURCLAR_TITLE, desc: burcMod.BURCLAR_DESC });
-for (const b of burclar) rows.push({ url: `/burclar/${b.slug}`, title: burcMod.burcTitle(b), desc: burcMod.burcDescription(b) });
+for (const b of burclar)
+  rows.push({ url: `/burclar/${b.slug}`, title: burcMod.burcTitle(b), desc: burcMod.burcDescription(b) });
 for (const u of burcMod.uyumlar) {
   const A = getBurc(u.a);
   const B = getBurc(u.b);
@@ -107,7 +110,8 @@ for (const r of rows) {
 }
 const titles = new Map<string, string[]>();
 for (const r of rows) titles.set(r.title, [...(titles.get(r.title) ?? []), r.url]);
-for (const [title, urls] of titles) if (urls.length > 1) problems.push(`TEKRAR EDEN BAŞLIK "${title}": ${urls.join(", ")}`);
+for (const [title, urls] of titles)
+  if (urls.length > 1) problems.push(`TEKRAR EDEN BAŞLIK "${title}": ${urls.join(", ")}`);
 
 console.log(`${rows.length} sayfa denetlendi, ${problems.length} uyarı.\n`);
 for (const p of problems) console.log("- " + p);

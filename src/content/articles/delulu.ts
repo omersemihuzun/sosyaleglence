@@ -6,20 +6,21 @@ export const deluluRehber: Article = {
   metaTitle: "Delulu Ne Demek? Aşkta Hayalcilik ve Gerçeklik",
   metaDescription:
     "Delulu ne demek, nereden çıktı? Aşkta hayal kurmanın tatlı ve yorucu tarafları, kendini kaptırdığını gösteren işaretler ve ayakları yere basmanın yolları.",
-  excerpt: "İki kez göz göze geldiniz ve sen çoktan düğün salonu seçtin. Buna internet dilinde delulu deniyor. Peki ne zaman eğlenceli, ne zaman yorucu?",
+  excerpt:
+    "İki kez göz göze geldiniz ve sen çoktan düğün salonu seçtin. Buna internet dilinde delulu deniyor. Peki ne zaman eğlenceli, ne zaman yorucu?",
   emoji: "🦄",
   color: "#B0287A",
   updated: "2026-11-08",
   intro: [
-    "Bir story'ni izledi diye senden hoşlandığını düşünmek, bir kez gülümsedi diye ortak bir gelecek planlamak, cevap gecikince yüzlerce açıklama uydurmak... İnternette bu hâlin bir adı var: delulu. İngilizcedeki \"delusional\" (hayalperest, yanılsama içinde) kelimesinden türeyen, yarı şaka yarı itiraf bir ifade.",
+    'Bir story\'ni izledi diye senden hoşlandığını düşünmek, bir kez gülümsedi diye ortak bir gelecek planlamak, cevap gecikince yüzlerce açıklama uydurmak... İnternette bu hâlin bir adı var: delulu. İngilizcedeki "delusional" (hayalperest, yanılsama içinde) kelimesinden türeyen, yarı şaka yarı itiraf bir ifade.',
     "Delulu olmak çoğu zaman masum ve eğlencelidir; herkes zaman zaman biraz hayal kurar. Ama bazen bu hayaller gerçek ilişkilerin yerini alır ve insanı yorar. Bu rehberde delulu kavramının ne anlattığını, tatlı ve zorlayıcı yanlarını ve hayallerle gerçeklik arasında nasıl denge kurulabileceğini konuşuyoruz.",
   ],
   sections: [
     {
       heading: "Delulu kelimesi nereden çıktı?",
       paragraphs: [
-        "Delulu, sosyal medyada özellikle hayranlık kültürü ve flört esprileriyle yaygınlaşan bir kelime. Başta ünlülere duyulan abartılı hayranlığı anlatmak için kullanılıyordu; sonra günlük aşk hayatına taşındı. \"Delulu is the solulu\" (hayalcilik çözümdür) gibi esprilerle, insanlar kendi abartılı umutlarıyla dalga geçmeye başladı.",
-        "Kelimenin popüler olmasının bir nedeni de kendine gülebilme hâlini içermesidir. \"Biliyorum, biraz delulu davranıyorum\" demek, aslında farkındalık da taşır. Bu yüzden delulu bir teşhis değil, yarı esprili bir öz eleştiridir.",
+        'Delulu, sosyal medyada özellikle hayranlık kültürü ve flört esprileriyle yaygınlaşan bir kelime. Başta ünlülere duyulan abartılı hayranlığı anlatmak için kullanılıyordu; sonra günlük aşk hayatına taşındı. "Delulu is the solulu" (hayalcilik çözümdür) gibi esprilerle, insanlar kendi abartılı umutlarıyla dalga geçmeye başladı.',
+        'Kelimenin popüler olmasının bir nedeni de kendine gülebilme hâlini içermesidir. "Biliyorum, biraz delulu davranıyorum" demek, aslında farkındalık da taşır. Bu yüzden delulu bir teşhis değil, yarı esprili bir öz eleştiridir.',
       ],
     },
     {
@@ -31,7 +32,7 @@ export const deluluRehber: Article = {
         "Henüz doğru dürüst konuşmadığın birinin seninle aynı şeyleri hissettiğinden eminsin.",
         "Küçük jestleri büyük işaretler olarak okuyorsun: bir beğeni, bir emoji, bir bakış.",
         "Cevap gecikince gerçekçi açıklamalar yerine en romantik senaryoyu seçiyorsun.",
-        "Arkadaşların \"Bence fazla düşünüyorsun\" dediğinde onlara kızıyorsun.",
+        'Arkadaşların "Bence fazla düşünüyorsun" dediğinde onlara kızıyorsun.',
         "Karşındakinin gerçek hâlinden çok kafandaki versiyonuna bağlanıyorsun.",
         "Geleceğe dair planlar, şu anki ilişkinin gerçekliğinden çok önde gidiyor.",
       ],
@@ -45,9 +46,7 @@ export const deluluRehber: Article = {
     },
     {
       heading: "Ne zaman yorucu olmaya başlar?",
-      paragraphs: [
-        "Hayaller gerçeklikle fazla açıldığında, en çok zarar gören genellikle hayali kuran kişidir.",
-      ],
+      paragraphs: ["Hayaller gerçeklikle fazla açıldığında, en çok zarar gören genellikle hayali kuran kişidir."],
       subsections: [
         {
           heading: "Hayal kırıklığı büyüdüğünde",
@@ -75,7 +74,7 @@ export const deluluRehber: Article = {
         "Hayal kurmayı bırakmana gerek yok; sadece arada bir gerçeklik kontrolü yapmak yeterli. İşe yarayan birkaç yöntem:",
       ],
       bullets: [
-        "Kanıt sor kendine: \"Bu düşünceyi destekleyen somut ne var?\" Bir bakış mı, yoksa tutarlı bir ilgi mi?",
+        'Kanıt sor kendine: "Bu düşünceyi destekleyen somut ne var?" Bir bakış mı, yoksa tutarlı bir ilgi mi?',
         "Davranışa odaklan: İnsanların söylediklerinden ve senin yorumlarından çok, düzenli olarak ne yaptıklarına bak.",
         "Güvendiğin bir arkadaşa danış ve cevabı dinlemeye hazır ol.",
         "Sormaktan korkma: Belirsizliği uzun süre kafanda çözmeye çalışmak yerine, uygun bir zamanda açıkça konuşmak çoğu zaman daha az yorar.",
@@ -93,7 +92,7 @@ export const deluluRehber: Article = {
       heading: "Arkadaş gözüyle bir gerçeklik kontrolü",
       paragraphs: [
         "Delulu anlarında en iyi yardımcılardan biri dürüst bir arkadaştır. Ama burada küçük bir tuzak var: Bazen sadece duymak istediğimiz cevabı verecek arkadaşa gideriz. Gerçekten işe yarayan şey, seni seven ama sana dürüst olmaktan çekinmeyen birine danışmaktır.",
-        "Arkadaşına durumu anlatırken kendi yorumlarını değil, olanları anlatmayı dene. \"Bana kesin ilgi duyuyor\" yerine \"Üç gündür mesajıma kısa cevaplar veriyor, ama dün bir fotoğrafımı beğendi\" demek, onun daha net bir bakış sunmasını sağlar. Bazen olayları yüksek sesle anlatmak bile, kafanda büyüttüğün hikâyeyi fark etmene yetebilir.",
+        'Arkadaşına durumu anlatırken kendi yorumlarını değil, olanları anlatmayı dene. "Bana kesin ilgi duyuyor" yerine "Üç gündür mesajıma kısa cevaplar veriyor, ama dün bir fotoğrafımı beğendi" demek, onun daha net bir bakış sunmasını sağlar. Bazen olayları yüksek sesle anlatmak bile, kafanda büyüttüğün hikâyeyi fark etmene yetebilir.',
       ],
     },
     {

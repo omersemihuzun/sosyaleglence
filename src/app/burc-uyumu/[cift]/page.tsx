@@ -84,7 +84,10 @@ async function CiftContent({ params }: { params: PageProps<"/burc-uyumu/[cift]">
 
         <div className="mt-5 grid items-start gap-8 lg:grid-cols-[1.15fr_1fr]">
           <div>
-            <div className="sticker -rotate-1 bg-white p-6 sm:p-8" style={{ boxShadow: "6px 8px 0 0 var(--color-plum)" }}>
+            <div
+              className="sticker -rotate-1 bg-white p-6 sm:p-8"
+              style={{ boxShadow: "6px 8px 0 0 var(--color-plum)" }}
+            >
               <div className="flex items-center justify-center gap-3 sm:gap-5">
                 {[A, B].map((x, i) => (
                   <Link
@@ -107,7 +110,10 @@ async function CiftContent({ params }: { params: PageProps<"/burc-uyumu/[cift]">
                 <span className="font-display text-7xl font-extrabold text-cherry tabular-nums">%{u.puan}</span>
               </p>
               <p className="text-center font-display text-lg font-bold">{uyumEtiketi(u.puan)}</p>
-              <div className="mx-auto mt-4 h-4 max-w-sm overflow-hidden rounded-full border-2 border-plum bg-paper" aria-hidden>
+              <div
+                className="mx-auto mt-4 h-4 max-w-sm overflow-hidden rounded-full border-2 border-plum bg-paper"
+                aria-hidden
+              >
                 <div className="animate-bar h-full bg-cherry" style={{ width: `${u.puan}%` }} />
               </div>
               <p className="mt-5 text-center text-xl font-semibold text-balance">{u.baslik}</p>
@@ -116,11 +122,15 @@ async function CiftContent({ params }: { params: PageProps<"/burc-uyumu/[cift]">
 
             <div className="mt-10 max-w-prose space-y-8">
               <div>
-                <h2 className="font-display text-2xl font-bold">Aşkta {A.ad} ve {B.ad}</h2>
+                <h2 className="font-display text-2xl font-bold">
+                  Aşkta {A.ad} ve {B.ad}
+                </h2>
                 <p className="mt-3 text-[17px] leading-[1.7]">{u.ask}</p>
               </div>
               <div>
-                <h2 className="font-display text-2xl font-bold">Arkadaşlıkta {A.ad} ve {B.ad}</h2>
+                <h2 className="font-display text-2xl font-bold">
+                  Arkadaşlıkta {A.ad} ve {B.ad}
+                </h2>
                 <p className="mt-3 text-[17px] leading-[1.7]">{u.arkadaslik}</p>
               </div>
             </div>

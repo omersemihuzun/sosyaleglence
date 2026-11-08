@@ -9,9 +9,7 @@ import type { Test } from "@/lib/types";
 import { Quiz } from "./quiz";
 
 type State =
-  | { kind: "loading" }
-  | { kind: "error"; message: string }
-  | { kind: "ready"; session: CompareSession; owner: boolean };
+  { kind: "loading" } | { kind: "error"; message: string } | { kind: "ready"; session: CompareSession; owner: boolean };
 
 export function CompareView({ test, code }: { test: Test; code: string }) {
   const [state, setState] = useState<State>({ kind: "loading" });
@@ -44,7 +42,10 @@ export function CompareView({ test, code }: { test: Test; code: string }) {
     return (
       <div className="sticker bg-white p-6">
         <p className="font-display text-xl font-bold">{state.message}</p>
-        <Link href={`/testler/${test.slug}`} className="mt-4 inline-block font-display font-bold text-cherry hover:underline">
+        <Link
+          href={`/testler/${test.slug}`}
+          className="mt-4 inline-block font-display font-bold text-cherry hover:underline"
+        >
           Testi baştan çöz
         </Link>
       </div>
@@ -61,7 +62,8 @@ export function CompareView({ test, code }: { test: Test; code: string }) {
         <div className="sticker bg-white p-6">
           <p className="font-display text-2xl font-bold">Onun cevabını bekliyoruz</p>
           <p className="mt-2 text-plum-soft">
-            Bağlantıyı gönderdiğin kişi testi çözünce karşılaştırma bu sayfada görünecek. Sayfayı sonra yenileyebilirsin.
+            Bağlantıyı gönderdiğin kişi testi çözünce karşılaştırma bu sayfada görünecek. Sayfayı sonra
+            yenileyebilirsin.
           </p>
         </div>
       );
@@ -73,7 +75,8 @@ export function CompareView({ test, code }: { test: Test; code: string }) {
           {aName} seni &quot;{test.title}&quot; testinde karşılaştırmaya çağırıyor
         </p>
         <p className="mt-2 text-plum-soft">
-          Testi çöz, ikinizin sonuçlarını ve uyum yüzdenizi yan yana görün. {aName}&apos;in sonucunu testi bitirince göreceksin.
+          Testi çöz, ikinizin sonuçlarını ve uyum yüzdenizi yan yana görün. {aName}&apos;in sonucunu testi bitirince
+          göreceksin.
         </p>
         <label className="mt-5 block text-sm font-semibold" htmlFor="cift-isim-b">
           Adın (isteğe bağlı)
@@ -155,7 +158,10 @@ export function CompareView({ test, code }: { test: Test; code: string }) {
               </div>
               {[sa, sb].map((sc, i) => (
                 <div key={i} className="mt-1.5 h-3 overflow-hidden rounded-full border-2 border-plum bg-paper">
-                  <div className="animate-bar h-full" style={{ width: `${Math.max(3, sc[d.id])}%`, background: people[i].color }} />
+                  <div
+                    className="animate-bar h-full"
+                    style={{ width: `${Math.max(3, sc[d.id])}%`, background: people[i].color }}
+                  />
                 </div>
               ))}
               <div className="mt-1 flex justify-between text-xs text-plum-soft">

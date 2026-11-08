@@ -20,7 +20,10 @@ export async function guardRender(request: Request): Promise<Response | null> {
   const tooLong = rejectLongQuery(request);
   if (tooLong) return tooLong;
   if (!(await allow(request, "gorsel", 30))) {
-    return new Response("Çok fazla istek", { status: 429, headers: { "Cache-Control": "no-store", "Retry-After": "60" } });
+    return new Response("Çok fazla istek", {
+      status: 429,
+      headers: { "Cache-Control": "no-store", "Retry-After": "60" },
+    });
   }
   return null;
 }

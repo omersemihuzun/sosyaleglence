@@ -6,7 +6,8 @@ export const ghostingRehber: Article = {
   metaTitle: "Ghosting Nedir? Neden Yapılır, Nasıl Başa Çıkılır?",
   metaDescription:
     "Ghosting nedir, insanlar neden bir anda ortadan kaybolur? Ghostlandığında nasıl toparlanacağını ve bir ilişkiyi saygılı bitirmenin yollarını anlattık.",
-  excerpt: "Dün her şey yolundaydı, bugün mesajların okunmuyor. Bir anda ortadan kaybolmanın adı ghosting ve en zor yanı cevapsız kalan sorular.",
+  excerpt:
+    "Dün her şey yolundaydı, bugün mesajların okunmuyor. Bir anda ortadan kaybolmanın adı ghosting ve en zor yanı cevapsız kalan sorular.",
   emoji: "👻",
   color: "#3B2A6B",
   updated: "2026-11-08",
@@ -19,19 +20,17 @@ export const ghostingRehber: Article = {
       heading: "Ghosting ne demek?",
       paragraphs: [
         "Ghosting, bir kişinin hiçbir açıklama yapmadan iletişimi tamamen kesmesidir. Mesajlara cevap vermez, aramalara dönmez, bazen sosyal medyada da engeller. Çoğunlukla flört döneminde görülse de arkadaşlıklarda ve hatta iş ilişkilerinde de yaşanabilir.",
-        "Ghosting'in bazı akrabaları da var. Ara sıra ortaya çıkıp tekrar kaybolmaya \"zombieing\", ilişkiyi bitirmeden ilgiyi yavaş yavaş azaltmaya \"slow fade\" deniyor. Hepsinin ortak noktası, açık bir konuşma yerine belirsizliği seçmek.",
+        'Ghosting\'in bazı akrabaları da var. Ara sıra ortaya çıkıp tekrar kaybolmaya "zombieing", ilişkiyi bitirmeden ilgiyi yavaş yavaş azaltmaya "slow fade" deniyor. Hepsinin ortak noktası, açık bir konuşma yerine belirsizliği seçmek.',
       ],
     },
     {
       heading: "İnsanlar neden ghosting yapar?",
-      paragraphs: [
-        "Ghosting yapan herkes kötü niyetli değildir. Çoğu zaman sebep, zor bir konuşmadan kaçmaktır.",
-      ],
+      paragraphs: ["Ghosting yapan herkes kötü niyetli değildir. Çoğu zaman sebep, zor bir konuşmadan kaçmaktır."],
       subsections: [
         {
           heading: "Çatışmadan kaçınma",
           paragraphs: [
-            "Birine \"İlgilenmiyorum\" demek rahatsız edicidir. Bazı insanlar karşı tarafın üzülmesini ya da tepki vermesini görmek istemez ve sessizliği daha kolay bulur. Bu, karşı taraf için daha zor olsa da, kaçan kişi için anlık bir rahatlama sağlar.",
+            'Birine "İlgilenmiyorum" demek rahatsız edicidir. Bazı insanlar karşı tarafın üzülmesini ya da tepki vermesini görmek istemez ve sessizliği daha kolay bulur. Bu, karşı taraf için daha zor olsa da, kaçan kişi için anlık bir rahatlama sağlar.',
           ],
         },
         {
@@ -58,16 +57,14 @@ export const ghostingRehber: Article = {
       heading: "Ghostlandığında neler hissedebilirsin?",
       paragraphs: [
         "Ghosting'in en zor yanı, cevapsız kalan sorulardır. Bir ayrılık konuşması acı verse de bir son sunar. Ghosting'de ise zihin boşluğu kendi açıklamalarıyla doldurmaya çalışır ve bu açıklamalar genellikle insanın kendisini suçladığı yönde olur.",
-        "Kafa karışıklığı, öfke, utanç ve \"Yanlış bir şey mi yaptım?\" sorusu çok yaygındır. Bunları hissetmen tamamen doğal. Karşı tarafın iletişim kurma biçimi, senin değerin hakkında bir şey söylemez.",
+        'Kafa karışıklığı, öfke, utanç ve "Yanlış bir şey mi yaptım?" sorusu çok yaygındır. Bunları hissetmen tamamen doğal. Karşı tarafın iletişim kurma biçimi, senin değerin hakkında bir şey söylemez.',
       ],
     },
     {
       heading: "Ghosting sonrası toparlanmak",
-      paragraphs: [
-        "Ghostlandıktan sonra kendini daha iyi hissetmek için şunları deneyebilirsin:",
-      ],
+      paragraphs: ["Ghostlandıktan sonra kendini daha iyi hissetmek için şunları deneyebilirsin:"],
       bullets: [
-        "Bir mesaj at ve sonra bırak: \"Bir süredir haber alamadım, umarım iyisindir\" gibi kısa bir mesaj, kapıyı nazikçe kapatır. Cevap gelmezse, bu da bir cevaptır.",
+        'Bir mesaj at ve sonra bırak: "Bir süredir haber alamadım, umarım iyisindir" gibi kısa bir mesaj, kapıyı nazikçe kapatır. Cevap gelmezse, bu da bir cevaptır.',
         "Arka arkaya mesaj atma isteğine direnç göster; bu genellikle seni daha kötü hissettirir.",
         "Suçu üstlenmekten kaçın: Bir insanın açıklama yapmadan gitmesi, senin değil onun iletişim tarzı hakkında bilgi verir.",
         "Profilini sürekli kontrol etmeyi bırak; sessize almak ya da arşivlemek iyileşmeyi hızlandırır.",
@@ -78,7 +75,7 @@ export const ghostingRehber: Article = {
     {
       heading: "Bir şeyi bitirmek istediğinde ghosting yerine ne yapılabilir?",
       paragraphs: [
-        "Bir ilişkiyi ya da flörtü bitirmek istemek tamamen normal. Ama bunu kısa ve saygılı bir mesajla yapmak, karşı tarafın yaşadığı belirsizliği büyük ölçüde azaltır. Uzun açıklamalar yapman gerekmez; şöyle bir mesaj yeterlidir: \"Seninle tanışmak güzeldi ama aramızda romantik bir şey hissetmiyorum. Sana iyi şeyler dilerim.\"",
+        'Bir ilişkiyi ya da flörtü bitirmek istemek tamamen normal. Ama bunu kısa ve saygılı bir mesajla yapmak, karşı tarafın yaşadığı belirsizliği büyük ölçüde azaltır. Uzun açıklamalar yapman gerekmez; şöyle bir mesaj yeterlidir: "Seninle tanışmak güzeldi ama aramızda romantik bir şey hissetmiyorum. Sana iyi şeyler dilerim."',
         "Böyle bir mesaj yazmak birkaç dakikanı alır ama karşındakini haftalarca süren bir düşünme döngüsünden kurtarır. Bu, birine gösterebileceğin en temel saygılardan biridir.",
       ],
     },

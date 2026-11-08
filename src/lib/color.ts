@@ -1,7 +1,13 @@
 /** WCAG 2.x göreli parlaklık. */
 function luminance(hex: string): number {
   const h = hex.replace("#", "");
-  const full = h.length === 3 ? h.split("").map((c) => c + c).join("") : h;
+  const full =
+    h.length === 3
+      ? h
+          .split("")
+          .map((c) => c + c)
+          .join("")
+      : h;
   const [r, g, b] = [0, 2, 4].map((i) => {
     const c = parseInt(full.slice(i, i + 2), 16) / 255;
     return c <= 0.03928 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4;

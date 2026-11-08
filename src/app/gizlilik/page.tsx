@@ -38,17 +38,17 @@ export default function PrivacyPage() {
               soruları iyileştirmektir.
             </li>
             <li>
-              <strong>Karşılaştırma bağlantıları:</strong> &quot;Karşılaştır&quot; özelliğini kullanırsan test skorların ve
-              isteğe bağlı olarak yazdığın isim (en fazla 24 karakter) bir bağlantı koduyla birlikte saklanır. Bu kayıt
-              30 gün sonra otomatik olarak silinir. Gerçek adını yazmak zorunda değilsin.
+              <strong>Karşılaştırma bağlantıları:</strong> &quot;Karşılaştır&quot; özelliğini kullanırsan test skorların
+              ve isteğe bağlı olarak yazdığın isim (en fazla 24 karakter) bir bağlantı koduyla birlikte saklanır. Bu
+              kayıt 30 gün sonra otomatik olarak silinir. Gerçek adını yazmak zorunda değilsin.
             </li>
             <li>
               <strong>Kötüye kullanım önleme:</strong> Sayaçların şişirilmesini önlemek için IP adresin, kısa süreli
               (dakikalık) istek sınırlama amacıyla işlenir ve kalıcı olarak saklanmaz.
             </li>
             <li>
-              <strong>Ziyaret istatistikleri:</strong> Vercel Web Analytics ile sayfa görüntüleme sayıları ve
-              Speed Insights ile sayfa hızı ölçülür. Bu araçlar çerez kullanmaz ve seni siteler arasında takip etmez.
+              <strong>Ziyaret istatistikleri:</strong> Vercel Web Analytics ile sayfa görüntüleme sayıları ve Speed
+              Insights ile sayfa hızı ölçülür. Bu araçlar çerez kullanmaz ve seni siteler arasında takip etmez.
             </li>
             <li>
               <strong>Tarayıcında tutulanlar:</strong> Son sonucun ve bir sonucu kısa süre içinde tekrar saymamak için
@@ -61,17 +61,17 @@ export default function PrivacyPage() {
         <section>
           <h2 className="font-display text-2xl font-bold">Veriler nerede tutuluyor?</h2>
           <p className="mt-2">
-            Site Vercel altyapısında barındırılır, sayaçlar ve karşılaştırma kayıtları Upstash veritabanında tutulur.
-            Bu hizmet sağlayıcıların sunucuları yurt dışında olabilir.
+            Site Vercel altyapısında barındırılır, sayaçlar ve karşılaştırma kayıtları Upstash veritabanında tutulur. Bu
+            hizmet sağlayıcıların sunucuları yurt dışında olabilir.
           </p>
         </section>
 
         <section>
           <h2 className="font-display text-2xl font-bold">Mağaza bağlantıları</h2>
           <p className="mt-2">
-            Hediye sayfalarındaki Trendyol, Hepsiburada ve Amazon bağlantılarına tıkladığında o sitelere geçersin. Oradaki
-            veri işleme o sitelerin kendi gizlilik politikalarına tabidir. Bu bağlantılardan yapılan alışverişlerden
-            komisyon alabiliriz.
+            Hediye sayfalarındaki Trendyol, Hepsiburada ve Amazon bağlantılarına tıkladığında o sitelere geçersin.
+            Oradaki veri işleme o sitelerin kendi gizlilik politikalarına tabidir. Bu bağlantılardan yapılan
+            alışverişlerden komisyon alabiliriz.
           </p>
         </section>
 
@@ -79,9 +79,12 @@ export default function PrivacyPage() {
           <h2 className="font-display text-2xl font-bold">Hakların ve iletişim</h2>
           <p className="mt-2">
             6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamındaki hakların (bilgi alma, silme, düzeltme vb.) için
-            bize <a className="font-semibold text-cherry underline" href={`mailto:${site.email}`}>{site.email}</a> adresinden
-            ulaşabilirsin. Bir karşılaştırma bağlantısının erkenden silinmesini istersen bağlantıyı e-postana eklemen
-            yeterli.
+            bize{" "}
+            <a className="font-semibold text-cherry underline" href={`mailto:${site.email}`}>
+              {site.email}
+            </a>{" "}
+            adresinden ulaşabilirsin. Bir karşılaştırma bağlantısının erkenden silinmesini istersen bağlantıyı e-postana
+            eklemen yeterli.
           </p>
         </section>
 

@@ -20,16 +20,16 @@ npm run rapor      # istatistik raporu (önce: vercel env pull .env.local --yes)
 
 ## Modüller
 
-| Modül | Adres | İçerik | Kaynak |
-|---|---|---|---|
-| Testler | `/testler` | Çok boyutlu senaryo testleri ve "Seç" formatı | `src/content/tests/` |
-| Eleme oyunları | `/eleme` | 16 seçenekli turnuvalar, açık lisanslı fotoğraflar | `src/content/brackets/` |
-| Bunu mu O mu? | `/bunu-mu-o-mu` | İkili anketler, günün sorusu | `src/content/polls.ts` |
-| Burçlar | `/burclar`, `/burc-uyumu/...` | 12 profil, 78 uyum çifti | `src/content/burclar.ts`, `burc-uyum.ts` |
-| Hediye | `/hediye` | Hediye bulucu, rehberler, SSS | `src/content/gifts/` |
-| Rehber | `/rehber` | Uzun içerikli SEO makaleleri | `src/content/articles/` |
-| Karşılaştırma | `/testler/[slug]/karsilastir/[kod]` | İki kişinin test uyumu (30 gün saklanır) | `src/lib/compare.ts` |
-| Arama | `/ara` | Tüm içerikte Türkçe duyarsız arama | `src/lib/search*.ts` |
+| Modül          | Adres                               | İçerik                                             | Kaynak                                   |
+| -------------- | ----------------------------------- | -------------------------------------------------- | ---------------------------------------- |
+| Testler        | `/testler`                          | Çok boyutlu senaryo testleri ve "Seç" formatı      | `src/content/tests/`                     |
+| Eleme oyunları | `/eleme`                            | 16 seçenekli turnuvalar, açık lisanslı fotoğraflar | `src/content/brackets/`                  |
+| Bunu mu O mu?  | `/bunu-mu-o-mu`                     | İkili anketler, günün sorusu                       | `src/content/polls.ts`                   |
+| Burçlar        | `/burclar`, `/burc-uyumu/...`       | 12 profil, 78 uyum çifti                           | `src/content/burclar.ts`, `burc-uyum.ts` |
+| Hediye         | `/hediye`                           | Hediye bulucu, rehberler, SSS                      | `src/content/gifts/`                     |
+| Rehber         | `/rehber`                           | Uzun içerikli SEO makaleleri                       | `src/content/articles/`                  |
+| Karşılaştırma  | `/testler/[slug]/karsilastir/[kod]` | İki kişinin test uyumu (30 gün saklanır)           | `src/lib/compare.ts`                     |
+| Arama          | `/ara`                              | Tüm içerikte Türkçe duyarsız arama                 | `src/lib/search*.ts`                     |
 
 ## Klasörler
 
@@ -74,10 +74,10 @@ docs/                 Operasyon, domain geçişi, rakip analizi, erişilebilirli
 
 ## Ortam değişkenleri
 
-| Değişken | Ne işe yarar |
-|---|---|
-| `NEXT_PUBLIC_SITE_URL` | Kanonik adres (varsayılan https://sosyaleglence.com) |
+| Değişken                               | Ne işe yarar                                                                                          |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| `NEXT_PUBLIC_SITE_URL`                 | Kanonik adres (varsayılan https://sosyaleglence.com)                                                  |
 | `KV_REST_API_URL`, `KV_REST_API_TOKEN` | Upstash Redis (Vercel Marketplace kurar). Yoksa istatistik, anket yüzdeleri ve karşılaştırma kapanır. |
-| `NEXT_PUBLIC_AMAZON_TAG` | Amazon affiliate etiketi (isteğe bağlı) |
+| `NEXT_PUBLIC_AMAZON_TAG`               | Amazon affiliate etiketi (isteğe bağlı)                                                               |
 
 Ayrıntılar: `docs/operasyon.md`, domain geçişi: `docs/domain-gecisi.md`.

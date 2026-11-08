@@ -49,7 +49,10 @@ test("bağlantıyla gelen ziyaretçiye testi çöz daveti gösterilir", async ({
   await expect(page.getByRole("link", { name: "Testi çöz" })).toHaveAttribute("href", "/testler/kiskanclik-testi");
 });
 
-test("test hunisi: başlatma ve bitiş anonim olarak bildirilir, cevaplar soru sayısı kadar", async ({ page, consoleErrors }) => {
+test("test hunisi: başlatma ve bitiş anonim olarak bildirilir, cevaplar soru sayısı kadar", async ({
+  page,
+  consoleErrors,
+}) => {
   void consoleErrors;
   const olaylar: { olay: string; cevaplar?: number[]; sure?: number }[] = [];
   await page.route("**/api/istatistik/huni", async (route) => {

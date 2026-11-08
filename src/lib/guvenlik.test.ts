@@ -18,7 +18,8 @@ describe("güvenlik yardımcıları", () => {
     for (const k of kodlar) expect(k).toMatch(/^[a-f0-9]{16}$/);
     expect(COMPARE_CODE.test("0123456789")).toBe(true);
     expect(COMPARE_CODE.test("0123456789abcdef")).toBe(true);
-    for (const kotu of ["0123456789a", "../etc", "ABCDEF0123", "0123456789abcdef0"]) expect(COMPARE_CODE.test(kotu)).toBe(false);
+    for (const kotu of ["0123456789a", "../etc", "ABCDEF0123", "0123456789abcdef0"])
+      expect(COMPARE_CODE.test(kotu)).toBe(false);
   });
 
   it("JSON-LD içinde </script> etiketi kapanamaz", () => {

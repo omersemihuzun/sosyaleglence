@@ -18,8 +18,8 @@ export default function TestsPage() {
         Kendini tanı, sonra herkese göster.
       </h1>
       <p className="mt-5 max-w-xl text-lg leading-relaxed text-plum-soft">
-        Her test gerçek hayattan senaryolarla ilerler ve tek bir puan yerine seni birkaç açıdan ölçer. Sonunda
-        kendi tipini, güçlü yanlarını ve paylaşabileceğin bir kartı alırsın.
+        Her test gerçek hayattan senaryolarla ilerler ve tek bir puan yerine seni birkaç açıdan ölçer. Sonunda kendi
+        tipini, güçlü yanlarını ve paylaşabileceğin bir kartı alırsın.
       </p>
       <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {tests.map((t, i) => (

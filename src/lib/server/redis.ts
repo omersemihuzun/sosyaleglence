@@ -47,7 +47,9 @@ export async function allow(request: Request, ad: string, adet = 30): Promise<bo
     const redis = getRedis();
     limiters.set(
       ad,
-      redis ? new Ratelimit({ redis, limiter: Ratelimit.slidingWindow(adet, "60 s"), prefix: `rl:${ad}`, analytics: false }) : null,
+      redis
+        ? new Ratelimit({ redis, limiter: Ratelimit.slidingWindow(adet, "60 s"), prefix: `rl:${ad}`, analytics: false })
+        : null,
     );
   }
   const l = limiters.get(ad);

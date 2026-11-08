@@ -6,12 +6,13 @@ export const ilkBulusmaRehber: Article = {
   metaTitle: "İlk Buluşmada Ne Konuşulur? Sohbeti Akıtan 20 Soru",
   metaDescription:
     "İlk buluşmada ne konuşulur, sessizlik olunca ne yapılır? Sohbeti doğal akıtan 20 soru, kaçınılacak konular ve gerginliği azaltan pratik ipuçları.",
-  excerpt: "Garson gitti, menüler kapandı ve o sessizlik geldi. İlk buluşmada sohbeti akıtmanın sırrı mükemmel cümlelerde değil, doğru sorularda.",
+  excerpt:
+    "Garson gitti, menüler kapandı ve o sessizlik geldi. İlk buluşmada sohbeti akıtmanın sırrı mükemmel cümlelerde değil, doğru sorularda.",
   emoji: "☕",
   color: "#C2410C",
   updated: "2026-11-08",
   intro: [
-    "İlk buluşmadan önce çoğu insan aynı şeyden korkar: konuşacak bir şey bulamamak. Sessizlik uzadıkça içten içe \"Sıkıldı mı?\", \"Yanlış bir şey mi söyledim?\" diye düşünmeye başlarız. Oysa ilk buluşmada amaç kusursuz bir performans değil, karşındakini biraz tanımak ve onun da seni tanımasına izin vermektir.",
+    'İlk buluşmadan önce çoğu insan aynı şeyden korkar: konuşacak bir şey bulamamak. Sessizlik uzadıkça içten içe "Sıkıldı mı?", "Yanlış bir şey mi söyledim?" diye düşünmeye başlarız. Oysa ilk buluşmada amaç kusursuz bir performans değil, karşındakini biraz tanımak ve onun da seni tanımasına izin vermektir.',
     "Bu rehberde sohbeti doğal biçimde akıtan soruları, ilk buluşmada kaçınmak isteyebileceğin konuları ve tuhaf sessizlik anlarında ne yapabileceğini konuşuyoruz. Ezberlenecek bir senaryo değil; kendi tarzına uyarlayabileceğin bir başlangıç noktası.",
   ],
   sections: [
@@ -102,13 +103,13 @@ export const ilkBulusmaRehber: Article = {
         {
           heading: "Önceki bir cevaba geri dön",
           paragraphs: [
-            "\"Az önce bahsettiğin o yolculuk, nasıl karar verdin gitmeye?\" gibi bir geri dönüş, onu gerçekten dinlediğini gösterir. Bu, en güçlü sohbet tekniklerinden biridir.",
+            '"Az önce bahsettiğin o yolculuk, nasıl karar verdin gitmeye?" gibi bir geri dönüş, onu gerçekten dinlediğini gösterir. Bu, en güçlü sohbet tekniklerinden biridir.',
           ],
         },
         {
           heading: "Sessizliğe gülümse",
           paragraphs: [
-            "Bazen \"Tamam, şimdi o tuhaf sessizlik anı geldi\" diyerek gülmek, ikinizin de rahatlamasını sağlar. Kendinle dalga geçebilmek çekici bir özelliktir.",
+            'Bazen "Tamam, şimdi o tuhaf sessizlik anı geldi" diyerek gülmek, ikinizin de rahatlamasını sağlar. Kendinle dalga geçebilmek çekici bir özelliktir.',
           ],
         },
       ],
@@ -118,14 +119,14 @@ export const ilkBulusmaRehber: Article = {
       paragraphs: [
         "İyi bir sohbet çoğu zaman buluşmadan önce başlar. Mekânı ikiniz için de rahat olacak şekilde seçmek, gergin anları azaltır. Çok gürültülü bir yer konuşmayı zorlaştırır, çok sessiz ve resmî bir yer ise baskı yaratabilir. Kafe, sahil yürüyüşü ya da küçük bir sergi gibi ortamlar, konuşmaya doğal aralar ve ortak konular sağlar.",
         "Kendini hazırlarken ezber cümleler yerine birkaç konu başlığı düşünmek yeterlidir: son zamanlarda seni heyecanlandıran bir şey, yakın zamanda yaşadığın komik bir olay, merak ettiğin bir konu. Bu başlıklar, sohbet tıkandığında elinde bir yedek olduğunu bilmeni sağlar ve kaygıyı azaltır.",
-        "Bir de beklentini gözden geçir. İlk buluşma bir sınav değil; amaç karşındakiyle anlaşıp anlaşamayacağını keşfetmek. Bu bakış açısı, \"Beğenilecek miyim?\" kaygısını \"Ben onu beğenecek miyim?\" merakına çevirir ve seni daha doğal yapar.",
+        'Bir de beklentini gözden geçir. İlk buluşma bir sınav değil; amaç karşındakiyle anlaşıp anlaşamayacağını keşfetmek. Bu bakış açısı, "Beğenilecek miyim?" kaygısını "Ben onu beğenecek miyim?" merakına çevirir ve seni daha doğal yapar.',
       ],
     },
     {
       heading: "Dinlemek de bir sohbet becerisi",
       paragraphs: [
         "İlk buluşmada en çok akılda kalan kişi, genellikle en çok konuşan değil, en iyi dinleyendir. Karşındakinin cevabını dinlerken bir sonraki soruyu düşünmek yerine söylediğine odaklanmak, sohbeti kendiliğinden derinleştirir. Göz teması kurmak, araya girmemek ve küçük ayrıntıları hatırlamak, ilgini sözlerinden daha iyi gösterir.",
-        "Dinlerken \"Bu nasıl hissettirdi?\" ya da \"Sonra ne oldu?\" gibi açık uçlu sorular, karşındakinin anlatmaya devam etmesini kolaylaştırır. Bu tür sorular, kısa cevaplı sorulardan çok daha zengin sohbetler doğurur.",
+        'Dinlerken "Bu nasıl hissettirdi?" ya da "Sonra ne oldu?" gibi açık uçlu sorular, karşındakinin anlatmaya devam etmesini kolaylaştırır. Bu tür sorular, kısa cevaplı sorulardan çok daha zengin sohbetler doğurur.',
       ],
     },
   ],

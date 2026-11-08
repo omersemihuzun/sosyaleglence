@@ -34,9 +34,16 @@ const buf = Buffer.from(await res.arrayBuffer());
 const outDir = join("public", "eleme", slug);
 mkdirSync(outDir, { recursive: true });
 const position = focus === "attention" ? sharp.strategy.attention : focus;
-await sharp(buf).rotate().resize(800, 600, { fit: "cover", position }).webp({ quality: 72 }).toFile(join(outDir, `${id}.webp`));
+await sharp(buf)
+  .rotate()
+  .resize(800, 600, { fit: "cover", position })
+  .webp({ quality: 72 })
+  .toFile(join(outDir, `${id}.webp`));
 // Kartlarda kullanılan küçük sürüm
-await sharp(join(outDir, `${id}.webp`)).resize(400, 300, { fit: "cover" }).webp({ quality: 66 }).toFile(join(outDir, `${id}-k.webp`));
+await sharp(join(outDir, `${id}.webp`))
+  .resize(400, 300, { fit: "cover" })
+  .webp({ quality: 66 })
+  .toFile(join(outDir, `${id}-k.webp`));
 
 const metaDir = join("src", "content", "brackets", "gorseller");
 mkdirSync(metaDir, { recursive: true });
@@ -52,6 +59,10 @@ meta[id] = {
   title: c.title.slice(0, 140),
 };
 // Kararlı sıralama: farklar okunaklı kalsın
-const sorted = Object.fromEntries(Object.keys(meta).sort().map((k) => [k, meta[k]]));
+const sorted = Object.fromEntries(
+  Object.keys(meta)
+    .sort()
+    .map((k) => [k, meta[k]]),
+);
 writeFileSync(metaFile, JSON.stringify(sorted, null, 2) + "\n");
 console.log(`Kaydedildi: ${join(outDir, `${id}.webp`)}  (${c.license}, ${c.creator.slice(0, 40)})`);

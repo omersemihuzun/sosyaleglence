@@ -166,7 +166,10 @@ export function PollPlayer({ polls, firstId }: { polls: Poll[]; firstId?: string
               const t = c.counts ? c.counts.a + c.counts.b : 0;
               const yuzde = c.counts && t ? Math.round((c.counts[c.choice] / t) * 100) : null;
               return (
-                <li key={c.id} className="flex items-center justify-between gap-3 rounded-xl border-2 border-plum bg-paper px-3 py-2 text-[15px]">
+                <li
+                  key={c.id}
+                  className="flex items-center justify-between gap-3 rounded-xl border-2 border-plum bg-paper px-3 py-2 text-[15px]"
+                >
                   <span>
                     <span aria-hidden>{c.choice === "a" ? p.aEmoji : p.bEmoji} </span>
                     <strong>{c.choice === "a" ? p.a : p.b}</strong>
@@ -190,7 +193,9 @@ export function PollPlayer({ polls, firstId }: { polls: Poll[]; firstId?: string
             Testlere göz at
           </Link>
         </div>
-        {kalan === 0 && <p className="mt-3 text-sm text-plum-soft">Bütün soruları gördün; şimdi eskiler karışık sırayla geliyor.</p>}
+        {kalan === 0 && (
+          <p className="mt-3 text-sm text-plum-soft">Bütün soruları gördün; şimdi eskiler karışık sırayla geliyor.</p>
+        )}
       </div>
     );
   }
@@ -203,11 +208,19 @@ export function PollPlayer({ polls, firstId }: { polls: Poll[]; firstId?: string
         </span>
         <div className="flex items-center gap-4">
           {!choice && (
-            <button type="button" onClick={next} className="min-h-9 rounded-full border-2 border-plum bg-white px-3.5 font-display text-plum hover:bg-blush">
+            <button
+              type="button"
+              onClick={next}
+              className="min-h-9 rounded-full border-2 border-plum bg-white px-3.5 font-display text-plum hover:bg-blush"
+            >
               Atla
             </button>
           )}
-          <button type="button" onClick={bitir} className="min-h-9 rounded-full border-2 border-plum bg-white px-3.5 font-display text-plum hover:bg-blush">
+          <button
+            type="button"
+            onClick={bitir}
+            className="min-h-9 rounded-full border-2 border-plum bg-white px-3.5 font-display text-plum hover:bg-blush"
+          >
             Turu bitir
           </button>
         </div>
@@ -220,7 +233,10 @@ export function PollPlayer({ polls, firstId }: { polls: Poll[]; firstId?: string
         aria-valuemax={TUR}
         aria-valuenow={turdaki + (choice ? 1 : 0)}
       >
-        <div className="h-full bg-cherry transition-[width]" style={{ width: `${((turdaki + (choice ? 1 : 0)) / TUR) * 100}%` }} />
+        <div
+          className="h-full bg-cherry transition-[width]"
+          style={{ width: `${((turdaki + (choice ? 1 : 0)) / TUR) * 100}%` }}
+        />
       </div>
 
       <div key={poll.id} className="animate-pop relative mt-5 grid gap-4 sm:grid-cols-2 sm:gap-6" aria-live="polite">
@@ -243,7 +259,11 @@ export function PollPlayer({ polls, firstId }: { polls: Poll[]; firstId?: string
               style={{ rotate: `${idx === 0 ? -0.8 : 0.8}deg` }}
             >
               {counts && (
-                <span aria-hidden className="animate-bar absolute inset-y-0 left-0 bg-blush/70" style={{ width: `${p}%` }} />
+                <span
+                  aria-hidden
+                  className="animate-bar absolute inset-y-0 left-0 bg-blush/70"
+                  style={{ width: `${p}%` }}
+                />
               )}
               <span aria-hidden className="relative text-6xl leading-none">
                 {emoji}

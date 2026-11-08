@@ -12,7 +12,20 @@ import { absoluteUrl } from "@/lib/site";
 /** Tüm parametreler build sırasında bilinir: sayfa tamamen statik üretilir. */
 export const ensureStatic = "navigation";
 
-const TR_MONTHS = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
+const TR_MONTHS = [
+  "Ocak",
+  "Şubat",
+  "Mart",
+  "Nisan",
+  "Mayıs",
+  "Haziran",
+  "Temmuz",
+  "Ağustos",
+  "Eylül",
+  "Ekim",
+  "Kasım",
+  "Aralık",
+];
 
 /** "2026-11-08" -> "8 Kasım 2026" (Date kullanmadan: statik üretimde saat dilimi sürprizi olmasın) */
 function formatTrDate(iso: string) {
@@ -104,7 +117,10 @@ async function ArticleContent({ params }: { params: PageProps<"/rehber/[slug]">[
           <span>{article.title}</span>
         </nav>
 
-        <header className="sticker mt-5 -rotate-[0.6deg] p-7 sm:p-9" style={{ background: hero.background, color: hero.color }}>
+        <header
+          className="sticker mt-5 -rotate-[0.6deg] p-7 sm:p-9"
+          style={{ background: hero.background, color: hero.color }}
+        >
           <p aria-hidden className="text-5xl leading-none">
             {article.emoji}
           </p>
@@ -130,7 +146,10 @@ async function ArticleContent({ params }: { params: PageProps<"/rehber/[slug]">[
             <ol className="mt-3 list-decimal space-y-0.5 pl-5 text-[15px]">
               {article.sections.map((s) => (
                 <li key={s.heading}>
-                  <a href={`#${anchorId(s.heading)}`} className="inline-block py-1 underline-offset-4 hover:text-cherry hover:underline">
+                  <a
+                    href={`#${anchorId(s.heading)}`}
+                    className="inline-block py-1 underline-offset-4 hover:text-cherry hover:underline"
+                  >
                     {s.heading}
                   </a>
                 </li>
@@ -140,7 +159,10 @@ async function ArticleContent({ params }: { params: PageProps<"/rehber/[slug]">[
 
           {article.sections.map((s, i) => (
             <section key={s.heading} className="mt-10">
-              <h2 id={anchorId(s.heading)} className="scroll-mt-6 font-display text-2xl leading-tight font-bold sm:text-3xl">
+              <h2
+                id={anchorId(s.heading)}
+                className="scroll-mt-6 font-display text-2xl leading-tight font-bold sm:text-3xl"
+              >
                 {s.heading}
               </h2>
               <div className="mt-3 space-y-4">

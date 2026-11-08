@@ -6,7 +6,8 @@ export const sosyalEnerji: Article = {
   metaTitle: "İçe Dönük müsün, Yorgun musun? Sosyal Enerji Rehberi",
   metaDescription:
     "İçe dönüklük, dışa dönüklük ve sosyal yorgunluk arasındaki fark ne? Sosyal pilini tanımayı, enerjini korumayı ve ihtiyacını anlatmayı rehberde anlattık.",
-  excerpt: "Davetleri iptal etmek seni içe dönük mü yapar, yoksa sadece çok mu yorgunsun? Sosyal enerjini tanımanın yollarını anlattık.",
+  excerpt:
+    "Davetleri iptal etmek seni içe dönük mü yapar, yoksa sadece çok mu yorgunsun? Sosyal enerjini tanımanın yollarını anlattık.",
   emoji: "🔋",
   color: "#2F7D6D",
   updated: "2026-11-08",
@@ -32,21 +33,19 @@ export const sosyalEnerji: Article = {
     },
     {
       heading: "Sosyal pilini tanımak",
-      paragraphs: [
-        "Kendi sosyal enerjini anlamak için birkaç soruya dürüst cevap vermek yeterli:",
-      ],
+      paragraphs: ["Kendi sosyal enerjini anlamak için birkaç soruya dürüst cevap vermek yeterli:"],
       bullets: [
         "Kalabalık bir partiden sonra kendini dinç mi hissediyorsun, bitkin mi?",
         "Dinlenmek için yalnız kalmak mı, yoksa sevdiğin biriyle sohbet etmek mi istiyorsun?",
         "Son zamanlarda yalnız kalma ihtiyacın arttıysa, hayatında ne değişti?",
         "Plansız bir buluşma seni heyecanlandırıyor mu, yoksa geriyor mu?",
-        "Telefon çaldığında ilk hissin ne? Merak mı, \"şimdi olmaz\" mı?",
+        'Telefon çaldığında ilk hissin ne? Merak mı, "şimdi olmaz" mı?',
       ],
     },
     {
       heading: "Pilini ne boşaltır, ne doldurur?",
       paragraphs: [
-        "Sosyal enerji sadece \"insanlarla vakit geçirmek\" ile ölçülmez. Aynı süre farklı ortamlarda çok farklı etki yapabilir.",
+        'Sosyal enerji sadece "insanlarla vakit geçirmek" ile ölçülmez. Aynı süre farklı ortamlarda çok farklı etki yapabilir.',
       ],
       subsections: [
         {
@@ -69,9 +68,9 @@ export const sosyalEnerji: Article = {
         "Sosyal enerji ihtiyaçlarını anlatmamak, çevrende yanlış anlaşılmalara yol açabilir. İptal edilen planlar ilgisizlik, cevapsız mesajlar küskünlük gibi algılanabilir. Birkaç basit cümle bu durumu çok değiştirir:",
       ],
       bullets: [
-        "\"Seni görmek istiyorum ama bu hafta çok yoruldum, gelecek hafta kahve içelim mi?\"",
-        "\"Kalabalık ortamlarda çabuk yoruluyorum, bir saat kalıp çıkacağım.\"",
-        "\"Akşamları telefona geç bakıyorum, sana kızgın olduğumdan değil.\"",
+        '"Seni görmek istiyorum ama bu hafta çok yoruldum, gelecek hafta kahve içelim mi?"',
+        '"Kalabalık ortamlarda çabuk yoruluyorum, bir saat kalıp çıkacağım."',
+        '"Akşamları telefona geç bakıyorum, sana kızgın olduğumdan değil."',
       ],
     },
     {
@@ -79,14 +78,12 @@ export const sosyalEnerji: Article = {
       paragraphs: [
         "Bir partner her hafta sonu arkadaşlarıyla buluşmak isterken diğeri evde kalmayı tercih ediyorsa, bu ilişkide sık rastlanan bir gerilim kaynağıdır. Biri kendini yalnız bırakılmış, diğeri sürekli zorlanmış hissedebilir.",
         "Burada amaç kimin haklı olduğunu bulmak değil, iki ihtiyacı da karşılayan bir denge kurmaktır. Bazı çiftler sosyal planları dönüşümlü yapar, bazıları birlikte gidip erken ayrılmayı, bazıları ise dışa dönük partnerin bazen tek başına gitmesini rahatça kabul eder. Önemli olan bu tercihin bir reddedilme olarak algılanmamasıdır.",
-        "İçe dönük partner için \"Seninle değil, kalabalıkla ilgili\" demek; dışa dönük partner için ise \"Bensiz eğlenmen beni üzmez\" demek, iki tarafın da kendini güvende hissetmesine yardımcı olur.",
+        'İçe dönük partner için "Seninle değil, kalabalıkla ilgili" demek; dışa dönük partner için ise "Bensiz eğlenmen beni üzmez" demek, iki tarafın da kendini güvende hissetmesine yardımcı olur.',
       ],
     },
     {
       heading: "Pilini korumak için küçük alışkanlıklar",
-      paragraphs: [
-        "Sosyal enerjini yönetmek büyük kararlar değil, küçük ve düzenli alışkanlıklar gerektirir:",
-      ],
+      paragraphs: ["Sosyal enerjini yönetmek büyük kararlar değil, küçük ve düzenli alışkanlıklar gerektirir:"],
       bullets: [
         "Takvime boş alan koy: Art arda planların arasına dinlenme zamanı ekle.",
         "Kendine çıkış planı yap: Bir davete giderken ne zaman ayrılacağını baştan bilmek kaygıyı azaltır.",
