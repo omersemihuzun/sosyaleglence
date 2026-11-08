@@ -6,9 +6,24 @@ import { redFlag } from "./red-flag";
 import { ex } from "./ex";
 import { sevgiDili } from "./sevgi-dili";
 import { flort } from "./flort";
+import { sosyalPil } from "./sosyal-pil";
+import { grupRolu } from "./grup-rolu";
+import { baskinlik } from "./baskinlik";
+import { toksikArkadas } from "./toksik-arkadas";
 
 /** Listeleme sırası */
-export const rawTests: Test[] = [kiskanclik, redFlag, baglanma, ex, sevgiDili, flort];
+export const rawTests: Test[] = [
+  kiskanclik,
+  redFlag,
+  baglanma,
+  ex,
+  toksikArkadas,
+  baskinlik,
+  grupRolu,
+  sosyalPil,
+  sevgiDili,
+  flort,
+];
 
 type Calibration = Record<string, Record<string, Record<string, number>>>;
 
