@@ -69,10 +69,26 @@ const nextConfig: NextConfig = {
     },
   },
   async redirects() {
-    return legacy.flatMap(([from, to]) => [
-      { source: from, destination: to, permanent: true },
-      { source: `${from}/`, destination: to, permanent: true },
-    ]);
+    // Kanonik alan adı sosyaleglence.com olduğunda geçici vercel.app adresi oraya kalıcı yönlenir
+    // (kopya içerik olmasın). Değişken hâlâ vercel.app'i gösteriyorsa yönlendirme kapalıdır.
+    const canonical = process.env.NEXT_PUBLIC_SITE_URL ?? "https://sosyaleglence.com";
+    const hostRedirect = canonical.includes("vercel.app")
+      ? []
+      : [
+          {
+            source: "/:path*",
+            has: [{ type: "host" as const, value: "sosyaleglence.vercel.app" }],
+            destination: `${canonical.replace(/\/$/, "")}/:path*`,
+            permanent: true,
+          },
+        ];
+    return [
+      ...hostRedirect,
+      ...legacy.flatMap(([from, to]) => [
+        { source: from, destination: to, permanent: true },
+        { source: `${from}/`, destination: to, permanent: true },
+      ]),
+    ];
   },
 };
 
