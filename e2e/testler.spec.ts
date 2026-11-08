@@ -3,7 +3,8 @@ import { answerAll, expect, test } from "./fixtures";
 test("ana sayfadaki canlı soru testi 2. sorudan başlatır", async ({ page, consoleErrors }) => {
   void consoleErrors;
   await page.goto("/");
-  const live = page.locator("main").getByRole("button").filter({ hasText: "Hayranın yazmış" });
+  // Canlı soru kartındaki 3. şık (orijinal sıra, index 2); şık metnine bağlı kalmasın
+  const live = page.locator("main .sticker ul.grid > li button").nth(2);
   await live.click();
   await expect(page).toHaveURL(/\/testler\/kiskanclik-testi\?ilk=2$/);
   await expect(page.getByRole("progressbar", { name: "İlerleme" })).toHaveAttribute("aria-valuenow", "2");
