@@ -2,11 +2,11 @@ import { ImageResponse } from "next/og";
 import { getTest } from "@/content/tests";
 import { decodeScores, headlineScore } from "@/lib/scoring";
 import { loadOgFonts, StoryCard } from "@/lib/og";
-import { rejectLongQuery } from "../../../_lib/guard";
+import { guardRender } from "../../../_lib/guard";
 
 /** Story boyutunda (1080×1920) paylaşım kartı. ?s=64-20-80-33 ile kişisel skorları da çizer. */
 export async function GET(request: Request, ctx: RouteContext<"/api/kart/[slug]/[result]">) {
-  const tooLong = rejectLongQuery(request);
+  const tooLong = await guardRender(request);
   if (tooLong) return tooLong;
   const { slug, result: resultId } = await ctx.params;
   const test = getTest(slug);

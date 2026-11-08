@@ -31,5 +31,23 @@ export function compatibilityText(p: number): string {
 /** Kullanıcının yazdığı ismi güvenli hâle getirir. */
 export function cleanName(raw: unknown): string {
   if (typeof raw !== "string") return "";
-  return raw.replace(/[<>"'`\\]/g, "").replace(/\s+/g, " ").trim().slice(0, 24);
+  // Kontrol, görünmez ve yön değiştiren (RTL override) karakterler isim sahteciliğine izin vermesin
+  return raw
+    .normalize("NFC")
+    .replace(/[\p{Cc}\p{Cf}\p{Co}\p{Cn}]/gu, "")
+    .replace(/[<>"'`\\]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 24);
+}
+
+/**
+ * Karşılaştırma kodu: yeni kodlar 16 hex (64 bit rastgele); eski 10 haneli kodlar da geçerli kalır
+ * (önceden paylaşılmış linkler kırılmasın). Kodu bilen sonuçları görebildiği için tahmin edilemez olmalı.
+ */
+export const COMPARE_CODE = /^(?:[a-f0-9]{10}|[a-f0-9]{16})$/;
+
+export function newCompareCode(): string {
+  const b = crypto.getRandomValues(new Uint8Array(8));
+  return Array.from(b, (x) => x.toString(16).padStart(2, "0")).join("");
 }

@@ -1,7 +1,8 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { getTest } from "@/content/tests";
+import { COMPARE_CODE } from "@/lib/compare";
 
-const CODE = /^[a-f0-9]{10}$/;
+const CODE = COMPARE_CODE;
 
 /**
  * Karşılaştırma sayfası dinamik bir rota: Cache Components önceden üretilmiş kabuğu hemen

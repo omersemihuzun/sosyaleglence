@@ -1,5 +1,5 @@
 import { getTest } from "@/content/tests";
-import { cleanName, type CompareSession } from "@/lib/compare";
+import { cleanName, newCompareCode, type CompareSession } from "@/lib/compare";
 import { decodeScores } from "@/lib/scoring";
 import { allowWrite, getRedis, ID, json, readJson } from "@/lib/server/redis";
 
@@ -15,7 +15,7 @@ export async function POST(request: Request) {
   if (!redis) return json({ error: "Karşılaştırma şu an kullanılamıyor" }, { status: 503 });
   if (!(await allowWrite(request))) return json({ error: "Çok fazla istek" }, { status: 429 });
 
-  const code = crypto.randomUUID().replace(/-/g, "").slice(0, 10);
+  const code = newCompareCode();
   const session: CompareSession = {
     slug: test.slug,
     a: { s: body!.s!, name: cleanName(body!.name) },

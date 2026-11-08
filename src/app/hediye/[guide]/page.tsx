@@ -5,7 +5,7 @@ import { Suspense } from "react";
 import { GiftCard } from "@/components/gift-card";
 import { PageSkeleton } from "@/components/page-skeleton";
 import { getGuide, guides, ideasForGuide } from "@/content/gifts/guides";
-import { guideTitle } from "@/lib/jsonld";
+import { guideTitle, toJsonLd } from "@/lib/jsonld";
 import { absoluteUrl } from "@/lib/site";
 
 /** Tüm parametreler build sırasında bilinir: sayfa tamamen statik üretilir. */
@@ -77,8 +77,8 @@ async function GuidePageContent({ params }: { params: PageProps<"/hediye/[guide]
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      {faqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: toJsonLd(jsonLd) }} />
+      {faqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: toJsonLd(faqLd) }} />}
       <article className="mx-auto max-w-6xl px-4 pt-8 sm:px-6 sm:pt-12">
         <nav aria-label="Konum" className="text-sm font-semibold text-plum-soft">
           <Link href="/hediye" className="hover:text-cherry">

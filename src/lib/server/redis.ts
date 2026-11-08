@@ -18,6 +18,11 @@ export function getRedis(): Redis | null {
 
 let limiter: Ratelimit | null | undefined;
 
+/** İstemci IP'si. Vercel x-forwarded-for başlığını kendisi yazar; istemcinin gönderdiği değeri ezer. */
+function clientIp(request: Request) {
+  return request.headers.get("x-real-ip") || request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "anon";
+}
+
 /** Yazma isteklerine IP başına sınır: dakikada 40 istek. */
 export async function allowWrite(request: Request): Promise<boolean> {
   if (limiter === undefined) {
@@ -27,13 +32,35 @@ export async function allowWrite(request: Request): Promise<boolean> {
       : null;
   }
   if (!limiter) return true;
-  const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "anon";
-  const { success } = await limiter.limit(ip);
+  const { success } = await limiter.limit(clientIp(request));
+  return success;
+}
+
+const limiters = new Map<string, Ratelimit | null>();
+
+/**
+ * Ad verilmiş, ayrı bir sınır: ör. karşılaştırma kodlarını deneyerek tarama ("oku", dakikada 30)
+ * ya da önbellekte olmayan pahalı görsel üretimi ("gorsel", dakikada 30). Veritabanı yoksa serbest.
+ */
+export async function allow(request: Request, ad: string, adet = 30): Promise<boolean> {
+  if (!limiters.has(ad)) {
+    const redis = getRedis();
+    limiters.set(
+      ad,
+      redis ? new Ratelimit({ redis, limiter: Ratelimit.slidingWindow(adet, "60 s"), prefix: `rl:${ad}`, analytics: false }) : null,
+    );
+  }
+  const l = limiters.get(ad);
+  if (!l) return true;
+  const { success } = await l.limit(clientIp(request));
   return success;
 }
 
 /** Gövdeyi en fazla `max` bayt okuyup JSON'a çevirir; aşarsa ya da bozuksa null. */
 export async function readJson<T>(request: Request, max = 4096): Promise<T | null> {
+  // Bildirilen boyut sınırı aşıyorsa gövdeyi hiç okuma
+  const declared = Number(request.headers.get("content-length") ?? 0);
+  if (declared > max) return null;
   const text = await request.text();
   if (text.length > max) return null;
   try {

@@ -5,13 +5,14 @@ import { Suspense } from "react";
 import { CompareView } from "@/components/compare-view";
 import { PageSkeleton } from "@/components/page-skeleton";
 import { getTest } from "@/content/tests";
+import { COMPARE_CODE } from "@/lib/compare";
 
 export async function generateMetadata({ params }: PageProps<"/testler/[slug]/karsilastir/[code]">): Promise<Metadata> {
   const { slug, code } = await params;
   const test = getTest(slug);
   // Burada (gövde akışı başlamadan) doğrulamak gerçek 404 durum kodu verir;
   // sayfa içindeki notFound() Suspense'te kaldığı için 200 + "bulunamadı" (soft 404) üretiyordu.
-  if (!test || !/^[a-f0-9]{10}$/.test(code)) notFound();
+  if (!test || !COMPARE_CODE.test(code)) notFound();
   return {
     title: `${test.title}: Karşılaştırma`,
     description: test ? `"${test.title}" testinde ikinizi karşılaştırın, uyum yüzdenizi görün.` : undefined,
@@ -31,7 +32,7 @@ export default function ComparePage({ params }: PageProps<"/testler/[slug]/karsi
 async function CompareContent({ params }: { params: PageProps<"/testler/[slug]/karsilastir/[code]">["params"] }) {
   const { slug, code } = await params;
   const test = getTest(slug);
-  if (!test || !/^[a-f0-9]{10}$/.test(code)) notFound();
+  if (!test || !COMPARE_CODE.test(code)) notFound();
 
   return (
     <section className="mx-auto max-w-2xl px-4 pt-8 sm:pt-12">
