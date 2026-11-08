@@ -16,18 +16,26 @@ import { kariyer } from "./kariyer";
 import { kahvaltilik } from "./kahvaltilik";
 import { superGuc } from "./super-guc";
 import { muzikTuru } from "./muzik-turu";
+import { tatilYeri } from "./tatil-yeri";
+import { tatlilar } from "./tatlilar";
+import { kafe } from "./kafe";
+import { istanbulSemti } from "./istanbul-semti";
 
 const rawBrackets: Bracket[] = [
   ev,
+  istanbulSemti,
+  tatilYeri,
   sevgiliyle,
   redFlagEleme,
   yemek,
+  tatlilar,
   sevgilidenMesaj,
   superGuc,
   ilkBulusma,
   evcilHayvan,
   cekiciOzellik,
   kahvaltilik,
+  kafe,
   dugun,
   kariyer,
   tatilGunu,
