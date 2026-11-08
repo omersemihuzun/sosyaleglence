@@ -88,6 +88,12 @@ export function CompareInvite({ slug, s, testTitle }: { slug: string; s: string;
       >
         {busy ? "Oluşturuluyor…" : "Karşılaştırma bağlantısı oluştur"}
       </button>
+      <p className="mt-2 text-xs text-plum-soft">
+        Skorların ve yazdığın isim 30 gün saklanır, sonra silinir.{" "}
+        <a href="/gizlilik" className="underline">
+          Gizlilik
+        </a>
+      </p>
       {error && (
         <p className="mt-2 text-sm font-semibold text-cherry" role="alert">
           {error}

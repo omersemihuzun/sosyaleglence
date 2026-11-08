@@ -18,5 +18,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...brackets.map((b) => ({ url: absoluteUrl(`/eleme/${b.slug}`), changeFrequency: "monthly" as const, priority: 0.8 })),
     ...guides.map((g) => ({ url: absoluteUrl(`/hediye/${g.slug}`), changeFrequency: "monthly" as const, priority: 0.8 })),
     { url: absoluteUrl("/iletisim"), changeFrequency: "yearly", priority: 0.3 },
+    { url: absoluteUrl("/gizlilik"), changeFrequency: "yearly", priority: 0.2 },
   ];
 }
