@@ -16,22 +16,22 @@ export function SiteFooter() {
         </div>
         <div>
           <p className="font-display font-bold">Keşfet</p>
-          <ul className="mt-3 space-y-2 text-sm text-paper/80">
-            <li><Link className="hover:text-butter" href="/testler">Tüm testler</Link></li>
-            <li><Link className="hover:text-butter" href="/eleme">Eleme oyunları</Link></li>
-            <li><Link className="hover:text-butter" href="/bunu-mu-o-mu">Bunu mu o mu?</Link></li>
-            <li><Link className="hover:text-butter" href="/burclar">Burç uyumu</Link></li>
-            <li><Link className="hover:text-butter" href="/ask-testi">İsimle aşk testi</Link></li>
-            <li><Link className="hover:text-butter" href="/rehber">Rehberler</Link></li>
-            <li><Link className="hover:text-butter" href="/hediye">Hediye bulucu</Link></li>
-            <li><Link className="hover:text-butter" href="/iletisim">İletişim</Link></li>
-            <li><Link className="hover:text-butter" href="/gizlilik">Gizlilik</Link></li>
-            <li><Link className="hover:text-butter" href="/gorsel-kaynaklari">Görsel kaynakları</Link></li>
+          <ul className="mt-3 space-y-1 text-sm text-paper/80">
+            <li><Link className="inline-block py-1 hover:text-butter" href="/testler">Tüm testler</Link></li>
+            <li><Link className="inline-block py-1 hover:text-butter" href="/eleme">Eleme oyunları</Link></li>
+            <li><Link className="inline-block py-1 hover:text-butter" href="/bunu-mu-o-mu">Bunu mu o mu?</Link></li>
+            <li><Link className="inline-block py-1 hover:text-butter" href="/burclar">Burç uyumu</Link></li>
+            <li><Link className="inline-block py-1 hover:text-butter" href="/ask-testi">İsimle aşk testi</Link></li>
+            <li><Link className="inline-block py-1 hover:text-butter" href="/rehber">Rehberler</Link></li>
+            <li><Link className="inline-block py-1 hover:text-butter" href="/hediye">Hediye bulucu</Link></li>
+            <li><Link className="inline-block py-1 hover:text-butter" href="/iletisim">İletişim</Link></li>
+            <li><Link className="inline-block py-1 hover:text-butter" href="/gizlilik">Gizlilik</Link></li>
+            <li><Link className="inline-block py-1 hover:text-butter" href="/gorsel-kaynaklari">Görsel kaynakları</Link></li>
           </ul>
         </div>
         <div>
           <p className="font-display font-bold">{socialLinks.length > 0 ? "Takip et" : "Bize ulaş"}</p>
-          <ul className="mt-3 space-y-2 text-sm text-paper/80">
+          <ul className="mt-3 space-y-1 text-sm text-paper/80">
             {socialLinks.map((s) => (
               <li key={s.name}>
                 <a className="hover:text-butter" href={s.href} rel="noopener" target="_blank">

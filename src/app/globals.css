@@ -170,3 +170,9 @@ body {
     transition: none !important;
   }
 }
+
+/* Konum (breadcrumb) bağlantıları: görünüm aynı, dokunma alanı en az 24px */
+nav[aria-label="Konum"] a {
+  display: inline-block;
+  padding-block: 0.375rem;
+}

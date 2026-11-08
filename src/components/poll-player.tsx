@@ -203,11 +203,11 @@ export function PollPlayer({ polls, firstId }: { polls: Poll[]; firstId?: string
         </span>
         <div className="flex items-center gap-4">
           {!choice && (
-            <button type="button" onClick={next} className="underline-offset-4 hover:text-cherry hover:underline">
+            <button type="button" onClick={next} className="min-h-9 rounded-full border-2 border-plum bg-white px-3.5 font-display text-plum hover:bg-blush">
               Atla
             </button>
           )}
-          <button type="button" onClick={bitir} className="underline-offset-4 hover:text-cherry hover:underline">
+          <button type="button" onClick={bitir} className="min-h-9 rounded-full border-2 border-plum bg-white px-3.5 font-display text-plum hover:bg-blush">
             Turu bitir
           </button>
         </div>
