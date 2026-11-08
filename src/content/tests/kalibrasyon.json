@@ -536,5 +536,116 @@
       "sakin": 3,
       "koruyucu": 91
     }
+  },
+  "kavga-tarzi": {
+    "anlik-firtina": {
+      "patlama": 100,
+      "kacinma": 5,
+      "kusme": 4,
+      "cozum": 8,
+      "uzlasma": 4
+    },
+    "hali-alti": {
+      "patlama": 2,
+      "kacinma": 99,
+      "kusme": 4,
+      "cozum": 2,
+      "uzlasma": 15
+    },
+    "soguk-savas": {
+      "patlama": 5,
+      "kacinma": 8,
+      "kusme": 100,
+      "cozum": 4,
+      "uzlasma": 4
+    },
+    "cozum-muhendisi": {
+      "patlama": 8,
+      "kacinma": 5,
+      "kusme": 5,
+      "cozum": 100,
+      "uzlasma": 15
+    },
+    "baris-elcisi": {
+      "patlama": 3,
+      "kacinma": 22,
+      "kusme": 3,
+      "cozum": 6,
+      "uzlasma": 99
+    }
+  },
+  "iliskiye-hazir-misin": {
+    "kalbi-acik": {
+      "acilik": 100,
+      "gecmis": 4,
+      "ozgurluk": 7,
+      "temkin": 5,
+      "acele": 5
+    },
+    "yarim-kalan-sayfa": {
+      "acilik": 3,
+      "gecmis": 100,
+      "ozgurluk": 5,
+      "temkin": 8,
+      "acele": 6
+    },
+    "kendi-krallik": {
+      "acilik": 6,
+      "gecmis": 4,
+      "ozgurluk": 100,
+      "temkin": 8,
+      "acele": 3
+    },
+    "yuksek-duvarlar": {
+      "acilik": 5,
+      "gecmis": 19,
+      "ozgurluk": 10,
+      "temkin": 99,
+      "acele": 8
+    },
+    "aska-asik": {
+      "acilik": 17,
+      "gecmis": 11,
+      "ozgurluk": 3,
+      "temkin": 4,
+      "acele": 100
+    }
+  },
+  "guven-sorunu": {
+    "acik-kapi": {
+      "rahat": 100,
+      "kontrol": 4,
+      "kaygi": 6,
+      "mesafe": 7,
+      "sinama": 3
+    },
+    "kanit-toplayici": {
+      "rahat": 2,
+      "kontrol": 100,
+      "kaygi": 13,
+      "mesafe": 2,
+      "sinama": 7
+    },
+    "gece-yarisi-senaristi": {
+      "rahat": 3,
+      "kontrol": 15,
+      "kaygi": 99,
+      "mesafe": 3,
+      "sinama": 3
+    },
+    "zirhli-kalp": {
+      "rahat": 5,
+      "kontrol": 6,
+      "kaygi": 7,
+      "mesafe": 100,
+      "sinama": 14
+    },
+    "sinav-hocasi": {
+      "rahat": 3,
+      "kontrol": 16,
+      "kaygi": 5,
+      "mesafe": 9,
+      "sinama": 100
+    }
   }
 }

@@ -17,6 +17,9 @@ import { ruhYasi } from "./ruh-yasi";
 import { situationship } from "./situationship";
 import { delulu } from "./delulu";
 import { sevgiliTipi } from "./sevgili-tipi";
+import { kavgaTarzi } from "./kavga-tarzi";
+import { iliskiyeHazir } from "./iliskiye-hazir";
+import { guvenSorunu } from "./guven-sorunu";
 
 /** Listeleme sırası */
 export const rawTests: Test[] = [
@@ -26,6 +29,9 @@ export const rawTests: Test[] = [
   delulu,
   sevgiliTipi,
   baglanma,
+  guvenSorunu,
+  kavgaTarzi,
+  iliskiyeHazir,
   ex,
   toksikArkadas,
   baskinlik,

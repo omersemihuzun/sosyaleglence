@@ -12,4 +12,7 @@ export const articleByTest: Record<string, string> = {
   "flort-tarzi-testi": "ilk-bulusmada-ne-konusulur",
   "iliskide-kim-baskin-testi": "kiskanclik-mi-sevgi-mi",
   "arkadas-grubundaki-rolun-testi": "arkadaslikta-sinir-koymak",
+  "kavga-tarzi": "kiskanclik-mi-sevgi-mi",
+  "iliskiye-hazir-misin": "exi-unutmak",
+  "guven-sorunu": "baglanma-stilleri-nedir",
 };
