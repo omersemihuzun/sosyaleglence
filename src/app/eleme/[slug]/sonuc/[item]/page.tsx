@@ -8,6 +8,7 @@ import { BracketStats } from "@/components/live-stats";
 import { PageSkeleton } from "@/components/page-skeleton";
 import { brackets, getBracket } from "@/content/brackets";
 import { bracketResultDescription, bracketResultTitle, breadcrumbJsonLd, toJsonLd } from "@/lib/jsonld";
+import { onColor } from "@/lib/color";
 import { absoluteUrl } from "@/lib/site";
 
 /** Tüm parametreler build sırasında bilinir: sayfa tamamen statik üretilir. */
@@ -66,17 +67,17 @@ async function BracketResultContent({ params }: { params: PageProps<"/eleme/[slu
         <div className="mt-5 grid items-start gap-8 lg:grid-cols-[1.15fr_1fr]">
           <div>
             <div
-              className="sticker animate-pop -rotate-1 p-7 text-paper sm:p-10"
-              style={{ background: bracket.color, boxShadow: "6px 8px 0 0 var(--color-plum)" }}
+              className="sticker animate-pop -rotate-1 p-7 sm:p-10"
+              style={{ ...onColor(bracket.color), boxShadow: "6px 8px 0 0 var(--color-plum)" }}
             >
-              <p className="text-paper/85">🏆 {bracket.championLabel}</p>
+              <p>🏆 {bracket.championLabel}</p>
               <p aria-hidden className="mt-4 text-7xl leading-none sm:text-8xl">
                 {champion.emoji}
               </p>
               <h1 className="mt-4 font-display text-5xl leading-[0.95] font-extrabold tracking-tight text-balance sm:text-6xl">
                 {champion.name}
               </h1>
-              <p className="mt-4 max-w-md text-xl leading-snug text-paper/90">{champion.detail}</p>
+              <p className="mt-4 max-w-md text-xl leading-snug">{champion.detail}</p>
             </div>
             <div className="mt-10 max-w-prose">
               <h2 className="font-display text-2xl font-bold">Bu seçim seni nasıl anlatıyor?</h2>

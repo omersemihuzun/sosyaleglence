@@ -10,14 +10,15 @@ export function SiteHeader() {
   return (
     <header className="border-b-2 border-plum bg-paper">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-2 px-4 sm:px-6">
-        <Link href="/" className="group flex items-center gap-2" aria-label="Sosyal Eğlence ana sayfa">
+        <Link href="/" className="group flex items-center gap-2">
           <span
             aria-hidden
             className="grid size-9 -rotate-6 place-items-center rounded-xl border-2 border-plum bg-cherry text-lg shadow-[2px_3px_0_0_var(--color-plum)] transition-transform group-hover:rotate-3"
           >
             🧠
           </span>
-          <span className="hidden font-display text-lg leading-none font-extrabold tracking-tight min-[380px]:inline sm:text-xl">
+          {/* Dar ekranda yazı görsel olarak gizlenir ama linkin erişilebilir adı olarak kalır */}
+          <span className="sr-only font-display text-lg leading-none font-extrabold tracking-tight min-[380px]:not-sr-only sm:text-xl">
             sosyal<span className="text-cherry">eğlence</span>
           </span>
         </Link>

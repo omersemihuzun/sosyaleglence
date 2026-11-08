@@ -55,8 +55,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
         <SiteFooter />
-        <Analytics />
-        <SpeedInsights />
+        {/* Script'ler /_vercel/* altından gelir; sadece Vercel ortamında vardır (yerelde/CI'da 404 olur) */}
+        {process.env.VERCEL && <Analytics />}
+        {process.env.VERCEL && <SpeedInsights />}
       </body>
     </html>
   );

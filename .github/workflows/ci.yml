@@ -48,3 +48,41 @@ jobs:
         run: npm run build
         env:
           NEXT_TELEMETRY_DISABLED: "1"
+
+  e2e:
+    # Uçtan uca testler production build üzerinde, masaüstü ve mobil Chromium ile.
+    # Veritabanı bağlanmadan çalışır: istatistik özellikleri bu durumda sessizce kapanır.
+    needs: check
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Bağımlılıklar
+        run: npm ci
+
+      - name: Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Build
+        run: npm run build
+        env:
+          NEXT_TELEMETRY_DISABLED: "1"
+
+      - name: Uçtan uca testler
+        run: npm run e2e
+
+      - name: Hata raporu
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-raporu
+          path: |
+            test-results/
+            playwright-report/
+          retention-days: 7
