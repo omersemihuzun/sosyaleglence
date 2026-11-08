@@ -242,6 +242,7 @@ export const sosyalPil: Test = {
       strengths: ["Kendinle vakit geçirmekten keyif alıyorsun", "Az ama derin dostluklar kuruyorsun", "İyi bir dinleyicisin"],
       watchOut: ["Uzun süre geri çekilmek yalnızlığa dönüşebilir", "Önemli insanlara arada bir \"seni düşünüyorum\" demeyi unutma"],
       bestMatch: "planli-sosyal",
+      giftLink: { href: "/hediye?ilgi=ev,kitap#bulucu", label: "Evde şarj olmalık battaniye ve kitap hediyeleri" },
     },
   ],
 };

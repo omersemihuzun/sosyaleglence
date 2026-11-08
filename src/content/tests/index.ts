@@ -10,11 +10,17 @@ import { sosyalPil } from "./sosyal-pil";
 import { grupRolu } from "./grup-rolu";
 import { baskinlik } from "./baskinlik";
 import { toksikArkadas } from "./toksik-arkadas";
+import { situationship } from "./situationship";
+import { delulu } from "./delulu";
+import { sevgiliTipi } from "./sevgili-tipi";
 
 /** Listeleme sırası */
 export const rawTests: Test[] = [
   kiskanclik,
+  situationship,
   redFlag,
+  delulu,
+  sevgiliTipi,
   baglanma,
   ex,
   toksikArkadas,

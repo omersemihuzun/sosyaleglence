@@ -22,11 +22,14 @@ export type Guide = {
   };
   /** Sık sorulan sorular. Boşsa faqs.ts içindeki karşılığı kullanılır. */
   faq?: Faq[];
+  /** Son içerik güncellemesi (YYYY-MM-DD) */
+  updated?: string;
 };
 
 const baseGuides: Guide[] = [
   {
     slug: "sevgiliye-yilbasi-hediyesi",
+    updated: "2026-11-08",
     title: "Sevgiliye yılbaşı hediyesi",
     metaTitle: "Sevgiliye Yılbaşı Hediyesi: En Anlamlı Fikirler",
     metaDescription:
@@ -45,6 +48,7 @@ const baseGuides: Guide[] = [
   },
   {
     slug: "erkek-arkadasa-hediye",
+    updated: "2026-11-08",
     title: "Erkek arkadaşa hediye",
     metaTitle: "Erkek Arkadaşa Hediye: Gerçekten Kullanacağı Fikirler",
     metaDescription:
@@ -63,6 +67,7 @@ const baseGuides: Guide[] = [
   },
   {
     slug: "kiz-arkadasa-hediye",
+    updated: "2026-11-08",
     title: "Kız arkadaşa hediye",
     metaTitle: "Kız Arkadaşa Hediye: Romantik ve Anlamlı Fikirler",
     metaDescription:
@@ -81,6 +86,7 @@ const baseGuides: Guide[] = [
   },
   {
     slug: "sevgililer-gunu-hediyesi",
+    updated: "2026-11-08",
     title: "Sevgililer günü hediyesi",
     metaTitle: "Sevgililer Günü Hediyesi: 14 Şubat İçin Fikirler",
     metaDescription:
@@ -99,6 +105,7 @@ const baseGuides: Guide[] = [
   },
   {
     slug: "yildonumu-hediyesi",
+    updated: "2026-11-08",
     title: "Yıldönümü hediyesi",
     metaTitle: "Yıldönümü Hediyesi: Birlikteliğinizi Kutlayacak Fikirler",
     metaDescription:
@@ -116,6 +123,7 @@ const baseGuides: Guide[] = [
   },
   {
     slug: "dogum-gunu-hediyesi",
+    updated: "2026-11-08",
     title: "Doğum günü hediyesi",
     metaTitle: "Doğum Günü Hediyesi: Herkes İçin Fikirler",
     metaDescription:
@@ -133,6 +141,7 @@ const baseGuides: Guide[] = [
   },
   {
     slug: "anneye-hediye",
+    updated: "2026-11-08",
     title: "Anneye hediye",
     metaTitle: "Anneye Hediye: Anneler Günü ve Doğum Günü İçin Fikirler",
     metaDescription:
@@ -150,6 +159,7 @@ const baseGuides: Guide[] = [
   },
   {
     slug: "babaya-hediye",
+    updated: "2026-11-08",
     title: "Babaya hediye",
     metaTitle: "Babaya Hediye: Babalar Günü ve Doğum Günü İçin Fikirler",
     metaDescription:
@@ -166,6 +176,7 @@ const baseGuides: Guide[] = [
   },
   {
     slug: "arkadasa-hediye",
+    updated: "2026-11-08",
     title: "Arkadaşa hediye",
     metaTitle: "Arkadaşa Hediye: Eğlenceli ve Anlamlı Fikirler",
     metaDescription:
@@ -182,6 +193,7 @@ const baseGuides: Guide[] = [
   },
   {
     slug: "500-tl-alti-hediye",
+    updated: "2026-11-08",
     title: "500 TL altı hediye fikirleri",
     metaTitle: "500 TL Altı Hediye Fikirleri: Ucuz Ama Etkili",
     metaDescription:
@@ -199,6 +211,7 @@ const baseGuides: Guide[] = [
   },
   {
     slug: "is-arkadasina-hediye",
+    updated: "2026-11-08",
     title: "İş arkadaşına hediye",
     metaTitle: "İş Arkadaşına Hediye: Yılbaşı Hediye Değişimi İçin Fikirler",
     metaDescription:
@@ -215,6 +228,7 @@ const baseGuides: Guide[] = [
   },
   {
     slug: "ev-hediyesi",
+    updated: "2026-11-08",
     title: "Yeni eve hediye",
     metaTitle: "Yeni Eve Hediye: Ev Hediyesi Fikirleri",
     metaDescription:
@@ -231,6 +245,7 @@ const baseGuides: Guide[] = [
   },
   {
     slug: "erkege-dogum-gunu-hediyesi",
+    updated: "2026-11-08",
     title: "Erkeğe doğum günü hediyesi",
     metaTitle: "Erkeğe Doğum Günü Hediyesi: İlgi Alanına Göre Fikirler",
     metaDescription:
@@ -263,6 +278,7 @@ const baseGuides: Guide[] = [
   },
   {
     slug: "kadina-dogum-gunu-hediyesi",
+    updated: "2026-11-08",
     title: "Kadına doğum günü hediyesi",
     metaTitle: "Kadına Doğum Günü Hediyesi: Anlamlı ve Şık Fikirler",
     metaDescription:
@@ -295,6 +311,7 @@ const baseGuides: Guide[] = [
   },
   {
     slug: "ogretmene-hediye",
+    updated: "2026-11-08",
     title: "Öğretmene hediye",
     metaTitle: "Öğretmene Hediye: Öğretmenler Günü İçin Anlamlı Fikirler",
     metaDescription:
@@ -327,6 +344,7 @@ const baseGuides: Guide[] = [
   },
   {
     slug: "mezuniyet-hediyesi",
+    updated: "2026-11-08",
     title: "Mezuniyet hediyesi",
     metaTitle: "Mezuniyet Hediyesi: Yeni Mezunlar İçin Anlamlı Fikirler",
     metaDescription:
@@ -359,6 +377,7 @@ const baseGuides: Guide[] = [
   },
   {
     slug: "1000-tl-alti-hediye",
+    updated: "2026-11-08",
     title: "1000 TL altı hediye fikirleri",
     metaTitle: "1000 TL Altı Hediye Fikirleri: Bütçe Dostu Ama Özel",
     metaDescription:
@@ -391,6 +410,7 @@ const baseGuides: Guide[] = [
   },
   {
     slug: "teknoloji-sevene-hediye",
+    updated: "2026-11-08",
     title: "Teknoloji sevene hediye",
     metaTitle: "Teknoloji Sevene Hediye: Gerçekten İşe Yarayan Fikirler",
     metaDescription:

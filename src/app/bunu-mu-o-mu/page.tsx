@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { PollPlayerClient } from "@/components/poll-player-client";
 import { polls } from "@/content/polls";
 
@@ -17,7 +18,9 @@ export default function PollsPage() {
         İkisinden birini seç. Seçtiğin an herkesin ne dediğini görürsün. Düşünmek yok, ilk içgüdü.
       </p>
       <div className="mt-10">
-        <PollPlayerClient polls={polls} />
+        <Suspense fallback={<div className="sticker h-72 bg-white" aria-busy="true" />}>
+          <PollPlayerClient polls={polls} />
+        </Suspense>
       </div>
     </section>
   );

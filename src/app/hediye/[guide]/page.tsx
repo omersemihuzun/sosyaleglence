@@ -11,6 +11,14 @@ import { absoluteUrl } from "@/lib/site";
 /** Tüm parametreler build sırasında bilinir: sayfa tamamen statik üretilir. */
 export const ensureStatic = "navigation";
 
+const TR_MONTHS = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
+
+/** "2026-11-08" -> "8 Kasım 2026" (Date kullanmadan: statik üretimde saat dilimi sürprizi olmasın) */
+function formatTrDate(iso: string) {
+  const [y, m, d] = iso.split("-").map(Number);
+  return `${d} ${TR_MONTHS[m - 1]} ${y}`;
+}
+
 export function generateStaticParams() {
   return guides.map((g) => ({ guide: g.slug }));
 }
@@ -49,6 +57,7 @@ async function GuidePageContent({ params }: { params: PageProps<"/hediye/[guide]
     name: guide.title,
     url: absoluteUrl(`/hediye/${guide.slug}`),
     numberOfItems: list.length,
+    ...(guide.updated ? { dateModified: guide.updated } : {}),
     itemListElement: list.map((idea, i) => ({ "@type": "ListItem", position: i + 1, name: idea.name })),
   };
 
@@ -88,6 +97,17 @@ async function GuidePageContent({ params }: { params: PageProps<"/hediye/[guide]
           <h1 className="font-display text-4xl leading-[1.05] font-extrabold tracking-tight sm:text-5xl">
             {guide.title}
           </h1>
+        </div>
+        <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-plum-soft">
+          {guide.updated && (
+            <p>
+              Son güncelleme: <time dateTime={guide.updated}>{formatTrDate(guide.updated)}</time>
+            </p>
+          )}
+          <p className="rounded-full border border-line bg-white px-3 py-1">
+            Bu sayfadaki mağaza bağlantılarından alışveriş yaparsan komisyon alabiliriz. Fiyatlar mağazalara göre
+            değişir.
+          </p>
         </div>
         <div className="mt-6 max-w-prose space-y-4 text-[17px] leading-[1.7]">
           {guide.intro.map((p, i) => (

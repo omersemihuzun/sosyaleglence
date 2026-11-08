@@ -322,5 +322,85 @@
       "cikar": 42,
       "yargi": 36
     }
+  },
+  "situationship-testi": {
+    "net-iliski": {
+      "belirsizlik": 5,
+      "tektaraf": 5,
+      "sicaksoguk": 5
+    },
+    "gri-bolge": {
+      "belirsizlik": 96,
+      "tektaraf": 0,
+      "sicaksoguk": 4
+    },
+    "tek-tarafli": {
+      "belirsizlik": 2,
+      "tektaraf": 97,
+      "sicaksoguk": 0
+    },
+    "sicak-soguk": {
+      "belirsizlik": 5,
+      "tektaraf": 0,
+      "sicaksoguk": 96
+    },
+    "tam-situationship": {
+      "belirsizlik": 34,
+      "tektaraf": 32,
+      "sicaksoguk": 34
+    }
+  },
+  "ne-kadar-delulusun-testi": {
+    "ayaklari-yere-basan": {
+      "hayal": 5,
+      "isaret": 5,
+      "pembe": 6
+    },
+    "hayalperest": {
+      "hayal": 95,
+      "isaret": 0,
+      "pembe": 6
+    },
+    "isaret-avcisi": {
+      "hayal": 0,
+      "isaret": 97,
+      "pembe": 2
+    },
+    "pembe-gozluk": {
+      "hayal": 2,
+      "isaret": 4,
+      "pembe": 95
+    },
+    "tam-delulu": {
+      "hayal": 33,
+      "isaret": 33,
+      "pembe": 35
+    }
+  },
+  "hangi-tip-sevgilisin-testi": {
+    "golden-retriever": {
+      "coskun": 91,
+      "gizem": 1,
+      "sakin": 3,
+      "koruyucu": 5
+    },
+    "kara-kedi": {
+      "coskun": 1,
+      "gizem": 91,
+      "sakin": 5,
+      "koruyucu": 3
+    },
+    "kapibara": {
+      "coskun": 3,
+      "gizem": 3,
+      "sakin": 91,
+      "koruyucu": 3
+    },
+    "ayi": {
+      "coskun": 5,
+      "gizem": 1,
+      "sakin": 3,
+      "koruyucu": 90
+    }
   }
 }

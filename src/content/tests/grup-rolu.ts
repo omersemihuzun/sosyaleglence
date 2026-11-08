@@ -170,6 +170,7 @@ export const grupRolu: Test = {
       strengths: ["Planları gerçeğe dönüştürüyorsun", "Güvenilir ve düzenlisin", "Grubu bir arada tutan yapıştırıcısın"],
       watchOut: ["Her şeyi üstlenmek seni yorabilir", "Planlar bozulduğunda bunu kişisel algılama", "Kontrolü bırakmak bazen en güzel anları yaratır"],
       bestMatch: "kaos-ajani",
+      giftLink: { href: "/hediye/arkadasa-hediye", label: "Gruptaki herkes için arkadaş hediyeleri" },
     },
     {
       id: "terapist",
@@ -202,6 +203,7 @@ export const grupRolu: Test = {
       strengths: ["Hiçbir anı sıradan bırakmıyorsun", "Spontan ve cesursun", "Gergin ortamları bir anda yumuşatabiliyorsun"],
       watchOut: ["Herkes her gün maceraya hazır değil", "Ciddi anlarda espri yapmak birini kırabilir", "Planları bozmak organizatörü yorabilir"],
       bestMatch: "organizator",
+      giftLink: { href: "/hediye?kime=arkadas&ilgi=oyun#bulucu", label: "Grup geceleri için kutu oyunları" },
     },
     {
       id: "gozlemci",
