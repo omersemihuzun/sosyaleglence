@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import type { Bracket, BracketItem } from "@/lib/bracket-types";
 import { roundName } from "@/content/brackets";
+import { deriveState, summarize, type Pick } from "@/lib/bracket";
 
 function shuffled<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -14,7 +15,6 @@ function shuffled<T>(arr: T[]): T[] {
   return a;
 }
 
-type Pick = { winner: string; loser: string; roundSize: number };
 
 /**
  * Eleme turnuvası. Her turda seçenekler ikişer ikişer eşleşir, kazananlar bir sonraki tura geçer.
@@ -30,18 +30,10 @@ export function BracketGame({ bracket }: { bracket: Bracket }) {
   const [finishing, setFinishing] = useState(false);
 
   // Geçmişten mevcut turu ve eşleşmeyi hesapla
-  let round = seed;
-  let consumed = 0;
-  while (round.length > 1 && consumed + round.length / 2 <= picks.length) {
-    const winners = picks.slice(consumed, consumed + round.length / 2).map((p) => p.winner);
-    consumed += round.length / 2;
-    round = winners;
-  }
-  const matchIndex = picks.length - consumed;
-  const totalMatches = round.length / 2;
-  const left = byId.get(round[matchIndex * 2]);
-  const right = byId.get(round[matchIndex * 2 + 1]);
-  const totalPicks = bracket.items.length - 1;
+  const state = deriveState(seed, picks);
+  const { round, matchIndex, totalMatches, totalPicks } = state;
+  const left = state.left ? byId.get(state.left) : undefined;
+  const right = state.right ? byId.get(state.right) : undefined;
 
   function choose(winner: BracketItem, loser: BracketItem) {
     if (chosen || finishing) return;
@@ -56,15 +48,14 @@ export function BracketGame({ bracket }: { bracket: Bracket }) {
 
   function finish(all: Pick[]) {
     setFinishing(true);
-    const final = all[all.length - 1];
-    const semis = all.filter((p) => p.roundSize === 4).map((p) => p.loser);
-    const qs = new URLSearchParams({ f: final.loser, y: semis.join(",") });
+    const sum = summarize(all)!;
+    const qs = new URLSearchParams({ f: sum.finalist, y: sum.semis.join(",") });
     try {
-      localStorage.setItem(`eleme:${bracket.slug}`, JSON.stringify({ champion: final.winner, ...Object.fromEntries(qs) }));
+      localStorage.setItem(`eleme:${bracket.slug}`, JSON.stringify({ champion: sum.champion, ...Object.fromEntries(qs) }));
     } catch {
       /* gizli sekme */
     }
-    router.push(`/eleme/${bracket.slug}/sonuc/${final.winner}?${qs.toString()}`);
+    router.push(`/eleme/${bracket.slug}/sonuc/${sum.champion}?${qs.toString()}`);
   }
 
   if (!started) {
