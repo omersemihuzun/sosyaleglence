@@ -14,8 +14,8 @@ export function BracketCard({ bracket, tilt = 0 }: { bracket: Bracket; tilt?: nu
     >
       {photos ? (
         <div className="relative grid h-36 grid-cols-2 border-b-2 border-plum" aria-hidden>
-          <ItemVisual item={preview[0]} className="size-full border-r-2 border-plum" />
-          <ItemVisual item={preview[1]} className="size-full" />
+          <ItemVisual item={preview[0]} className="size-full border-r-2 border-plum" thumb />
+          <ItemVisual item={preview[1]} className="size-full" thumb />
           <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-6 rounded-full border-2 border-plum bg-cherry px-2.5 py-1 font-display text-sm font-extrabold text-white">
             VS
           </span>

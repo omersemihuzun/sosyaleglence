@@ -35,6 +35,8 @@ const outDir = join("public", "eleme", slug);
 mkdirSync(outDir, { recursive: true });
 const position = focus === "attention" ? sharp.strategy.attention : focus;
 await sharp(buf).rotate().resize(800, 600, { fit: "cover", position }).webp({ quality: 72 }).toFile(join(outDir, `${id}.webp`));
+// Kartlarda kullanılan küçük sürüm
+await sharp(join(outDir, `${id}.webp`)).resize(400, 300, { fit: "cover" }).webp({ quality: 66 }).toFile(join(outDir, `${id}-k.webp`));
 
 const metaDir = join("src", "content", "brackets", "gorseller");
 mkdirSync(metaDir, { recursive: true });

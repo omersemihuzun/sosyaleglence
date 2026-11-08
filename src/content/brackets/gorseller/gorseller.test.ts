@@ -24,6 +24,8 @@ describe("eleme fotoğrafları", () => {
     for (const { slug, id, img } of entries) {
       expect(img.src).toBe(`/eleme/${slug}/${id}.webp`);
       expect(existsSync(join(process.cwd(), "public", img.src)), img.src).toBe(true);
+      const thumb = img.src.replace(/\.webp$/, "-k.webp");
+      expect(existsSync(join(process.cwd(), "public", thumb)), `${thumb} (node scripts/kucuk-gorsel.mjs)`).toBe(true);
     }
   });
 
