@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
+import { ArticleCta } from "@/components/article-card";
 import { PageSkeleton } from "@/components/page-skeleton";
+import { getArticle, readingMinutes } from "@/content/articles";
+import { articleByTest } from "@/content/articles/by-test";
 import { Quiz } from "@/components/quiz";
 import { TestCard } from "@/components/test-card";
 import { getTest, tests } from "@/content/tests";
@@ -42,6 +45,8 @@ async function TestPageContent({ params }: { params: PageProps<"/testler/[slug]"
   if (!test) notFound();
 
   const others = tests.filter((t) => t.slug !== test.slug).slice(0, 3);
+  const articleSlug = articleByTest[test.slug];
+  const article = articleSlug ? getArticle(articleSlug) : undefined;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -83,6 +88,13 @@ async function TestPageContent({ params }: { params: PageProps<"/testler/[slug]"
             <Quiz test={test} />
           </Suspense>
         </div>
+        {article && (
+          <ArticleCta
+            href={`/rehber/${article.slug}`}
+            label="Daha fazlasını oku"
+            text={`${article.title}: ${readingMinutes(article)} dakikalık rehber.`}
+          />
+        )}
       </section>
 
       {others.length > 0 && (
