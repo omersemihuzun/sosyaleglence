@@ -10,6 +10,10 @@ import { sosyalPil } from "./sosyal-pil";
 import { grupRolu } from "./grup-rolu";
 import { baskinlik } from "./baskinlik";
 import { toksikArkadas } from "./toksik-arkadas";
+import { sofraSehir } from "./sofra-sehir";
+import { tatilCantasi } from "./tatil-cantasi";
+import { mevsim } from "./mevsim";
+import { ruhYasi } from "./ruh-yasi";
 
 /** Listeleme sırası */
 export const rawTests: Test[] = [
@@ -23,6 +27,10 @@ export const rawTests: Test[] = [
   sosyalPil,
   sevgiDili,
   flort,
+  sofraSehir,
+  tatilCantasi,
+  ruhYasi,
+  mevsim,
 ];
 
 type Calibration = Record<string, Record<string, Record<string, number>>>;

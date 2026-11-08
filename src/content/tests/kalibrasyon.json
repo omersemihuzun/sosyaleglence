@@ -322,5 +322,139 @@
       "cikar": 42,
       "yargi": 36
     }
+  },
+  "sofra-kur-sehir-testi": {
+    "istanbul": {
+      "deniz": 5,
+      "gelenek": 16,
+      "tempo": 83,
+      "doga": 1
+    },
+    "izmir": {
+      "deniz": 73,
+      "gelenek": 1,
+      "tempo": 36,
+      "doga": 2
+    },
+    "antalya": {
+      "deniz": 60,
+      "gelenek": 3,
+      "tempo": 4,
+      "doga": 47
+    },
+    "trabzon": {
+      "deniz": 3,
+      "gelenek": 22,
+      "tempo": 1,
+      "doga": 86
+    },
+    "gaziantep": {
+      "deniz": 0,
+      "gelenek": 96,
+      "tempo": 3,
+      "doga": 2
+    },
+    "eskisehir": {
+      "deniz": 32,
+      "gelenek": 22,
+      "tempo": 32,
+      "doga": 22
+    }
+  },
+  "tatil-cantasi-ask-testi": {
+    "film-gibi": {
+      "romantizm": 98,
+      "ozgurluk": 1,
+      "plan": 1,
+      "macera": 1
+    },
+    "ozgur-ruh": {
+      "romantizm": 2,
+      "ozgurluk": 90,
+      "plan": 1,
+      "macera": 19
+    },
+    "planli-sadik": {
+      "romantizm": 2,
+      "ozgurluk": 0,
+      "plan": 97,
+      "macera": 2
+    },
+    "macera-ortagi": {
+      "romantizm": 2,
+      "ozgurluk": 20,
+      "plan": 5,
+      "macera": 87
+    },
+    "yavas-yanan": {
+      "romantizm": 29,
+      "ozgurluk": 23,
+      "plan": 30,
+      "macera": 24
+    }
+  },
+  "gun-planla-mevsim-testi": {
+    "ilkbahar": {
+      "tazelik": 96,
+      "enerji": 2,
+      "nostalji": 5,
+      "huzur": 0
+    },
+    "yaz": {
+      "tazelik": 2,
+      "enerji": 98,
+      "nostalji": 0,
+      "huzur": 0
+    },
+    "sonbahar": {
+      "tazelik": 1,
+      "enerji": 0,
+      "nostalji": 94,
+      "huzur": 10
+    },
+    "kis": {
+      "tazelik": 0,
+      "enerji": 0,
+      "nostalji": 7,
+      "huzur": 94
+    },
+    "dort-mevsim": {
+      "tazelik": 25,
+      "enerji": 25,
+      "nostalji": 26,
+      "huzur": 27
+    }
+  },
+  "kahve-siparisi-ruh-yasi-testi": {
+    "ruhen-12": {
+      "trend": 15,
+      "oyun": 90,
+      "klasik": 4,
+      "sakinlik": 1
+    },
+    "ruhen-22": {
+      "trend": 94,
+      "oyun": 7,
+      "klasik": 0,
+      "sakinlik": 0
+    },
+    "ruhen-35": {
+      "trend": 30,
+      "oyun": 21,
+      "klasik": 34,
+      "sakinlik": 21
+    },
+    "ruhen-50": {
+      "trend": 0,
+      "oyun": 1,
+      "klasik": 90,
+      "sakinlik": 11
+    },
+    "ruhen-80": {
+      "trend": 1,
+      "oyun": 1,
+      "klasik": 29,
+      "sakinlik": 82
+    }
   }
 }
