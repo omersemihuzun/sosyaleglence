@@ -2,6 +2,7 @@ import Link from "next/link";
 import { BracketCard } from "@/components/bracket-card";
 import { LiveQuestion } from "@/components/live-question";
 import { brackets } from "@/content/brackets";
+import { burclar } from "@/content/burclar";
 import { TestCard } from "@/components/test-card";
 import { guides } from "@/content/gifts/guides";
 import { recipients, type Recipient } from "@/content/gifts/types";
@@ -81,6 +82,31 @@ export default function Home() {
           </span>
           <span className="rounded-full border-2 border-paper bg-cherry px-5 py-2.5 font-display font-bold">Oyla</span>
         </Link>
+      </section>
+
+      <section className="mx-auto mt-16 max-w-6xl px-4 sm:px-6">
+        <div className="sticker flex flex-col gap-5 bg-white p-6 sm:p-8 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <h2 className="font-display text-3xl font-extrabold sm:text-4xl">Koç ile Aslan anlaşır mı?</h2>
+            <p className="mt-1 text-plum-soft">İki burç seç, aşkta ve arkadaşlıkta uyumunuzu gör.</p>
+            <ul className="mt-4 flex flex-wrap gap-1.5 text-2xl" aria-hidden>
+              {burclar.map((b) => (
+                <li key={b.slug}>{b.emoji}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href="/burc-uyumu/koc-ve-aslan"
+              className="sticker sticker-press bg-white px-5 py-3 font-display font-bold"
+            >
+              Koç ve Aslan
+            </Link>
+            <Link href="/burclar" className="sticker sticker-press bg-cherry px-5 py-3 font-display font-bold text-white">
+              Burç uyumunu hesapla
+            </Link>
+          </div>
+        </div>
       </section>
 
       <section className="mt-24 border-y-2 border-plum bg-butter">
