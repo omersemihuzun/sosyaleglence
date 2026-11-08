@@ -83,3 +83,8 @@ export function breadcrumbJsonLd(crumbs: Crumb[]) {
     })),
   };
 }
+
+/** Hediye rehberi <title> metni: sığmazsa önce site adı eki, sonra alt başlık düşer. */
+export function guideTitle(metaTitle: string, title: string) {
+  return fitTitle(`${metaTitle}${SITE_SUFFIX}`, metaTitle, `${title}${SITE_SUFFIX}`);
+}

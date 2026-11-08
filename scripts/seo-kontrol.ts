@@ -84,7 +84,7 @@ for (const b of brackets) {
       desc: seo.bracketResultDescription(i.name, b.championLabel, b.title),
     });
 }
-for (const g of guides) rows.push({ url: `/hediye/${g.slug}`, title: g.metaTitle + SUFFIX, desc: g.metaDescription });
+for (const g of guides) rows.push({ url: `/hediye/${g.slug}`, title: seo.guideTitle(g.metaTitle, g.title), desc: g.metaDescription });
 
 const problems: string[] = [];
 for (const r of rows) {

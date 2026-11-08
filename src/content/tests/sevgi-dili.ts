@@ -10,7 +10,7 @@ export const sevgiDili: Test = {
   color: "#E0567A",
   category: "ilişki",
   metaDescription:
-    "Sevgi dili testi: onay sözleri, kaliteli zaman, hediye, hizmet ya da fiziksel temas. 15 soruda baskın sevgi dilini ve partnerinle nasıl iletişim kuracağını öğren.",
+    "Sevgi dili testi: onay sözleri, kaliteli zaman, hediye, hizmet ya da fiziksel temas. 15 soruda baskın sevgi dilini ve partnerinle iletişimini öğren.",
   dimensions: [
     { id: "soz", label: "Onay sözleri", low: "Söze ihtiyacın az", high: "Duymak istersin" },
     { id: "zaman", label: "Kaliteli zaman", low: "Ayrı vakit dert değil", high: "Birlikte olmak her şey" },

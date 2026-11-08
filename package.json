@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "kalibre": "node --experimental-strip-types --no-warnings scripts/kalibre.ts",
-    "seo": "node --experimental-strip-types --no-warnings scripts/seo-kontrol.ts"
+    "seo": "node --experimental-strip-types --no-warnings scripts/seo-kontrol.ts",
+    "test": "vitest run"
   },
   "dependencies": {
     "@upstash/ratelimit": "^2.2.0",
@@ -28,6 +29,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.5",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^4.1.12"
   }
 }

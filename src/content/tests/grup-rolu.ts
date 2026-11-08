@@ -10,7 +10,7 @@ export const grupRolu: Test = {
   color: "#C2410C",
   category: "arkadaşlık",
   metaDescription:
-    "Arkadaş grubundaki rolün ne? Organizatör, grup terapisti, kaos ajanı ya da sessiz gözlemci. 15 tanıdık senaryoyla gruptaki yerini keşfet, arkadaşlarınla karşılaştır.",
+    "Arkadaş grubundaki rolün ne? Organizatör, grup terapisti, kaos ajanı ya da sessiz gözlemci. 15 tanıdık senaryoyla gruptaki yerini keşfet.",
   dimensions: [
     { id: "organizator", label: "Organizasyon", low: "Akışa uyarsın", high: "Planı sen kurarsın" },
     { id: "terapist", label: "Destek", low: "Dert dinlemek sana göre değil", high: "Herkesin sığınağısın" },

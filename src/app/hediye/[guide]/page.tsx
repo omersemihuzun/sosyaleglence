@@ -5,6 +5,7 @@ import { Suspense } from "react";
 import { GiftCard } from "@/components/gift-card";
 import { PageSkeleton } from "@/components/page-skeleton";
 import { getGuide, guides, ideasForGuide } from "@/content/gifts/guides";
+import { guideTitle } from "@/lib/jsonld";
 import { absoluteUrl } from "@/lib/site";
 
 /** Tüm parametreler build sırasında bilinir: sayfa tamamen statik üretilir. */
@@ -19,7 +20,7 @@ export async function generateMetadata({ params }: PageProps<"/hediye/[guide]">)
   const guide = getGuide(slug);
   if (!guide) return {};
   return {
-    title: { absolute: `${guide.metaTitle} | Sosyal Eğlence` },
+    title: { absolute: guideTitle(guide.metaTitle, guide.title) },
     description: guide.metaDescription,
     alternates: { canonical: `/hediye/${guide.slug}` },
     openGraph: { title: guide.metaTitle, description: guide.metaDescription, url: `/hediye/${guide.slug}` },

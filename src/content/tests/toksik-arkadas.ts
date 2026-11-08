@@ -10,7 +10,7 @@ export const toksikArkadas: Test = {
   color: "#65A30D",
   category: "arkadaşlık",
   metaDescription:
-    "Toksik arkadaş testi: Kıskançlık, dedikodu, çıkarcılık ve yargılayıcılık eğilimini 15 gerçekçi arkadaşlık senaryosuyla ölç. Arkadaşlıklarında toksik olan sen misin?",
+    "Toksik arkadaş testi: Kıskançlık, dedikodu, çıkarcılık ve yargılayıcılık eğilimini 15 gerçekçi senaryoyla ölç. Arkadaşlıklarında toksik olan sen misin?",
   headline: {
     label: "Toksik arkadaşlık seviyen",
     weights: { kiskanclik: 1, dedikodu: 1, cikar: 1, yargi: 1 },
