@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { onColor } from "@/lib/color";
 import { compatibility, compatibilityText, type CompareSession } from "@/lib/compare";
 import { decodeScores, pickResult } from "@/lib/scoring";
 import type { Test } from "@/lib/types";
@@ -120,14 +121,14 @@ export function CompareView({ test, code }: { test: Test; code: string }) {
           <Link
             key={p.name + p.result.id}
             href={`/testler/${test.slug}/sonuc/${p.result.id}`}
-            className="sticker sticker-press flex items-center gap-4 p-5 text-paper"
-            style={{ background: p.result.color }}
+            className="sticker sticker-press flex items-center gap-4 p-5"
+            style={onColor(p.result.color)}
           >
             <span aria-hidden className="text-5xl">
               {p.result.emoji}
             </span>
             <span>
-              <span className="block text-sm text-paper/85">{p.name}</span>
+              <span className="block text-sm">{p.name}</span>
               <span className="font-display text-2xl leading-tight font-bold">{p.result.name}</span>
             </span>
           </Link>

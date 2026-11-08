@@ -10,7 +10,8 @@
     "kalibre": "node --experimental-strip-types --no-warnings scripts/kalibre.ts",
     "seo": "node --experimental-strip-types --no-warnings scripts/seo-kontrol.ts",
     "test": "vitest run",
-    "rapor": "node --experimental-strip-types --no-warnings scripts/rapor.ts"
+    "rapor": "node --experimental-strip-types --no-warnings scripts/rapor.ts",
+    "e2e": "playwright test"
   },
   "dependencies": {
     "@upstash/ratelimit": "^2.2.0",
@@ -23,6 +24,8 @@
     "server-only": "^0.0.1"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.65.0",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

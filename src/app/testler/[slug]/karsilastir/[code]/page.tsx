@@ -7,10 +7,13 @@ import { PageSkeleton } from "@/components/page-skeleton";
 import { getTest } from "@/content/tests";
 
 export async function generateMetadata({ params }: PageProps<"/testler/[slug]/karsilastir/[code]">): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug, code } = await params;
   const test = getTest(slug);
+  // Burada (gövde akışı başlamadan) doğrulamak gerçek 404 durum kodu verir;
+  // sayfa içindeki notFound() Suspense'te kaldığı için 200 + "bulunamadı" (soft 404) üretiyordu.
+  if (!test || !/^[a-f0-9]{10}$/.test(code)) notFound();
   return {
-    title: test ? `${test.title}: Karşılaştırma` : "Karşılaştırma",
+    title: `${test.title}: Karşılaştırma`,
     description: test ? `"${test.title}" testinde ikinizi karşılaştırın, uyum yüzdenizi görün.` : undefined,
     // Kişiye özel sayfalar arama motorlarına girmesin
     robots: { index: false, follow: false },

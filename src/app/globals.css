@@ -101,16 +101,6 @@ body {
   top: 12px;
 }
 
-/* Renkli sonuç kartları: şeffaf açık yazı bazı renklerde (pembe, mavi) kontrastı düşürüyordu.
-   Yazıyı tam opak yap ve hafif bir mürdüm gölgeyle zemin ayrımını güçlendir. */
-.sticker.text-paper {
-  text-shadow: 0 1px 2px rgb(43 16 48 / 0.45);
-}
-
-.sticker.text-paper [class*="text-paper/"] {
-  color: var(--color-paper);
-}
-
 /* Sonuca ulaşınca tek seferlik kutlama: küçük konfeti çıkartmaları */
 .celebrate {
   pointer-events: none;

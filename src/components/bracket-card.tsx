@@ -13,7 +13,7 @@ export function BracketCard({ bracket, tilt = 0 }: { bracket: Bracket; tilt?: nu
         <span aria-hidden className="grid size-12 place-items-center rounded-xl bg-white/90 text-2xl">
           {preview[0].emoji}
         </span>
-        <span aria-hidden className="font-display text-sm font-extrabold text-white">
+        <span aria-hidden className="rounded-full bg-plum px-2 py-0.5 font-display text-sm font-extrabold text-paper">
           VS
         </span>
         <span aria-hidden className="grid size-12 place-items-center rounded-xl bg-white/90 text-2xl">

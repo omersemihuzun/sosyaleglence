@@ -8,6 +8,7 @@ import { ResultPersonal } from "@/components/result-personal";
 import { TestCard } from "@/components/test-card";
 import { getTest, tests } from "@/content/tests";
 import { breadcrumbJsonLd, testResultDescription, testResultTitle, toJsonLd } from "@/lib/jsonld";
+import { onColor } from "@/lib/color";
 import { absoluteUrl } from "@/lib/site";
 
 /** Tüm parametreler build sırasında bilinir: sayfa tamamen statik üretilir. */
@@ -70,17 +71,17 @@ async function ResultPageContent({ params }: { params: PageProps<"/testler/[slug
         <div className="mt-5 grid items-start gap-8 lg:grid-cols-[1.15fr_1fr]">
           <div>
             <div
-              className="sticker animate-pop -rotate-1 p-7 text-paper sm:p-10"
-              style={{ background: result.color, boxShadow: "6px 8px 0 0 var(--color-plum)" }}
+              className="sticker animate-pop -rotate-1 p-7 sm:p-10"
+              style={{ ...onColor(result.color), boxShadow: "6px 8px 0 0 var(--color-plum)" }}
             >
-              <p className="text-paper/85">{test.title} sonucu</p>
+              <p>{test.title} sonucu</p>
               <p aria-hidden className="mt-4 text-7xl leading-none sm:text-8xl">
                 {result.emoji}
               </p>
               <h1 className="mt-4 font-display text-5xl leading-[0.95] font-extrabold tracking-tight sm:text-6xl">
                 {result.name}
               </h1>
-              <p className="mt-4 max-w-md text-xl leading-snug text-paper/90">{result.tagline}</p>
+              <p className="mt-4 max-w-md text-xl leading-snug">{result.tagline}</p>
             </div>
 
             <div className="mt-10 max-w-prose space-y-4 text-[17px] leading-[1.7]">

@@ -19,7 +19,6 @@ import { join } from "node:path";
 import { pathToFileURL } from "node:url";
 
 const root = process.cwd();
-const SUFFIX = " | Sosyal Eğlence";
 const TITLE_MAX = 60;
 const DESC_MIN = 70;
 const DESC_MAX = 160;
