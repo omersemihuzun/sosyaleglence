@@ -33,6 +33,15 @@ type Q = { options: Opt[] };
 type R = { id: string; profile: Record<string, number> };
 type T = { slug: string; dimensions: { id: string }[]; questions: Q[]; results: R[] };
 
+/** Sabit tohumlu üreteç (mulberry32): aynı içerik her çalıştırmada aynı kalibrasyonu verir. */
+let seed = 20261108;
+function rand() {
+  seed = (seed + 0x6d2b79f5) | 0;
+  let t = Math.imul(seed ^ (seed >>> 15), 1 | seed);
+  t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+  return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+}
+
 const N = 4000;
 const out: Record<string, Record<string, Record<string, number>>> = {};
 let failed = false;
@@ -47,7 +56,7 @@ for (const [file, name] of files) {
       let best = 0;
       let bv = -Infinity;
       q.options.forEach((o, oi) => {
-        let v = (Math.random() - 0.5) * 3;
+        let v = (rand() - 0.5) * 3;
         for (const d of dims) v += ((o.scores[d] ?? 0) * ((concept[d] ?? 50) - 40)) / 50;
         if (v > bv) {
           bv = v;
@@ -73,7 +82,7 @@ for (const [file, name] of files) {
   const M = 20000;
   for (let i = 0; i < M; i++) {
     const c: Record<string, number> = {};
-    for (const d of dims) c[d] = Math.random() * 100;
+    for (const d of dims) c[d] = rand() * 100;
     counts[scoring.pickResult(calibrated, scoring.scoreDimensions(calibrated, answer(c))).id]++;
   }
   let hit = 0;

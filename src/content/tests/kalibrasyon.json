@@ -3,8 +3,8 @@
     "sakin-liman": {
       "sahiplenme": 14,
       "guvensizlik": 8,
-      "kontrol": 8,
-      "sessizlik": 6
+      "kontrol": 9,
+      "sessizlik": 7
     },
     "dengeli-romantik": {
       "sahiplenme": 32,
@@ -13,21 +13,21 @@
       "sessizlik": 12
     },
     "atesli-koruyucu": {
-      "sahiplenme": 81,
+      "sahiplenme": 82,
       "guvensizlik": 10,
       "kontrol": 38,
       "sessizlik": 6
     },
     "sessiz-dedektif": {
-      "sahiplenme": 20,
+      "sahiplenme": 21,
       "guvensizlik": 32,
       "kontrol": 76,
       "sessizlik": 28
     },
     "kirilgan-kalp": {
       "sahiplenme": 8,
-      "guvensizlik": 79,
-      "kontrol": 18,
+      "guvensizlik": 80,
+      "kontrol": 17,
       "sessizlik": 42
     },
     "radar": {
@@ -69,7 +69,7 @@
       "drama": 26
     },
     "kirmizi-alarm": {
-      "manipulasyon": 35,
+      "manipulasyon": 36,
       "ofke": 34,
       "mesafe": 31,
       "drama": 42
@@ -110,11 +110,11 @@
       "ozlem": 28,
       "takip": 86,
       "kirginlik": 7,
-      "kiyas": 17
+      "kiyas": 18
     },
     "hesap-kapanmadi": {
       "ozlem": 9,
-      "takip": 10,
+      "takip": 9,
       "kirginlik": 87,
       "kiyas": 22
     },
@@ -122,19 +122,19 @@
       "ozlem": 74,
       "takip": 32,
       "kirginlik": 4,
-      "kiyas": 39
+      "kiyas": 40
     }
   },
   "sevgi-dili-testi": {
     "soz": {
-      "soz": 86,
+      "soz": 85,
       "zaman": 12,
       "hediye": 5,
       "hizmet": 5,
       "temas": 11
     },
     "zaman": {
-      "soz": 12,
+      "soz": 13,
       "zaman": 83,
       "hediye": 4,
       "hizmet": 7,
@@ -142,20 +142,20 @@
     },
     "hediye": {
       "soz": 13,
-      "zaman": 11,
+      "zaman": 12,
       "hediye": 86,
-      "hizmet": 10,
-      "temas": 13
+      "hizmet": 11,
+      "temas": 14
     },
     "hizmet": {
       "soz": 8,
-      "zaman": 12,
+      "zaman": 11,
       "hediye": 10,
       "hizmet": 88,
       "temas": 12
     },
     "temas": {
-      "soz": 11,
+      "soz": 10,
       "zaman": 16,
       "hediye": 8,
       "hizmet": 7,
@@ -164,7 +164,7 @@
   },
   "flort-tarzi-testi": {
     "avci": {
-      "cesaret": 95,
+      "cesaret": 96,
       "oyun": 0,
       "romantizm": 6,
       "mizah": 3
@@ -230,7 +230,7 @@
     },
     "terapist": {
       "organizator": 3,
-      "terapist": 97,
+      "terapist": 98,
       "kaos": 0,
       "gozlemci": 5
     },
@@ -247,10 +247,10 @@
       "gozlemci": 98
     },
     "yapistirici": {
-      "organizator": 27,
+      "organizator": 28,
       "terapist": 26,
       "kaos": 25,
-      "gozlemci": 26
+      "gozlemci": 25
     }
   },
   "iliskide-kim-baskin-testi": {
@@ -270,7 +270,7 @@
       "kontrol": 8,
       "uyum": 0,
       "catisma": 97,
-      "yonlendirme": 1
+      "yonlendirme": 0
     },
     "gizli-patron": {
       "kontrol": 2,
@@ -281,26 +281,26 @@
     "denge": {
       "kontrol": 31,
       "uyum": 31,
-      "catisma": 29,
+      "catisma": 30,
       "yonlendirme": 7
     }
   },
   "toksik-arkadas-testi": {
     "altin-kalp": {
       "kiskanclik": 10,
-      "dedikodu": 6,
+      "dedikodu": 7,
       "cikar": 14,
-      "yargi": 7
+      "yargi": 6
     },
     "gizli-rakip": {
       "kiskanclik": 92,
       "dedikodu": 5,
-      "cikar": 11,
-      "yargi": 13
+      "cikar": 12,
+      "yargi": 14
     },
     "haber-ajansi": {
       "kiskanclik": 8,
-      "dedikodu": 89,
+      "dedikodu": 90,
       "cikar": 18,
       "yargi": 7
     },
@@ -308,18 +308,18 @@
       "kiskanclik": 10,
       "dedikodu": 9,
       "cikar": 92,
-      "yargi": 6
+      "yargi": 7
     },
     "acimasiz-juri": {
-      "kiskanclik": 20,
+      "kiskanclik": 21,
       "dedikodu": 5,
       "cikar": 9,
       "yargi": 89
     },
     "zehirli-sarmasik": {
       "kiskanclik": 40,
-      "dedikodu": 39,
-      "cikar": 43,
+      "dedikodu": 38,
+      "cikar": 42,
       "yargi": 36
     }
   }
