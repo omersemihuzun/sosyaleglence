@@ -69,7 +69,7 @@ type Row = { url: string; title: string; desc: string };
 const rows: Row[] = [];
 
 for (const t of tests) {
-  rows.push({ url: `/testler/${t.slug}`, title: t.title + SUFFIX, desc: t.metaDescription });
+  rows.push({ url: `/testler/${t.slug}`, title: seo.pageTitle(t.title), desc: t.metaDescription });
   for (const r of t.results)
     rows.push({
       url: `/testler/${t.slug}/sonuc/${r.id}`,
@@ -78,7 +78,7 @@ for (const t of tests) {
     });
 }
 for (const b of brackets) {
-  rows.push({ url: `/eleme/${b.slug}`, title: b.title + SUFFIX, desc: b.metaDescription });
+  rows.push({ url: `/eleme/${b.slug}`, title: seo.pageTitle(b.title), desc: b.metaDescription });
   for (const i of b.items)
     rows.push({
       url: `/eleme/${b.slug}/sonuc/${i.id}`,

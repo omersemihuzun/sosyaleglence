@@ -6,7 +6,7 @@ import { BracketCard } from "@/components/bracket-card";
 import { BracketGame } from "@/components/bracket-game";
 import { PageSkeleton } from "@/components/page-skeleton";
 import { brackets, getBracket } from "@/content/brackets";
-import { breadcrumbJsonLd, toJsonLd } from "@/lib/jsonld";
+import { breadcrumbJsonLd, pageTitle, toJsonLd } from "@/lib/jsonld";
 import { absoluteUrl } from "@/lib/site";
 
 /** Tüm parametreler build sırasında bilinir: sayfa tamamen statik üretilir. */
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps<"/eleme/[slug]">): 
   const b = getBracket(slug);
   if (!b) return {};
   return {
-    title: b.title,
+    title: { absolute: pageTitle(b.title) },
     description: b.metaDescription,
     alternates: { canonical: `/eleme/${b.slug}` },
     openGraph: { title: b.title, description: b.summary, url: `/eleme/${b.slug}` },

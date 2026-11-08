@@ -89,3 +89,8 @@ export function breadcrumbJsonLd(crumbs: Crumb[]) {
 export function guideTitle(metaTitle: string, title: string) {
   return fitTitle(`${metaTitle}${SITE_SUFFIX}`, metaTitle, `${title}${SITE_SUFFIX}`);
 }
+
+/** Genel sayfa <title> metni: site adı eki sığmıyorsa düşer. */
+export function pageTitle(title: string) {
+  return fitTitle(`${title}${SITE_SUFFIX}`, title);
+}

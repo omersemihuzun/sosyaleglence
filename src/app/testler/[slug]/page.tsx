@@ -6,7 +6,7 @@ import { PageSkeleton } from "@/components/page-skeleton";
 import { Quiz } from "@/components/quiz";
 import { TestCard } from "@/components/test-card";
 import { getTest, tests } from "@/content/tests";
-import { breadcrumbJsonLd, toJsonLd } from "@/lib/jsonld";
+import { breadcrumbJsonLd, pageTitle, toJsonLd } from "@/lib/jsonld";
 import { absoluteUrl } from "@/lib/site";
 
 /** Tüm parametreler build sırasında bilinir: sayfa tamamen statik üretilir. */
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps<"/testler/[slug]">)
   const test = getTest(slug);
   if (!test) return {};
   return {
-    title: test.title,
+    title: { absolute: pageTitle(test.title) },
     description: test.metaDescription,
     alternates: { canonical: `/testler/${test.slug}` },
     openGraph: { title: test.title, description: test.summary, url: `/testler/${test.slug}` },
