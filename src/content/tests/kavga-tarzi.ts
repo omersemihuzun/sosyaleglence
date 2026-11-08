@@ -1,7 +1,7 @@
 import type { Test } from "@/lib/types";
 
 export const kavgaTarzi: Test = {
-  slug: "kavga-tarzi",
+  slug: "kavga-tarzi-testi",
   title: "Kavga Ederken Nasıl Birisin?",
   summary: "Sesini mi yükseltirsin, konuyu mu değiştirirsin, yoksa mavi tikle mi cevap verirsin? Çatışma tarzını bul.",
   intro:

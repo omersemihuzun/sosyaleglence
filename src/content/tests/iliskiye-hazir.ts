@@ -1,7 +1,7 @@
 import type { Test } from "@/lib/types";
 
 export const iliskiyeHazir: Test = {
-  slug: "iliskiye-hazir-misin",
+  slug: "iliskiye-hazir-misin-testi",
   title: "Yeni Bir İlişkiye Hazır mısın?",
   summary: "Kalbin yeni birine açık mı, yoksa hâlâ eski bir sayfada mı? Belki de bekârlığın tadını çıkarıyorsundur.",
   intro:

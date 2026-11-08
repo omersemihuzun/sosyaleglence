@@ -537,7 +537,7 @@
       "koruyucu": 91
     }
   },
-  "kavga-tarzi": {
+  "kavga-tarzi-testi": {
     "anlik-firtina": {
       "patlama": 100,
       "kacinma": 5,
@@ -574,7 +574,7 @@
       "uzlasma": 99
     }
   },
-  "iliskiye-hazir-misin": {
+  "iliskiye-hazir-misin-testi": {
     "kalbi-acik": {
       "acilik": 100,
       "gecmis": 4,
@@ -611,7 +611,7 @@
       "acele": 100
     }
   },
-  "guven-sorunu": {
+  "guven-sorunu-testi": {
     "acik-kapi": {
       "rahat": 100,
       "kontrol": 4,

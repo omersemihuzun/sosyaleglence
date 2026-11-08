@@ -1,7 +1,7 @@
 import type { Test } from "@/lib/types";
 
 export const guvenSorunu: Test = {
-  slug: "guven-sorunu",
+  slug: "guven-sorunu-testi",
   title: "İlişkide Güven Sorunun Var mı?",
   summary: "Son görülmeye mi bakarsın, kafanda senaryo mu yazarsın, yoksa gizlice sınav mı yaparsın? Güven tarzını bul.",
   intro:
