@@ -43,8 +43,8 @@ const securityHeaders = [
     key: "Permissions-Policy",
     value: "camera=(), microphone=(), geolocation=(), payment=(), usb=(), interest-cohort=()",
   },
-  ...(isDev ? [] : [// preload/includeSubDomains bilinçli olarak yok: alan adının alt alanları netleşmeden kalıcı taahhüt verilmez
-          { key: "Strict-Transport-Security", value: "max-age=31536000" }]),
+  // preload/includeSubDomains bilinçli olarak yok: alan adının alt alanları netleşmeden kalıcı taahhüt verilmez
+  ...(isDev ? [] : [{ key: "Strict-Transport-Security", value: "max-age=31536000" }]),
 ];
 
 const nextConfig: NextConfig = {
