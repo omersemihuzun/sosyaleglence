@@ -17,6 +17,7 @@ const pages = [
   "/hediye",
   "/hediye/sevgiliye-yilbasi-hediyesi",
   "/iletisim",
+  "/ara?q=ask",
   "/gizlilik",
   // Sonradan eklenen modüller
   "/testler/sofra-kur-sehir-testi",

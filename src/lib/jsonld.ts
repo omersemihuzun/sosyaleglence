@@ -35,6 +35,11 @@ export function websiteJsonLd() {
     inLanguage: "tr-TR",
     description: site.description,
     publisher: { "@id": absoluteUrl("/#organization") },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: { "@type": "EntryPoint", urlTemplate: `${absoluteUrl("/ara")}?q={search_term_string}` },
+      "query-input": "required name=search_term_string",
+    },
   };
 }
 
