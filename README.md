@@ -7,16 +7,32 @@ Canlı (geçici adres): https://sosyaleglence.vercel.app
 
 ## Komutlar
 
+Node 22.6 veya üstü gerekir (CI: Node 24).
+
 ```bash
-npm install
-npm run dev        # http://localhost:3000
-npm run build      # production build (~1000 statik sayfa)
-npm test           # birim + içerik bütünlüğü testleri (vitest)
-npm run e2e        # uçtan uca testler (Playwright; önce build)
-npm run kalibre    # test sonuç profillerini kalibre et (yeni test/soru değişikliğinde)
-npm run seo        # tüm sayfaların başlık/açıklama uzunluk denetimi
-npm run rapor      # istatistik raporu (önce: vercel env pull .env.local --yes)
+npm ci
+npm run dev           # http://localhost:3000
+npm run check         # commit öncesi: format, lint, tipler, knip, birim testleri, kalibrasyon, SEO
+npm run build         # production build (~1200 statik sayfa)
+npm run e2e           # uçtan uca testler (Playwright, masaüstü + mobil; önce build)
+
+npm run format        # Prettier ile biçimle
+npm run typecheck     # route tipleri + TypeScript
+npm run knip          # kullanılmayan dosya, export ve bağımlılık
+npm test              # birim + içerik bütünlüğü testleri (vitest)
+npm run kalibre       # test sonuç profillerini kalibre et, docs/test-metrikleri.md'yi üret
+npm run seo           # tüm sayfaların başlık/açıklama uzunluk denetimi
+npm run rapor         # canlı istatistik raporu (önce: vercel env pull .env.local --yes)
 ```
+
+## Çalışma düzeni
+
+- `main`'e doğrudan commit yok; iş bir dalda yapılır, CI (`.github/workflows/ci.yml`) geçince birleştirilir.
+- CI, `npm run check` adımlarına ek olarak `npm audit --omit=dev`, build ve e2e çalıştırır.
+- Kalibrasyon belirlidir (sabit tohum): içerik değişip `npm run kalibre` commit'lenmezse CI kırılır.
+- Satır sonları LF (`.gitattributes`), biçim Prettier (`.prettierrc.json`). Toplu formatlama commit'i
+  `.git-blame-ignore-revs` içinde: `git config blame.ignoreRevsFile .git-blame-ignore-revs`.
+- Bağımlılık güncellemeleri haftalık Dependabot PR'ı olarak gelir.
 
 ## Modüller
 
@@ -42,7 +58,7 @@ src/lib/og*.tsx       Paylaşım görselleri (story kartı, bağlantı önizleme
 src/app/api/          İstatistik, anket, karşılaştırma ve görsel kart uçları
 scripts/              Kalibrasyon, SEO denetimi, rapor, fotoğraf araçları
 e2e/                  Playwright testleri (masaüstü + mobil, erişilebilirlik dahil)
-docs/                 Operasyon, domain geçişi, rakip analizi, erişilebilirlik, içerik denetimi
+docs/                 Operasyon, domain, güvenlik, test metrikleri, erişilebilirlik, içerik, rakip analizi
 ```
 
 ## Yeni test eklemek
@@ -79,5 +95,3 @@ docs/                 Operasyon, domain geçişi, rakip analizi, erişilebilirli
 | `NEXT_PUBLIC_SITE_URL`                 | Kanonik adres (varsayılan https://sosyaleglence.com)                                                  |
 | `KV_REST_API_URL`, `KV_REST_API_TOKEN` | Upstash Redis (Vercel Marketplace kurar). Yoksa istatistik, anket yüzdeleri ve karşılaştırma kapanır. |
 | `NEXT_PUBLIC_AMAZON_TAG`               | Amazon affiliate etiketi (isteğe bağlı)                                                               |
-
-Ayrıntılar: `docs/operasyon.md`, domain geçişi: `docs/domain-gecisi.md`.
