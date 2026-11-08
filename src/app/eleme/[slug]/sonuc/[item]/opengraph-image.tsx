@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { brackets, getBracket } from "@/content/brackets";
 import { loadOgFonts } from "@/lib/og";
-import { OgBracketCard } from "@/lib/og-bracket";
+import { loadItemPhoto, OgBracketCard } from "@/lib/og-bracket";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
@@ -15,7 +15,7 @@ export default async function Image({ params }: { params: Promise<{ slug: string
   const { slug, item } = await params;
   const bracket = getBracket(slug)!;
   const champion = bracket.items.find((i) => i.id === item);
-  return new ImageResponse(<OgBracketCard bracket={bracket} champion={champion} />, {
+  return new ImageResponse(<OgBracketCard bracket={bracket} champion={champion} photo={await loadItemPhoto(champion, { width: 420, height: 420 })} />, {
     ...size,
     fonts: await loadOgFonts(),
   });

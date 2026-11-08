@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { BracketCard } from "@/components/bracket-card";
 import { BracketGame } from "@/components/bracket-game";
+import { hasPhotos } from "@/components/item-visual";
 import { PageSkeleton } from "@/components/page-skeleton";
 import { brackets, getBracket } from "@/content/brackets";
 import { breadcrumbJsonLd, pageTitle, toJsonLd } from "@/lib/jsonld";
@@ -90,6 +91,14 @@ async function BracketPageContent({ params }: { params: PageProps<"/eleme/[slug]
             <BracketGame bracket={bracket} />
           </Suspense>
         </div>
+        {hasPhotos(bracket) && (
+          <p className="mt-6 text-xs text-plum-soft">
+            Fotoğraflar açık lisanslıdır.{" "}
+            <Link href={`/gorsel-kaynaklari#${bracket.slug}`} className="underline">
+              Fotoğraf kaynakları
+            </Link>
+          </p>
+        )}
       </section>
 
       <section className="mx-auto mt-20 max-w-6xl px-4 sm:px-6">

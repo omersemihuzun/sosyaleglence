@@ -9,6 +9,8 @@ import { PageSkeleton } from "@/components/page-skeleton";
 import { brackets, getBracket } from "@/content/brackets";
 import { bracketResultDescription, bracketResultTitle, breadcrumbJsonLd, toJsonLd } from "@/lib/jsonld";
 import { onColor } from "@/lib/color";
+import { ItemVisual } from "@/components/item-visual";
+import { PhotoCredit } from "@/components/photo-credit";
 import { absoluteUrl } from "@/lib/site";
 
 /** Tüm parametreler build sırasında bilinir: sayfa tamamen statik üretilir. */
@@ -67,18 +69,26 @@ async function BracketResultContent({ params }: { params: PageProps<"/eleme/[slu
         <div className="mt-5 grid items-start gap-8 lg:grid-cols-[1.15fr_1fr]">
           <div>
             <div
-              className="sticker animate-pop -rotate-1 p-7 sm:p-10"
+              className="sticker animate-pop -rotate-1 overflow-hidden"
               style={{ ...onColor(bracket.color), boxShadow: "6px 8px 0 0 var(--color-plum)" }}
             >
-              <p>🏆 {bracket.championLabel}</p>
-              <p aria-hidden className="mt-4 text-7xl leading-none sm:text-8xl">
-                {champion.emoji}
-              </p>
-              <h1 className="mt-4 font-display text-5xl leading-[0.95] font-extrabold tracking-tight text-balance sm:text-6xl">
-                {champion.name}
-              </h1>
-              <p className="mt-4 max-w-md text-xl leading-snug">{champion.detail}</p>
+              {champion.image && (
+                <ItemVisual item={champion} className="aspect-[4/3] w-full border-b-2 border-plum" priority />
+              )}
+              <div className="p-7 sm:p-10">
+                <p>🏆 {bracket.championLabel}</p>
+                {!champion.image && (
+                  <p aria-hidden className="mt-4 text-7xl leading-none sm:text-8xl">
+                    {champion.emoji}
+                  </p>
+                )}
+                <h1 className="mt-4 font-display text-5xl leading-[0.95] font-extrabold tracking-tight text-balance sm:text-6xl">
+                  {champion.name}
+                </h1>
+                <p className="mt-4 max-w-md text-xl leading-snug">{champion.detail}</p>
+              </div>
             </div>
+            {champion.image && <PhotoCredit image={champion.image} />}
             <div className="mt-10 max-w-prose">
               <h2 className="font-display text-2xl font-bold">Bu seçim seni nasıl anlatıyor?</h2>
               <p className="mt-3 text-[17px] leading-[1.7]">{champion.meaning}</p>

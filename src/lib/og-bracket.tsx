@@ -9,11 +9,14 @@ export function BracketStoryCard({
   champion,
   finalist,
   host,
+  photo,
 }: {
   bracket: Bracket;
   champion: BracketItem;
   finalist?: BracketItem;
   host: string;
+  /** Şampiyonun fotoğrafı (data URL, JPEG). Yoksa emoji çizilir. */
+  photo?: string | null;
 }) {
   return (
     <div
@@ -50,7 +53,18 @@ export function BracketStoryCard({
         }}
       >
         <div style={{ fontSize: 36, color: "#5A3E5E" }}>{`🏆 ${bracket.championLabel}`}</div>
-        <div style={{ fontSize: 220, lineHeight: 1, marginTop: 36 }}>{champion.emoji}</div>
+        {photo ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={photo}
+            width={820}
+            height={560}
+            alt=""
+            style={{ marginTop: 32, borderRadius: 28, border: `5px solid ${PLUM}`, objectFit: "cover" }}
+          />
+        ) : (
+          <div style={{ fontSize: 220, lineHeight: 1, marginTop: 36 }}>{champion.emoji}</div>
+        )}
         <div style={{ fontFamily: "Display, DisplayExt", fontSize: 92, lineHeight: 1.02, marginTop: 36, letterSpacing: -2 }}>
           {champion.name}
         </div>
@@ -96,7 +110,15 @@ export function BracketStoryCard({
 }
 
 /** 1200×630 bağlantı önizlemesi */
-export function OgBracketCard({ bracket, champion }: { bracket: Bracket; champion?: BracketItem }) {
+export function OgBracketCard({
+  bracket,
+  champion,
+  photo,
+}: {
+  bracket: Bracket;
+  champion?: BracketItem;
+  photo?: string | null;
+}) {
   const a = champion ?? bracket.items[0];
   return (
     <div
@@ -122,7 +144,16 @@ export function OgBracketCard({ bracket, champion }: { bracket: Bracket; champio
           padding: 56,
         }}
       >
-        {champion ? (
+        {photo ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={photo}
+            width={420}
+            height={420}
+            alt=""
+            style={{ marginRight: 48, borderRadius: 28, border: `5px solid ${PLUM}`, objectFit: "cover" }}
+          />
+        ) : champion ? (
           <div style={{ fontSize: 190, lineHeight: 1, marginRight: 48 }}>{a.emoji}</div>
         ) : (
           <div style={{ display: "flex", alignItems: "center", marginRight: 44 }}>
@@ -145,4 +176,22 @@ export function OgBracketCard({ bracket, champion }: { bracket: Bracket; champio
       </div>
     </div>
   );
+}
+
+/**
+ * Seçeneğin fotoğrafını kart için data URL'e çevirir. Satori WebP okuyamadığı için JPEG'e dönüştürülür.
+ * Fotoğraf yoksa ya da okunamazsa null döner (kart emojiyle çizilir).
+ */
+export async function loadItemPhoto(item: BracketItem | undefined, size: { width: number; height: number }) {
+  if (!item?.image) return null;
+  try {
+    const { readFile } = await import("node:fs/promises");
+    const { join } = await import("node:path");
+    const sharp = (await import("sharp")).default;
+    const file = await readFile(join(process.cwd(), "public", item.image.src));
+    const jpg = await sharp(file).resize(size.width, size.height, { fit: "cover" }).jpeg({ quality: 82 }).toBuffer();
+    return `data:image/jpeg;base64,${jpg.toString("base64")}`;
+  } catch {
+    return null;
+  }
 }

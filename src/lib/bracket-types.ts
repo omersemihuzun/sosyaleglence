@@ -1,3 +1,14 @@
+/** Açık lisanslı fotoğrafın yolu ve atıf bilgisi (CC lisansları atıf ister). */
+export type BracketImage = {
+  src: string;
+  creator: string;
+  license: string;
+  licenseUrl: string;
+  source: string;
+  sourceUrl: string;
+  title: string;
+};
+
 export type BracketItem = {
   id: string;
   name: string;
@@ -6,6 +17,8 @@ export type BracketItem = {
   detail: string;
   /** Şampiyon olursa sonuç sayfasında: bu seçim seni nasıl anlatıyor */
   meaning: string;
+  /** Açık lisanslı fotoğraf (varsa). Yoksa kartlarda emoji gösterilir. */
+  image?: BracketImage;
 };
 
 export type Bracket = {

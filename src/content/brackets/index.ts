@@ -1,4 +1,5 @@
 import type { Bracket } from "@/lib/bracket-types";
+import { bracketImages } from "./gorseller";
 import { ev } from "./ev";
 import { sevgiliyle } from "./sevgiliyle";
 import { ilkBulusma } from "./ilk-bulusma";
@@ -16,7 +17,7 @@ import { kahvaltilik } from "./kahvaltilik";
 import { superGuc } from "./super-guc";
 import { muzikTuru } from "./muzik-turu";
 
-export const brackets: Bracket[] = [
+const rawBrackets: Bracket[] = [
   ev,
   sevgiliyle,
   redFlagEleme,
@@ -34,6 +35,12 @@ export const brackets: Bracket[] = [
   mevsimlikAn,
   balayi,
 ];
+
+/** Fotoğrafı olan seçeneklere atıf kaydını ekle (src/content/brackets/gorseller). */
+export const brackets: Bracket[] = rawBrackets.map((b) => {
+  const imgs = bracketImages[b.slug] ?? {};
+  return { ...b, items: b.items.map((i) => (imgs[i.id] ? { ...i, image: imgs[i.id] } : i)) };
+});
 
 // Yanlış hazırlanmış bir turnuva build'i durdursun: seçenek sayısı 2'nin kuvveti, id'ler benzersiz olmalı
 for (const b of brackets) {

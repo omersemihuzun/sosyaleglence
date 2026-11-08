@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { getBracket } from "@/content/brackets";
 import { loadOgFonts } from "@/lib/og";
-import { BracketStoryCard } from "@/lib/og-bracket";
+import { BracketStoryCard, loadItemPhoto } from "@/lib/og-bracket";
 import { rejectLongQuery } from "../../../_lib/guard";
 
 /** Eleme oyunu story kartı (1080×1920). ?f=finalist-id ile finaldeki rakibi de yazar. */
@@ -17,7 +17,13 @@ export async function GET(request: Request, ctx: RouteContext<"/api/eleme-kart/[
   const finalist = bracket.items.find((i) => i.id === f && i.id !== champion.id);
 
   return new ImageResponse(
-    <BracketStoryCard bracket={bracket} champion={champion} finalist={finalist} host="sosyaleglence.com" />,
+    <BracketStoryCard
+      bracket={bracket}
+      champion={champion}
+      finalist={finalist}
+      host="sosyaleglence.com"
+      photo={await loadItemPhoto(champion, { width: 820, height: 560 })}
+    />,
     {
       width: 1080,
       height: 1920,

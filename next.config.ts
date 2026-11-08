@@ -50,6 +50,12 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   cacheComponents: true,
   poweredByHeader: false,
+  // Story kartı ve önizleme görselleri şampiyon fotoğrafını çalışma anında diskten okuyor;
+  // yol dinamik olduğu için otomatik izlenmiyor, fonksiyon paketine elle ekliyoruz.
+  outputFileTracingIncludes: {
+    "/api/eleme-kart/**": ["./public/eleme/**/*"],
+    "/eleme/**": ["./public/eleme/**/*"],
+  },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },

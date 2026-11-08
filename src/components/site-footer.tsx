@@ -24,6 +24,7 @@ export function SiteFooter() {
             <li><Link className="hover:text-butter" href="/hediye">Hediye bulucu</Link></li>
             <li><Link className="hover:text-butter" href="/iletisim">İletişim</Link></li>
             <li><Link className="hover:text-butter" href="/gizlilik">Gizlilik</Link></li>
+            <li><Link className="hover:text-butter" href="/gorsel-kaynaklari">Görsel kaynakları</Link></li>
           </ul>
         </div>
         <div>

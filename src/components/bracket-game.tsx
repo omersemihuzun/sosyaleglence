@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import type { Bracket, BracketItem } from "@/lib/bracket-types";
 import { deriveState, summarize, type Pick } from "@/lib/bracket";
 import { reportBracket } from "@/lib/client/stats";
+import { hasPhotos, ItemVisual } from "./item-visual";
 
 // Bilinçli olarak @/content/brackets'tan import edilmiyor: o modül 8 turnuvanın bütün metnini
 // tarayıcı paketine taşıyordu (+38 KB). Oyun yalnızca props ile gelen tek turnuvayı bilir.
@@ -44,6 +45,19 @@ export function BracketGame({ bracket }: { bracket: Bracket }) {
     if (started) promptRef.current?.focus({ preventScroll: true });
   }, [started, picks.length]);
 
+  const photos = hasPhotos(bracket);
+
+  // Turnuva başlayınca bütün fotoğrafları önceden yükle: eşleşmeler arasında bekleme olmasın
+  useEffect(() => {
+    if (!started || !photos) return;
+    for (const i of bracket.items) {
+      if (!i.image) continue;
+      const img = new window.Image();
+      img.decoding = "async";
+      img.src = i.image.src;
+    }
+  }, [started, photos, bracket.items]);
+
   // Geçmişten mevcut turu ve eşleşmeyi hesapla
   const state = deriveState(seed, picks);
   const { round, matchIndex, totalMatches, totalPicks } = state;
@@ -80,8 +94,12 @@ export function BracketGame({ bracket }: { bracket: Bracket }) {
         <p className="text-lg leading-relaxed text-plum-soft">{bracket.summary}</p>
         <ul className="mt-5 flex flex-wrap gap-1.5 text-2xl" aria-label="Turnuvadaki seçenekler">
           {bracket.items.map((i) => (
-            <li key={i.id} title={i.name} className="grid size-11 place-items-center rounded-xl border-2 border-line bg-paper">
-              <span aria-hidden>{i.emoji}</span>
+            <li
+              key={i.id}
+              title={i.name}
+              className="grid size-11 place-items-center overflow-hidden rounded-xl border-2 border-line bg-paper sm:size-12"
+            >
+              <ItemVisual item={i} className="size-full" small />
               <span className="sr-only">{i.name}</span>
             </li>
           ))}
@@ -146,18 +164,39 @@ export function BracketGame({ bracket }: { bracket: Bracket }) {
         {`${roundName(round.length)}${round.length > 2 ? `, eşleşme ${matchIndex + 1}/${totalMatches}` : ""}: ${left.name} ya da ${right.name}`}
       </p>
 
-      <div key={`${left.id}-${right.id}`} className="animate-pop relative mt-6 grid gap-4 sm:grid-cols-2 sm:gap-6">
+      <div
+        key={`${left.id}-${right.id}`}
+        className={`animate-pop relative mt-6 grid ${photos ? "grid-cols-2 gap-3 sm:gap-6" : "gap-4 sm:grid-cols-2 sm:gap-6"}`}
+      >
         {[left, right].map((item, idx) => {
           const other = idx === 0 ? right : left;
           const state = chosen === null ? "idle" : chosen === item.id ? "won" : "lost";
+          const motion = `transition-[opacity,transform] duration-300 ${state === "won" ? "scale-[1.03] bg-butter" : "bg-white"} ${
+            state === "lost" ? "scale-95 opacity-30" : ""
+          }`;
+          if (photos) {
+            return (
+              <button
+                key={item.id}
+                type="button"
+                onClick={() => choose(item, other)}
+                className={`sticker sticker-press flex flex-col overflow-hidden text-left ${motion}`}
+                style={{ rotate: `${idx === 0 ? -0.8 : 0.8}deg` }}
+              >
+                <ItemVisual item={item} className="aspect-[4/3] w-full border-b-2 border-plum" />
+                <span className="flex flex-1 flex-col p-3 sm:p-4">
+                  <span className="font-display text-base leading-tight font-bold text-balance sm:text-xl">{item.name}</span>
+                  <span className="mt-1 hidden text-sm leading-snug text-plum-soft sm:block">{item.detail}</span>
+                </span>
+              </button>
+            );
+          }
           return (
             <button
               key={item.id}
               type="button"
               onClick={() => choose(item, other)}
-              className={`sticker sticker-press flex min-h-44 flex-col items-center justify-center px-5 py-6 text-center transition-[opacity,transform] duration-300 sm:min-h-72 ${
-                state === "won" ? "scale-[1.03] bg-butter" : "bg-white"
-              } ${state === "lost" ? "scale-95 opacity-30" : ""}`}
+              className={`sticker sticker-press flex min-h-44 flex-col items-center justify-center px-5 py-6 text-center sm:min-h-72 ${motion}`}
               style={{ rotate: `${idx === 0 ? -0.8 : 0.8}deg` }}
             >
               <span aria-hidden className="text-6xl leading-none sm:text-7xl">
@@ -170,7 +209,9 @@ export function BracketGame({ bracket }: { bracket: Bracket }) {
         })}
         <span
           aria-hidden
-          className="pointer-events-none absolute top-1/2 left-1/2 grid size-14 -translate-x-1/2 -translate-y-1/2 -rotate-6 place-items-center rounded-full border-2 border-plum bg-cherry font-display text-lg font-extrabold text-white shadow-[3px_4px_0_0_var(--color-plum)]"
+          className={`pointer-events-none absolute left-1/2 grid -translate-x-1/2 -translate-y-1/2 -rotate-6 place-items-center rounded-full border-2 border-plum bg-cherry font-display font-extrabold text-white shadow-[3px_4px_0_0_var(--color-plum)] ${
+            photos ? "top-[32%] size-11 text-sm sm:size-14 sm:text-lg" : "top-1/2 size-14 text-lg"
+          }`}
         >
           VS
         </span>
