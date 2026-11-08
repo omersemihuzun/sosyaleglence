@@ -175,7 +175,7 @@ export const baskinlik: Test = {
       id: "fedakar",
       name: "Fedakâr",
       emoji: "🕊️",
-      tagline: "Sen mutlu olsun yeter dersin. Peki sen?",
+      tagline: "\"O mutlu olsun yeter\" dersin. Peki ya sen?",
       profile: { kontrol: 10, uyum: 75, catisma: 10, yonlendirme: 15 },
       color: "#2F7D6D",
       description: [
@@ -197,7 +197,7 @@ export const baskinlik: Test = {
       description: [
         "İlişkinizde güç tek bir kişide değil, sürekli el değiştiriyor. Her konu tartışılıyor, her karar bir pazarlıkla çıkıyor. Dışarıdan bakan biri sürekli kavga ettiğinizi sanabilir.",
         "Aslında bu, ikinizin de fikrini söylemekten çekinmediğini gösteriyor. Kimse kendini bastırmıyor ve bu sağlıklı bir şey.",
-        "Ama her konunun bir savaşa dönmesi yorucu olabilir. Hangi tartışmaya gerçekten değer olduğunu seçmek, enerjinizi önemli konulara saklamanızı sağlar.",
+        "Ama her konunun bir savaşa dönmesi yorucu olabilir. Hangi tartışmanın gerçekten değdiğini seçmek, enerjinizi önemli konulara saklamanızı sağlar.",
       ],
       strengths: ["Fikrini açıkça söylüyorsun", "Sorunları halının altına süpürmüyorsun", "Tutkulu ve canlı bir ilişki dinamiğin var"],
       watchOut: ["Her şeyi tartışmak ilişkiyi yorabilir", "Kazanmak ile anlaşmak aynı şey değil"],
@@ -228,7 +228,7 @@ export const baskinlik: Test = {
       color: "#3B6FD9",
       description: [
         "İlişkinizde kararlar çoğunlukla birlikte veriliyor. Bazen sen geri adım atıyorsun, bazen o. Fikrini söylüyorsun ama her konuyu kazanmak zorunda hissetmiyorsun.",
-        "Bu denge kendiliğinden oluşmaz, ikinizin de bunun için emek verdiğini gösterir. Partnerin seninle hem dinlendiğini hem de dinlediğini hissediyor.",
+        "Bu denge kendiliğinden oluşmaz, ikinizin de bunun için emek verdiğini gösterir. Partnerin hem fikrinin dinlenildiğini hem de kendi sözünün ağırlığı olduğunu hissediyor.",
         "Denge bazen bozulabilir, özellikle stresli dönemlerde. Böyle anlarda \"Son zamanlarda kararları hep ben veriyorum, sen ne düşünüyorsun?\" diye sormak dengeyi geri getirir.",
       ],
       strengths: ["Kararları paylaşıyorsun", "Hem konuşmayı hem dinlemeyi biliyorsun", "Güç oyunlarına girmiyorsun"],

@@ -5,7 +5,7 @@ export const redFlag: Test = {
   title: "İlişkideki Red Flag Sen misin?",
   summary: "Herkes ex'inin red flag'lerini sayar. Peki ya seninkiler? Kendine karşı dürüst ol.",
   intro:
-    "Toksik davranışlar çoğu zaman \"normal\" kılığında gelir: küsmek, laf sokmak, kıskandırmak. 15 senaryoda gerçekten ne yapacağını seç. Bu testi kimse görmüyor, o yüzden dürüst olmak senin elinde.",
+    "Toksik davranışlar çoğu zaman \"normal\" kılığında gelir: küsmek, laf sokmak, kıskandırmak. 15 senaryoda gerçekten ne yapacağını seç. Cevaplarını kimse görmüyor, o yüzden dürüst olmak senin elinde.",
   emoji: "🚩",
   color: "#C2410C",
   category: "ilişki",

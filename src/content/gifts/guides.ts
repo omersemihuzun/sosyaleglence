@@ -36,7 +36,7 @@ const baseGuides: Guide[] = [
       "Sevgiliye yılbaşı hediyesi arıyorsan doğru yerdesin. Kişiye özel, romantik ve işe yarayan yılbaşı hediye fikirleri, her bütçeye uygun öneriler.",
     emoji: "🎄",
     intro: [
-      "Yılbaşı hediyesi, sevgililer gününden farklı olarak hem romantik hem de kış aylarında gerçekten kullanılacak bir şey olabilir. En iyi hediyeler genelde bu ikisini birleştirir: bir battaniyenin yanına eklenmiş bir not ya da bir albümün içine saklanmış bir bilet.",
+      "Yılbaşı hediyesi, Sevgililer Günü'nden farklı olarak hem romantik hem de kış aylarında gerçekten kullanılacak bir şey olabilir. En iyi hediyeler genelde bu ikisini birleştirir: bir battaniyenin yanına eklenmiş bir not ya da bir albümün içine saklanmış bir bilet.",
       "Aşağıdaki fikirler, sevgilinin ilgi alanlarına ve bütçene göre seçildi. Her birinde neden iyi bir seçim olduğunu ve nereden bakabileceğini bulabilirsin.",
     ],
     tips: [
@@ -87,18 +87,18 @@ const baseGuides: Guide[] = [
   {
     slug: "sevgililer-gunu-hediyesi",
     updated: "2026-11-08",
-    title: "Sevgililer günü hediyesi",
+    title: "Sevgililer Günü hediyesi",
     metaTitle: "Sevgililer Günü Hediyesi: 14 Şubat İçin Fikirler",
     metaDescription:
-      "Sevgililer günü için anlamlı hediye fikirleri. Kişiye özel hediyeler, romantik deneyimler ve her bütçeye uygun 14 Şubat önerileri.",
+      "Sevgililer Günü için anlamlı hediye fikirleri. Kişiye özel hediyeler, romantik deneyimler ve her bütçeye uygun 14 Şubat önerileri.",
     emoji: "❤️",
     intro: [
       "14 Şubat hediyesi pahalı olmak zorunda değil, ama düşünülmüş olmak zorunda. Kişiye özel bir poster, birlikte gidilecek bir atölye ya da \"Şu an aç\" mektupları, sıradan bir çiçek buketinden çok daha uzun süre hatırlanır.",
       "Aşağıda romantik olduğu kadar özgün olan fikirler var. Bütçene ve sevgilinin tarzına göre seçebilirsin.",
     ],
     tips: [
-      "Sevgililer günü haftasında restoranlar dolar. Rezervasyonu en az bir hafta önceden yap.",
-      "Kişiye özel ürünlerin üretim süresi uzayabilir, siparişi Şubat başında ver.",
+      "Sevgililer Günü haftasında restoranlar dolar. Rezervasyonu en az bir hafta önceden yap.",
+      "Kişiye özel ürünlerin üretim süresi uzayabilir, siparişi şubat başında ver.",
       "Bir deneyim ve küçük bir somut hediye birleşimi genelde en iyi sonucu verir.",
     ],
     filter: { recipients: ["kiz-arkadas", "erkek-arkadas"], occasions: ["romantik"], only: true },
@@ -145,14 +145,14 @@ const baseGuides: Guide[] = [
     title: "Anneye hediye",
     metaTitle: "Anneye Hediye: Anneler Günü ve Doğum Günü İçin Fikirler",
     metaDescription:
-      "Anneye ne hediye alınır? Anneler günü ve doğum günü için kişiye özel, işe yarayan ve duygusal hediye önerileri.",
+      "Anneye ne hediye alınır? Anneler Günü ve doğum günü için kişiye özel, işe yarayan ve duygusal hediye önerileri.",
     emoji: "🌷",
     intro: [
       "Annelerin çoğu \"Bana bir şey alma\" der. Ama bu, onları en çok mutlu edecek şeyin düşünülmüş olmak olduğu anlamına gelir. Kendine almaya kıyamadığı şeyler (spa, iyi bir parfüm, kaliteli bir mutfak aleti) çoğu zaman en isabetli seçimdir.",
       "Duygusal hediyeler de anneler için çok değerli: aile fotoğraflarından bir albüm ya da torunların fotoğraflarını uzaktan yükleyebileceğin dijital bir çerçeve.",
     ],
     tips: [
-      "Anneler günü mayısın ikinci pazarıdır. Çiçek ve kişiye özel ürün siparişlerini birkaç gün önceden ver.",
+      "Anneler Günü mayısın ikinci pazarıdır. Çiçek ve kişiye özel ürün siparişlerini birkaç gün önceden ver.",
       "Ona birlikte zaman geçireceğiniz bir deneyim hediye etmek, uzun yıllar hatırlanan bir anı olur.",
     ],
     filter: { recipients: ["anne"], occasions: ["anneler-gunu"] },
@@ -163,13 +163,13 @@ const baseGuides: Guide[] = [
     title: "Babaya hediye",
     metaTitle: "Babaya Hediye: Babalar Günü ve Doğum Günü İçin Fikirler",
     metaDescription:
-      "Babaya ne hediye alınır? Babalar günü ve doğum günü için teknoloji, bakım, aksesuar ve kişiye özel hediye önerileri.",
+      "Babaya ne hediye alınır? Babalar Günü ve doğum günü için teknoloji, bakım, aksesuar ve kişiye özel hediye önerileri.",
     emoji: "👔",
     intro: [
       "Babalar genelde ihtiyacı olan şeyi kendisi alır ya da hiç almaz. Bu yüzden en iyi hediyeler, eskiyen bir şeyin kaliteli bir versiyonu (cüzdan, saat, termos) ya da hiç denemediği ama seveceği bir şeydir (masaj tabancası, dijital çerçeve).",
     ],
     tips: [
-      "Babalar günü haziranın üçüncü pazarıdır.",
+      "Babalar Günü haziranın üçüncü pazarıdır.",
       "Teknolojiyle arası iyi değilse kurulumu kolay ürünler seç ya da kurulumu sen yap.",
     ],
     filter: { recipients: ["baba"], occasions: ["babalar-gunu"] },
@@ -315,11 +315,11 @@ const baseGuides: Guide[] = [
     title: "Öğretmene hediye",
     metaTitle: "Öğretmene Hediye: Öğretmenler Günü İçin Anlamlı Fikirler",
     metaDescription:
-      "Öğretmenler günü ve yıl sonu için öğretmene hediye önerileri. Kişiye özel kalem, kupa, anı albümü ve bütçe dostu, samimi hediye fikirleri.",
+      "Öğretmenler Günü ve yıl sonu için öğretmene hediye önerileri. Kişiye özel kalem, kupa, anı albümü ve bütçe dostu, samimi hediye fikirleri.",
     emoji: "🍎",
     intro: [
       "Öğretmene verilen hediyenin değeri fiyatında değil, içtenliğinde. Öğrencinin kendi eliyle yazdığı bir kart ya da sınıfça hazırlanan bir anı albümü, öğretmenlerin yıllarca sakladığı hediyelerin başında gelir.",
-      "Aşağıda öğretmenlerin gerçekten kullanabileceği, bütçe dostu ve samimi hediye fikirleri var. Öğretmenler günü 24 Kasım'da kutlanır; yıl sonu ve mezuniyet için de aynı fikirler uygundur.",
+      "Aşağıda öğretmenlerin gerçekten kullanabileceği, bütçe dostu ve samimi hediye fikirleri var. Öğretmenler Günü 24 Kasım'da kutlanır; yıl sonu ve mezuniyet için de aynı fikirler uygundur.",
     ],
     tips: [
       "Okulun ya da velilerin hediye konusundaki kurallarını önceden öğren; bazı okullar pahalı hediyeleri kabul etmez.",
@@ -329,8 +329,8 @@ const baseGuides: Guide[] = [
     filter: { occasions: ["ogretmen-gunu"], only: true },
     faq: [
       {
-        q: "Öğretmenler günü ne zaman?",
-        a: "Türkiye'de öğretmenler günü her yıl 24 Kasım'da kutlanır.",
+        q: "Öğretmenler Günü ne zaman?",
+        a: "Türkiye'de Öğretmenler Günü her yıl 24 Kasım'da kutlanır.",
       },
       {
         q: "Öğretmene pahalı hediye almak doğru mu?",
@@ -390,7 +390,7 @@ const baseGuides: Guide[] = [
     tips: [
       "Mağaza sayfalarında fiyata göre sıralama ve filtreleme kullanarak bütçene uyan modelleri bul.",
       "İki küçük hediyeyi bir tema altında birleştirmek, tek bir orta fiyatlı hediyeden daha etkileyici olabilir.",
-      "Kampanya dönemlerinde (yılbaşı, sevgililer günü öncesi) fiyatlar değişebilir; birkaç mağazayı karşılaştır.",
+      "Kampanya dönemlerinde (yılbaşı, Sevgililer Günü öncesi) fiyatlar değişebilir; birkaç mağazayı karşılaştır.",
     ],
     filter: { budgets: [1, 2] },
     faq: [

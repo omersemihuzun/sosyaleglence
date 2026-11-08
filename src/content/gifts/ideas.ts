@@ -327,7 +327,7 @@ export const ideas: GiftIdea[] = [
   },
   {
     id: "lego",
-    name: "Yetişkinler için LEGO seti",
+    name: "Yetişkinler için yapı seti",
     emoji: "🧱",
     why: "Çiçek buketleri, ünlü binalar, arabalar. Yapması rahatlatıcı, bitince dekorasyon olarak da kullanılabiliyor.",
     query: "lego yetişkin çiçek buketi",
@@ -897,7 +897,7 @@ export const ideas: GiftIdea[] = [
     id: "taki-kutusu",
     name: "Takı kutusu",
     emoji: "💎",
-    why: "Takılarını düzenli tutmak isteyen biri için. Seyahat boyu modeller valizde de işe yarar.",
+    why: "Takılarını düzenli tutmak isteyen biri için. Seyahat tipi modeller valizde de işe yarar.",
     query: "takı kutusu",
     budget: 1,
     recipients: ["kiz-arkadas", "anne", "kardes", "arkadas"],
@@ -925,7 +925,7 @@ export const ideas: GiftIdea[] = [
     interests: ["moda", "spor"],
   },
 
-  // ——— Öğretmenler günü
+  // ——— Öğretmenler Günü
   {
     id: "ogretmen-kalem",
     name: "Kişiye özel kalem",

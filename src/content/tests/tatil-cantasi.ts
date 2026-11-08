@@ -129,13 +129,13 @@ export const tatilCantasi: Test = {
     },
     {
       id: "ozgur-ruh",
-      name: "Özgür Ruhlu Aşık",
+      name: "Özgür Ruhlu Âşık",
       emoji: "🕊️",
       tagline: "Sev ama kafese koyma.",
       profile: { romantizm: 15, ozgurluk: 80, plan: 10, macera: 30 },
       color: "#0E7C66",
       description: [
-        "Çantan neredeyse boş: bir mayo, bir diş fırçası, telefon evde. Sen eşyaya değil, ana bağlanıyorsun. Rezervasyonsuz yollar ve plansız günler seni mutlu ediyor.",
+        "Çantan neredeyse boş: bir mayo, bir diş fırçası, telefon evde. Sen eşyaya değil, yaşadığın ana bağlanıyorsun. Rezervasyonsuz yollar ve plansız günler seni mutlu ediyor.",
         "Aşkta da alan istiyorsun. Seni sürekli kontrol eden, her saat nerede olduğunu soran biriyle boğulursun. Ama doğru kişi senin özgürlüğünü kısıtlamaz, ona eşlik eder.",
         "Senin sevgin hafif ama sahici. Tek uyarı: Bağlanmaktan korktuğun için değil, gerçekten istediğin için özgür olduğundan emin ol.",
       ],

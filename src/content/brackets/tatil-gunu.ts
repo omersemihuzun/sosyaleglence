@@ -15,7 +15,7 @@ export const tatilGunu: Bracket = {
     { id: "gun-dogumu-deniz", name: "Gün doğarken denize girmek", emoji: "🌊", detail: "Plaj bomboş, su cam gibi", meaning: "Günün en sessiz anını kendine saklamayı seviyorsun. Kalabalık başlamadan dünyayla baş başa kalmak sana enerji veriyor." },
   { id: "ogle-uykusu", name: "Öğlene kadar uyumak", emoji: "😴", detail: "Alarm yok, perdeler kapalı", meaning: "Senin için tatil, hiçbir şeye yetişmek zorunda olmamak. Dinlenmeyi ertelemiyorsun, hakkını veriyorsun." },
     { id: "kahvalti-manzara", name: "Manzaralı uzun kahvaltı", emoji: "🥐", detail: "Terasta, saatlerce", meaning: "Yavaş ve keyifli başlangıçlar senin tarzın. Güzel bir masa ve güzel bir manzara, günün geri kalanını belirliyor." },
-    { id: "tekne-turu", name: "Koy koy tekne turu", emoji: "🚤", detail: "Her durakta başka bir mavi", meaning: "Keşfetmeyi ama yorulmadan keşfetmeyi seviyorsun. Gün boyu değişen manzaralar seni mutlu ediyor." },
+    { id: "tekne-turu", name: "Koy koy tekne turu", emoji: "🚤", detail: "Her durakta başka bir mavi", meaning: "Yorulmadan keşfetmeyi seviyorsun. Gün boyu değişen manzaralar seni mutlu ediyor." },
     { id: "dag-yuruyusu", name: "Zirveye yürüyüş", emoji: "🥾", detail: "Ter, nefes, en tepede manzara", meaning: "Emek verdiğin şeyin tadını daha çok alıyorsun. Tatilde bile kendini zorlamak sana iyi geliyor." },
     { id: "sehir-turu", name: "Bilmediğin bir şehrin sokakları", emoji: "🗺️", detail: "Harita kapalı, sadece yürümek", meaning: "Meraklısın. Rehber kitaplardaki yerlerden çok, kendi bulduğun küçük köşeler seni heyecanlandırıyor." },
     { id: "spa", name: "Bütün gün spa", emoji: "💆", detail: "Masaj, hamam, sauna", meaning: "Kendine iyi bakmayı biliyorsun. Tatil senin için bedenini ve zihnini sıfırlama zamanı." },

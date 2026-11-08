@@ -94,7 +94,7 @@ export const grupRolu: Test = {
       text: "Gruptan biri herkesin içinde kırıldı ve sustu.",
       options: [
         { text: "Hemen yanına gidip yalnız konuşmak isterim.", scores: { terapist: 3 } },
-        { text: "Konuyu değiştirip ortamı dağıtırım.", scores: { kaos: 2 } },
+        { text: "Bir espriyle konuyu değiştiririm.", scores: { kaos: 2 } },
         { text: "Onu kimin neden kırdığını fark etmişimdir. Sonra ona söylerim.", scores: { gozlemci: 2, terapist: 1 } },
         { text: "Akşamın kalanını ona iyi gelecek şekilde yeniden düzenlerim.", scores: { organizator: 2 } },
       ],
@@ -167,7 +167,7 @@ export const grupRolu: Test = {
         "Bunu yapıyorsun çünkü arkadaşlarını bir arada görmek seni mutlu ediyor. Planlar suya düştüğünde en çok senin canının sıkılması da bu yüzden.",
         "Dikkat: Organizatörler çoğu zaman emeklerinin görünmez olduğunu hisseder. Arada bir \"Bu sefer başkası ayarlasın\" demek hem seni dinlendirir hem de grubun sorumluluğu paylaşmasını sağlar.",
       ],
-      strengths: ["Planları gerçeğe dönüştürüyorsun", "Güvenilir ve düzenlisin", "Grubu bir arada tutan yapıştırıcısın"],
+      strengths: ["Planları gerçeğe dönüştürüyorsun", "Güvenilir ve düzenlisin", "Grubu bir arada tutan kişisin"],
       watchOut: ["Her şeyi üstlenmek seni yorabilir", "Planlar bozulduğunda bunu kişisel algılama", "Kontrolü bırakmak bazen en güzel anları yaratır"],
       bestMatch: "kaos-ajani",
       giftLink: { href: "/hediye/arkadasa-hediye", label: "Gruptaki herkes için arkadaş hediyeleri" },
@@ -196,7 +196,7 @@ export const grupRolu: Test = {
       profile: { organizator: 10, terapist: 15, kaos: 75, gozlemci: 10 },
       color: "#D7102F",
       description: [
-        "\"Hadi şimdi gidelim\" diyen, sürprizi yanlışlıkla ağzından kaçıran, sıradan bir akşamı unutulmaz bir maceraya dönüştüren kişi sensin. Sen olmadan buluşmalar bir şeyler eksik geçiyor.",
+        "\"Hadi şimdi gidelim\" diyen, sürprizi yanlışlıkla ağzından kaçıran, sıradan bir akşamı unutulmaz bir maceraya dönüştüren kişi sensin. Sen olmadığında buluşmalarda hep bir şey eksik kalıyor.",
         "Enerjin bulaşıcı ve insanlar seninle kendilerini daha özgür hissediyor. Grubun anlatmaktan hiç bıkmadığı hikâyelerin çoğunda başrol sende.",
         "Kaosun güzel bir tarafı var ama bazen birinin planını ya da sınırını aşabiliyor. Ortamı okumayı bilen bir kaos ajanı, grubun en sevilen kişisi olur.",
       ],

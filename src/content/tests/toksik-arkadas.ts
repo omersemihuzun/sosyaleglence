@@ -86,7 +86,7 @@ export const toksikArkadas: Test = {
       ],
     },
     {
-      text: "Arkadaşının Instagram'ı patladı, takipçileri hızla artıyor.",
+      text: "Arkadaşının sosyal medya hesabı patladı, takipçileri hızla artıyor.",
       options: [
         { text: "Paylaşımlarını desteklerim, yorum yaparım.", scores: {} },
         { text: "Artık beğenmemeye başlarım.", scores: { kiskanclik: 3 } },
@@ -199,7 +199,7 @@ export const toksikArkadas: Test = {
       profile: { kiskanclik: 15, dedikodu: 80, cikar: 15, yargi: 25 },
       color: "#B0287A",
       description: [
-        "Kim kiminle görüşüyor, kim kimle küs, kim işten ayrılıyor... Hepsini biliyorsun ve paylaşmak sana bir bağ kurma yolu gibi geliyor. Hikâye anlatmayı seviyorsun ve çok da iyi anlatıyorsun.",
+        "Kim kimle görüşüyor, kim kime küs, kim işten ayrılıyor... Hepsini biliyorsun ve paylaşmak sana bir bağ kurma yolu gibi geliyor. Hikâye anlatmayı seviyorsun ve çok da iyi anlatıyorsun.",
         "Ama arkadaşların bir süre sonra bir şeyi fark eder: Sana anlatılan sır, bir şekilde başkalarına ulaşıyor. Ve sana bir şey anlatmadan önce iki kez düşünmeye başlarlar.",
         "Dedikodu kısa süreli bir yakınlık hissi verir ama uzun vadede güveni yok eder. Bir hikâyeyi anlatmadan önce sor: \"O burada olsaydı bunu anlatır mıydım?\"",
       ],
@@ -216,7 +216,7 @@ export const toksikArkadas: Test = {
       color: "#3B6FD9",
       description: [
         "Arkadaşlıklarını genellikle ihtiyaç anında hatırlıyorsun: taşınma, borç, bir tanıdık, bir iyilik. Bunu kötü niyetle yapmıyorsun, sadece hayatın yoğun ve aklına o zaman geliyor.",
-        "Ama karşı taraf için bu tek yönlü bir ilişki gibi hissettiriyor. Sen yokken o sana yazdığında cevap gecikiyor, sen ihtiyaç duyduğunda ise hemen ortaya çıkıyorsun.",
+        "Ama karşı taraf için bu tek yönlü bir ilişki gibi hissettiriyor. O sana yazdığında cevabın gecikiyor, ama sen bir şeye ihtiyaç duyduğunda hemen ortaya çıkıyorsun.",
         "Arkadaşlık bir banka hesabı gibi: Sadece çekim yaparsan bir gün bakiye biter. Hiçbir şey istemeden atılmış bir \"Nasılsın?\" mesajı, en büyük iyilikten daha değerli olabilir.",
       ],
       strengths: ["Pratik ve çözüm odaklısın", "Ne istediğini açıkça söyleyebiliyorsun", "Geniş bir çevren var"],

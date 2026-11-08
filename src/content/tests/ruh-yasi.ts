@@ -155,7 +155,7 @@ export const ruhYasi: Test = {
         "Ruhen 35 olmak, deneyimle merakın buluştuğu nokta. Hem kendi alışkanlıklarını seviyorsun hem de arada sırada menüde yeni bir şey deniyorsun.",
         "Çevrendeki herkes senden tavsiye istiyor olabilir, çünkü sen hem eski hem yeni dünyayı anlıyorsun. Bu dengeyi korumak senin süper gücün.",
       ],
-      strengths: ["Dengeli ve olgunsun", "Hem eskiyi hem yeniyi anlarsın", "İyi bir tavsiye verensin"],
+      strengths: ["Dengeli ve olgunsun", "Hem eskiyi hem yeniyi anlarsın", "İyi tavsiye verirsin"],
       watchOut: ["Fazla temkinli olabilirsin", "Kendine ayırdığın zamanı ihmal etme"],
       bestMatch: "ruhen-22",
     },
@@ -183,7 +183,7 @@ export const ruhYasi: Test = {
       profile: { trend: 10, oyun: 10, klasik: 45, sakinlik: 80 },
       color: "#5A3E5E",
       description: [
-        "Sabah altıda balkonda bir bardak ıhlamur, yanında ev kurabiyesi, kucağında kafenin kedisi. Sen hayatın temposunu kendin belirleyen birisin.",
+        "Sabah altıda balkonda bir bardak ıhlamur, yanında ev kurabiyesi, kucağında bir kedi. Sen hayatın temposunu kendin belirleyen birisin.",
         "Ruhen 80 olmak bilgelik demek. Acele etmeden yaşamanın, küçük anların ve sessizliğin kıymetini biliyorsun. İnsanlar yanında yavaşlıyor ve rahatlıyor.",
         "Bu huzur bulunmaz bir şey. Sadece bazen gece on birde dışarı çıkıp çılgın bir şey yapmak da ruhuna iyi gelebilir. Torunlarına anlatacak hikâyeler lazım.",
       ],

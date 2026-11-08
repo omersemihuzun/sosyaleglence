@@ -167,7 +167,7 @@ export const situationship: Test = {
       color: "#2F7D6D",
       description: [
         "Ne olduğunuzu biliyorsunuz, planlarınız var, emek karşılıklı. Arkadaşların sana \"Siz ne oluyorsunuz?\" diye sormuyor bile, çünkü cevap belli.",
-        "Bu, her şeyin kusursuz olduğu anlamına gelmiyor. Ama belirsizliğin yarattığı o sürekli tahmin etme yorgunluğunu yaşamıyorsun. Enerjini ilişkiyi anlamaya değil, yaşamaya harcıyorsun.",
+        "Her şey kusursuz demek değil bu. Ama belirsizliğin yarattığı o sürekli tahmin etme yorgunluğunu yaşamıyorsun. Enerjini ilişkiyi anlamaya değil, yaşamaya harcıyorsun.",
         "Bu netliği korumanın yolu da aynı: konuşmaya devam etmek. Bugün net olan şey, konuşulmazsa yarın griye dönebilir.",
       ],
       strengths: ["İletişiminiz açık", "Karşılıklı emek var", "Geleceği birlikte konuşabiliyorsunuz"],
@@ -210,12 +210,12 @@ export const situationship: Test = {
       id: "sicak-soguk",
       name: "Isıt-Soğut Döngüsü",
       emoji: "🎢",
-      tagline: "Bir gün dünyanın merkezisin, ertesi gün görüldü bile atılmıyor.",
+      tagline: "Bir gün dünyanın merkezisin, ertesi gün mesajın görülmüyor bile.",
       profile: { belirsizlik: 30, tektaraf: 25, sicaksoguk: 80 },
       color: "#C2410C",
       description: [
         "En güzel günleriniz gerçekten çok güzel. O yüzden kayboluşlar daha çok acıtıyor. Bir hafta çok ilgili, bir hafta ortada yok; sen de bu iniş çıkışın içinde sürekli tetikte yaşıyorsun.",
-        "Bu döngü beyinde bir tür bağımlılık gibi çalışır: Belirsiz ödüller, istikrarlı olanlardan daha çok bağlar. Bu yüzden bırakmak o kadar zor.",
+        "Psikolojide buna aralıklı pekiştirme deniyor: Ne zaman geleceği belli olmayan ilgi, insanı istikrarlı ilgiden bile daha sıkı bağlayabiliyor. Bırakmanın bu kadar zor olması bundan.",
         "Kendine sor: Beni mutlu eden o, yoksa geri döndüğü anın rahatlaması mı? İstikrar sıkıcı değil; huzurlu.",
       ],
       strengths: ["Güçlü bir çekim yaşıyorsunuz", "İyi anlarınız gerçekten çok iyi"],

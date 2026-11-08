@@ -2,7 +2,7 @@ import type { Test } from "@/lib/types";
 
 export const sofraSehir: Test = {
   slug: "sofra-kur-sehir-testi",
-  title: "Bir Sofra Kur, Sana Hangi Şehri Yakıştıralım",
+  title: "Bir Sofra Kur, Sana Hangi Şehri Yakıştıralım?",
   summary: "Kahvaltıdan tatlıya kendi sofranı kur. Sonunda ruhunun hangi şehirde yaşadığını söyleyelim.",
   intro:
     "Soru yok, sadece sofra var. Her adımda dört seçenekten canının çektiğini seç. Kurduğun sofradan senin hangi şehrin insanı olduğunu tahmin edeceğiz. Tamamen eğlence, ama şaşırabilirsin.",
@@ -33,7 +33,7 @@ export const sofraSehir: Test = {
       options: [
         { emoji: "🐟", text: "Izgara levrek", scores: { deniz: 2 } },
         { emoji: "🍢", text: "Közde kebap", scores: { gelenek: 2 } },
-        { emoji: "🌽", text: "Hamsili pilav", scores: { doga: 2 } },
+        { emoji: "🍚", text: "Hamsili pilav", scores: { doga: 2 } },
         { emoji: "🍣", text: "Füzyon bir tabak", scores: { tempo: 2 } },
       ],
     },
@@ -50,7 +50,7 @@ export const sofraSehir: Test = {
       text: "Mezeleri seç.",
       options: [
         { emoji: "🌿", text: "Ot kavurma", scores: { deniz: 1, doga: 1 } },
-        { emoji: "🌰", text: "Acılı ezme", scores: { gelenek: 2 } },
+        { emoji: "🌶️", text: "Acılı ezme", scores: { gelenek: 2 } },
         { emoji: "🧀", text: "Peynir tabağı", scores: { tempo: 1, deniz: 1 } },
         { emoji: "🍄", text: "Mantar sote", scores: { doga: 2 } },
       ],

@@ -236,13 +236,13 @@ export const sosyalPil: Test = {
       color: "#8E3B63",
       description: [
         "Kendi alanın senin şarj istasyonun. Kalabalıklar, uzun sohbetler ve sürpriz davetler seni yoruyor. Bir plan iptal olduğunda içinden küçük bir sevinç geçmesi bu yüzden.",
-        "Bu, insanları sevmediğin anlamına gelmiyor. Az ama derin ilişkiler kuruyorsun. Seni tanıyan birkaç kişi, ne kadar sadık ve iyi bir dost olduğunu çok iyi biliyor.",
+        "İnsanları sevmediğinden değil; sadece az ama derin ilişkiler kuruyorsun. Seni tanıyan birkaç kişi, ne kadar sadık ve iyi bir dost olduğunu çok iyi biliyor.",
         "Yalnız kalmak sana iyi geliyor ve bu bir eksiklik değil. Sadece arada bir konfor alanının dışına küçük bir adım atmak, hayatına beklenmedik güzellikler katabilir.",
       ],
       strengths: ["Kendinle vakit geçirmekten keyif alıyorsun", "Az ama derin dostluklar kuruyorsun", "İyi bir dinleyicisin"],
       watchOut: ["Uzun süre geri çekilmek yalnızlığa dönüşebilir", "Önemli insanlara arada bir \"seni düşünüyorum\" demeyi unutma"],
       bestMatch: "planli-sosyal",
-      giftLink: { href: "/hediye?ilgi=ev,kitap#bulucu", label: "Evde şarj olmalık battaniye ve kitap hediyeleri" },
+      giftLink: { href: "/hediye?ilgi=ev,kitap#bulucu", label: "Evde şarj olmak için battaniye ve kitap hediyeleri" },
     },
   ],
 };
