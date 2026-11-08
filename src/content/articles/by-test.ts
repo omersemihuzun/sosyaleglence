@@ -5,9 +5,11 @@ export const articleByTest: Record<string, string> = {
   "red-flag-testi": "iliskide-red-flagler",
   "sevgi-dili-testi": "5-sevgi-dili",
   "situationship-testi": "situationship-nedir",
-  "ne-kadar-delulusun-testi": "situationship-nedir",
+  "ne-kadar-delulusun-testi": "delulu-ne-demek",
   "exini-unuttun-mu-testi": "exi-unutmak",
   "toksik-arkadas-testi": "toksik-arkadaslik",
-  "arkadas-grubundaki-rolun-testi": "toksik-arkadaslik",
   "sosyal-pil-testi": "sosyal-enerji-rehberi",
+  "flort-tarzi-testi": "ilk-bulusmada-ne-konusulur",
+  "iliskide-kim-baskin-testi": "kiskanclik-mi-sevgi-mi",
+  "arkadas-grubundaki-rolun-testi": "arkadaslikta-sinir-koymak",
 };

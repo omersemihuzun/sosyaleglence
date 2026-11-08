@@ -7,6 +7,14 @@ import { situationshipRehber } from "./situationship";
 import { exRehber } from "./ex";
 import { toksikArkadaslik } from "./toksik-arkadaslik";
 import { sosyalEnerji } from "./sosyal-enerji";
+import { sevgiliyeHediye } from "./sevgiliye-hediye";
+import { ilkBulusmaRehber } from "./ilk-bulusma";
+import { deluluRehber } from "./delulu";
+import { ghostingRehber } from "./ghosting";
+import { uzakMesafeRehber } from "./uzak-mesafe";
+import { burcUyumuRehber } from "./burc-uyumu";
+import { sinirKoymakRehber } from "./sinir-koymak";
+import { kiskanclikMiSevgiMi } from "./kiskanclik-mi-sevgi-mi";
 
 export const articles: Article[] = [
   baglanmaStilleri,
@@ -17,6 +25,14 @@ export const articles: Article[] = [
   exRehber,
   toksikArkadaslik,
   sosyalEnerji,
+  sevgiliyeHediye,
+  ilkBulusmaRehber,
+  deluluRehber,
+  ghostingRehber,
+  uzakMesafeRehber,
+  burcUyumuRehber,
+  sinirKoymakRehber,
+  kiskanclikMiSevgiMi,
 ];
 
 export function getArticle(slug: string): Article | undefined {
