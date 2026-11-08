@@ -28,28 +28,7 @@ const root = process.cwd();
 const scoring = await import(pathToFileURL(join(root, "src/lib/scoring.ts")).href);
 const strict = process.argv.includes("--sıkı") || process.argv.includes("--strict");
 
-const files: [string, string][] = [
-  ["kiskanclik.ts", "kiskanclik"],
-  ["red-flag.ts", "redFlag"],
-  ["baglanma.ts", "baglanma"],
-  ["ex.ts", "ex"],
-  ["sevgi-dili.ts", "sevgiDili"],
-  ["flort.ts", "flort"],
-  ["sosyal-pil.ts", "sosyalPil"],
-  ["grup-rolu.ts", "grupRolu"],
-  ["baskinlik.ts", "baskinlik"],
-  ["toksik-arkadas.ts", "toksikArkadas"],
-  ["sofra-sehir.ts", "sofraSehir"],
-  ["tatil-cantasi.ts", "tatilCantasi"],
-  ["mevsim.ts", "mevsim"],
-  ["ruh-yasi.ts", "ruhYasi"],
-  ["situationship.ts", "situationship"],
-  ["delulu.ts", "delulu"],
-  ["sevgili-tipi.ts", "sevgiliTipi"],
-  ["kavga-tarzi.ts", "kavgaTarzi"],
-  ["iliskiye-hazir.ts", "iliskiyeHazir"],
-  ["guven-sorunu.ts", "guvenSorunu"],
-];
+const { testDosyalari: files } = await import(pathToFileURL(join(root, "scripts/test-dosyalari.ts")).href) as { testDosyalari: [string, string][] };
 
 type Opt = { text: string; scores: Record<string, number> };
 type Q = { text: string; options: Opt[] };

@@ -1,0 +1,23 @@
+/** Kalibrasyon ve rapor betiklerinin okuduğu test dosyaları: [dosya, dışa aktarılan ad]. Yeni test buraya da eklenir. */
+export const testDosyalari: [string, string][] = [
+  ["kiskanclik.ts", "kiskanclik"],
+  ["red-flag.ts", "redFlag"],
+  ["baglanma.ts", "baglanma"],
+  ["ex.ts", "ex"],
+  ["sevgi-dili.ts", "sevgiDili"],
+  ["flort.ts", "flort"],
+  ["sosyal-pil.ts", "sosyalPil"],
+  ["grup-rolu.ts", "grupRolu"],
+  ["baskinlik.ts", "baskinlik"],
+  ["toksik-arkadas.ts", "toksikArkadas"],
+  ["sofra-sehir.ts", "sofraSehir"],
+  ["tatil-cantasi.ts", "tatilCantasi"],
+  ["mevsim.ts", "mevsim"],
+  ["ruh-yasi.ts", "ruhYasi"],
+  ["situationship.ts", "situationship"],
+  ["delulu.ts", "delulu"],
+  ["sevgili-tipi.ts", "sevgiliTipi"],
+  ["kavga-tarzi.ts", "kavgaTarzi"],
+  ["iliskiye-hazir.ts", "iliskiyeHazir"],
+  ["guven-sorunu.ts", "guvenSorunu"],
+];

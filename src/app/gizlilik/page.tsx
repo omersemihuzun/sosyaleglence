@@ -31,8 +31,11 @@ export default function PrivacyPage() {
           <ul className="mt-3 list-disc space-y-3 pl-5">
             <li>
               <strong>Anonim sonuç sayaçları:</strong> Bir testi bitirdiğinde hangi sonucun çıktığı, bir turnuvada hangi
-              seçeneğin hangisini yendiği ve &quot;Bunu mu O mu?&quot; oyları birer sayaç olarak artırılır. Cevapların tek
-              tek, kişiye bağlı olarak saklanmaz. Amaç &quot;Bu sonucu alanların %20&apos;si&quot; gibi istatistikleri göstermektir.
+              seçeneğin hangisini yendiği ve &quot;Bunu mu O mu?&quot; oyları birer sayaç olarak artırılır. Testleri
+              geliştirmek için ayrıca her sorudaki şıkların kaç kez seçildiği, testi kaç kişinin başlatıp bitirdiği,
+              yarıda bırakılan soru ve ortalama çözüm süresi toplam sayaç olarak tutulur. Cevapların tek tek, kişiye
+              bağlı olarak saklanmaz. Amaç &quot;Bu sonucu alanların %20&apos;si&quot; gibi istatistikleri göstermek ve
+              soruları iyileştirmektir.
             </li>
             <li>
               <strong>Karşılaştırma bağlantıları:</strong> &quot;Karşılaştır&quot; özelliğini kullanırsan test skorların ve

@@ -47,3 +47,22 @@ test("bağlantıyla gelen ziyaretçiye testi çöz daveti gösterilir", async ({
   await page.goto("/testler/kiskanclik-testi/sonuc/radar");
   await expect(page.getByRole("link", { name: "Testi çöz" })).toHaveAttribute("href", "/testler/kiskanclik-testi");
 });
+
+test("test hunisi: başlatma ve bitiş anonim olarak bildirilir, cevaplar soru sayısı kadar", async ({ page, consoleErrors }) => {
+  void consoleErrors;
+  const olaylar: { olay: string; cevaplar?: number[]; sure?: number }[] = [];
+  await page.route("**/api/istatistik/huni", async (route) => {
+    olaylar.push(JSON.parse(route.request().postData() ?? "{}"));
+    await route.fulfill({ status: 200, contentType: "application/json", body: '{"ok":true}' });
+  });
+  await page.goto("/testler/sevgi-dili-testi");
+  await page.getByRole("button", { name: "Teste başla" }).click();
+  const total = Number(await page.getByRole("progressbar", { name: "İlerleme" }).getAttribute("aria-valuemax"));
+  expect(total).toBeGreaterThanOrEqual(10);
+  await answerAll(page, 1, total);
+  await expect(page).toHaveURL(/\/sonuc\//, { timeout: 15_000 });
+  await expect.poll(() => olaylar.map((o) => o.olay)).toEqual(["basla", "bitir"]);
+  const bitir = olaylar[1];
+  expect(bitir.cevaplar).toHaveLength(total);
+  expect(bitir.sure).toBeGreaterThan(0);
+});

@@ -49,9 +49,13 @@ docs/                 Operasyon, domain geçişi, rakip analizi, erişilebilirli
 
 1. `src/content/tests/` içinde mevcut bir testi kopyala. Gerçekçi senaryolar yaz; 4 şıktan hiçbiri bariz doğru olmasın.
 2. Her sonucun `profile` alanına niyetini yaz (ör. kontrol yüksek: `{ kontrol: 80, ... }`).
-3. Testi `src/content/tests/index.ts` ve `scripts/kalibre.ts` listelerine ekle.
-4. `npm run kalibre`: isabet %75'in altındaysa sonuçlar ayrışmıyor, puanları gözden geçir.
+3. Testi `src/content/tests/index.ts` ve `scripts/test-dosyalari.ts` listelerine ekle.
+4. `npm run kalibre`: kalibre eder ve `docs/test-metrikleri.md` raporunu üretir. İsabet, dağılım (zorunlu) ve zorluk
+   metrikleri (zor isabet, sınırda sonuç, tek boyutlu şık, etkisiz soru, ölü şık, uzunluk ipucu) orada açıklanır.
+   Hedef: testin satırı ✓. `npm run kalibre -- --sıkı` zorluk uyarılarını da hata sayar.
 5. `npm test && npm run seo`.
+6. Yayından sonra `npm run rapor`: gerçek kullanıcıların başlatma/bitirme oranı, bırakılan sorular, ortalama süre ve
+   şık dağılımı (%5 altı ölü, %70 üstü bariz şık). Şık sayaçları soru sürümüne bağlıdır; sorular değişince sıfırdan başlar.
 
 ## Yeni eleme oyunu ve fotoğraf eklemek
 

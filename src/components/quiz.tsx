@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import type { Test } from "@/lib/types";
-import { reportTestResult } from "@/lib/client/stats";
+import { reportTestAbandon, reportTestFinish, reportTestResult, reportTestStart } from "@/lib/client/stats";
 import { encodeScores, pickResult, scoreDimensions } from "@/lib/scoring";
 
 function shuffle(n: number): number[] {
@@ -41,12 +41,39 @@ export function Quiz({ test, compare }: { test: Test; compare?: { code: string; 
     if (started) headingRef.current?.focus({ preventScroll: true });
   }, [current, started]);
 
+  // Huni ölçümü: başlatma, yarıda bırakma (sayfadan ayrılınca) ve bitiş
+  const huni = useRef({ sayiliyor: false, bitti: false, bas: 0, soru: 0 });
+  useEffect(() => {
+    huni.current.soru = current;
+  }, [current]);
+  useEffect(() => {
+    if (!started) return;
+    const h = huni.current;
+    if (!h.bas) {
+      h.bas = Date.now();
+      h.sayiliyor = reportTestStart(test.slug);
+    }
+    const birak = () => {
+      if (!h.sayiliyor || h.bitti) return;
+      h.bitti = true;
+      reportTestAbandon(test.slug, h.soru + 1);
+    };
+    window.addEventListener("pagehide", birak);
+    return () => {
+      window.removeEventListener("pagehide", birak);
+      birak();
+    };
+  }, [started, test.slug]);
+
   function finish(final: number[]) {
     setFinishing(true);
     const scores = scoreDimensions(test, final);
     const result = pickResult(test, scores);
     const s = encodeScores(test, scores);
     reportTestResult(test.slug, result.id);
+    const h = huni.current;
+    if (h.sayiliyor && !h.bitti) reportTestFinish(test.slug, final, h.bas);
+    h.bitti = true;
     try {
       localStorage.setItem(`sonuc:${test.slug}`, JSON.stringify({ result: result.id, s }));
     } catch {
