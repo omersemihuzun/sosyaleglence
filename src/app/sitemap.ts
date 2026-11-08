@@ -23,6 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absoluteUrl("/rehber"), changeFrequency: "weekly", priority: 0.8 },
     ...articles.map((a) => ({ url: absoluteUrl(`/rehber/${a.slug}`), lastModified: a.updated, changeFrequency: "monthly" as const, priority: 0.8 })),
     { url: absoluteUrl("/burclar"), changeFrequency: "monthly", priority: 0.8 },
+    { url: absoluteUrl("/ask-testi"), changeFrequency: "monthly", priority: 0.8 },
     ...burclar.map((b) => ({ url: absoluteUrl(`/burclar/${b.slug}`), changeFrequency: "monthly" as const, priority: 0.7 })),
     ...uyumlar.map((u) => ({ url: absoluteUrl(`/burc-uyumu/${u.slug}`), changeFrequency: "monthly" as const, priority: 0.6 })),
     { url: absoluteUrl("/iletisim"), changeFrequency: "yearly", priority: 0.3 },

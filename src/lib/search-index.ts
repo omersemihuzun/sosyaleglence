@@ -14,6 +14,7 @@ const short = (s: string, n = 90) => (s.length > n ? `${s.slice(0, n - 1).trimEn
 export function buildSearchIndex(): SearchItem[] {
   const out: SearchItem[] = [];
   for (const t of tests) out.push({ k: "test", t: t.title, s: short(t.summary), u: `/testler/${t.slug}`, e: t.emoji });
+  out.push({ k: "test", t: "İsimle aşk testi", s: "İki ismi yaz, aşk uyumunuzu yüzde olarak gör", u: "/ask-testi", e: "💘" });
   for (const b of brackets) out.push({ k: "eleme", t: b.title, s: short(b.summary), u: `/eleme/${b.slug}`, e: b.emoji });
   for (const b of burclar) {
     out.push({ k: "burc", t: `${b.ad} burcu`, s: `${b.tarih}, ${b.element} grubu, yönetici ${b.gezegen}`, u: `/burclar/${b.slug}`, e: b.emoji });

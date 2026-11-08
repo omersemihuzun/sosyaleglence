@@ -52,3 +52,29 @@ test("eski WordPress adresleri yeni sayfalara yönlenir", async ({ page }) => {
   await page.goto("/iletiu015fim/");
   await expect(page).toHaveURL(/\/iletisim$/);
 });
+
+test("isimle aşk testi: boş isimde uyarır, iki isimle sıradan bağımsız aynı puanı verir", async ({ page, consoleErrors }) => {
+  void consoleErrors;
+  await page.goto("/ask-testi");
+  const hesapla = page.locator("[data-hesapla]");
+  await hesapla.click();
+  await expect(page.locator("main [role=alert]")).toContainText("İki ismi de yaz");
+
+  await page.getByLabel("Senin adın").fill("elif");
+  await page.getByLabel("Onun adı").fill("KEREM");
+  await hesapla.click();
+  const sonuc = page.locator("[data-sonuc]");
+  await expect(sonuc).toContainText("Elif");
+  await expect(sonuc).toContainText("Kerem");
+  const puan = sonuc.locator("p.text-cherry");
+  await expect(puan).toHaveText(/%\d+/, { timeout: 15_000 });
+  await page.waitForTimeout(1300);
+  const ilk = await puan.innerText();
+
+  await page.getByLabel("Senin adın").fill("Kerem");
+  await page.getByLabel("Onun adı").fill("Elif");
+  await hesapla.click();
+  await page.waitForTimeout(1300);
+  await expect(puan).toHaveText(ilk);
+  await expect(sonuc.getByRole("link", { name: /WhatsApp/ })).toHaveAttribute("href", /wa\.me/);
+});

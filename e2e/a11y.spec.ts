@@ -14,6 +14,7 @@ const pages = [
   "/eleme/gelecekteki-evini-sec",
   "/eleme/hayalindeki-dugun/sonuc/kir?f=sahil&y=yali,koy",
   "/bunu-mu-o-mu",
+  "/ask-testi",
   "/hediye",
   "/hediye/sevgiliye-yilbasi-hediyesi",
   "/iletisim",

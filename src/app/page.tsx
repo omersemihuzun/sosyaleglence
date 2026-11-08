@@ -131,6 +131,18 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        <div className="sticker mt-5 flex flex-col gap-4 bg-blush p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
+          <div>
+            <h2 className="font-display text-3xl font-extrabold sm:text-4xl">İsimleriniz ne kadar uyumlu?</h2>
+            <p className="mt-1 text-plum-soft">İki ismi yaz, tutku, iletişim, güven ve eğlence puanınızı gör.</p>
+          </div>
+          <Link
+            href="/ask-testi"
+            className="sticker sticker-press shrink-0 bg-cherry px-5 py-3 text-center font-display font-bold text-white"
+          >
+            İsimle aşk testi
+          </Link>
+        </div>
       </section>
 
       <section className="mt-24 border-y-2 border-plum bg-butter">
