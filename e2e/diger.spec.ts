@@ -79,9 +79,8 @@ test("isimle aşk testi: boş isimde uyarır, iki isimle sıradan bağımsız ay
   await expect(sonuc.getByRole("link", { name: /WhatsApp/ })).toHaveAttribute("href", /wa\.me/);
 });
 
-test("isimle aşk testi: story kartı tarayıcıda PNG olarak üretilir", async ({ page, consoleErrors, browserName }) => {
+test("isimle aşk testi: story kartı tarayıcıda PNG olarak üretilir", async ({ page, consoleErrors }) => {
   void consoleErrors;
-  void browserName;
   await page.goto("/ask-testi");
   await page.getByLabel("Senin adın").fill("Şeyma");
   await page.getByLabel("Onun adı").fill("Çağrı");
