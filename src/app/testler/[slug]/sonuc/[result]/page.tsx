@@ -113,6 +113,21 @@ async function ResultPageContent({ params }: { params: PageProps<"/testler/[slug
                 </ul>
               </div>
             </div>
+
+            {result.giftLink && (
+              <Link
+                href={result.giftLink.href}
+                className="sticker sticker-press mt-8 flex items-center gap-4 bg-butter p-5"
+              >
+                <span aria-hidden className="text-4xl">
+                  🎁
+                </span>
+                <span>
+                  <span className="block text-sm font-semibold text-plum-soft">Sana uygun hediyeler</span>
+                  <span className="font-display text-xl leading-tight font-bold">{result.giftLink.label}</span>
+                </span>
+              </Link>
+            )}
           </div>
 
           <aside className="space-y-6 lg:sticky lg:top-6">

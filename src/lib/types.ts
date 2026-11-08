@@ -37,6 +37,8 @@ export type Result = {
   bestMatch: string;
   /** Kart arka plan rengi */
   color: string;
+  /** Bu sonuca uygun hediye sayfası (testten hediyeye köprü) */
+  giftLink?: { href: string; label: string };
 };
 
 export type Test = {

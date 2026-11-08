@@ -18,8 +18,13 @@ function shuffled<T>(arr: T[]): T[] {
  * Bunu mu O mu? Bir soru, iki seçenek. Oy verince herkesin dağılımı görünür.
  * İstatistik altyapısı kapalıysa sadece seçimini işaretler ve devam eder.
  */
-export function PollPlayer({ polls }: { polls: Poll[] }) {
-  const [queue] = useState(() => shuffled(polls));
+export function PollPlayer({ polls, firstId }: { polls: Poll[]; firstId?: string | null }) {
+  // ?soru=<id> ile gelindiyse (ör. ana sayfadaki günün sorusu) o soru ilk sırada
+  const [queue] = useState(() => {
+    const rest = shuffled(polls.filter((p) => p.id !== firstId));
+    const first = polls.find((p) => p.id === firstId);
+    return first ? [first, ...rest] : rest;
+  });
   const [index, setIndex] = useState(0);
   const [choice, setChoice] = useState<"a" | "b" | null>(null);
   const [counts, setCounts] = useState<Counts | null>(null);

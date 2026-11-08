@@ -171,6 +171,7 @@ export const sevgiDili: Test = {
       strengths: ["İnsanları sözlerinle iyileştirebiliyorsun", "Takdir etmeyi biliyorsun", "Duygularını ifade etmekte rahatsın"],
       watchOut: ["Sevgisini sözle değil davranışla gösteren partnerleri yanlış anlayabilirsin", "Eleştiriye karşı hassasiyetin yüksek"],
       bestMatch: "zaman",
+      giftLink: { href: "/hediye?ilgi=kitap,hobi#bulucu", label: "Sözle sevenlere: mektup, albüm ve kişiye özel hediyeler" },
     },
     {
       id: "zaman",
@@ -187,6 +188,7 @@ export const sevgiDili: Test = {
       strengths: ["Anı yaşamayı biliyorsun", "İyi bir dinleyicisin", "İlişkiye gerçek bir dikkat veriyorsun"],
       watchOut: ["Partnerinin ayrı vakit ihtiyacını reddedilme olarak algılayabilirsin", "Yoğun dönemlerde kendini ihmal edilmiş hissedebilirsin"],
       bestMatch: "temas",
+      giftLink: { href: "/hediye?ilgi=deneyim,seyahat#bulucu", label: "Birlikte yaşanacak deneyim hediyeleri" },
     },
     {
       id: "hediye",
@@ -203,6 +205,7 @@ export const sevgiDili: Test = {
       strengths: ["Detayları hatırlıyorsun", "Mükemmel sürprizler hazırlıyorsun", "Küçük şeylerden mutlu olabiliyorsun"],
       watchOut: ["Hediye vermeyen partneri sevgisiz sanma", "Beklentilerini açıkça söyle, ima etme"],
       bestMatch: "soz",
+      giftLink: { href: "/hediye/sevgililer-gunu-hediyesi", label: "Özenle seçilmiş, düşünülmüş hediyeler" },
     },
     {
       id: "hizmet",
@@ -219,6 +222,7 @@ export const sevgiDili: Test = {
       strengths: ["Güvenilir ve çözüm odaklısın", "Sevgini somut olarak gösteriyorsun", "Partnerinin hayatını kolaylaştırıyorsun"],
       watchOut: ["Yaptıklarının fark edilmemesi seni kırabilir, bunu dile getir", "Söz ve temas ihtiyacı olan partnere bazen mesafeli görünebilirsin"],
       bestMatch: "zaman",
+      giftLink: { href: "/hediye?ilgi=ev,mutfak#bulucu", label: "Hayatı kolaylaştıran pratik hediyeler" },
     },
     {
       id: "temas",
@@ -235,6 +239,7 @@ export const sevgiDili: Test = {
       strengths: ["Sıcak ve sevecensin", "İnsanları rahatlatma yeteneğin var", "Anın içinde olmayı biliyorsun"],
       watchOut: ["Temastan kaçınan partneri sevgisiz sanma", "Uzak mesafe dönemleri senin için çok zor olabilir"],
       bestMatch: "zaman",
+      giftLink: { href: "/hediye?ilgi=bakim#bulucu", label: "Rahatlatan bakım ve konfor hediyeleri" },
     },
   ],
 };

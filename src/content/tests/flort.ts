@@ -202,6 +202,7 @@ export const flort: Test = {
       strengths: ["Çok samimi ve sıcaksın", "Romantik jestlerde ustasın", "Sevgini saklamıyorsun"],
       watchOut: ["Kişiyi tanımadan idealleştirme", "Beklentiler büyüdükçe hayal kırıklığı da büyür"],
       bestMatch: "esprili",
+      giftLink: { href: "/hediye/yildonumu-hediyesi", label: "Romantik ruhlar için anı dolu hediyeler" },
     },
     {
       id: "esprili",
@@ -218,6 +219,7 @@ export const flort: Test = {
       strengths: ["Buzları anında kırıyorsun", "Birlikte olmak çok keyifli", "Gerginliği dağıtmakta ustasın"],
       watchOut: ["Duygularını esprinin arkasına saklama", "Ciddi anlarda şaka yapmak karşı tarafı kırabilir"],
       bestMatch: "romantik",
+      giftLink: { href: "/hediye?ilgi=oyun,hobi#bulucu", label: "Birlikte gülmelik oyun ve hobi hediyeleri" },
     },
     {
       id: "dengeli",

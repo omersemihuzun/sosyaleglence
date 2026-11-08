@@ -30,6 +30,9 @@ const files: [string, string][] = [
   ["tatil-cantasi.ts", "tatilCantasi"],
   ["mevsim.ts", "mevsim"],
   ["ruh-yasi.ts", "ruhYasi"],
+  ["situationship.ts", "situationship"],
+  ["delulu.ts", "delulu"],
+  ["sevgili-tipi.ts", "sevgiliTipi"],
 ];
 
 type Opt = { scores: Record<string, number> };

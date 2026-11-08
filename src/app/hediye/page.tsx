@@ -22,6 +22,9 @@ export default function GiftsPage() {
           Kime aldığını, bütçeni ve neleri sevdiğini seç. Her fikirde neden iyi bir seçim olduğunu ve üç mağazadaki
           fiyatlarını görebilirsin.
         </p>
+        <p className="mt-4 inline-block rounded-full border border-line bg-white px-3 py-1 text-sm text-plum-soft">
+          Bu sayfadaki mağaza bağlantılarından alışveriş yaparsan komisyon alabiliriz. Fiyatlar mağazalara göre değişir.
+        </p>
         <div className="mt-10">
           <Suspense fallback={<div className="sticker h-96 bg-white" />}>
             <GiftFinder />

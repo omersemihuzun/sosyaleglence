@@ -14,11 +14,17 @@ import { sofraSehir } from "./sofra-sehir";
 import { tatilCantasi } from "./tatil-cantasi";
 import { mevsim } from "./mevsim";
 import { ruhYasi } from "./ruh-yasi";
+import { situationship } from "./situationship";
+import { delulu } from "./delulu";
+import { sevgiliTipi } from "./sevgili-tipi";
 
 /** Listeleme sırası */
 export const rawTests: Test[] = [
   kiskanclik,
+  situationship,
   redFlag,
+  delulu,
+  sevgiliTipi,
   baglanma,
   ex,
   toksikArkadas,
