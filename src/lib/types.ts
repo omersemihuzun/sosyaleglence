@@ -8,7 +8,10 @@ export type Dimension = {
 };
 
 export type Option = {
+  /** "secim" formatında kısa etiket (≤ 4 kelime), "senaryo" formatında tam cümle */
   text: string;
+  /** "secim" formatında kartta büyük gösterilen emoji */
+  emoji?: string;
   /** Her boyuta 0–3 arası katkı. Yazılmayan boyutlar 0 sayılır. */
   scores: Record<string, number>;
 };
@@ -46,6 +49,11 @@ export type Test = {
   emoji: string;
   color: string;
   category: "ilişki" | "kişilik" | "arkadaşlık";
+  /**
+   * "senaryo" (varsayılan): gerçekçi durumlar ve cümle şıklar.
+   * "secim": emoji kartlar arasından seçim; sonuç dolaylı çıkarılır ("Bir sofra kur, sana şehir söyleyelim").
+   */
+  format?: "senaryo" | "secim";
   metaDescription: string;
   dimensions: Dimension[];
   questions: Question[];

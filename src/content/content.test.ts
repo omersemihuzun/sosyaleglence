@@ -81,6 +81,17 @@ describe("testler", () => {
         for (const dim of dimIds) expect(cal[r.id][dim]).toBeTypeOf("number");
       }
     });
+
+    it("seçim formatında her şıkta emoji var ve etiket en fazla 4 kelime", () => {
+      if (test.format !== "secim") return;
+      test.questions.forEach((q, qi) => {
+        expect(q.options.length, `${qi + 1}. soru 4 şık olmalı`).toBe(4);
+        for (const o of q.options) {
+          expect(o.emoji, `${qi + 1}. soru "${o.text}": emoji eksik`).toBeTruthy();
+          expect(o.text.trim().split(/\s+/).length, `${qi + 1}. soru "${o.text}": etiket çok uzun`).toBeLessThanOrEqual(4);
+        }
+      });
+    });
   });
 });
 

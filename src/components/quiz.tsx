@@ -145,33 +145,63 @@ export function Quiz({ test, compare }: { test: Test; compare?: { code: string; 
           <span className="sr-only">{`Soru ${current + 1} / ${total}: `}</span>
           {q.text}
         </h2>
-        <ul className="mt-6 grid gap-3">
-          {optOrder.map((oi, pos) => {
-            const isPicked = picked === oi;
-            const wasAnswer = answers[current] === oi && picked === null;
-            return (
-              <li key={oi} style={{ rotate: `${pos % 2 === 0 ? -0.4 : 0.5}deg` }}>
-                <button
-                  type="button"
-                  onClick={() => choose(oi)}
-                  className={`sticker sticker-press flex w-full items-start gap-3 px-4 py-4 text-left text-[17px] leading-snug ${
-                    isPicked ? "bg-butter" : wasAnswer ? "bg-blush" : "bg-white"
-                  }`}
-                >
-                  <span
-                    aria-hidden
-                    className={`grid size-7 shrink-0 place-items-center rounded-full border-2 border-plum font-display text-sm font-bold ${
-                      isPicked ? "bg-cherry text-white" : "bg-paper"
+        {test.format === "secim" ? (
+          <ul className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+            {optOrder.map((oi, pos) => {
+              const o = q.options[oi];
+              const isPicked = picked === oi;
+              const wasAnswer = answers[current] === oi && picked === null;
+              return (
+                <li key={oi} style={{ rotate: `${pos % 2 === 0 ? -0.8 : 0.8}deg` }}>
+                  <button
+                    type="button"
+                    onClick={() => choose(oi)}
+                    aria-label={o.text}
+                    aria-pressed={wasAnswer || isPicked}
+                    className={`sticker sticker-press flex aspect-square w-full flex-col items-center justify-center gap-2 p-3 text-center ${
+                      isPicked ? "scale-[1.04] bg-butter" : wasAnswer ? "bg-blush" : "bg-white"
                     }`}
                   >
-                    {LETTERS[pos]}
-                  </span>
-                  <span className="pt-0.5">{q.options[oi].text}</span>
-                </button>
-              </li>
-            );
-          })}
-        </ul>
+                    <span aria-hidden className="text-5xl leading-none sm:text-6xl">
+                      {o.emoji}
+                    </span>
+                    <span aria-hidden className="font-display text-[15px] leading-tight font-bold text-balance">
+                      {o.text}
+                    </span>
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        ) : (
+          <ul className="mt-6 grid gap-3">
+            {optOrder.map((oi, pos) => {
+              const isPicked = picked === oi;
+              const wasAnswer = answers[current] === oi && picked === null;
+              return (
+                <li key={oi} style={{ rotate: `${pos % 2 === 0 ? -0.4 : 0.5}deg` }}>
+                  <button
+                    type="button"
+                    onClick={() => choose(oi)}
+                    className={`sticker sticker-press flex w-full items-start gap-3 px-4 py-4 text-left text-[17px] leading-snug ${
+                      isPicked ? "bg-butter" : wasAnswer ? "bg-blush" : "bg-white"
+                    }`}
+                  >
+                    <span
+                      aria-hidden
+                      className={`grid size-7 shrink-0 place-items-center rounded-full border-2 border-plum font-display text-sm font-bold ${
+                        isPicked ? "bg-cherry text-white" : "bg-paper"
+                      }`}
+                    >
+                      {LETTERS[pos]}
+                    </span>
+                    <span className="pt-0.5">{q.options[oi].text}</span>
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        )}
         {finishing && (
           <p className="mt-6 font-display text-lg font-semibold" role="status">
             Sonucun hazırlanıyor…

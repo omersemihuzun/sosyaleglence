@@ -1,0 +1,220 @@
+import type { Test } from "@/lib/types";
+
+export const sofraSehir: Test = {
+  slug: "sofra-kur-sehir-testi",
+  title: "Bir Sofra Kur, Sana Hangi Şehri Yakıştıralım",
+  summary: "Kahvaltıdan tatlıya kendi sofranı kur. Sonunda ruhunun hangi şehirde yaşadığını söyleyelim.",
+  intro:
+    "Soru yok, sadece sofra var. Her adımda dört seçenekten canının çektiğini seç. Kurduğun sofradan senin hangi şehrin insanı olduğunu tahmin edeceğiz. Tamamen eğlence, ama şaşırabilirsin.",
+  emoji: "🍽️",
+  color: "#C2410C",
+  category: "kişilik",
+  format: "secim",
+  metaDescription:
+    "Bir sofra kur, sana hangi şehri yakıştıralım: İstanbul mu, İzmir mi, Gaziantep mi? 11 seçimde kendi sofranı hazırla, ruhunun şehrini öğren.",
+  dimensions: [
+    { id: "deniz", label: "Deniz havası", low: "Karada mutlusun", high: "Deniz görmeden olmaz" },
+    { id: "gelenek", label: "Gelenek", low: "Yeniye açıksın", high: "Köklere bağlısın" },
+    { id: "tempo", label: "Şehir temposu", low: "Yavaş yaşarsın", high: "Kalabalıkta canlanırsın" },
+    { id: "doga", label: "Yeşil", low: "Asfalt yeter", high: "Ağaç ve sis istersin" },
+  ],
+  questions: [
+    {
+      text: "Kahvaltı masasına ilk ne koyarsın?",
+      options: [
+        { emoji: "🫒", text: "Zeytin ve domates", scores: { deniz: 2 } },
+        { emoji: "🧈", text: "Tereyağlı mıhlama", scores: { doga: 2, gelenek: 1 } },
+        { emoji: "🥯", text: "Simit, ayakta", scores: { tempo: 2 } },
+        { emoji: "🫓", text: "Fıstıklı katmer", scores: { gelenek: 2 } },
+      ],
+    },
+    {
+      text: "Ana yemek hangisi olsun?",
+      options: [
+        { emoji: "🐟", text: "Izgara levrek", scores: { deniz: 2 } },
+        { emoji: "🍢", text: "Közde kebap", scores: { gelenek: 2 } },
+        { emoji: "🌽", text: "Hamsili pilav", scores: { doga: 2 } },
+        { emoji: "🍣", text: "Füzyon bir tabak", scores: { tempo: 2 } },
+      ],
+    },
+    {
+      text: "Yanına ne içersin?",
+      options: [
+        { emoji: "🍋", text: "Buz gibi limonata", scores: { deniz: 2 } },
+        { emoji: "🫖", text: "Demlik demlik çay", scores: { doga: 1, gelenek: 1 } },
+        { emoji: "☕", text: "Filtre kahve", scores: { tempo: 2 } },
+        { emoji: "🥛", text: "Yayık ayranı", scores: { gelenek: 2 } },
+      ],
+    },
+    {
+      text: "Mezeleri seç.",
+      options: [
+        { emoji: "🌿", text: "Ot kavurma", scores: { deniz: 1, doga: 1 } },
+        { emoji: "🌰", text: "Acılı ezme", scores: { gelenek: 2 } },
+        { emoji: "🧀", text: "Peynir tabağı", scores: { tempo: 1, deniz: 1 } },
+        { emoji: "🍄", text: "Mantar sote", scores: { doga: 2 } },
+      ],
+    },
+    {
+      text: "Sofra nerede kurulsun?",
+      options: [
+        { emoji: "🌊", text: "Deniz kenarı", scores: { deniz: 2 } },
+        { emoji: "🏔️", text: "Yayla çimeni", scores: { doga: 2 } },
+        { emoji: "🏙️", text: "Çatı katı terası", scores: { tempo: 2 } },
+        { emoji: "🏠", text: "Avlulu taş ev", scores: { gelenek: 2 } },
+      ],
+    },
+    {
+      text: "Arka planda hangi müzik çalsın?",
+      options: [
+        { emoji: "🎻", text: "Kemençe", scores: { doga: 2 } },
+        { emoji: "🎷", text: "Caz", scores: { tempo: 2 } },
+        { emoji: "🎸", text: "Akustik gitar", scores: { deniz: 2 } },
+        { emoji: "🥁", text: "Davul zurna", scores: { gelenek: 2 } },
+      ],
+    },
+    {
+      text: "Sofrada kimler olsun?",
+      options: [
+        { emoji: "👨‍👩‍👧‍👦", text: "Kalabalık aile", scores: { gelenek: 2 } },
+        { emoji: "👯", text: "Arkadaş grubu", scores: { tempo: 1, deniz: 1 } },
+        { emoji: "💑", text: "Sadece ikimiz", scores: { deniz: 1, doga: 1 } },
+        { emoji: "🤝", text: "Yeni tanıştıklarım", scores: { tempo: 2 } },
+      ],
+    },
+    {
+      text: "Ekmek sepetinde ne var?",
+      options: [
+        { emoji: "🥖", text: "Ekşi maya", scores: { tempo: 1, deniz: 1 } },
+        { emoji: "🫓", text: "Sıcak lavaş", scores: { gelenek: 2 } },
+        { emoji: "🌾", text: "Mısır ekmeği", scores: { doga: 2 } },
+        { emoji: "🥐", text: "Kruvasan", scores: { tempo: 2 } },
+      ],
+    },
+    {
+      text: "Tatlı zamanı.",
+      options: [
+        { emoji: "🍯", text: "Baklava", scores: { gelenek: 2 } },
+        { emoji: "🥧", text: "Laz böreği", scores: { doga: 2 } },
+        { emoji: "🍨", text: "Dondurma", scores: { deniz: 2 } },
+        { emoji: "🍰", text: "San Sebastian", scores: { tempo: 2 } },
+      ],
+    },
+    {
+      text: "Sofra örtüsü hangisi?",
+      options: [
+        { emoji: "🟦", text: "Mavi beyaz çizgili", scores: { deniz: 2 } },
+        { emoji: "🟥", text: "Kilim desenli", scores: { gelenek: 2 } },
+        { emoji: "⬛", text: "Minimalist siyah", scores: { tempo: 2 } },
+        { emoji: "🟩", text: "Ekose yeşil", scores: { doga: 2 } },
+      ],
+    },
+    {
+      text: "Yemekten sonra ne yapalım?",
+      options: [
+        { emoji: "🚶", text: "Sahilde yürüyüş", scores: { deniz: 2 } },
+        { emoji: "🌲", text: "Ormanda yürüyüş", scores: { doga: 2 } },
+        { emoji: "🎭", text: "Bir gösteriye git", scores: { tempo: 2 } },
+        { emoji: "🗣️", text: "Uzun çay sohbeti", scores: { gelenek: 2 } },
+      ],
+    },
+  ],
+  results: [
+    {
+      id: "istanbul",
+      name: "İstanbul",
+      emoji: "🌉",
+      tagline: "Kalabalık seni yormaz, besler.",
+      profile: { deniz: 20, gelenek: 50, tempo: 85, doga: 10 },
+      color: "#3B2A6B",
+      description: [
+        "Sofrandaki her şey bir şehir gibi: hızlı, karışık, sürprizli. Simit ayakta, kahve filtre, tatlı yeni açılan bir yerden. Sen tek bir tada yerleşmek yerine hepsini denemek istiyorsun.",
+        "Ruhun İstanbul gibi iki kıtalı. Bir yanın çatı katında caz dinlerken öbür yanın eski bir mahallede çay içmeyi seviyor. Gelenekle yeniyi aynı masada buluşturmak senin işin.",
+        "Seninle bir gün asla sıkıcı geçmez. Ama arada bir telefonu bırakıp vapurda martı izlemek sana iyi gelecek. Şehrin bile nefes aldığı anlar var.",
+      ],
+      strengths: ["Yeniliklere çok açıksın", "Farklı insanlarla kolay kaynaşırsın", "Hızlı karar verir, hızlı uyum sağlarsın"],
+      watchOut: ["Sürekli hareket seni farkında olmadan yorabilir", "Yavaş giden şeylere sabrın az"],
+      bestMatch: "izmir",
+    },
+    {
+      id: "izmir",
+      name: "İzmir",
+      emoji: "🌅",
+      tagline: "Deniz, gün batımı ve rahat bir şehir hayatı.",
+      profile: { deniz: 75, gelenek: 15, tempo: 55, doga: 10 },
+      color: "#2563EB",
+      description: [
+        "Sofran ferah: zeytin, ot kavurma, buz gibi limonata ve deniz manzarası. Ama sen sadece tatilci değilsin. Akşamüstü kordonda yürüyüp gece arkadaşlarla bir yere takılmak da istiyorsun.",
+        "Ruhun İzmir gibi rahat ama canlı. Şehrin olanaklarını seviyorsun, ama bunu telaş olmadan yaşamak istiyorsun. Senin için iyi bir hayat, işten çıkınca denizi görebilmek.",
+        "İnsanlar yanında rahatlıyor çünkü sen de rahatsın. Tek dikkat etmen gereken, \"Sonra hallederiz\" dediğin şeylerin birikmemesi.",
+      ],
+      strengths: ["Pozitif ve rahat bir enerjin var", "Sosyalsin ama kalabalığa boğulmazsın", "Hayattan keyif almayı biliyorsun"],
+      watchOut: ["Erteleme eğilimi", "Plan gerektiren işlerde sabırsızlanabilirsin"],
+      bestMatch: "istanbul",
+    },
+    {
+      id: "antalya",
+      name: "Antalya",
+      emoji: "🏝️",
+      tagline: "Ruhun hep yaz tatilinde.",
+      profile: { deniz: 70, gelenek: 10, tempo: 15, doga: 65 },
+      color: "#0E7C66",
+      description: [
+        "Denize de doğaya da hayır diyemiyorsun. Sofran sahilde kurulsun ama arkada dağlar ve portakal bahçeleri olsun. Kalabalık şehir hayatı sana pek göre değil.",
+        "Ruhun Antalya gibi sıcak ve misafirperver. Güneşi, açık havayı ve uzun yaz akşamlarını seviyorsun. Hayatı fazla karmaşık hâle getirmeye gerek görmüyorsun.",
+        "Yanında olmak tatile çıkmak gibi. Sadece kış gelince biraz durgunlaşabilirsin. Kendine yıl boyu sürecek küçük güneşler bul.",
+      ],
+      strengths: ["Sıcak ve misafirperversin", "Doğayla iç içe olmayı seviyorsun", "Stresi hızlı atarsın"],
+      watchOut: ["Rutin ve yoğun tempo seni çabuk bunaltır", "Kış aylarında motivasyonun düşebilir"],
+      bestMatch: "trabzon",
+    },
+    {
+      id: "trabzon",
+      name: "Trabzon",
+      emoji: "🌲",
+      tagline: "Sis, yeşil ve bir demlik çay.",
+      profile: { deniz: 10, gelenek: 45, tempo: 10, doga: 85 },
+      color: "#15803D",
+      description: [
+        "Sofranda mıhlama, hamsi, mısır ekmeği ve kemençe var. Yaylada, sisin içinde kurulan bir masa senin için en güzel restorandan daha güzel.",
+        "Ruhun Karadeniz gibi: dışarıdan sert görünebilir ama içi sıcacık. Doğaya ve köklerine bağlısın. Sevdiğin insanlar için dağları aşarsın.",
+        "Duyguların yoğun ve dürüst. Bazen bir anda parlayabilirsin ama kin tutmazsın. Seni tanıyan herkes ne kadar sadık olduğunu bilir.",
+      ],
+      strengths: ["Sadık ve dürüstsün", "Doğayla bağın güçlü", "Sevdiklerine çok bağlısın"],
+      watchOut: ["Ani çıkışların karşı tarafı şaşırtabilir", "Değişime alışman zaman alabilir"],
+      bestMatch: "antalya",
+    },
+    {
+      id: "gaziantep",
+      name: "Gaziantep",
+      emoji: "🌶️",
+      tagline: "Sofran uzun, sohbetin uzun, kalbin geniş.",
+      profile: { deniz: 10, gelenek: 85, tempo: 30, doga: 15 },
+      color: "#B91C1C",
+      description: [
+        "Katmer, kebap, acılı ezme, baklava ve kalabalık bir aile. Senin için sofra sadece yemek değil, bir araya gelmenin bahanesi. Kimse aç kalkmaz, kimse erken kalkmaz.",
+        "Ruhun Gaziantep gibi köklü ve cömert. Geleneklere, aile bağlarına ve emekle yapılan şeylere değer veriyorsun. Hazır olanla yetinmez, en iyisini istersin.",
+        "İnsanları ağırlamak senin süper gücün. Bazen herkesi memnun etmeye çalışırken kendini unutabilirsin. Kendi tabağını da doldurmayı unutma.",
+      ],
+      strengths: ["Cömert ve misafirperversin", "Köklerine ve sevdiklerine bağlısın", "Emek ve kaliteye değer verirsin"],
+      watchOut: ["Yeniliklere başta mesafeli durabilirsin", "Herkesi memnun etmeye çalışmak seni yorabilir"],
+      bestMatch: "istanbul",
+    },
+    {
+      id: "eskisehir",
+      name: "Eskişehir",
+      emoji: "🚲",
+      tagline: "Ne çok hızlı ne çok yavaş. Tam kıvamında.",
+      profile: { deniz: 40, gelenek: 35, tempo: 40, doga: 35 },
+      color: "#C026D3",
+      description: [
+        "Sofran her yerden bir parça: biraz deniz, biraz gelenek, biraz şehir, biraz yeşil. Tek bir tarza bağlanmıyorsun ve bu seni çok kolay sevilen biri yapıyor.",
+        "Ruhun Eskişehir gibi genç ve dengeli. Hem kafeleri hem parkları, hem eskiyi hem yeniyi seviyorsun. Uç noktalara gitmeden hayattan keyif almayı biliyorsun.",
+        "Esnekliğin en büyük gücün. Sadece bazen \"Fark etmez\" demek yerine gerçekten ne istediğini söylemek iyi gelir.",
+      ],
+      strengths: ["Esnek ve uyumlusun", "Her ortama kolay girersin", "Dengeyi korumayı biliyorsun"],
+      watchOut: ["Kararsız görünebilirsin", "Kendi isteklerini geri planda bırakma"],
+      bestMatch: "izmir",
+    },
+  ],
+};
