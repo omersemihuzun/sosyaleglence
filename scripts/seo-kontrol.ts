@@ -61,6 +61,7 @@ const { guides } = await load("src/content/gifts/guides.ts");
 const burcMod = await load("src/content/burc-uyum.ts");
 const { burclar, getBurc } = await load("src/content/burclar.ts");
 // Sonuç sayfaları başlık/açıklamayı bu fonksiyonlarla üretir: denetim sayfayla birebir aynı metni görür
+const { articles } = await load("src/content/articles/index.ts");
 const seo = await load("src/lib/jsonld.ts");
 const len: (s: string) => number = seo.textLength;
 
@@ -86,6 +87,7 @@ for (const b of brackets) {
     });
 }
 for (const g of guides) rows.push({ url: `/hediye/${g.slug}`, title: seo.guideTitle(g.metaTitle, g.title), desc: g.metaDescription });
+for (const a of articles) rows.push({ url: `/rehber/${a.slug}`, title: seo.pageTitle(a.metaTitle), desc: a.metaDescription });
 
 rows.push({ url: "/burclar", title: burcMod.BURCLAR_TITLE, desc: burcMod.BURCLAR_DESC });
 for (const b of burclar) rows.push({ url: `/burclar/${b.slug}`, title: burcMod.burcTitle(b), desc: burcMod.burcDescription(b) });

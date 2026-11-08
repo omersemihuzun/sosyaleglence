@@ -59,11 +59,14 @@ export function OgSectionCard({
   subtitle,
   emojis,
   accent = CHERRY,
+  titleSize = 88,
 }: {
   title: string;
   subtitle: string;
   emojis: string[];
   accent?: string;
+  /** Uzun başlıklar için küçültülebilir (varsayılan 88) */
+  titleSize?: number;
 }) {
   return (
     <div
@@ -141,8 +144,8 @@ export function OgSectionCard({
           style={{
             display: "flex",
             fontFamily: "Display, DisplayExt",
-            fontSize: 88,
-            lineHeight: 1,
+            fontSize: titleSize,
+            lineHeight: 1.02,
             letterSpacing: -2,
             maxWidth: 960,
           }}

@@ -26,6 +26,9 @@ const pages = [
   "/burclar/aslan",
   "/burc-uyumu/koc-ve-aslan",
   "/burc-uyumu/basak-ve-yay",
+  "/rehber",
+  "/rehber/baglanma-stilleri-nedir",
+  "/testler/sevgi-dili-testi",
 ];
 
 for (const path of pages) {

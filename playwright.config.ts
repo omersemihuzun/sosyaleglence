@@ -1,6 +1,6 @@
 import { defineConfig, devices } from "@playwright/test";
 
-const PORT = Number(process.env.E2E_PORT ?? 3314);
+const PORT = Number(process.env.E2E_PORT ?? process.env.PORT ?? 3314);
 
 /**
  * Uçtan uca testler production build üzerinde çalışır (dev sunucusu değil):
