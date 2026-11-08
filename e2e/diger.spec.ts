@@ -90,3 +90,45 @@ test("isimle aşk testi: story kartı tarayıcıda PNG olarak üretilir", async 
   const [d] = await Promise.all([page.waitForEvent("download"), page.locator("[data-story]").click()]);
   expect(d.suggestedFilename()).toBe("isim-uyumu.png");
 });
+
+test("Bunu mu O mu: oy değiştirilebilir, soru atlanır, tur istenince biter ve 10 soruda özet gelir", async ({ page, consoleErrors }) => {
+  void consoleErrors;
+  const istekler: { id: string; choice: string; degistir?: boolean }[] = [];
+  await page.route("**/api/anket", async (route) => {
+    if (route.request().method() !== "POST") return route.continue();
+    const b = JSON.parse(route.request().postData() ?? "{}");
+    istekler.push(b);
+    await route.fulfill({ contentType: "application/json", body: JSON.stringify({ enabled: true, a: 60, b: 40 }) });
+  });
+  await page.goto("/bunu-mu-o-mu");
+  const options = page.locator("main button[aria-pressed]");
+  await options.first().click();
+  await expect(options.first()).toHaveAttribute("aria-pressed", "true");
+  // Fikir değiştir
+  await options.last().click();
+  await expect(options.last()).toHaveAttribute("aria-pressed", "true");
+  await expect(options.first()).toHaveAttribute("aria-pressed", "false");
+  expect(istekler.map((i) => [i.choice, Boolean(i.degistir)])).toEqual([["a", false], ["b", true]]);
+
+  // Sıradaki, sonra atla
+  await page.getByRole("button", { name: "Sıradaki" }).click();
+  await expect(page.getByText("Tur: 2/10")).toBeVisible();
+  await page.getByRole("button", { name: "Atla" }).click();
+  await expect(page.getByText("Tur: 3/10")).toBeVisible();
+
+  // Turu bitir: özet ilk sorudaki son seçimi gösterir
+  await page.getByRole("button", { name: "Turu bitir" }).click();
+  const ozet = page.locator("[data-ozet]");
+  await expect(ozet.getByRole("heading", { name: "Tur bitti!" })).toBeVisible();
+  await expect(ozet.locator("li")).toHaveCount(1);
+
+  // Yeni tur, 10 soruyu tamamla
+  await ozet.getByRole("button", { name: /soru daha/ }).click();
+  for (let i = 1; i <= 10; i++) {
+    await expect(page.getByText(`Tur: ${i}/10`)).toBeVisible();
+    await options.first().click();
+    await page.getByRole("button", { name: i === 10 ? "Turu tamamla" : "Sıradaki" }).click();
+  }
+  await expect(ozet.locator("li")).toHaveCount(10);
+  await expect(ozet).toContainText("10 sorunun 10 tanesinde");
+});
