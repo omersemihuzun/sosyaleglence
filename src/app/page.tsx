@@ -2,20 +2,49 @@ import Link from "next/link";
 import { BracketCard } from "@/components/bracket-card";
 import { DailyPoll } from "@/components/daily-poll";
 import { LiveQuestion } from "@/components/live-question";
-import { polls } from "@/content/polls";
+import { TestCard } from "@/components/test-card";
 import { brackets } from "@/content/brackets";
 import { burclar } from "@/content/burclar";
-import { TestCard } from "@/components/test-card";
 import { guides } from "@/content/gifts/guides";
 import { recipients, type Recipient } from "@/content/gifts/types";
-import { getTest, tests } from "@/content/tests";
+import { polls } from "@/content/polls";
+import { getTest } from "@/content/tests";
+import { navItems } from "@/lib/nav";
+import type { Test } from "@/lib/types";
 
 const TILTS = [-1, 0.7, -0.4, 0.9, -0.8, 0.5];
+
+/** Hero'daki kıskançlık testi dışında, türleri karışık altı test: ilişki, arkadaşlık, kişilik ve "seç" formatı. */
+const FEATURED_TESTS = [
+  "red-flag-testi",
+  "situationship-testi",
+  "hangi-tip-sevgilisin-testi",
+  "toksik-arkadas-testi",
+  "sofra-kur-sehir-testi",
+  "baglanma-stili-testi",
+];
 const FEATURED_GUIDES = ["sevgiliye-yilbasi-hediyesi", "erkek-arkadasa-hediye", "kiz-arkadasa-hediye", "500-tl-alti-hediye"];
 
+function SectionHead({ title, blurb, href }: { title: string; blurb?: string; href: string }) {
+  return (
+    <div className="flex items-end justify-between gap-4">
+      <div>
+        <h2 className="font-display text-3xl font-bold sm:text-4xl">{title}</h2>
+        {blurb && <p className="mt-2 text-plum-soft">{blurb}</p>}
+      </div>
+      <Link href={href} className="shrink-0 font-display font-bold text-cherry hover:underline">
+        Hepsini gör
+      </Link>
+    </div>
+  );
+}
+
 export default function Home() {
-  const featured = getTest("kiskanclik-testi")!;
-  const featuredGuides = FEATURED_GUIDES.map((s) => guides.find((g) => g.slug === s)!).filter(Boolean);
+  const hero = getTest("kiskanclik-testi")!;
+  const featuredTests = FEATURED_TESTS.map((s) => getTest(s)).filter((t): t is Test => Boolean(t));
+  const featuredGuides = FEATURED_GUIDES.map((s) => guides.find((g) => g.slug === s)).filter(
+    (g): g is (typeof guides)[number] => Boolean(g),
+  );
 
   return (
     <>
@@ -37,33 +66,40 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <LiveQuestion test={featured} />
+        <LiveQuestion test={hero} />
       </section>
 
-      <section className="mx-auto mt-16 max-w-6xl px-4 sm:px-6">
-        <div className="flex items-end justify-between gap-4">
-          <h2 className="font-display text-3xl font-bold sm:text-4xl">Testler</h2>
-          <Link href="/testler" className="font-display font-bold text-cherry hover:underline">
-            Hepsini gör
-          </Link>
-        </div>
+      <nav aria-label="Bölümler" className="mx-auto mt-14 max-w-6xl px-4 sm:px-6">
+        <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+          {navItems.map((m, i) => (
+            <li key={m.href} style={{ rotate: `${TILTS[i % TILTS.length] * 0.6}deg` }}>
+              <Link href={m.href} className="sticker sticker-press flex h-full flex-col bg-white p-4">
+                <span aria-hidden className="text-3xl">
+                  {m.emoji}
+                </span>
+                <span className="mt-2 font-display text-lg leading-tight font-bold">{m.label}</span>
+                <span className="mt-1 text-sm leading-snug text-plum-soft">{m.blurb}</span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+
+      <section className="mx-auto mt-20 max-w-6xl px-4 sm:px-6">
+        <SectionHead title="Öne çıkan testler" href="/testler" />
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {tests.map((t, i) => (
+          {featuredTests.map((t, i) => (
             <TestCard key={t.slug} test={t} tilt={TILTS[i % TILTS.length]} />
           ))}
         </div>
       </section>
 
       <section className="mx-auto mt-20 max-w-6xl px-4 sm:px-6">
-        <div className="flex items-end justify-between gap-4">
-          <div>
-            <h2 className="font-display text-3xl font-bold sm:text-4xl">Eleme oyunları</h2>
-            <p className="mt-2 text-plum-soft">16 seçenek, her turda ikisinden biri. Sonunda tek şampiyon.</p>
-          </div>
-          <Link href="/eleme" className="shrink-0 font-display font-bold text-cherry hover:underline">
-            Hepsini gör
-          </Link>
-        </div>
+        <SectionHead
+          title="Eleme oyunları"
+          blurb="16 seçenek, her turda ikisinden biri. Sonunda tek şampiyon."
+          href="/eleme"
+        />
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {brackets.slice(0, 3).map((b, i) => (
             <BracketCard key={b.slug} bracket={b} tilt={TILTS[(i + 1) % TILTS.length]} />
@@ -75,7 +111,7 @@ export default function Home() {
         <DailyPoll polls={polls} />
       </section>
 
-      <section className="mx-auto mt-16 max-w-6xl px-4 sm:px-6">
+      <section className="mx-auto mt-10 max-w-6xl px-4 sm:px-6">
         <div className="sticker flex flex-col gap-5 bg-white p-6 sm:p-8 lg:flex-row lg:items-center lg:justify-between">
           <div>
             <h2 className="font-display text-3xl font-extrabold sm:text-4xl">Koç ile Aslan anlaşır mı?</h2>
@@ -87,10 +123,7 @@ export default function Home() {
             </ul>
           </div>
           <div className="flex flex-wrap gap-3">
-            <Link
-              href="/burc-uyumu/koc-ve-aslan"
-              className="sticker sticker-press bg-white px-5 py-3 font-display font-bold"
-            >
+            <Link href="/burc-uyumu/koc-ve-aslan" className="sticker sticker-press bg-white px-5 py-3 font-display font-bold">
               Koç ve Aslan
             </Link>
             <Link href="/burclar" className="sticker sticker-press bg-cherry px-5 py-3 font-display font-bold text-white">
@@ -130,7 +163,7 @@ export default function Home() {
                     {g.emoji}
                   </span>
                   <span className="mt-3 font-display text-xl leading-tight font-bold">{g.title}</span>
-                  <span className="mt-1 text-sm text-plum-soft line-clamp-2">{g.intro[0]}</span>
+                  <span className="mt-1 line-clamp-2 text-sm text-plum-soft">{g.intro[0]}</span>
                 </Link>
               </li>
             ))}
