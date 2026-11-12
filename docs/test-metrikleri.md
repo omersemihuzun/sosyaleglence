@@ -24,6 +24,7 @@ Bu dosya `npm run kalibre` tarafından üretilir, elle düzenleme.
 | ✓ | kavga-tarzi-testi | 12 | %100 | %97 | %18–%24 | %11 | %35 | 0 | 0 | 0 |
 | ✓ | iliskiye-hazir-misin-testi | 12 | %100 | %99 | %18–%22 | %11 | %13 | 0 | 0 | 0 |
 | ✓ | guven-sorunu-testi | 12 | %100 | %99 | %19–%21 | %11 | %19 | 0 | 0 | 0 |
+| ✓ | magara-adami-testi | 14 | %97 | %75 | %5–%21 | %18 | %25 | 0 | 0 | 0 |
 
 ## Metrikler ve eşikler
 
@@ -141,3 +142,8 @@ Not: "Bariz doğru şık" (sosyal beğenirlik) sayıyla ölçülemez; içerik in
 
 - Uyarı yok
 - Sonuca en az katkı veren sorular (bilgi, %): S4 (20.7), S10 (20.9), S1 (22.1)
+
+### magara-adami-testi
+
+- Uyarı yok
+- Sonuca en az katkı veren sorular (bilgi, %): S2 (9.8), S7 (12.3), S5 (13.2)

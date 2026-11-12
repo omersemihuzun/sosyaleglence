@@ -20,6 +20,7 @@ import { sevgiliTipi } from "./sevgili-tipi";
 import { kavgaTarzi } from "./kavga-tarzi";
 import { iliskiyeHazir } from "./iliskiye-hazir";
 import { guvenSorunu } from "./guven-sorunu";
+import { magaraAdami } from "./magara-adami";
 
 /** Listeleme sırası */
 export const rawTests: Test[] = [
@@ -27,6 +28,7 @@ export const rawTests: Test[] = [
   situationship,
   redFlag,
   delulu,
+  magaraAdami,
   sevgiliTipi,
   baglanma,
   guvenSorunu,

@@ -647,5 +647,43 @@
       "mesafe": 42,
       "sinama": 95
     }
+  },
+  "magara-adami-testi": {
+    "sehirli-sapiens": {
+      "teknoloji": 8,
+      "icgudu": 9,
+      "iletisim": 9,
+      "konfor": 9
+    },
+    "dijital-magara": {
+      "teknoloji": 72,
+      "icgudu": 26,
+      "iletisim": 17,
+      "konfor": 34
+    },
+    "ates-bekcisi": {
+      "teknoloji": 22,
+      "icgudu": 78,
+      "iletisim": 28,
+      "konfor": 29
+    },
+    "hi-diyen-bilge": {
+      "teknoloji": 22,
+      "icgudu": 28,
+      "iletisim": 78,
+      "konfor": 24
+    },
+    "tas-yastik": {
+      "teknoloji": 29,
+      "icgudu": 29,
+      "iletisim": 24,
+      "konfor": 74
+    },
+    "tam-magara": {
+      "teknoloji": 42,
+      "icgudu": 52,
+      "iletisim": 49,
+      "konfor": 49
+    }
   }
 }
