@@ -1,0 +1,100 @@
+name: CI
+
+on:
+  push:
+    branches: [main, yeniden-tasarim]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Bağımlılıklar
+        run: npm ci
+
+      - name: Format
+        run: npm run format:check
+
+      - name: TypeScript
+        run: npm run typecheck
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Kullanılmayan dosya, export ve bağımlılık
+        run: npm run knip
+
+      # Sadece siteye giden bağımlılıklar; geliştirme araçlarındaki orta seviye bulgular build'i durdurmaz
+      - name: Güvenlik açığı taraması
+        run: npm audit --omit=dev --audit-level=high
+
+      - name: Birim ve içerik testleri
+        run: npm test
+
+      - name: SEO denetimi
+        run: npm run seo
+
+      # Sonuçların ayrışıp ayrışmadığını doğrular (isabet ve dağılım eşikleri, bkz. docs/test-metrikleri.md).
+      # Simülasyon sabit tohumlu olduğu için çıktı belirlidir: commit'lenen kalibrasyon içerikle eşleşmeli.
+      - name: Kalibrasyon doğrulaması
+        run: |
+          npm run kalibre
+          git diff --exit-code src/content/tests/kalibrasyon.json docs/test-metrikleri.md || (echo "Kalibrasyon güncel değil: npm run kalibre çalıştırıp commit'le" && exit 1)
+
+      - name: Build
+        run: npm run build
+        env:
+          NEXT_TELEMETRY_DISABLED: "1"
+
+  e2e:
+    # Uçtan uca testler production build üzerinde, masaüstü ve mobil Chromium ile.
+    # Veritabanı bağlanmadan çalışır: istatistik özellikleri bu durumda sessizce kapanır.
+    needs: check
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Bağımlılıklar
+        run: npm ci
+
+      - name: Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Build
+        run: npm run build
+        env:
+          NEXT_TELEMETRY_DISABLED: "1"
+
+      - name: Uçtan uca testler
+        run: npm run e2e
+
+      - name: Hata raporu
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-raporu
+          path: |
+            test-results/
+            playwright-report/
+          retention-days: 7

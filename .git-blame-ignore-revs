@@ -1,0 +1,3 @@
+# git blame bu commitleri yok sayar: git config blame.ignoreRevsFile .git-blame-ignore-revs
+# Prettier ile toplu formatlama
+62dcadb6996dcb7d0f651bcd645d99fd1dae57fd

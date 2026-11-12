@@ -1,0 +1,16 @@
+# Haftalık bağımlılık güncellemeleri; küçük/yama sürümleri tek PR'da toplanır
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 5
+    groups:
+      kucuk-guncellemeler:
+        update-types: [minor, patch]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly

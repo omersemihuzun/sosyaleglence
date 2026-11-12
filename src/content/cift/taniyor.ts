@@ -1,0 +1,153 @@
+import type { TaniyorSoru } from "./types";
+
+export const taniyorSorulari: TaniyorSoru[] = [
+  {
+    id: "t-kahvaltilik",
+    soru: "En sevdiğin kahvaltılık hangisi?",
+    tahminSoru: "Onun en sevdiği kahvaltılık hangisi?",
+    secenekler: ["Menemen", "Sucuklu yumurta", "Peynir ve zeytin", "Bal ve kaymak"],
+  },
+  {
+    id: "t-icecek",
+    soru: "Gün içinde en çok ne içersin?",
+    tahminSoru: "Gün içinde en çok ne içer?",
+    secenekler: ["Çay", "Türk kahvesi", "Filtre kahve", "Bitki çayı"],
+  },
+  {
+    id: "t-tatli",
+    soru: "Hangi tatlıya hayır diyemezsin?",
+    tahminSoru: "Hangi tatlıya hayır diyemez?",
+    secenekler: ["Baklava", "Sütlaç", "Çikolatalı pasta", "Dondurma"],
+  },
+  {
+    id: "t-disarida-yemek",
+    soru: "Dışarıda yemek yerken ilk neye yönelirsin?",
+    tahminSoru: "Dışarıda yemek yerken ilk neye yönelir?",
+    secenekler: ["Kebap ve döner", "Pizza ve makarna", "Ev yemekleri", "Uzak Doğu mutfağı"],
+  },
+  {
+    id: "t-cumartesi-sabahi",
+    soru: "İdeal bir cumartesi sabahın nasıl geçer?",
+    tahminSoru: "Onun ideal cumartesi sabahı nasıl geçer?",
+    secenekler: ["Öğlene kadar uyumak", "Erkenden spor yapmak", "Uzun bir kahvaltı", "Hemen dışarı çıkmak"],
+  },
+  {
+    id: "t-cuma-aksami",
+    soru: "Cuma akşamı için ideal plan hangisi?",
+    tahminSoru: "Onun için ideal cuma akşamı planı hangisi?",
+    secenekler: ["Evde film ve battaniye", "Arkadaşlarla buluşmak", "Yeni bir mekân keşfi", "Erkenden uyumak"],
+  },
+  {
+    id: "t-tatil",
+    soru: "Hayalindeki tatil hangisi?",
+    tahminSoru: "Onun hayalindeki tatil hangisi?",
+    secenekler: ["Deniz kenarında dinlenmek", "Avrupa'da şehir turu", "Dağda bir kulübe", "Çadırla doğada kamp"],
+  },
+  {
+    id: "t-dizi-film",
+    soru: "En çok hangi türde dizi ya da film izlersin?",
+    tahminSoru: "En çok hangi türde dizi ya da film izler?",
+    secenekler: ["Komedi", "Polisiye ve gerilim", "Romantik", "Bilim kurgu ve fantastik"],
+  },
+  {
+    id: "t-muzik",
+    soru: "Yolda en çok hangi müziği dinlersin?",
+    tahminSoru: "Yolda en çok hangi müziği dinler?",
+    secenekler: ["Türkçe pop", "Rock ya da alternatif", "Rap", "Türk halk müziği"],
+  },
+  {
+    id: "t-stres",
+    soru: "Stresliyken ilk ne yaparsın?",
+    tahminSoru: "Stresliyken ilk ne yapar?",
+    secenekler: ["Biriyle konuşmak", "Yalnız kalmak", "Yürüyüşe çıkmak", "Bir şeyler atıştırmak"],
+  },
+  {
+    id: "t-tartisma-sonrasi",
+    soru: "Bir tartışmadan sonra genelde ne yaparsın?",
+    tahminSoru: "Bir tartışmadan sonra genelde ne yapar?",
+    secenekler: ["Hemen konuşmak", "Biraz yalnız kalmak", "Şakayla buzu kırmak", "Küçük bir jest yapmak"],
+  },
+  {
+    id: "t-sevgi-gosterme",
+    soru: "Sevgini en çok nasıl gösterirsin?",
+    tahminSoru: "Sevgisini en çok nasıl gösterir?",
+    secenekler: ["Güzel sözlerle", "Sarılarak", "Küçük sürprizlerle", "Birlikte vakit geçirerek"],
+  },
+  {
+    id: "t-sabah-gece",
+    soru: "Günün hangi saatinde en enerjiksin?",
+    tahminSoru: "Günün hangi saatinde en enerjik?",
+    secenekler: ["Sabahın köründe", "Öğlene doğru", "Akşamüstü", "Gece yarısından sonra"],
+  },
+  {
+    id: "t-uyaninca",
+    soru: "Sabah uyanınca ilk ne yaparsın?",
+    tahminSoru: "Sabah uyanınca ilk ne yapar?",
+    secenekler: ["Telefona bakmak", "Bir bardak su içmek", "Alarmı ertelemek", "Hemen duşa girmek"],
+  },
+  {
+    id: "t-hediye",
+    soru: "En çok sevindiğin hediye türü hangisi?",
+    tahminSoru: "En çok sevindiği hediye türü hangisi?",
+    secenekler: ["El yapımı bir şey", "İşe yarar bir eşya", "Birlikte bir deneyim", "Duygusal bir mektup"],
+  },
+  {
+    id: "t-dogum-gunu",
+    soru: "Doğum gününü nasıl kutlamak istersin?",
+    tahminSoru: "Doğum gününü nasıl kutlamak ister?",
+    secenekler: ["Kalabalık bir parti", "Baş başa bir yemek", "Sürpriz bir kaçamak", "Sessiz ve sakin bir gün"],
+  },
+  {
+    id: "t-cocukluk-hayali",
+    soru: "Çocukken ne olmak isterdin?",
+    tahminSoru: "Çocukken ne olmak isterdi?",
+    secenekler: ["Doktor ya da öğretmen", "Astronot ya da pilot", "Sanatçı ya da şarkıcı", "Futbolcu ya da sporcu"],
+  },
+  {
+    id: "t-korku",
+    soru: "Hangisi seni en çok ürkütür?",
+    tahminSoru: "Hangisi onu en çok ürkütür?",
+    secenekler: ["Örümcekler", "Yükseklik", "Zifiri karanlık", "Kalabalık yerler"],
+  },
+  {
+    id: "t-super-guc",
+    soru: "Bir süper gücün olsa hangisi olurdu?",
+    tahminSoru: "Bir süper gücü olsa hangisi olurdu?",
+    secenekler: ["Görünmezlik", "Uçabilmek", "Zamanda yolculuk", "Akıl okumak"],
+  },
+  {
+    id: "t-mevsim",
+    soru: "En sevdiğin mevsim hangisi?",
+    tahminSoru: "En sevdiği mevsim hangisi?",
+    secenekler: ["İlkbahar", "Yaz", "Sonbahar", "Kış"],
+  },
+  {
+    id: "t-yasam-yeri",
+    soru: "Nerede yaşamayı en çok isterdin?",
+    tahminSoru: "Nerede yaşamayı en çok isterdi?",
+    secenekler: [
+      "Sakin bir sahil kasabası",
+      "Hareketli bir büyükşehir",
+      "Yeşil bir dağ köyü",
+      "Yurt dışında bir başkent",
+    ],
+  },
+  {
+    id: "t-evcil-hayvan",
+    soru: "Hangi evcil hayvanı beslemek isterdin?",
+    tahminSoru: "Hangi evcil hayvanı beslemek isterdi?",
+    secenekler: ["Kedi", "Köpek", "Muhabbet kuşu", "Akvaryum balığı"],
+  },
+  {
+    id: "t-sinir",
+    soru: "Seni en çok ne sinirlendirir?",
+    tahminSoru: "Onu en çok ne sinirlendirir?",
+    secenekler: ["Geç kalınması", "Dağınıklık", "Sözünün kesilmesi", "Yüksek gürültü"],
+  },
+  {
+    id: "t-oyun-tarzi",
+    soru: "Bir oyun oynarken nasıl birisin?",
+    tahminSoru: "Bir oyun oynarken nasıl biri?",
+    secenekler: ["Hırslı, mutlaka kazanmalı", "Sadece eğlencesine", "Kuralları sorgulayan", "Kaybedince biraz küsen"],
+  },
+];

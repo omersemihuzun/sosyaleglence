@@ -1,0 +1,139 @@
+import type { Bracket } from "@/lib/bracket-types";
+
+export const ev: Bracket = {
+  slug: "gelecekteki-evini-sec",
+  title: "Gelecekteki Evini Seç",
+  prompt: "Hangisinde yaşamak isterdin?",
+  summary: "16 ev, tek bir kazanan. İkisinden birini seç, sonunda hayalindeki ev ve seni anlatan cümle çıksın.",
+  emoji: "🏡",
+  color: "#2F7D6D",
+  metaDescription:
+    "Gelecekteki evini seç: 16 farklı ev, eleme usulü karşılaşmalar. Ege'de taş ev mi, İstanbul'da çatı katı mı? Hayalindeki evi bul, sonucunu paylaş.",
+  championLabel: "Hayalimdeki ev",
+  items: [
+    {
+      id: "ege-tas-ev",
+      name: "Ege'de taş ev",
+      emoji: "🫒",
+      detail: "Zeytin ağaçları, begonvil, sabah kahvesi bahçede",
+      meaning:
+        "Sen hayatı yavaşlatmak istiyorsun. Gürültüden çok sessizliği, hızdan çok anı seçiyorsun. Mutluluğun ölçüsü senin için sade bir sabah.",
+    },
+    {
+      id: "istanbul-cati-kati",
+      name: "İstanbul'da Boğaz manzaralı çatı katı",
+      emoji: "🌉",
+      detail: "Terasta martılar, gece ışıkları, şehrin tam ortası",
+      meaning:
+        "Şehrin enerjisinden besleniyorsun. Her şeyin yakında olmasını, hayatın içinde olmayı seviyorsun. Manzara senin için bir lüks değil, ihtiyaç.",
+    },
+    {
+      id: "karadeniz-yayla",
+      name: "Karadeniz'de yayla evi",
+      emoji: "🌲",
+      detail: "Sis, çay bahçesi, ahşap veranda",
+      meaning:
+        "Doğaya ve köklere bağlısın. Kalabalıktan uzak, ama yalnız değil, kendi küçük cennetinde yaşamak istiyorsun.",
+    },
+    {
+      id: "kapadokya-magara",
+      name: "Kapadokya'da mağara ev",
+      emoji: "🎈",
+      detail: "Kayaya oyulmuş odalar, sabah balonlar",
+      meaning:
+        'Sıradan olanla yetinmiyorsun. Yaşadığın yerin bir hikâyesi olsun istiyorsun, misafirlerin de "Böylesini görmedim" desin.',
+    },
+    {
+      id: "deniz-kenari-villa",
+      name: "Bodrum'da havuzlu villa",
+      emoji: "🏝️",
+      detail: "Sonsuzluk havuzu, gün batımı, yaz boyu misafir",
+      meaning:
+        "Hayattan keyif almayı biliyorsun ve bunu paylaşmayı seviyorsun. Evin senin için bir sosyal merkez, kapısı herkese açık.",
+    },
+    {
+      id: "orman-kulube",
+      name: "Ormanda cam duvarlı kulübe",
+      emoji: "🛖",
+      detail: "Şömine, yağmur sesi, en yakın komşu 2 km",
+      meaning:
+        "Kendinle baş başa kalmak sana iyi geliyor. Kafanı dinlemek için uzaklaşmana gerek yok, zaten uzaktasın.",
+    },
+    {
+      id: "paris-dairesi",
+      name: "Paris'te balkonlu apartman dairesi",
+      emoji: "🥐",
+      detail: "Yüksek tavanlar, ahşap parke, aşağıda fırın",
+      meaning:
+        "Romantik bir ruhun var ve estetiğe çok önem veriyorsun. Sıradan bir salı bile senin elinde bir film sahnesine dönüşüyor.",
+    },
+    {
+      id: "new-york-loft",
+      name: "New York'ta loft",
+      emoji: "🗽",
+      detail: "Tuğla duvarlar, kocaman pencereler, 7/24 açık şehir",
+      meaning:
+        "Hırslısın ve büyük düşünüyorsun. Fırsatların peşinden koşmayı seviyorsun, uyuyan bir şehirde yaşamak sana göre değil.",
+    },
+    {
+      id: "bahceli-mustakil",
+      name: "Bahçeli müstakil ev",
+      emoji: "🌻",
+      detail: "Salıncak, ızgara, bahçede koşan bir köpek",
+      meaning:
+        "Sen yuva kurmayı hayal ediyorsun. Kalabalık sofralar, büyüyen çocuklar, bahçede pazar kahvaltıları. Huzurun adresi aile.",
+    },
+    {
+      id: "tekne-ev",
+      name: "Tekne ev",
+      emoji: "⛵",
+      detail: "Her hafta başka bir koy, uyanınca deniz",
+      meaning: "Özgürlük senin için her şey. Bir yere bağlanmak yerine hayatın seni götürdüğü yere gitmek istiyorsun.",
+    },
+    {
+      id: "karavan",
+      name: "Karavan",
+      emoji: "🚐",
+      detail: "Bugün Kaş, yarın Kazdağları",
+      meaning: "Sahip olduklarından çok yaşadıklarına değer veriyorsun. Evin dört duvar değil, gittiğin her yer.",
+    },
+    {
+      id: "minimalist-studyo",
+      name: "Şehir merkezinde minimalist stüdyo",
+      emoji: "🪟",
+      detail: "Az eşya, çok ışık, her yere yürüme mesafesi",
+      meaning:
+        "Sade ve pratiksin. Fazlalıklardan arınmış bir hayat sana özgürlük veriyor. Evin bir sığınak, hayatın ise dışarıda.",
+    },
+    {
+      id: "kosk",
+      name: "Boğaz'da tarihi köşk",
+      emoji: "🏛️",
+      detail: "Yalı rıhtımı, yüz yıllık ahşap, kendi iskelesi",
+      meaning: "Geçmişin zarafetine hayransın. Kalıcı olanı, hikâyesi olanı seviyorsun. Senin için ev bir miras.",
+    },
+    {
+      id: "akilli-ev",
+      name: "Her şeyi sesle yönetilen akıllı ev",
+      emoji: "🤖",
+      detail: "Işıklar, perdeler, kahve: hepsi bir komutla",
+      meaning:
+        "Konfor ve verimlilik senin dilin. Teknolojiyi hayatı kolaylaştırmak için kullanıyor, zamanını önemli şeylere ayırıyorsun.",
+    },
+    {
+      id: "koy-evi",
+      name: "Köyde bahçeli kerpiç ev",
+      emoji: "🐓",
+      detail: "Kendi sebzen, kendi tavukların, tandır ekmeği",
+      meaning:
+        "Sen toprağa dönmek istiyorsun. Ürettiğini yemek, mevsimlere göre yaşamak sana gerçek zenginlik gibi geliyor.",
+    },
+    {
+      id: "kayak-dag-evi",
+      name: "Uludağ'da dağ evi",
+      emoji: "🏔️",
+      detail: "Kar manzarası, sıcak çikolata, kapının önünde pist",
+      meaning: "Macera ve sıcaklık arasında bir denge arıyorsun. Gün boyu hareket, akşam şöminenin karşısında huzur.",
+    },
+  ],
+};

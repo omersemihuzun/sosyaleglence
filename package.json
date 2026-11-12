@@ -1,26 +1,57 @@
 {
   "name": "sosyaleglence",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "Turkish entertainment platform: calibrated personality tests, couple games, elimination games and gift finder.",
+  "homepage": "https://sosyaleglence.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omersemihuzun/sosyaleglence.git"
+  },
+  "engines": {
+    "node": ">=22.6"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "next typegen && tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "knip": "knip",
+    "test": "vitest run",
+    "e2e": "playwright test",
+    "kalibre": "node --experimental-strip-types --no-warnings scripts/kalibre.ts",
+    "seo": "node --experimental-strip-types --no-warnings scripts/seo-kontrol.ts",
+    "rapor": "node --experimental-strip-types --no-warnings scripts/rapor.ts",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run knip && npm test && npm run kalibre && npm run seo"
   },
   "dependencies": {
+    "@upstash/ratelimit": "^2.2.0",
+    "@upstash/redis": "^1.41.0",
+    "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.1.0",
     "next": "16.4.5",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "server-only": "^0.0.1",
+    "sharp": "^0.35.5"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.65.0",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.5",
+    "knip": "^5.88.1",
+    "prettier": "^3.9.10",
     "tailwindcss": "^4",
-    "typescript": "^5"
-  }
+    "typescript": "^5",
+    "vitest": "^4.1.12"
+  },
+  "license": "UNLICENSED"
 }

@@ -1,0 +1,11 @@
+# Üretilen dosyalar: npm run kalibre yazar, CI birebir karşılaştırır
+src/content/tests/kalibrasyon.json
+docs/test-metrikleri.md
+src/content/brackets/gorseller/*.json
+
+package-lock.json
+public/
+.next/
+node_modules/
+test-results/
+playwright-report/

@@ -1,0 +1,146 @@
+{
+  "bali": {
+    "src": "/eleme/balayi-rotani-sec/bali.webp",
+    "creator": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rice_terraces,_Bali.jpg",
+    "title": "Rice terraces, Bali"
+  },
+  "dubai": {
+    "src": "/eleme/balayi-rotani-sec/dubai.webp",
+    "creator": "Robert Bock",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dubai_skyline_unsplash.jpg",
+    "title": "Dubai skyline unsplash"
+  },
+  "evde": {
+    "src": "/eleme/balayi-rotani-sec/evde.webp",
+    "creator": "Shixart1985",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cozy_cabin_living_room_with_wooden_interior.jpg",
+    "title": "Cozy cabin living room with wooden interior"
+  },
+  "fethiye": {
+    "src": "/eleme/balayi-rotani-sec/fethiye.webp",
+    "creator": "Nevit Dilmen",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ingiliz_limani_04510_-_6115.jpg",
+    "title": "Ingiliz limani 04510 - 6115"
+  },
+  "guney-amerika": {
+    "src": "/eleme/balayi-rotani-sec/guney-amerika.webp",
+    "creator": "Martin St-Amant (S23678)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:80_-_Machu_Picchu_-_Juin_2009_-_edit.jpg",
+    "title": "80 - Machu Picchu - Juin 2009 - edit"
+  },
+  "isvicre": {
+    "src": "/eleme/balayi-rotani-sec/isvicre.webp",
+    "creator": "Kabelleger / David Gubler",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:RhB_ABe_4-4_III_Am_See_Br%C3%BCcke.jpg",
+    "title": "RhB ABe 4-4 III Am See Brücke"
+  },
+  "italya": {
+    "src": "/eleme/balayi-rotani-sec/italya.webp",
+    "creator": "Bernard Gagnon",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Positano_(Italy)_03.jpg",
+    "title": "Positano (Italy) 03"
+  },
+  "kapadokya": {
+    "src": "/eleme/balayi-rotani-sec/kapadokya.webp",
+    "creator": "Wolfgang Moroder",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hot_air_balloon_start_in_Cappadocia_2014.jpg",
+    "title": "Hot air balloon start in Cappadocia 2014"
+  },
+  "kas": {
+    "src": "/eleme/balayi-rotani-sec/kas.webp",
+    "creator": "Esginmurat",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ka%C5%9F_Ak%C5%9Fam%C3%BCst%C3%BC_Manzaras%C4%B1.jpg",
+    "title": "Kaş Akşamüstü Manzarası"
+  },
+  "maldivler": {
+    "src": "/eleme/balayi-rotani-sec/maldivler.webp",
+    "creator": "Martin Falbisoner",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diamonds_Thudufushi_Beach_and_Water_Villas,_May_2017_-04.jpg",
+    "title": "Diamonds Thudufushi Beach and Water Villas, May 2017 -04"
+  },
+  "new-york": {
+    "src": "/eleme/balayi-rotani-sec/new-york.webp",
+    "creator": "Superbass",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024-11-19-Central_Park-0669.jpg",
+    "title": "2024-11-19-Central Park-0669"
+  },
+  "norvec": {
+    "src": "/eleme/balayi-rotani-sec/norvec.webp",
+    "creator": "Carsten",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aurora_Borealis_Norway_2013.jpg",
+    "title": "Aurora Borealis Norway 2013"
+  },
+  "paris": {
+    "src": "/eleme/balayi-rotani-sec/paris.webp",
+    "creator": "Getfunky Paris",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg",
+    "title": "Eiffel Tower and Pont Alexandre III at night"
+  },
+  "safari": {
+    "src": "/eleme/balayi-rotani-sec/safari.webp",
+    "creator": "Byrdyak",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Three_giraffes_01.jpg",
+    "title": "Three giraffes 01"
+  },
+  "santorini": {
+    "src": "/eleme/balayi-rotani-sec/santorini.webp",
+    "creator": "Norbert Nagel",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:07-17-2012_-_Oia_-_Santorini_-_Greece_-_15.jpg",
+    "title": "07-17-2012 - Oia - Santorini - Greece - 15"
+  },
+  "tokyo": {
+    "src": "/eleme/balayi-rotani-sec/tokyo.webp",
+    "creator": "Syced",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "source": "Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Views_of_Tokyo_Tower_from_Shibuya_Stream.jpg",
+    "title": "Views of Tokyo Tower from Shibuya Stream"
+  }
+}
