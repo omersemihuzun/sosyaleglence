@@ -19,12 +19,12 @@ const TILTS = [-1, 0.7, -0.4, 0.9, -0.8, 0.5];
 
 /** Hero'daki kıskançlık testi dışında, türleri karışık altı test: ilişki, arkadaşlık, kişilik ve "seç" formatı. */
 const FEATURED_TESTS = [
+  "magara-adami-testi",
   "red-flag-testi",
   "situationship-testi",
   "hangi-tip-sevgilisin-testi",
   "toksik-arkadas-testi",
   "sofra-kur-sehir-testi",
-  "baglanma-stili-testi",
 ];
 const FEATURED_GUIDES = [
   "sevgiliye-yilbasi-hediyesi",

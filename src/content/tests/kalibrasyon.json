@@ -649,41 +649,41 @@
     }
   },
   "magara-adami-testi": {
-    "sehirli-sapiens": {
-      "teknoloji": 8,
-      "icgudu": 9,
-      "iletisim": 9,
-      "konfor": 9
+    "modern-partner": {
+      "roller": 10,
+      "kontrol": 10,
+      "duygu": 9,
+      "elalem": 8
     },
-    "dijital-magara": {
-      "teknoloji": 72,
-      "icgudu": 26,
-      "iletisim": 17,
-      "konfor": 34
+    "eski-usul-romantik": {
+      "roller": 73,
+      "kontrol": 46,
+      "duygu": 23,
+      "elalem": 21
     },
-    "ates-bekcisi": {
-      "teknoloji": 22,
-      "icgudu": 78,
-      "iletisim": 28,
-      "konfor": 29
+    "magaranin-bekcisi": {
+      "roller": 47,
+      "kontrol": 76,
+      "duygu": 22,
+      "elalem": 20
     },
-    "hi-diyen-bilge": {
-      "teknoloji": 22,
-      "icgudu": 28,
-      "iletisim": 78,
-      "konfor": 24
+    "tas-kalp": {
+      "roller": 27,
+      "kontrol": 32,
+      "duygu": 81,
+      "elalem": 20
     },
-    "tas-yastik": {
-      "teknoloji": 29,
-      "icgudu": 29,
-      "iletisim": 24,
-      "konfor": 74
+    "elalem-ne-der": {
+      "roller": 30,
+      "kontrol": 29,
+      "duygu": 26,
+      "elalem": 75
     },
     "tam-magara": {
-      "teknoloji": 42,
-      "icgudu": 52,
-      "iletisim": 49,
-      "konfor": 49
+      "roller": 55,
+      "kontrol": 57,
+      "duygu": 49,
+      "elalem": 42
     }
   }
 }
