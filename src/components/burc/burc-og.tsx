@@ -1,5 +1,5 @@
 import type { Burc } from "@/content/burclar";
-import { yaziRengi } from "./burc-parcalar";
+import { yaziRengi } from "@/components/burc/burc-parcalar";
 
 const PLUM = "#2B1030";
 const PAPER = "#FFF7F3";

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { PhotoCredit } from "@/components/photo-credit";
+import { PhotoCredit } from "@/components/brackets/photo-credit";
 import { brackets } from "@/content/brackets";
 
 export const metadata: Metadata = {

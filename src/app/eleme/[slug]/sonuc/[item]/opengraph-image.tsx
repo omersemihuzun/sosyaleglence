@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { brackets, getBracket } from "@/content/brackets";
-import { loadOgFonts } from "@/lib/og";
-import { loadItemPhoto, OgBracketCard } from "@/lib/og-bracket";
+import { loadOgFonts } from "@/lib/og/og";
+import { loadItemPhoto, OgBracketCard } from "@/lib/og/og-bracket";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";

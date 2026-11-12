@@ -4,7 +4,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import { findIdeas } from "@/content/gifts/guides";
 import { budgets, interests, recipients, type Budget, type Interest, type Recipient } from "@/content/gifts/types";
-import { GiftCard } from "./gift-card";
+import { GiftCard } from "@/components/gifts/gift-card";
 
 function Chip({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
   return (

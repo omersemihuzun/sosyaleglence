@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ArticleCard } from "@/components/article-card";
+import { ArticleCard } from "@/components/articles/article-card";
 import { articles } from "@/content/articles";
 import { breadcrumbJsonLd, toJsonLd } from "@/lib/jsonld";
 

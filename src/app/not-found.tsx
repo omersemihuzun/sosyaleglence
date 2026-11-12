@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SearchForm } from "@/components/search-box";
+import { SearchForm } from "@/components/layout/search-box";
 
 export default function NotFound() {
   return (

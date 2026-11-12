@@ -1,8 +1,8 @@
 import { ImageResponse } from "next/og";
-import { OgCift } from "@/components/burc-og";
+import { OgCift } from "@/components/burc/burc-og";
 import { parseCiftSlug, uyumlar } from "@/content/burc-uyum";
 import { getBurc } from "@/content/burclar";
-import { loadOgFonts } from "@/lib/og";
+import { loadOgFonts } from "@/lib/og/og";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";

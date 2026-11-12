@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Suspense } from "react";
-import { MobileMenu, MobileMenuFallback } from "./mobile-menu";
-import { DesktopNav, DesktopNavView, SearchLink, SearchLinkView } from "./site-nav";
+import { MobileMenu, MobileMenuFallback } from "@/components/layout/mobile-menu";
+import { DesktopNav, DesktopNavView, SearchLink, SearchLinkView } from "@/components/layout/site-nav";
 
 export function SiteHeader() {
   return (

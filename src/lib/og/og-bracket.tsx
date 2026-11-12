@@ -1,4 +1,4 @@
-import type { Bracket, BracketItem } from "./bracket-types";
+import type { Bracket, BracketItem } from "@/lib/bracket-types";
 
 const PLUM = "#2B1030";
 const PAPER = "#FFF7F3";

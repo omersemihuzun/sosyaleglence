@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
-import { BracketCard } from "@/components/bracket-card";
-import { BracketResultPersonal } from "@/components/bracket-result-personal";
-import { BracketStats } from "@/components/live-stats";
-import { PageSkeleton } from "@/components/page-skeleton";
+import { BracketCard } from "@/components/brackets/bracket-card";
+import { BracketResultPersonal } from "@/components/brackets/bracket-result-personal";
+import { BracketStats } from "@/components/shared/live-stats";
+import { PageSkeleton } from "@/components/layout/page-skeleton";
 import { brackets, getBracket } from "@/content/brackets";
 import { bracketResultDescription, bracketResultTitle, breadcrumbJsonLd, toJsonLd } from "@/lib/jsonld";
 import { onColor } from "@/lib/color";
-import { ItemVisual } from "@/components/item-visual";
-import { PhotoCredit } from "@/components/photo-credit";
+import { ItemVisual } from "@/components/brackets/item-visual";
+import { PhotoCredit } from "@/components/brackets/photo-credit";
 import { absoluteUrl } from "@/lib/site";
 
 /** Tüm parametreler build sırasında bilinir: sayfa tamamen statik üretilir. */

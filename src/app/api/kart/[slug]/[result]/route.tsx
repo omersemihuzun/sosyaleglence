@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { getTest } from "@/content/tests";
 import { decodeScores, headlineScore } from "@/lib/scoring";
-import { loadOgFonts, StoryCard } from "@/lib/og";
+import { loadOgFonts, StoryCard } from "@/lib/og/og";
 import { guardRender } from "../../../_lib/guard";
 
 /** Story boyutunda (1080×1920) paylaşım kartı. ?s=64-20-80-33 ile kişisel skorları da çizer. */

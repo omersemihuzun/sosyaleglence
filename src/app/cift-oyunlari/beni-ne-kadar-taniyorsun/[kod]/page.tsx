@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { TaniyorTahminIstemci } from "@/components/cift/istemci";
-import { PageSkeleton } from "@/components/page-skeleton";
+import { PageSkeleton } from "@/components/layout/page-skeleton";
 import { taniyorSorulari } from "@/content/cift/taniyor";
 import { TANIYOR_KOD } from "@/lib/taniyor";
 

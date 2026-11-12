@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { IsimUyumuAraci } from "@/components/isim-uyumu-araci";
+import { IsimUyumuAraci } from "@/components/isim-uyumu/isim-uyumu-araci";
 import { breadcrumbJsonLd, toJsonLd } from "@/lib/jsonld";
 import { absoluteUrl } from "@/lib/site";
 

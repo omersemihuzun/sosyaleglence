@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BracketCard } from "@/components/bracket-card";
+import { BracketCard } from "@/components/brackets/bracket-card";
 import { OyunKarti } from "@/components/cift/oyun-sayfasi";
-import { DailyPoll } from "@/components/daily-poll";
-import { LiveQuestion } from "@/components/live-question";
-import { TestCard } from "@/components/test-card";
+import { DailyPoll } from "@/components/polls/daily-poll";
+import { LiveQuestion } from "@/components/tests/live-question";
+import { TestCard } from "@/components/tests/test-card";
 import { brackets } from "@/content/brackets";
 import { ciftOyunlari } from "@/content/cift";
 import { burclar } from "@/content/burclar";

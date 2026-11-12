@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { getGuide, guides, ideasForGuide } from "@/content/gifts/guides";
-import { loadOgFonts } from "@/lib/og";
-import { OgSectionCard } from "@/lib/og-brand";
+import { loadOgFonts } from "@/lib/og/og";
+import { OgSectionCard } from "@/lib/og/og-brand";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";

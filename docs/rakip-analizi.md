@@ -142,7 +142,7 @@ Tarih: Kasım 2026. Kaynaklar sayfa sonunda. İçerikler özetlenmiştir, alınt
 
 ### Sonuç
 
-Uyarı sayısı **102'den 11'e** indi (185 sayfa denetlendi). Kalan 11 uyarı içerik dosyalarından geliyor. Bu dosyalar sonraki turda düzeltildi; o anki liste:
+Uyarı sayısı **102'den 11'e** indi (185 sayfa denetlendi). Kalan 11 uyarı içerik dosyalarından geliyordu ve sonraki turda düzeltildi (güncel durum: `npm run seo`, 0 uyarı). O anki liste:
 
 | Sayfa                              | Sorun            | Kaynak dosya                                          |
 | ---------------------------------- | ---------------- | ----------------------------------------------------- |

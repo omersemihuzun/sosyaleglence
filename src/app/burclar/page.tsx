@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BurcNotu, burcSecenekleri } from "@/components/burc-parcalar";
-import { BurcUyumAraci } from "@/components/burc-uyum-araci";
+import { BurcNotu, burcSecenekleri } from "@/components/burc/burc-parcalar";
+import { BurcUyumAraci } from "@/components/burc/burc-uyum-araci";
 import { BURCLAR_DESC, BURCLAR_TITLE } from "@/content/burc-uyum";
 import { burclar } from "@/content/burclar";
 import { breadcrumbJsonLd, toJsonLd } from "@/lib/jsonld";

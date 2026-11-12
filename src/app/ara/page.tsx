@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { SearchPanel } from "@/components/search-box";
+import { SearchPanel } from "@/components/layout/search-box";
 
 export const metadata: Metadata = {
   title: "Sitede Ara",

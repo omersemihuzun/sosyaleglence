@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Bracket } from "@/lib/bracket-types";
-import { hasPhotos, ItemVisual } from "./item-visual";
+import { hasPhotos, ItemVisual } from "@/components/brackets/item-visual";
 
 export function BracketCard({ bracket, tilt = 0 }: { bracket: Bracket; tilt?: number }) {
   const photos = hasPhotos(bracket);

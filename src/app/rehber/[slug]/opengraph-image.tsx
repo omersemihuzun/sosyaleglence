@@ -1,8 +1,8 @@
 import { ImageResponse } from "next/og";
 import { articles, getArticle } from "@/content/articles";
 import { onColor } from "@/lib/color";
-import { loadOgFonts } from "@/lib/og";
-import { OgSectionCard } from "@/lib/og-brand";
+import { loadOgFonts } from "@/lib/og/og";
+import { OgSectionCard } from "@/lib/og/og-brand";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";

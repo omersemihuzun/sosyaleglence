@@ -1,7 +1,13 @@
 {
   "name": "sosyaleglence",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "Turkish entertainment platform: calibrated personality tests, couple games, elimination games and gift finder.",
+  "homepage": "https://sosyaleglence.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omersemihuzun/sosyaleglence.git"
+  },
   "engines": {
     "node": ">=22.6"
   },
@@ -46,5 +52,6 @@
     "tailwindcss": "^4",
     "typescript": "^5",
     "vitest": "^4.1.12"
-  }
+  },
+  "license": "UNLICENSED"
 }

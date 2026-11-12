@@ -4,9 +4,9 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import type { Result, Test } from "@/lib/types";
 import { decodeScores, headlineScore } from "@/lib/scoring";
-import { Celebrate } from "./celebrate";
-import { CompareInvite } from "./compare-invite";
-import { ShareBar } from "./share-bar";
+import { Celebrate } from "@/components/shared/celebrate";
+import { CompareInvite } from "@/components/tests/compare-invite";
+import { ShareBar } from "@/components/shared/share-bar";
 
 export function ResultPersonal({ test, result, shareUrl }: { test: Test; result: Result; shareUrl: string }) {
   const params = useSearchParams();

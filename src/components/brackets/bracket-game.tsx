@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import type { Bracket, BracketItem } from "@/lib/bracket-types";
 import { deriveState, summarize, type Pick } from "@/lib/bracket";
 import { reportBracket } from "@/lib/client/stats";
-import { hasPhotos, ItemVisual } from "./item-visual";
+import { hasPhotos, ItemVisual } from "@/components/brackets/item-visual";
 
 // Bilinçli olarak @/content/brackets'tan import edilmiyor: o modül 8 turnuvanın bütün metnini
 // tarayıcı paketine taşıyordu (+38 KB). Oyun yalnızca props ile gelen tek turnuvayı bilir.

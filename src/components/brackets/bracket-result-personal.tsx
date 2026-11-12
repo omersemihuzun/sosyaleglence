@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import type { Bracket, BracketItem } from "@/lib/bracket-types";
-import { Celebrate } from "./celebrate";
-import { ShareBar } from "./share-bar";
+import { Celebrate } from "@/components/shared/celebrate";
+import { ShareBar } from "@/components/shared/share-bar";
 
 export function BracketResultPersonal({
   bracket,

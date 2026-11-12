@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { BracketCard } from "@/components/bracket-card";
+import { BracketCard } from "@/components/brackets/bracket-card";
 import { brackets } from "@/content/brackets";
 
 export const metadata: Metadata = {

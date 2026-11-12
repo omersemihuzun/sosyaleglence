@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { BrandMark } from "@/lib/og-brand";
+import { BrandMark } from "@/lib/og/og-brand";
 
 export const size = { width: 32, height: 32 };
 export const contentType = "image/png";

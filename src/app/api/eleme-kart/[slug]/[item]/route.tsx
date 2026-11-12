@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { getBracket } from "@/content/brackets";
-import { loadOgFonts } from "@/lib/og";
-import { BracketStoryCard, loadItemPhoto } from "@/lib/og-bracket";
+import { loadOgFonts } from "@/lib/og/og";
+import { BracketStoryCard, loadItemPhoto } from "@/lib/og/og-bracket";
 import { guardRender } from "../../../_lib/guard";
 
 /** Eleme oyunu story kartı (1080×1920). ?f=finalist-id ile finaldeki rakibi de yazar. */

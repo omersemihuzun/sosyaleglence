@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-import type { Result, Test } from "./types";
-import type { DimensionScores } from "./scoring";
+import type { Result, Test } from "@/lib/types";
+import type { DimensionScores } from "@/lib/scoring";
 
 type Font = { name: string; data: Buffer; weight: 500 | 800; style: "normal" };
 

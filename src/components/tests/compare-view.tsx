@@ -6,7 +6,7 @@ import { onColor } from "@/lib/color";
 import { compatibility, compatibilityText, type CompareSession } from "@/lib/compare";
 import { decodeScores, pickResult } from "@/lib/scoring";
 import type { Test } from "@/lib/types";
-import { Quiz } from "./quiz";
+import { Quiz } from "@/components/tests/quiz";
 
 type State =
   { kind: "loading" } | { kind: "error"; message: string } | { kind: "ready"; session: CompareSession; owner: boolean };

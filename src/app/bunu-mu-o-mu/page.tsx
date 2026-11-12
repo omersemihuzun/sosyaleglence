@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { PollPlayerClient } from "@/components/poll-player-client";
+import { PollPlayerClient } from "@/components/polls/poll-player-client";
 import { polls } from "@/content/polls";
 
 export const metadata: Metadata = {

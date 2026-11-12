@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
-import { OgBurclar } from "@/components/burc-og";
+import { OgBurclar } from "@/components/burc/burc-og";
 import { burclar } from "@/content/burclar";
-import { loadOgFonts } from "@/lib/og";
+import { loadOgFonts } from "@/lib/og/og";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";

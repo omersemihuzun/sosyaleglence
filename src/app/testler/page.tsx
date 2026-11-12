@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { TestCard } from "@/components/test-card";
+import { TestCard } from "@/components/tests/test-card";
 import { tests } from "@/content/tests";
 
 export const metadata: Metadata = {

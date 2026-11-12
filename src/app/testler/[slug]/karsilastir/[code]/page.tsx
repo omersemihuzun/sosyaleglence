@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
-import { CompareView } from "@/components/compare-view";
-import { PageSkeleton } from "@/components/page-skeleton";
+import { CompareView } from "@/components/tests/compare-view";
+import { PageSkeleton } from "@/components/layout/page-skeleton";
 import { getTest } from "@/content/tests";
 import { COMPARE_CODE } from "@/lib/compare";
 

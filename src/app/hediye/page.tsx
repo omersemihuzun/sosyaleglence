@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
-import { GiftFinder } from "@/components/gift-finder";
+import { GiftFinder } from "@/components/gifts/gift-finder";
 import { guides } from "@/content/gifts/guides";
 
 export const metadata: Metadata = {

@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 import { getTest, tests } from "@/content/tests";
-import { loadOgFonts, OgTestCard } from "@/lib/og";
+import { loadOgFonts, OgTestCard } from "@/lib/og/og";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
