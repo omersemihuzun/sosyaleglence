@@ -1,4 +1,18 @@
+import type { Page } from "@playwright/test";
 import { expect, noHorizontalOverflow, test } from "./fixtures";
+
+/**
+ * Mobil menüyü açar. Düğme sunucudan hazır gelir; yoğun CI'da hydration tamamlanmadan
+ * yapılan ilk tıklama boşa gidebileceği için menü görünene kadar tıklamayı yineler.
+ */
+async function menuyuAc(page: Page) {
+  const dialog = page.getByRole("dialog", { name: "Menü" });
+  await expect(async () => {
+    await page.getByRole("button", { name: "Menü" }).click();
+    await expect(dialog).toBeVisible({ timeout: 1_000 });
+  }).toPass({ timeout: 15_000 });
+  return dialog;
+}
 
 test("mobil menü açılır, Esc ile kapanır, odak butona döner", async ({ page, consoleErrors, isMobile }) => {
   void consoleErrors;
@@ -6,9 +20,7 @@ test("mobil menü açılır, Esc ile kapanır, odak butona döner", async ({ pag
   await page.goto("/");
   const button = page.getByRole("button", { name: "Menü" });
   await expect(button).toHaveAttribute("aria-expanded", "false");
-  await button.click();
-  const dialog = page.getByRole("dialog", { name: "Menü" });
-  await expect(dialog).toBeVisible();
+  const dialog = await menuyuAc(page);
   await expect(button).toHaveAttribute("aria-expanded", "true");
   expect(await page.evaluate(() => document.body.style.overflow)).toBe("hidden");
 
@@ -30,18 +42,10 @@ test("mobil menüden bir bölüme gidince menü kapanır ve aktif bölüm işare
   void consoleErrors;
   test.skip(!isMobile, "mobil menü sadece dar ekranda");
   await page.goto("/");
-  await page.getByRole("button", { name: "Menü" }).click();
-  await page
-    .getByRole("dialog", { name: "Menü" })
-    .getByRole("link", { name: /Burçlar/ })
-    .click();
+  await (await menuyuAc(page)).getByRole("link", { name: /Burçlar/ }).click();
   await expect(page).toHaveURL(/\/burclar$/);
   await expect(page.getByRole("dialog", { name: "Menü" })).toBeHidden();
-  await page.getByRole("button", { name: "Menü" }).click();
-  await expect(page.getByRole("dialog", { name: "Menü" }).getByRole("link", { name: /Burçlar/ })).toHaveAttribute(
-    "aria-current",
-    "page",
-  );
+  await expect((await menuyuAc(page)).getByRole("link", { name: /Burçlar/ })).toHaveAttribute("aria-current", "page");
 });
 
 test("masaüstü menüsü bütün bölümleri gösterir ve aktif olanı işaretler", async ({ page, consoleErrors, isMobile }) => {

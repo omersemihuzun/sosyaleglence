@@ -43,6 +43,20 @@ export function pickResult(test: Test, scores: DimensionScores): Result {
 
 export function headlineScore(test: Test, scores: DimensionScores): number | null {
   if (!test.headline) return null;
+  if (test.headline.mode === "toplam") {
+    // Toplanan puan / her soruda en yüksek toplamı veren şık seçilseydi alınacak puan.
+    // Boyut skorları yüzde olduğu için her boyutun ham puanı, o boyutun en yüksek puanıyla geri hesaplanır.
+    let got = 0;
+    let max = 0;
+    for (const dim of test.dimensions) {
+      const dimMax = test.questions.reduce((t, q) => t + Math.max(...q.options.map((o) => o.scores[dim.id] ?? 0)), 0);
+      got += ((scores[dim.id] ?? 0) / 100) * dimMax;
+    }
+    for (const q of test.questions) {
+      max += Math.max(...q.options.map((o) => Object.values(o.scores).reduce((t, v) => t + v, 0)));
+    }
+    return max === 0 ? null : Math.min(100, Math.round((got / max) * 100));
+  }
   let sum = 0;
   let w = 0;
   for (const [id, weight] of Object.entries(test.headline.weights)) {

@@ -20,4 +20,5 @@ export const testDosyalari: [string, string][] = [
   ["kavga-tarzi.ts", "kavgaTarzi"],
   ["iliskiye-hazir.ts", "iliskiyeHazir"],
   ["guven-sorunu.ts", "guvenSorunu"],
+  ["magara-adami.ts", "magaraAdami"],
 ];

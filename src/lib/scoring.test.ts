@@ -83,6 +83,16 @@ describe("headlineScore", () => {
     expect(headlineScore(test, { a: 0, b: 100 })).toBe(75);
   });
 
+  it('"toplam" modunda seçilen puanı alınabilecek en yüksek toplama oranlar', () => {
+    const toplam: Test = { ...test, headline: { label: "H", weights: {}, mode: "toplam" } };
+    // Her soruda en yüksek toplamı veren şık (q1: a3, q2: b3) seçilirse %100
+    expect(headlineScore(toplam, scoreDimensions(toplam, [0, 1]))).toBe(100);
+    // Hiç puan vermeyen şık + 2 puanlık şık: 2 / 6
+    expect(headlineScore(toplam, scoreDimensions(toplam, [2, 0]))).toBe(33);
+    // Hiç puan almayan cevaplar %0
+    expect(headlineScore(toplam, { a: 0, b: 0 })).toBe(0);
+  });
+
   it("headline yoksa null döner", () => {
     expect(headlineScore({ ...test, headline: undefined }, { a: 50, b: 50 })).toBeNull();
   });

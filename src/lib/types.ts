@@ -64,5 +64,14 @@ export type Test = {
    * İsteğe bağlı genel skor: belirtilen boyutların ağırlıklı ortalaması.
    * Ör. Kıskançlık testinde "Kıskançlık seviyen %64".
    */
-  headline?: { label: string; weights: Record<string, number> };
+  headline?: {
+    label: string;
+    weights: Record<string, number>;
+    /**
+     * "ortalama" (varsayılan): boyut skorlarının ağırlıklı ortalaması.
+     * "toplam": seçilen şıkların toplam puanı / alınabilecek en yüksek toplam. Her soruda en "uç" şıkkı
+     * seçen %100 alır; boyutlar birbirini dışladığında (bir şık tek tarafa puan verir) ortalama yanıltıcı kalır.
+     */
+    mode?: "ortalama" | "toplam";
+  };
 };
