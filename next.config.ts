@@ -55,6 +55,8 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/api/eleme-kart/**": ["./public/eleme/**/*"],
     "/eleme/**": ["./public/eleme/**/*"],
+    // Paylaşım görselleri (Satori) fontları çalışma anında diskten okur
+    "/**": ["./src/lib/og/fonts/*.woff"],
   },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
