@@ -1,6 +1,0 @@
-# Vercel yüklemesine gitmeyecekler
-.gorsel-aday
-test-results
-playwright-report
-docs
-e2e

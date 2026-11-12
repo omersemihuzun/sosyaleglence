@@ -53,5 +53,24 @@
     "typescript": "^5",
     "vitest": "^4.1.12"
   },
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "prettier": {
+    "printWidth": 120,
+    "endOfLine": "lf"
+  },
+  "knip": {
+    "entry": [
+      "scripts/*.{ts,mjs}",
+      "e2e/**/*.ts"
+    ],
+    "project": [
+      "src/**/*.{ts,tsx}",
+      "scripts/**/*.{ts,mjs}",
+      "e2e/**/*.ts"
+    ],
+    "ignoreDependencies": [
+      "@tailwindcss/turbopack",
+      "tailwindcss"
+    ]
+  }
 }

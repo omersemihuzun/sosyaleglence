@@ -14,7 +14,7 @@ let cached: Font[] | null = null;
  */
 export async function loadOgFonts(): Promise<Font[]> {
   if (cached) return cached;
-  const dir = join(process.cwd(), "assets/fonts");
+  const dir = join(process.cwd(), "src/lib/og/fonts");
   const files: [string, string, 500 | 800][] = [
     ["Display", "bricolage-grotesque-latin-800-normal.woff", 800],
     ["DisplayExt", "bricolage-grotesque-latin-ext-800-normal.woff", 800],
