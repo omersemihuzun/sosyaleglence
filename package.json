@@ -47,7 +47,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.5",
-    "knip": "^5.88.1",
+    "knip": "^6.44.2",
     "prettier": "^3.9.10",
     "tailwindcss": "^4",
     "typescript": "^5",
