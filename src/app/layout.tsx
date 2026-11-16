@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Bricolage_Grotesque, Instrument_Sans } from "next/font/google";
 import { SiteHeader } from "@/components/layout/site-header";
+import { CerezOnayi } from "@/components/layout/cerez-onayi";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { organizationJsonLd, toJsonLd, websiteJsonLd } from "@/lib/jsonld";
 import { site } from "@/lib/site";
@@ -55,6 +56,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
         <SiteFooter />
+        <CerezOnayi />
         {/* Script'ler /_vercel/* altından gelir; sadece Vercel ortamında vardır (yerelde/CI'da 404 olur) */}
         {process.env.VERCEL && <Analytics />}
         {process.env.VERCEL && <SpeedInsights />}

@@ -19,14 +19,24 @@ const isDev = process.env.NODE_ENV === "development";
  * Next'in satır içi hydration script'leri ve JSON-LD için 'unsafe-inline' gerekli.
  * Dış kaynak yok: fontlar next/font ile kendi alan adımızdan, emoji görselleri sunucuda
  * (ImageResponse) üretiliyor. Mağaza linkleri yalnızca normal bağlantı, CSP'yi etkilemez.
+ * Tek istisna Google Analytics: sadece NEXT_PUBLIC_GA_ID tanımlıysa izin verilir ve script ancak
+ * ziyaretçi çerez onayı verince yüklenir (src/components/layout/cerez-onayi.tsx).
  */
+const ga = process.env.NEXT_PUBLIC_GA_ID
+  ? {
+      script: " https://www.googletagmanager.com",
+      connect: " https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com",
+      img: " https://*.google-analytics.com https://www.googletagmanager.com",
+    }
+  : { script: "", connect: "", img: "" };
+
 const csp = [
   "default-src 'self'",
-  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}`,
+  `script-src 'self' 'unsafe-inline'${ga.script}${isDev ? " 'unsafe-eval'" : ""}`,
   "style-src 'self' 'unsafe-inline'",
-  "img-src 'self' blob: data:",
+  `img-src 'self' blob: data:${ga.img}`,
   "font-src 'self'",
-  `connect-src 'self'${isDev ? " ws: wss:" : ""}`,
+  `connect-src 'self'${ga.connect}${isDev ? " ws: wss:" : ""}`,
   "object-src 'none'",
   "base-uri 'self'",
   "form-action 'self'",

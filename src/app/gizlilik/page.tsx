@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/gizlilik" },
 };
 
-const UPDATED = "8 Kasım 2026";
+const UPDATED = "16 Kasım 2026";
 
 export default function PrivacyPage() {
   return (
@@ -22,7 +22,8 @@ export default function PrivacyPage() {
           <h2 className="font-display text-2xl font-bold">Kısaca</h2>
           <p className="mt-2">
             Üyelik yok, e-posta ya da telefon istemiyoruz, reklam çerezi kullanmıyoruz. Test ve oyun cevapların
-            tarayıcında hesaplanır. Bizim tarafımızda kimliğinle eşleşmeyen, anonim sayaçlar tutulur.
+            tarayıcında hesaplanır. Bizim tarafımızda kimliğinle eşleşmeyen, anonim sayaçlar tutulur. Google Analytics
+            çerezleri yalnızca onay verirsen kullanılır.
           </p>
         </section>
 
@@ -49,6 +50,15 @@ export default function PrivacyPage() {
             <li>
               <strong>Ziyaret istatistikleri:</strong> Vercel Web Analytics ile sayfa görüntüleme sayıları ve Speed
               Insights ile sayfa hızı ölçülür. Bu araçlar çerez kullanmaz ve seni siteler arasında takip etmez.
+            </li>
+            <li>
+              <strong>Google Analytics (sadece onay verirsen):</strong> Siteyi geliştirmek için Google Analytics 4 ile
+              hangi sayfaların ziyaret edildiğini, yaklaşık konum (ülke/şehir), cihaz ve tarayıcı türü gibi bilgileri
+              toplarız. Bu, Google&apos;ın analitik çerezlerini (<code>_ga</code> ile başlayanlar) kullanır ve veriler
+              Google tarafından yurt dışındaki sunucularda işlenir. IP adresi anonimleştirilir; reklam ve
+              kişiselleştirme çerezleri kullanılmaz. Onay vermezsen Google Analytics hiç yüklenmez. Tercihini sayfanın
+              altındaki &quot;Çerez tercihleri&quot; bağlantısıyla istediğin an değiştirebilirsin; onayı geri çekersen
+              bu çerezler tarayıcından silinir.
             </li>
             <li>
               <strong>Tarayıcında tutulanlar:</strong> Son sonucun ve bir sonucu kısa süre içinde tekrar saymamak için
