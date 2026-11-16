@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { site, socialLinks } from "@/lib/site";
+import { CerezTercihleriMaddesi } from "./cerez-onayi";
 
 export function SiteFooter() {
   return (
@@ -67,6 +68,8 @@ export function SiteFooter() {
                 Gizlilik
               </Link>
             </li>
+            <CerezTercihleriMaddesi className="inline-block py-1 text-left hover:text-butter" />
+
             <li>
               <Link className="inline-block py-1 hover:text-butter" href="/gorsel-kaynaklari">
                 Görsel kaynakları
